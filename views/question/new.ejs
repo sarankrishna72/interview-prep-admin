@@ -1,0 +1,20 @@
+<div class="question-page">
+  <div class="question-container">
+    <div class="page-top">
+      <div class="page-heading">
+        <h1>New Question</h1>
+        <p>Create a new interview question.</p>
+      </div>
+    </div>
+
+    <div class="page-card">
+      <%- include('form', {
+        question: null,
+        formAction: '/questions',
+        formMethod: 'POST',
+        submitLabel: 'Create Question',
+        cancelUrl: '/questions'
+      }) %>
+    </div>
+  </div>
+</div>
