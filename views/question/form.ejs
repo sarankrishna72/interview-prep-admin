@@ -1,0 +1,105 @@
+<form
+  action="<%= formAction %>"
+  method="POST"
+  class="question-form"
+  id="questionForm"
+>
+  <% if (formMethod && formMethod !== 'POST') { %>
+    <input type="hidden" name="_method" value="<%= formMethod %>">
+  <% } %>
+  <input type="hidden" id="code" name="code" value="<%= question?.code || '' %>">
+  <div class="form-grid">
+    <div class="form-group full-width">
+      <label for="title">Title</label>
+      <input
+        type="text"
+        id="title"
+        placeholder="Enter question..."
+        name="title"
+        value="<%= question?.title || '' %>"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select id="category" name="category" required>
+        <option value="">Select Category</option>
+        <option value="html" <%= question?.category === 'html' ? 'selected' : '' %>>HTML</option>
+        <option value="css" <%= question?.category === 'css' ? 'selected' : '' %>>CSS</option>
+        <option value="javascript" <%= question?.category === 'javascript' ? 'selected' : '' %>>JavaScript</option>
+        <option value="angular" <%= question?.category === 'angular' ? 'selected' : '' %>>Angular</option>
+        <option value="react" <%= question?.category === 'react' ? 'selected' : '' %>>React</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty" name="difficulty" required>
+        <option value="">Select Difficulty</option>
+        <option value="easy" <%= question?.difficulty === 'easy' ? 'selected' : '' %>>Easy</option>
+        <option value="medium" <%= question?.difficulty === 'medium' ? 'selected' : '' %>>Medium</option>
+        <option value="hard" <%= question?.difficulty === 'hard' ? 'selected' : '' %>>Hard</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="question_type">Question Type</label>
+      <select id="question_type" name="question_type" required>
+        <option value="mcq" <%= question?.question_type === 'mcq' ? 'selected' : '' %>>MCQ</option>
+        <option value="boolean" <%= question?.question_type === 'boolean' ? 'selected' : '' %>>Boolean</option>
+        <option value="multi_answer" <%= question?.question_type === 'multi_answer' ? 'selected' : '' %>>Multi Answer</option>
+      </select>
+    </div>
+
+    <div class="form-group full-width">
+        <label for="code">Code Snippet</label>
+       
+        <div >
+            <pre style="border-radius: 8px;padding: 0px;"><code id="editor" data-placeholder="Type your HTML / CSS / JavaScript / Angular / React code here..." style="width: 100%;display: block;min-height: 150px;padding: 10px 14px;" class="language-javascript" contenteditable="true" spellcheck="false"></code></pre>
+        </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="hint">Hint</label>
+      <textarea id="hint" name="hint" placeholder="Enter hint..." rows="3"><%= question?.hint || '' %></textarea>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="explanation">Explanation</label>
+      <textarea id="explanation"  placeholder="Enter explanation..."  name="explanation" rows="5"><%= question?.explanation || '' %></textarea>
+    </div>
+  </div>
+
+  <div class="page-card inner-card">
+    <div class="card-header card-header-row">
+      <h2>Options</h2>
+    </div>
+    <div id="maxOptError" style="color: red; margin-top: 5px; margin-bottom: 5px; font-style: italic; font-size: 12px;"></div>
+    <div class="options-wrap" id="optionsWrap"></div>
+    <div class="d-flex justify-end">
+        <button type="button" class="btn btn-info font-regular"  id="addOptionBtn">+ Add More Option</button>
+    </div>
+  </div>
+
+  <input
+    type="hidden"
+    name="correctIndex"
+    id="correctIndex"
+    value='<%- JSON.stringify(question?.correctIndex || []) %>'
+  />
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn-primary"><%= submitLabel %></button>
+    <button type="submit" class="btn  btn-secondary">Cancel</button>
+  </div>
+</form>
+
+<script>
+  window.questionFormData = {
+    questionType: <%- JSON.stringify(question?.question_type || 'mcq') %>,
+    options: <%- JSON.stringify(question?.options || []) %>,
+    correctIndex: <%- JSON.stringify(question?.correctIndex || []) %>
+  };
+</script>
+<script src="/js/question-form.js"></script>

@@ -1,0 +1,29 @@
+{
+  "name": "interview-prep-admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "seed:admin": "node ./script/seedAdmin.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "connect-mongo": "^6.0.0",
+    "dotenv": "^17.3.1",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.19.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^9.3.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.14"
+  }
+}

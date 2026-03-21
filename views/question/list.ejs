@@ -1,0 +1,184 @@
+<div class="question-page">
+  <div class="question-container">
+
+    <div class="page-top">
+      <div class="page-heading">
+        <h1>Question List</h1>
+        <p>Manage all interview questions from one place.</p>
+      </div>
+
+      <button class="btn btn-primary">+ Add Question</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="page-card">
+      <div class="card-header">
+        <h2>Filters</h2>
+      </div>
+
+      <form class="filter-form">
+        <div class="form-group">
+          <label>Category</label>
+          <select id="category-filter">
+            <option value="">All Categories</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Difficulty</label>
+          <select id="difficulty-filter">
+            <option value="">All Difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+
+        <div class="filter-actions">
+          <button id="apply" class="btn btn-primary">Apply</button>
+          <button id="reset" class="btn btn-secondary">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Table -->
+    <div class="page-card">
+      <div class="card-header card-header-row">
+        <h2>Questions</h2>
+        <span class="badge badge-primary"><%= questions.length %> items</span>
+      </div>
+
+      <div class="table-wrapper">
+        <div class="pagination-wrap">
+            <div class="pagination-info">
+                Showing <strong><%= (pagination.page - 1) * pagination.limit + 1 %></strong> to <strong><%= Math.min(pagination.page * pagination.limit, pagination.total) %></strong> of <strong><%= pagination.total %></strong> questions
+            </div>
+
+            <div class="pagination">
+                <% if (pagination.hasPrevPage) { %>
+                    <a href="?page=<%= pagination.page - 1 %>&limit=<%= pagination.limit %>" class="btn btn-secondary btn-sm">Prev</a>
+                <% } else { %>
+                    <a href="#" class="btn btn-secondary btn-sm disabled">Prev</a>
+                <% } %>
+
+                <% 
+                const currentPage = pagination.page;
+                const totalPages = pagination.totalPages;
+                const pagesToShow = [];
+                
+                // Always show first 2 pages
+                for (let i = 1; i <= Math.min(2, totalPages); i++) {
+                    pagesToShow.push(i);
+                }
+                
+                // Show current page if not already included
+                if (currentPage > 2 && currentPage < totalPages - 1) {
+                    if (pagesToShow[pagesToShow.length - 1] !== currentPage - 1) {
+                        pagesToShow.push('...');
+                    }
+                    pagesToShow.push(currentPage);
+                }
+                
+                // Show last 2 pages
+                if (totalPages > 2) {
+                    if (pagesToShow[pagesToShow.length - 1] !== totalPages - 2 && currentPage < totalPages - 2) {
+                        pagesToShow.push('...');
+                    }
+                    for (let i = Math.max(totalPages - 1, 3); i <= totalPages; i++) {
+                        if (!pagesToShow.includes(i)) {
+                            pagesToShow.push(i);
+                        }
+                    }
+                }
+                
+                pagesToShow.forEach(page => {
+                %>
+                    <% if (page === '...') { %>
+                        <span class="pagination-dots">...</span>
+                    <% } else if (page === currentPage) { %>
+                        <a href="#" class="btn btn-primary btn-sm"><%= page %></a>
+                    <% } else { %>
+                        <a href="?page=<%= page %>&limit=<%= pagination.limit %>" class="btn btn-secondary btn-sm"><%= page %></a>
+                    <% } %>
+                <% }); %>
+
+                <% if (pagination.hasNextPage) { %>
+                    <a href="?page=<%= pagination.page + 1 %>&limit=<%= pagination.limit %>" class="btn btn-secondary btn-sm">Next</a>
+                <% } else { %>
+                    <a href="#" class="btn btn-secondary btn-sm disabled">Next</a>
+                <% } %>
+            </div>
+        </div>
+        <table class="question-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Question</th>
+              <th>Category</th>
+              <th>Difficulty</th>
+              <th>Type</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% if (questions && questions.length > 0) { %>
+              <% questions.forEach((question, index) => { %>
+                <tr>
+                  <td><%= index + 1 %></td>
+                  <td><%= question.question %></td>
+                  <td><span class="badge badge-info capitalize"><%= question.category %></span></td>
+                  <td><span class="capitalize badge badge-<%= question.difficulty === 'easy' ? 'success' : question.difficulty === 'medium' ? 'warning' : 'danger' %>"><%= question.difficulty %></span></td>
+                  <td><span class="badge badge-secondary capitalize"><%= question.question_type %></span></td>
+                  <td>
+                    <div class="table-actions">
+                      <button class="btn btn-info btn-sm">View</button>
+                      <button class="btn btn-warning btn-sm">Edit</button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              <% }); %>
+            <% } else { %>
+              <tr>
+                <td colspan="6" style="text-align:center; padding:20px;">
+                  🚫 No questions found
+                </td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script>
+  const apply = document.getElementById("apply");
+  const reset = document.getElementById("reset");
+  const category = document.getElementById("category-filter");
+  const difficulty = document.getElementById("difficulty-filter");
+
+  (function setQueryFilterVal()  {
+    const urlParams = new URLSearchParams(window.location.search);
+    category.value =  urlParams.get('category') || "";
+    difficulty.value = urlParams.get('difficulty') || "";
+  })();
+
+  apply.addEventListener('click', function(e) {
+    e.preventDefault();
+    let queryParams  = "";
+    if (category.value || difficulty.value) {
+      if (category.value) {
+        queryParams +=  `category=${category.value}&`
+      }
+      if (difficulty.value) {
+        queryParams +=  `difficulty=${difficulty.value}&`
+      }
+      window.location.href = `/questions?${queryParams}page=1&limit=10`
+    }
+  })
+</script>
