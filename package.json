@@ -6,6 +6,8 @@
     "dev": "nodemon index.js",
     "start": "node index.js",
     "seed:admin": "node ./script/seedAdmin.js",
+    "seed:question:html": "node ./script/seedQuestion.js -- --type=html",
+    "seed:question:angular": "node ./script/seedQuestion.js -- --type=angular",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

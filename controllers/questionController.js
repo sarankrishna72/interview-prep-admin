@@ -39,21 +39,12 @@ exports.getQuestion = async (req, res) => {
       Question.countDocuments(filter)
     ]);
 
-    // return res.status(200).json({
-    //   data: questions,
-    //   pagination: {
-    //     total,
-    //     page: pageNumber,
-    //     limit: limitNumber,
-    //     totalPages: Math.ceil(total / limitNumber),
-    //     hasNextPage: pageNumber * limitNumber < total,
-    //     hasPrevPage: pageNumber > 1
-    //   }
-    // });
     res.render('question/list', {
         title: 'Question List',
         error: null,
         questions,
+        category,
+        difficulty,
         pagination: {
             total,
             page: pageNumber,
@@ -100,7 +91,6 @@ exports.createQuestion = async (req, res) => {
       options
     } = req.body;
 
-    console.log(req.body)
     const question = new Question({
       question: title,
       explanation,
@@ -114,7 +104,7 @@ exports.createQuestion = async (req, res) => {
     });
 
     await question.save();
-    res.redirect('/questions');
+    res.redirect('/questions/new');
   } catch (error) {
     console.error(error);
     res.status(500).send('Server Error');

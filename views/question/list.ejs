@@ -24,6 +24,9 @@
             <option value="html">HTML</option>
             <option value="css">CSS</option>
             <option value="javascript">JavaScript</option>
+            <option value="angular">Angular</option>
+            <option value="react">React JS</option>
+            <option value="python">Python</option>
           </select>
         </div>
 
@@ -48,18 +51,18 @@
     <div class="page-card">
       <div class="card-header card-header-row">
         <h2>Questions</h2>
-        <span class="badge badge-primary"><%= questions.length %> items</span>
+        <span class="badge badge-primary"><%= pagination.total %> items</span>
       </div>
 
       <div class="table-wrapper">
         <div class="pagination-wrap">
             <div class="pagination-info">
-                Showing <strong><%= (pagination.page - 1) * pagination.limit + 1 %></strong> to <strong><%= Math.min(pagination.page * pagination.limit, pagination.total) %></strong> of <strong><%= pagination.total %></strong> questions
+                Showing <strong><%= ((pagination.page - 1) * pagination.limit + 1) %></strong> to <strong><%= Math.min(pagination.page * pagination.limit, pagination.total) %></strong> of <strong><%= pagination.total %></strong> questions
             </div>
 
             <div class="pagination">
                 <% if (pagination.hasPrevPage) { %>
-                    <a href="?page=<%= pagination.page - 1 %>&limit=<%= pagination.limit %>" class="btn btn-secondary btn-sm">Prev</a>
+                    <a href="?page=<%= pagination.page - 1 %>&limit=<%= pagination.limit %>&category=<%= category || '' %>&difficulty=<%= difficulty || '' %>" class="btn btn-secondary btn-sm">Prev</a>
                 <% } else { %>
                     <a href="#" class="btn btn-secondary btn-sm disabled">Prev</a>
                 <% } %>
@@ -101,12 +104,12 @@
                     <% } else if (page === currentPage) { %>
                         <a href="#" class="btn btn-primary btn-sm"><%= page %></a>
                     <% } else { %>
-                        <a href="?page=<%= page %>&limit=<%= pagination.limit %>" class="btn btn-secondary btn-sm"><%= page %></a>
+                        <a href="?page=<%= page %>&limit=<%= pagination.limit %>&category=<%= category || '' %>&difficulty=<%= difficulty || '' %>" class="btn btn-secondary btn-sm"><%= page %></a>
                     <% } %>
                 <% }); %>
 
                 <% if (pagination.hasNextPage) { %>
-                    <a href="?page=<%= pagination.page + 1 %>&limit=<%= pagination.limit %>" class="btn btn-secondary btn-sm">Next</a>
+                    <a href="?page=<%= pagination.page + 1 %>&limit=<%= pagination.limit %>&category=<%= category || '' %>&difficulty=<%= difficulty || '' %>" class="btn btn-secondary btn-sm">Next</a>
                 <% } else { %>
                     <a href="#" class="btn btn-secondary btn-sm disabled">Next</a>
                 <% } %>
@@ -128,11 +131,11 @@
             <% if (questions && questions.length > 0) { %>
               <% questions.forEach((question, index) => { %>
                 <tr>
-                  <td><%= index + 1 %></td>
+                  <td><%= ((pagination.page - 1) * pagination.limit + 1) + index %></td>
                   <td><%= question.question %></td>
-                  <td><span class="badge badge-info capitalize"><%= question.category %></span></td>
+                  <td><span class="badge badge-<%= question.category || 'info' %> capitalize"><%= question.category %></span></td>
                   <td><span class="capitalize badge badge-<%= question.difficulty === 'easy' ? 'success' : question.difficulty === 'medium' ? 'warning' : 'danger' %>"><%= question.difficulty %></span></td>
-                  <td><span class="badge badge-secondary capitalize"><%= question.question_type %></span></td>
+                  <td><span class="badge badge-secondary uppercase"><%= question.question_type %></span></td>
                   <td>
                     <div class="table-actions">
                       <button class="btn btn-info btn-sm">View</button>
@@ -171,14 +174,12 @@
   apply.addEventListener('click', function(e) {
     e.preventDefault();
     let queryParams  = "";
-    if (category.value || difficulty.value) {
-      if (category.value) {
-        queryParams +=  `category=${category.value}&`
-      }
-      if (difficulty.value) {
-        queryParams +=  `difficulty=${difficulty.value}&`
-      }
-      window.location.href = `/questions?${queryParams}page=1&limit=10`
+    if (category.value) {
+      queryParams +=  `category=${category.value}&`
     }
+    if (difficulty.value) {
+      queryParams +=  `difficulty=${difficulty.value}&`
+    }
+    window.location.href = `/questions?${queryParams}page=1&limit=10`
   })
 </script>

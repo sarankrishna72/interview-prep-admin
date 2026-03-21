@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "What is Angular?",
+    "options": [
+      "A framework for building client applications",
+      "A programming language",
+      "A CSS preprocessor",
+      "A JavaScript library for building user interfaces"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Angular is more than a library; it provides a complete structure.",
+    "explanation": "Angular is a full-featured front-end framework used to build scalable client-side applications."
+  },
+  {
+    "id": 2,
+    "question": "Which function bootstraps a standalone Angular application?",
+    "options": [
+      "bootstrapApplication()",
+      "startApplication()",
+      "createApp()",
+      "bootstrapModule()"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Standalone Angular apps don't use NgModules.",
+    "explanation": "bootstrapApplication() is used to bootstrap standalone Angular applications without NgModules."
+  },
+  {
+    "id": 3,
+    "question": "Which decorator defines a component?",
+    "options": [
+      "@Component",
+      "@Pipe",
+      "@Directive",
+      "@Injectable"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "This decorator includes template and metadata.",
+    "explanation": "@Component defines a UI component in Angular with template, styles, and metadata."
+  },
+  {
+    "id": 4,
+    "question": "How do you mark a component as standalone?",
+    "options": [
+      "standalone: true",
+      "root: true",
+      "independent: true",
+      "module: false"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "It's a property inside the component decorator.",
+    "explanation": "Setting standalone: true in the @Component decorator makes the component independent of NgModules."
+  },
+  {
+    "id": 5,
+    "question": "Which template syntax shows a value as text?",
+    "options": [
+      "{{ value }}",
+      "[(...)]",
+      "(event)",
+      "[prop]"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "This is called interpolation.",
+    "explanation": "{{ value }} is Angular's interpolation syntax used to display data in templates."
+  },
+  {
+    "id": 6,
+    "question": "Which syntax listens to a click event?",
+    "options": [
+      "(click)",
+      "on-click=\"handler()\"",
+      "[click]",
+      "{click}"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Event binding uses parentheses.",
+    "explanation": "(click) is Angular's event binding syntax used to listen for click events."
+  },
+  {
+    "id": 7,
+    "question": "Which syntax sets a DOM property?",
+    "options": [
+      "[prop]",
+      "{prop}",
+      "prop()",
+      "(prop)"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Property binding uses square brackets.",
+    "explanation": "[prop] binds a value to a DOM property in Angular."
+  },
+  {
+    "id": 8,
+    "question": "Which is the two-way binding syntax for forms?",
+    "options": [
+      "[(ngModel)]",
+      "[value] + (input)",
+      "[(value)]",
+      "(ngModel)"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "It combines property and event binding.",
+    "explanation": "[(ngModel)] provides two-way data binding between the view and component."
+  },
+  {
+    "id": 9,
+    "question": "Which module is required for [(ngModel)]?",
+    "options": [
+      "FormsModule",
+      "CommonModule",
+      "BrowserModule",
+      "ReactiveFormsModule"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "It belongs to template-driven forms.",
+    "explanation": "FormsModule is required to use ngModel in Angular."
+  },
+  {
+    "id": 10,
+    "question": "Which modern template syntax iterates over a list?",
+    "options": [
+      "*ngFor",
+      "@for",
+      "@switch",
+      "@if"
+    ],
+    "category": "angular",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [1],
+    "hint": "Angular introduced new control flow syntax recently.",
+    "explanation": "@for is the new modern syntax for looping in Angular templates."
+  },
+  {
+    "id": 11,
+    "question": "How do you provide a stable identity for items in @for?",
+    "options": [
+      "Use track it.id",
+      "Use keyBy",
+      "Use hashBy",
+      "Use index as id"
+    ],
+    "category": "angular",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "It helps Angular optimize DOM updates.",
+    "explanation": "track it.id ensures Angular efficiently tracks list items for rendering."
+  },
+  {
+    "id": 12,
+    "question": "Which element is used for content projection?",
+    "options": [
+      "<ng-content>",
+      "<ng-template>",
+      "<ng-container>",
+      "<router-outlet>"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Used to project external content into a component.",
+    "explanation": "<ng-content> allows content projection in Angular components."
+  },
+  {
+    "id": 13,
+    "question": "Which decorator marks an input property?",
+    "options": [
+      "@Input",
+      "@Output",
+      "@Inject",
+      "@HostBinding"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Used to receive data from parent component.",
+    "explanation": "@Input allows data to be passed into a component."
+  },
+  {
+    "id": 14,
+    "question": "Which decorator is used to emit events to a parent component?",
+    "options": [
+      "@Output",
+      "@Event",
+      "@Emitter",
+      "@Input"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Used with EventEmitter.",
+    "explanation": "@Output allows a child component to send events to a parent component."
+  },
+  {
+    "id": 15,
+    "question": "Which class is commonly used with @Output to emit events?",
+    "options": [
+      "EventEmitter<T>",
+      "BehaviorSubject<T>",
+      "Emitter<T>",
+      "Subject<any>"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Angular-specific class for emitting events.",
+    "explanation": "EventEmitter<T> is used with @Output to emit custom events."
+  },
+  {
+    "id": 16,
+    "question": "Which pipe subscribes to Observables and unsubscribes automatically?",
+    "options": [
+      "async",
+      "json",
+      "uppercase",
+      "date"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Used often with Observables in templates.",
+    "explanation": "The async pipe automatically subscribes and unsubscribes from Observables."
+  },
+  {
+    "id": 17,
+    "question": "When does the async pipe unsubscribe from an Observable?",
+    "options": [
+      "When you call destroy()",
+      "Never",
+      "When the view is destroyed",
+      "Only on route change"
+    ],
+    "category": "angular",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [2],
+    "hint": "Think about Angular lifecycle.",
+    "explanation": "The async pipe automatically unsubscribes when the component/view is destroyed."
+  },
+  {
+    "id": 18,
+    "question": "Which Angular service is used for HTTP requests?",
+    "options": [
+      "HttpClient",
+      "HttpModule",
+      "HttpService",
+      "FetchService"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Part of Angular's HTTP package.",
+    "explanation": "HttpClient is used to make HTTP requests in Angular applications."
+  },
+  {
+    "id": 19,
+    "question": "In standalone apps, which function enables HttpClient?",
+    "options": [
+      "provideHttpClient()",
+      "enableHttp()",
+      "registerHttp()",
+      "HttpClientModule"
+    ],
+    "category": "angular",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Used in providers array for standalone apps.",
+    "explanation": "provideHttpClient() is used in standalone Angular apps to enable HttpClient."
+  },
+  {
+    "id": 20,
+    "question": "How do you set an attribute when no corresponding property exists?",
+    "options": [
+      "[attr.*]",
+      "bind-attr",
+      "[style.*]",
+      "[class.*]"
+    ],
+    "category": "angular",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Used for non-standard attributes.",
+    "explanation": "[attr.*] is used to bind attributes that don't have corresponding DOM properties."
+  },
+  {
+    "id": 21,
+    "question": "What is the modern control flow syntax for conditionals in templates?",
+    "options": [
+      "@if",
+      "ng-if",
+      "v-if",
+      "*ngIf"
+    ],
+    "category": "angular",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "New syntax introduced in Angular 17+.",
+    "explanation": "@if is the modern Angular control flow syntax replacing *ngIf."
+  },
+  {
+    "id": 22,
+    "question": "Which symbol introduces a local template reference?",
+    "options": [
+      "#var",
+      "@var",
+      "$var",
+      "&var"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Used inside templates.",
+    "explanation": "#var creates a local reference to an element or directive."
+  },
+  {
+    "id": 23,
+    "question": "Where does the root component render in index.html by default?",
+    "options": [
+      "<app-root>",
+      "<angular-root>",
+      "<body>",
+      "<root-app>"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Check index.html file.",
+    "explanation": "<app-root> is the default selector where Angular bootstraps the app."
+  },
+  {
+    "id": 24,
+    "question": "Which package exports bootstrapApplication?",
+    "options": [
+      "@angular/platform-browser",
+      "@angular/core",
+      "@angular/router",
+      "@angular/common"
+    ],
+    "category": "angular",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Related to browser bootstrapping.",
+    "explanation": "bootstrapApplication is exported from @angular/platform-browser."
+  },
+  {
+    "id": 25,
+    "question": "To use *ngIf and *ngFor in a standalone component, import:",
+    "options": [
+      "CommonModule",
+      "FormsModule",
+      "RouterModule",
+      "BrowserModule"
+    ],
+    "category": "angular",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [0],
+    "hint": "Contains common directives.",
+    "explanation": "CommonModule provides directives like *ngIf and *ngFor."
+  }
+]
