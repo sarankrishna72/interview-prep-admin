@@ -1,9 +1,13 @@
 const express = require('express');
 const router = express.Router();
-
+const authMiddleware = require('../middleware/authMiddleware');
 const questionController = require('../controllers/questionController');
-router.get('/', questionController.getQuestion);
-router.get('/new', questionController.newQuestionPage);
-router.get('/edit/:id', questionController.editQuestionPage);
-router.post('/', questionController.createQuestion);
+
+router.get('/', authMiddleware, questionController.getQuestion);
+router.get('/new', authMiddleware, questionController.newQuestionPage);
+router.get('/edit/:id', authMiddleware, questionController.editQuestionPage);
+router.put('/edit/:id', authMiddleware, questionController.updateQuestion);
+router.post('/', authMiddleware, questionController.createQuestion);
+router.get('/detail/:id', authMiddleware, questionController.showQuestionPage);
 module.exports = router;
+

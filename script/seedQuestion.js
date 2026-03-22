@@ -15,8 +15,29 @@ const seedQuestion = async () => {
     }
     for (const que of data) {
         try {
+             const {
+                question,
+                difficulty,
+                category,
+                code,
+                options,
+                question_type,
+                explanation,
+                hint,
+                correctIndex
+            } = que;
             await mongoose.connect(process.env.MONGO_URI);
-            await Question.create(que);
+            await Question.create({
+                question,
+                difficulty,
+                category: category.toLowerCase(),
+                code,
+                options,
+                question_type,
+                explanation,
+                hint,
+                correctIndex
+            });
             console.log('Question Created Successfully');
             // process.exit();
         } catch (error) {
@@ -25,7 +46,6 @@ const seedQuestion = async () => {
         }
         // process.exit();
     }
-
-  
+    process.exit();
 };
 seedQuestion();

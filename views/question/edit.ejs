@@ -7,18 +7,18 @@
       </div>
     </div>
 
-    <div class="page-card">
-      <div class="card-header">
-        <h2>Question Form</h2>
-      </div>
-
-      <%- include('partials/form', {
+    <div class="page-card padding-15">
+      <%- include('form', {
         question,
-        formAction: `/questions/${question._id}`,
+        formAction: `/questions/edit/${question._id}?_method=PUT`,
         formMethod: 'PUT',
         submitLabel: 'Update Question',
-        cancelUrl: `/questions/${question._id}`
+        cancelUrl:  `/questions/${question._id}`
       }) %>
     </div>
   </div>
 </div>
+<!-- 
+@for(item of items; track: item.id) {
+    ​<div>{{item}}</div>
+​} -->

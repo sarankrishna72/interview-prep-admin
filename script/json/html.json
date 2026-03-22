@@ -1,617 +1,5713 @@
 [
   {
-    "id": 1,
     "question": "What does HTML stand for?",
     "options": [
       "Hyper Text Markup Language",
-      "Hyperlinks and Text Markup Language",
+      "High Text Machine Language",
+      "Hyperlink and Text Management Language",
       "Home Tool Markup Language"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "Think about the standard language used to structure web pages.",
-    "explanation": "HTML stands for Hyper Text Markup Language. It is the standard markup language used to create the structure of web pages."
-  },
-  {
-    "id": 2,
-    "question": "Who is making the Web standards?",
-    "options": [
-      "The World Wide Web Consortium",
-      "Microsoft",
-      "Mozilla",
-      "Google"
+    "correctIndex": [
+      0
     ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "Look for the organization responsible for standardizing web technologies.",
-    "explanation": "The World Wide Web Consortium (W3C) is the main organization that develops web standards such as HTML, CSS, and related specifications."
+    "explanation": "HTML is the standard markup language for structuring web pages.",
+    "id": 1,
+    "category": "HTML"
   },
   {
-    "id": 3,
-    "question": "Choose the correct HTML element for the largest heading:",
+    "question": "Which HTML tag is used for the largest heading by default?",
     "options": [
-      "<h1>",
-      "<head>",
       "<h6>",
-      "<heading>"
+      "<heading>",
+      "<h1>",
+      "<head>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "HTML headings range from h1 to h6.",
-    "explanation": "<h1> defines the largest and most important heading in HTML, while <h6> is the smallest heading."
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<h1> represents the highest-level heading.",
+    "id": 2,
+    "category": "HTML"
   },
   {
+    "question": "Which tag is used to create a paragraph in HTML?",
+    "options": [
+      "<p>",
+      "<para>",
+      "<text>",
+      "<paragraph>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<p> defines a paragraph.",
+    "id": 3,
+    "category": "HTML"
+  },
+  {
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<url>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<a> creates hyperlinks using the href attribute.",
     "id": 4,
-    "question": "What is the correct HTML element for inserting a line break?",
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute is used with the <a> tag to specify the destination URL?",
+    "options": [
+      "src",
+      "href",
+      "link",
+      "target"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The href attribute specifies the link destination.",
+    "id": 5,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to insert an image in HTML?",
+    "options": [
+      "<pic>",
+      "<image>",
+      "<img>",
+      "<src>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<img> embeds an image in the page.",
+    "id": 6,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute is required on the <img> tag to describe the image for accessibility?",
+    "options": [
+      "title",
+      "alt",
+      "name",
+      "description"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "alt provides alternative text for screen readers and fallback contexts.",
+    "id": 7,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag creates a line break?",
     "options": [
       "<break>",
       "<lb>",
-      "<br>"
+      "<br>",
+      "<newline>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [2],
-    "hint": "It is a short tag often used inside text content.",
-    "explanation": "<br> is the correct HTML element for inserting a line break. It creates a new line without starting a new paragraph."
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<br> inserts a line break.",
+    "id": 8,
+    "category": "HTML"
   },
   {
-    "id": 5,
-    "question": "What is the correct HTML for adding a background color?",
+    "question": "Which tag is used to make text bold semantically important?",
     "options": [
-      "<body style=\"background-color:yellow;\">",
-      "<body bg=\"yellow\">",
-      "<background>yellow</background>"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "Modern HTML uses CSS styles instead of old custom attributes.",
-    "explanation": "The correct way is to use CSS, such as background-color inside the style attribute. The bg attribute and <background> element are not valid modern HTML."
-  },
-  {
-    "id": 6,
-    "question": "Choose the correct HTML element to define important text",
-    "options": [
-      "<strong>",
       "<b>",
-      "<i>",
+      "<strong>",
+      "<bold>",
       "<important>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "Choose the semantic tag, not just the visual styling tag.",
-    "explanation": "<strong> is used to define important text semantically. Browsers often display it in bold, but its main purpose is meaning, not appearance."
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<strong> indicates strong importance.",
+    "id": 9,
+    "category": "HTML"
   },
   {
-    "id": 7,
-    "question": "Choose the correct HTML element to define emphasized text",
+    "question": "Which tag is used to emphasize text semantically?",
     "options": [
       "<em>",
       "<i>",
-      "<italic>"
+      "<italic>",
+      "<mark>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "Pick the semantic emphasis tag.",
-    "explanation": "<em> defines emphasized text. It is semantic HTML, while <i> is mostly presentational."
-  },
-  {
-    "id": 8,
-    "question": "What is the correct HTML for creating a hyperlink?",
-    "options": [
-      "<a href=\"http://www.w3schools.com\">W3Schools</a>",
-      "<a>http://www.w3schools.com</a>",
-      "<a name=\"http://www.w3schools.com\">W3Schools.com</a>",
-      "<a url=\"http://www.w3schools.com\">W3Schools.com</a>"
+    "correctIndex": [
+      0
     ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "Hyperlinks use the anchor tag with a destination attribute.",
-    "explanation": "The <a> tag creates hyperlinks, and the href attribute specifies the destination URL."
-  },
-  {
-    "id": 9,
-    "question": "Which character is used to indicate an end tag?",
-    "options": [
-      "/",
-      "<",
-      "^",
-      "*"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "Look at an example like </p>.",
-    "explanation": "The forward slash (/) is used in closing tags, such as </div> or </p>."
-  },
-  {
+    "explanation": "<em> gives emphasis to text.",
     "id": 10,
-    "question": "How can you open a link in a new tab/browser window?",
-    "options": [
-      "<a href=\"url\" target=\"_blank\">",
-      "<a href=\"url\" target=\"new\">",
-      "<a href=\"url\" new>"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "Use the target attribute with the standard browser keyword.",
-    "explanation": "target=\"_blank\" opens the linked document in a new tab or browser window."
+    "category": "HTML"
   },
   {
-    "id": 11,
-    "question": "Which of these elements are all <table> elements?",
+    "question": "Which tag creates an unordered list?",
     "options": [
-      "<table><head><tfoot>",
-      "<thead><body><tr>",
-      "<table><tr><td>",
-      "<table><tr><tt>"
-    ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [2],
-    "hint": "Think of the basic table structure: table, row, and cell.",
-    "explanation": "<table>, <tr>, and <td> are all valid table-related elements. The other options contain elements that are not valid table elements in that context."
-  },
-  {
-    "id": 12,
-    "question": "Inline elements are normally displayed without starting a new line.",
-    "options": [
-      "False",
-      "True"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "Compare inline elements like <span> with block elements like <div>.",
-    "explanation": "Inline elements do not normally start on a new line. They flow within the surrounding text."
-  },
-  {
-    "id": 13,
-    "question": "How can you make a numbered list?",
-    "options": [
-      "<dl>",
-      "<list>",
       "<ul>",
-      "<ol>"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [3],
-    "hint": "The tag name stands for ordered list.",
-    "explanation": "<ol> creates an ordered list, which is a numbered list in HTML."
-  },
-  {
-    "id": 14,
-    "question": "How can you make a bulleted list?",
-    "options": [
-      "<list>",
       "<ol>",
+      "<li>",
+      "<list>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<ul> defines a bulleted list.",
+    "id": 11,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag creates an ordered list?",
+    "options": [
       "<ul>",
-      "<dl>"
+      "<ol>",
+      "<li>",
+      "<order>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [2],
-    "hint": "The tag name stands for unordered list.",
-    "explanation": "<ul> creates an unordered list, which usually displays as a bulleted list."
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<ol> defines a numbered list.",
+    "id": 12,
+    "category": "HTML"
   },
   {
+    "question": "Which tag is used for a list item?",
+    "options": [
+      "<item>",
+      "<li>",
+      "<list-item>",
+      "<dt>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<li> defines an item inside a list.",
+    "id": 13,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to create a table row?",
+    "options": [
+      "<td>",
+      "<tr>",
+      "<th>",
+      "<row>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<tr> defines a table row.",
+    "id": 14,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to create a table cell?",
+    "options": [
+      "<tc>",
+      "<td>",
+      "<tr>",
+      "<cell>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<td> defines a standard data cell.",
     "id": 15,
-    "question": "What is the correct HTML for making a checkbox?",
-    "options": [
-      "<checkbox>",
-      "<input type=\"checkbox\">",
-      "<input type=\"check\">",
-      "<check>"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "Form controls usually use the input element with a specific type.",
-    "explanation": "A checkbox is created using the <input> element with type=\"checkbox\"."
+    "category": "HTML"
   },
   {
+    "question": "Which tag is used for a table header cell?",
+    "options": [
+      "<th>",
+      "<thead>",
+      "<header>",
+      "<td>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<th> represents a header cell.",
     "id": 16,
-    "question": "What is the correct HTML for making a text input field?",
-    "options": [
-      "<textfield>",
-      "<input type=\"text\">",
-      "<textinput type=\"text\">",
-      "<input type=\"textfield\">"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "Use the standard form input element.",
-    "explanation": "A single-line text field is created with <input type=\"text\">."
+    "category": "HTML"
   },
   {
+    "question": "Which tag is used to create a form in HTML?",
+    "options": [
+      "<input>",
+      "<form>",
+      "<fieldset>",
+      "<label>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<form> groups controls for user input.",
     "id": 17,
-    "question": "What is the correct HTML for making a drop-down list?",
-    "options": [
-      "<list>",
-      "<input type=\"list\">",
-      "<select>",
-      "<input type=\"dropdown\">"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [2],
-    "hint": "Dropdowns use a dedicated form element with nested options.",
-    "explanation": "The <select> element creates a dropdown list, usually containing <option> elements."
+    "category": "HTML"
   },
   {
+    "question": "Which tag creates a single-line text input field?",
+    "options": [
+      "<textbox>",
+      "<text>",
+      "<input>",
+      "<textarea>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<input type='text'> creates a single-line text box.",
     "id": 18,
-    "question": "What is the correct HTML for making a text area?",
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used for multi-line text input?",
     "options": [
+      "<input type='text'>",
       "<textarea>",
-      "<input type=\"textbox\">",
-      "<input type=\"textarea\">"
+      "<multiline>",
+      "<textblock>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "Multi-line text input uses its own element, not an input type.",
-    "explanation": "<textarea> is the correct HTML element for multi-line text input."
-  },
-  {
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<textarea> is for multi-line text input.",
     "id": 19,
-    "question": "What is the correct HTML for inserting an image?",
-    "options": [
-      "<img href=\"image.gif\" alt=\"MyImage\">",
-      "<image src=\"image.gif\" alt=\"MyImage\">",
-      "<img src=\"image.gif\" alt=\"MyImage\">",
-      "<img alt=\"MyImage\">image.gif</img>"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [2],
-    "hint": "Images use the src attribute.",
-    "explanation": "The <img> tag is used to insert an image, and src specifies the image file path. The alt attribute provides alternative text."
+    "category": "HTML"
   },
   {
+    "question": "Which tag is used to create a clickable button?",
+    "options": [
+      "<click>",
+      "<input>",
+      "<button>",
+      "Both <button> and suitable <input> types"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      3
+    ],
+    "explanation": "A button can be created with <button> or certain <input> types such as submit/button.",
     "id": 20,
-    "question": "What is the correct HTML for inserting a background image?",
-    "options": [
-      "<background img=\"background.gif\">",
-      "<body style=\"background-image:url(background.gif)\">",
-      "<body bg=\"background.gif\">"
-    ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "Use CSS rather than outdated HTML attributes.",
-    "explanation": "Background images should be added with CSS, such as the background-image property inside the style attribute or an external stylesheet."
+    "category": "HTML"
   },
   {
+    "question": "Which attribute gives an element a unique identifier?",
+    "options": [
+      "class",
+      "id",
+      "name",
+      "key"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The id attribute should be unique within the document.",
     "id": 21,
-    "question": "An <iframe> is used to display a web page within a web page.",
-    "options": [
-      "False",
-      "True",
-      "There is no such thing as an <iframe>"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "This element embeds another document inside the current page.",
-    "explanation": "The <iframe> element is used to embed another webpage or document inside the current page."
+    "category": "HTML"
   },
   {
+    "question": "Which attribute is used to assign one or more CSS classes to an element?",
+    "options": [
+      "style",
+      "css",
+      "class",
+      "font"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "class attaches CSS classes to an element.",
     "id": 22,
-    "question": "HTML comments start with <!-- and end with -->",
-    "options": [
-      "True",
-      "False"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "HTML comments have a specific opening and closing syntax.",
-    "explanation": "HTML comments begin with <!-- and end with -->. They are ignored by the browser when rendering the page."
+    "category": "HTML"
   },
   {
+    "question": "The visible page title shown in the browser tab is defined with which tag?",
+    "options": [
+      "<meta>",
+      "<title>",
+      "<head>",
+      "<caption>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<title> sets the document title.",
     "id": 23,
-    "question": "Block elements are normally displayed without starting a new line.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "Think about how <div> and <p> behave by default.",
-    "explanation": "Block elements usually start on a new line and take up the full available width by default."
+    "category": "HTML"
   },
   {
+    "question": "Which part of an HTML document contains metadata such as title and meta tags?",
+    "options": [
+      "<body>",
+      "<footer>",
+      "<head>",
+      "<main>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<head> stores document metadata.",
     "id": 24,
-    "question": "Which HTML element defines the title of a document?",
+    "category": "HTML"
+  },
+  {
+    "question": "Which part of the HTML document contains the content displayed on the page?",
     "options": [
       "<head>",
-      "<meta>",
+      "<body>",
+      "<html>",
       "<title>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [2],
-    "hint": "It is the text shown in the browser tab.",
-    "explanation": "The <title> element defines the title of the document, which appears in the browser tab and is important for SEO."
-  },
-  {
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<body> contains the rendered page content.",
     "id": 25,
-    "question": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
-    "options": [
-      "alt",
-      "title",
-      "src",
-      "longdesc"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "This attribute is also important for accessibility.",
-    "explanation": "The alt attribute provides alternative text for an image when it cannot be displayed and helps screen readers describe the image."
+    "category": "HTML"
   },
   {
-    "id": 26,
-    "question": "Which doctype is correct for HTML5?",
-    "options": [
-      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 5.0//EN\" \"http://www.w3.org/TR/html5/strict.dtd\">",
-      "<!DOCTYPE HTML5>",
-      "<!DOCTYPE html>"
-    ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [2],
-    "hint": "HTML5 simplified the doctype declaration a lot.",
-    "explanation": "<!DOCTYPE html> is the correct and simplified doctype declaration for HTML5."
-  },
-  {
-    "id": 27,
-    "question": "Which HTML element is used to specify a footer for a document or section?",
-    "options": [
-      "<section>",
-      "<bottom>",
-      "<footer>"
-    ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [2],
-    "hint": "It is a semantic layout element introduced in HTML5.",
-    "explanation": "<footer> defines the footer section of a document or a section, often containing copyright, links, or author information."
-  },
-  {
-    "id": 28,
-    "question": "In HTML, you can embed SVG elements directly into an HTML page.",
+    "question": " HTML is a programming language.",
     "options": [
       "True",
       "False"
     ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "SVG integrates directly with modern HTML documents.",
-    "explanation": "SVG can be embedded directly into HTML using the <svg> element, allowing scalable vector graphics in the page."
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "HTML is a markup language, not a programming language.",
+    "id": 26,
+    "category": "HTML"
   },
   {
+    "question": " An HTML document should normally start with <!DOCTYPE html>.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The doctype tells browsers to use standards mode.",
+    "id": 27,
+    "category": "HTML"
+  },
+  {
+    "question": " The <img> tag usually has a closing tag like </img>.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<img> is a void element and does not have a closing tag.",
+    "id": 28,
+    "category": "HTML"
+  },
+  {
+    "question": " <ul> is used for numbered lists.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<ul> creates unordered lists; numbered lists use <ol>.",
     "id": 29,
-    "question": "What is the correct HTML element for playing video files?",
+    "category": "HTML"
+  },
+  {
+    "question": " The href attribute is commonly used with the <a> tag.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "href specifies the URL of the hyperlink.",
+    "id": 30,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are common block-level elements in normal flow?",
+    "options": [
+      "<div>",
+      "<p>",
+      "<span>",
+      "<h1>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "<div>, <p>, and headings are block-level by default; <span> is inline.",
+    "id": 31,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these tags are used in table markup?",
+    "options": [
+      "<table>",
+      "<tr>",
+      "<td>",
+      "<section>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Tables commonly use <table>, <tr>, and <td>.",
+    "id": 32,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are valid heading tags?",
+    "options": [
+      "<h1>",
+      "<h3>",
+      "<heading1>",
+      "<h6>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "HTML headings go from <h1> to <h6>.",
+    "id": 33,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these elements are commonly used in forms?",
+    "options": [
+      "<input>",
+      "<label>",
+      "<textarea>",
+      "<article>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Forms often include inputs, labels, and textareas.",
+    "id": 34,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attributes are commonly used on an <img> element?",
+    "options": [
+      "src",
+      "alt",
+      "href",
+      "width"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Images use src and alt, and width may also be used.",
+    "id": 35,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are valid global HTML attributes?",
+    "options": [
+      "id",
+      "class",
+      "style",
+      "href"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "id, class, and style are global; href is not global.",
+    "id": 36,
+    "category": "HTML"
+  },
+  {
+    "question": "Which code correctly creates a hyperlink to example.com?",
+    "options": [
+      "<a src='https://example.com'>Visit</a>",
+      "<a href='https://example.com'>Visit</a>",
+      "<link href='https://example.com'>Visit</link>",
+      "<url>https://example.com</url>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<a href='...'> is the correct hyperlink syntax.",
+    "code": "<a href='https://example.com'>Visit</a>",
+    "id": 37,
+    "category": "HTML"
+  },
+  {
+    "question": "What will this code display?",
+    "options": [
+      "A paragraph with the text Hello",
+      "Nothing",
+      "An error",
+      "A heading"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The <p> element renders the text Hello.",
+    "code": "<p>Hello</p>",
+    "id": 38,
+    "category": "HTML"
+  },
+  {
+    "question": "What will this code create?",
+    "options": [
+      "A numbered list",
+      "A bulleted list with one item",
+      "A table",
+      "A paragraph"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<ul><li>Apple</li></ul> makes a bulleted list with one item.",
+    "code": "<ul><li>Apple</li></ul>",
+    "id": 39,
+    "category": "HTML"
+  },
+  {
+    "question": "What is the correct tag for the main top-level container of an HTML document?",
+    "options": [
+      "<document>",
+      "<html>",
+      "<body>",
+      "<container>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<html> is the root element of an HTML document.",
+    "id": 40,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is best for generic grouping without semantic meaning?",
+    "options": [
+      "<section>",
+      "<article>",
+      "<div>",
+      "<main>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<div> is a generic container.",
+    "id": 41,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is typically used for short inline grouping without semantic meaning?",
+    "options": [
+      "<span>",
+      "<div>",
+      "<section>",
+      "<aside>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<span> is a generic inline container.",
+    "id": 42,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to define a caption for a table?",
+    "options": [
+      "<title>",
+      "<caption>",
+      "<legend>",
+      "<thead>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<caption> provides a table caption.",
+    "id": 43,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to define an option inside a dropdown list?",
+    "options": [
+      "<choice>",
+      "<option>",
+      "<select-item>",
+      "<item>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<option> defines an item inside <select>.",
+    "id": 44,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag creates a dropdown list?",
+    "options": [
+      "<dropdown>",
+      "<input type='dropdown'>",
+      "<select>",
+      "<list>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<select> creates a dropdown.",
+    "id": 45,
+    "category": "HTML"
+  },
+  {
+    "question": " The <head> element is visible as page content by default.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The <head> contains metadata, not visible page content.",
+    "id": 46,
+    "category": "HTML"
+  },
+  {
+    "question": " The <title> element belongs inside <head>.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<title> is metadata and belongs in <head>.",
+    "id": 47,
+    "category": "HTML"
+  },
+  {
+    "question": " The alt attribute on an image can help accessibility.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Alternative text supports screen readers and fallback cases.",
+    "id": 48,
+    "category": "HTML"
+  },
+  {
+    "question": " <textarea> is suitable for multi-line input.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<textarea> is specifically designed for multi-line text.",
+    "id": 49,
+    "category": "HTML"
+  },
+  {
+    "question": "Which elements are void elements with no closing tag in normal HTML syntax?",
+    "options": [
+      "<img>",
+      "<br>",
+      "<input>",
+      "<p>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "<img>, <br>, and <input> are void elements.",
+    "id": 50,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tags are commonly used to structure lists?",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<dl>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All four are list-related tags, including description lists with <dl>.",
+    "id": 51,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to associate text with a form control?",
+    "options": [
+      "<label>",
+      "<caption>",
+      "<legend>",
+      "<span>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<label> associates text with a form field.",
+    "id": 52,
+    "category": "HTML"
+  },
+  {
+    "question": "What does the src attribute usually specify?",
+    "options": [
+      "CSS class names",
+      "A resource location",
+      "A semantic role",
+      "The page title"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "src points to the resource URL for elements like img, script, and iframe.",
+    "id": 53,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to embed another HTML page inside the current page?",
+    "options": [
+      "<frame>",
+      "<embed>",
+      "<iframe>",
+      "<object>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<iframe> embeds another browsing context.",
+    "id": 54,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to define the document's metadata character encoding?",
+    "options": [
+      "<charset>",
+      "<meta>",
+      "<encoding>",
+      "<headcharset>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A <meta charset='UTF-8'> tag sets the encoding.",
+    "id": 55,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used for the most important page heading, not the browser tab text?",
+    "options": [
+      "<title>",
+      "<h1>",
+      "<header>",
+      "<head>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<h1> is the main content heading on the page.",
+    "id": 56,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to insert a horizontal thematic break?",
+    "options": [
+      "<hr>",
+      "<line>",
+      "<br>",
+      "<separator>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<hr> creates a thematic break.",
+    "id": 57,
+    "category": "HTML"
+  },
+  {
+    "question": " Multiple elements can share the same class name.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Classes are reusable across multiple elements.",
+    "id": 58,
+    "category": "HTML"
+  },
+  {
+    "question": " The id value should generally be unique in a page.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "An id identifies a unique element in the document.",
+    "id": 59,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are common semantic text elements?",
+    "options": [
+      "<strong>",
+      "<em>",
+      "<mark>",
+      "<blink>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "<strong>, <em>, and <mark> are standard semantic text elements; <blink> is obsolete/non-standard.",
+    "id": 60,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is used for a clickable checkbox input?",
+    "options": [
+      "<input type='checkbox'>",
+      "<checkbox>",
+      "<check>",
+      "<input type='check'>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Checkboxes use <input type='checkbox'>.",
+    "id": 61,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is used for a radio button?",
+    "options": [
+      "<input type='radio'>",
+      "<radio>",
+      "<input type='option'>",
+      "<choice>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Radio buttons use <input type='radio'>.",
+    "id": 62,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element wraps all visible content of the page?",
+    "options": [
+      "<head>",
+      "<body>",
+      "<html>",
+      "<main>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "All visible page content goes in the body element.",
+    "id": 63,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to define a cell that spans an entire row heading area in tables?",
+    "options": [
+      "<thead>",
+      "<th>",
+      "<col>",
+      "<caption>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<th> is the header cell element.",
+    "id": 64,
+    "category": "HTML"
+  },
+  {
+    "question": "Which HTML tag is used to play audio content?",
+    "options": [
+      "<sound>",
+      "<music>",
+      "<audio>",
+      "<media>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<audio> embeds sound content.",
+    "id": 65,
+    "category": "HTML"
+  },
+  {
+    "question": "Which HTML tag is used to play video content?",
     "options": [
       "<movie>",
       "<video>",
-      "<media>"
+      "<media>",
+      "<player>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "HTML5 introduced a dedicated media element for video.",
-    "explanation": "The <video> element is used to embed and play video files in HTML."
-  },
-  {
-    "id": 30,
-    "question": "What is the correct HTML element for playing audio files?",
-    "options": [
-      "<sound>",
-      "<audio>",
-      "<mp3>"
+    "correctIndex": [
+      1
     ],
-    "category": "html",
-    "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "HTML5 introduced a dedicated media element for sound.",
-    "explanation": "The <audio> element is used to embed and play audio content in HTML."
+    "explanation": "<video> embeds video content.",
+    "id": 66,
+    "category": "HTML"
   },
   {
-    "id": 31,
-    "question": "The HTML global attribute, \"contenteditable\" is used to:",
+    "question": "Which attributes are valid on many form inputs?",
     "options": [
-      "Specifies a context menu for an element. The menu appears when a user right-clicks on the element",
-      "Update content from the server",
-      "Return the position of the first found occurrence of content inside a string",
-      "Specify whether the content of an element should be editable or not"
-    ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [3],
-    "hint": "This attribute allows direct editing of element content in the browser.",
-    "explanation": "The contenteditable attribute specifies whether the content of an element can be edited by the user directly in the browser."
-  },
-  {
-    "id": 32,
-    "question": "In HTML, onblur and onfocus are:",
-    "options": [
-      "HTML elements",
-      "Style attributes",
-      "Event attributes"
-    ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [2],
-    "hint": "They are related to user interaction with form fields and elements.",
-    "explanation": "onblur and onfocus are event attributes. They are triggered when an element loses focus or gains focus."
-  },
-  {
-    "id": 33,
-    "question": "Graphics defined by SVG is in which format?",
-    "options": [
-      "XML",
-      "CSS",
-      "HTML"
-    ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "SVG is text-based and uses a markup structure.",
-    "explanation": "SVG graphics are defined in XML format, which makes them scalable and easy to manipulate."
-  },
-  {
-    "id": 34,
-    "question": "The HTML <canvas> element is used to:",
-    "options": [
-      "draw graphics",
-      "display database records",
-      "manipulate data in MySQL",
-      "create draggable elements"
-    ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "It is commonly used with JavaScript for shapes, charts, and animations.",
-    "explanation": "The <canvas> element provides a drawable area for rendering graphics dynamically using JavaScript."
-  },
-  {
-    "id": 35,
-    "question": "In HTML, which attribute is used to specify that an input field must be filled out?",
-    "options": [
-      "required",
+      "name",
+      "value",
       "placeholder",
-      "validate",
-      "formvalidate"
+      "href"
     ],
-    "category": "html",
     "difficulty": "easy",
-    "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "This built-in validation attribute prevents empty submission.",
-    "explanation": "The required attribute makes a form field mandatory before the form can be submitted."
-  },
-  {
-    "id": 36,
-    "question": "Which input type defines a slider control?",
-    "options": [
-      "controls",
-      "range",
-      "search",
-      "slider"
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
     ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "It lets the user pick a value by dragging a handle.",
-    "explanation": "input type=\"range\" creates a slider control that allows selection of a value within a range."
+    "explanation": "name, value, and placeholder are commonly used on form controls.",
+    "id": 67,
+    "category": "HTML"
   },
   {
-    "id": 37,
-    "question": "Which HTML element is used to display a scalar measurement within a range?",
+    "question": " <section> and <article> are semantic HTML elements.",
     "options": [
-      "<measure>",
-      "<gauge>",
-      "<range>",
-      "<meter>"
+      "True",
+      "False"
     ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [3],
-    "hint": "It is a semantic element for values like disk usage or scores.",
-    "explanation": "The <meter> element represents a scalar measurement within a known range, such as a progress level or rating."
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "They provide meaning about document structure.",
+    "id": 68,
+    "category": "HTML"
   },
   {
-    "id": 38,
-    "question": "Which HTML element defines navigation links?",
+    "question": " <div> provides semantic meaning about the content by itself.",
     "options": [
-      "<nav>",
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<div> is generic and non-semantic.",
+    "id": 69,
+    "category": "HTML"
+  },
+  {
+    "question": "Which elements are commonly used as page structure sections?",
+    "options": [
+      "<header>",
+      "<main>",
+      "<footer>",
+      "<article>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All of these are structural/semantic elements.",
+    "id": 70,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute opens a link in a new tab or window when set to _blank?",
+    "options": [
+      "rel",
+      "target",
+      "window",
+      "open"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "target='_blank' opens the link in a new browsing context.",
+    "id": 71,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these tags are used for media embedding?",
+    "options": [
+      "<img>",
+      "<audio>",
+      "<video>",
+      "<meta>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Images, audio, and video are media elements.",
+    "id": 72,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used for a generic standalone piece of self-contained content?",
+    "options": [
+      "<article>",
+      "<div>",
+      "<span>",
+      "<b>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<article> represents self-contained content.",
+    "id": 73,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is often used for navigation links?",
+    "options": [
+      "<links>",
       "<navigate>",
-      "<navigation>"
+      "<nav>",
+      "<menuitem>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "It is a semantic HTML5 element specifically for major navigation blocks.",
-    "explanation": "The <nav> element defines a section of navigation links, such as menus or site navigation."
-  },
-  {
-    "id": 39,
-    "question": "In HTML, what does the <aside> element define?",
-    "options": [
-      "A navigation list to be shown at the left side of the page",
-      "Content aside from the page content",
-      "The ASCII character-set; to send information between computers on the Internet"
+    "correctIndex": [
+      2
     ],
-    "category": "html",
-    "difficulty": "medium",
-    "question_type": "mcq",
-    "correctIndex": [1],
-    "hint": "Think of sidebars, related links, or supporting content.",
-    "explanation": "The <aside> element defines content that is indirectly related to the main content, such as sidebars, notes, or related information."
+    "explanation": "<nav> denotes a section with navigation links.",
+    "id": 74,
+    "category": "HTML"
   },
   {
-    "id": 40,
-    "question": "Which HTML element is used to specify a header for a document or section?",
+    "question": "What will this code produce?",
+    "options": [
+      "A heading",
+      "A link to Google",
+      "An image",
+      "A form"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The anchor element links to Google.",
+    "code": "<a href='https://google.com'>Google</a>",
+    "id": 75,
+    "category": "HTML"
+  },
+  {
+    "question": "What will this code produce?",
+    "options": [
+      "A checkbox",
+      "A button labeled Send",
+      "A paragraph",
+      "A dropdown"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "This input creates a submit button.",
+    "code": "<input type='submit' value='Send'>",
+    "id": 76,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is best for marking up the footer of a page or section?",
+    "options": [
+      "<bottom>",
+      "<footer>",
+      "<end>",
+      "<foot>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<footer> defines footer content.",
+    "id": 77,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is best for introductory content or navigational aids at the top of a page or section?",
     "options": [
       "<header>",
       "<top>",
       "<head>",
+      "<intro>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<header> is used for introductory content.",
+    "id": 78,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is commonly used for the main content of the page?",
+    "options": [
+      "<content>",
+      "<main>",
+      "<body>",
       "<section>"
     ],
-    "category": "html",
     "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
     "question_type": "mcq",
-    "correctIndex": [0],
-    "hint": "It is a semantic layout element used for introductory content.",
-    "explanation": "The <header> element defines introductory content or a group of navigational aids for a document or section."
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<main> represents the dominant content of the document.",
+    "id": 79,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is designed for side content related to the main content?",
+    "options": [
+      "<side>",
+      "<aside>",
+      "<secondary>",
+      "<nav>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<aside> is for tangentially related content.",
+    "id": 80,
+    "category": "HTML"
+  },
+  {
+    "question": " HTML attributes are placed inside the start tag of an element.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Attributes go inside the opening tag.",
+    "id": 81,
+    "category": "HTML"
+  },
+  {
+    "question": " <ol> uses <li> for each list item.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Ordered lists contain list items marked with <li>.",
+    "id": 82,
+    "category": "HTML"
+  },
+  {
+    "question": "Which code correctly adds alternate text to an image?",
+    "options": [
+      "<img src='cat.jpg' description='Cat'>",
+      "<img src='cat.jpg' alt='Cat'>",
+      "<img href='cat.jpg' alt='Cat'>",
+      "<image src='cat.jpg' alt='Cat'>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "alt is the standard image alternative text attribute.",
+    "code": "<img src='https://blocks.astratic.com/img/general-img-landscape.png' alt='Cat'>",
+    "id": 83,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these elements can appear inside a table?",
+    "options": [
+      "<thead>",
+      "<tbody>",
+      "<tfoot>",
+      "<li>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Table sectioning elements include thead, tbody, and tfoot.",
+    "id": 84,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is used to group related options inside a <select>?",
+    "options": [
+      "<group>",
+      "<optgroup>",
+      "<optiongroup>",
+      "<fieldset>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<optgroup> groups related dropdown options.",
+    "id": 85,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is used to provide a title for a <fieldset>?",
+    "options": [
+      "<caption>",
+      "<legend>",
+      "<label>",
+      "<title>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<legend> captions a fieldset.",
+    "id": 86,
+    "category": "HTML"
+  },
+  {
+    "question": " You can place text inside a <button> element.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<button> commonly contains text or even other phrasing content.",
+    "id": 87,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are valid basic document structure tags?",
+    "options": [
+      "<html>",
+      "<head>",
+      "<body>",
+      "<script>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "The core document structure includes html, head, and body.",
+    "id": 88,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to include JavaScript directly in HTML?",
+    "options": [
+      "<js>",
+      "<javascript>",
+      "<script>",
+      "<code>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<script> embeds or references JavaScript.",
+    "id": 89,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to link an external CSS file?",
+    "options": [
+      "<style src='...'>",
+      "<css>",
+      "<link>",
+      "<stylesheet>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "External stylesheets are linked using <link rel='stylesheet' href='...'>.",
+    "id": 90,
+    "category": "HTML"
+  },
+  {
+    "question": " The <link> tag is commonly placed in the <head>.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Stylesheet links and other linked resources usually belong in the head.",
+    "id": 91,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute is commonly used in forms so submitted data has a key name?",
+    "options": [
+      "name",
+      "id",
+      "class",
+      "for"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The name attribute is important in form submission.",
+    "id": 92,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to highlight text as marked or relevant?",
+    "options": [
+      "<highlight>",
+      "<mark>",
+      "<strong>",
+      "<u>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<mark> highlights text.",
+    "id": 93,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tags are phrasing/inline text-level elements?",
+    "options": [
+      "<span>",
+      "<em>",
+      "<strong>",
+      "<section>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "span, em, and strong are inline text-level elements.",
+    "id": 94,
+    "category": "HTML"
+  },
+  {
+    "question": " The <span> element is inline by default.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<span> is an inline generic element.",
+    "id": 95,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used for preformatted text?",
+    "options": [
+      "<pre>",
+      "<codeblock>",
+      "<text>",
+      "<format>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<pre> preserves whitespace and line breaks.",
+    "id": 96,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is commonly used to represent computer code snippets?",
+    "options": [
+      "<script>",
+      "<code>",
+      "<kbd>",
+      "<samp>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<code> marks up code fragments.",
+    "id": 97,
+    "category": "HTML"
+  },
+  {
+    "question": "What will this code preserve?",
+    "options": [
+      "Only bold styling",
+      "Whitespace and line breaks",
+      "Hyperlinks",
+      "Table borders"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<pre> preserves spaces and line breaks.",
+    "code": "<pre>Line 1\n    Line 2</pre>",
+    "id": 98,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are semantic sectioning elements?",
+    "options": [
+      "<section>",
+      "<article>",
+      "<nav>",
+      "<div>"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "section, article, and nav are semantic; div is generic.",
+    "id": 99,
+    "category": "HTML"
+  },
+  {
+    "question": " <meta charset='UTF-8'> helps define the character encoding of the page.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "easy",
+    "description": "Easy level HTML concept question.",
+    "hint": "Think about basic HTML structure, common tags, and attributes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "UTF-8 is commonly declared with a meta charset tag.",
+    "id": 100,
+    "category": "HTML"
+  },
+  {
+    "question": "Which HTML5 element is most appropriate for the primary navigation of a site?",
+    "options": [
+      "<menu>",
+      "<nav>",
+      "<aside>",
+      "<header>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<nav> identifies a section of navigation links.",
+    "id": 101,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is most appropriate for the dominant content of the <body>?",
+    "options": [
+      "<main>",
+      "<section>",
+      "<article>",
+      "<div>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<main> represents the main content of the document.",
+    "id": 102,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is best for self-contained content that could be syndicated independently?",
+    "options": [
+      "<section>",
+      "<article>",
+      "<div>",
+      "<aside>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<article> is intended for self-contained compositions.",
+    "id": 103,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is best for grouping thematically related content within a page?",
+    "options": [
+      "<section>",
+      "<span>",
+      "<b>",
+      "<code>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<section> groups related content, often with a heading.",
+    "id": 104,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on a <label> explicitly associates it with an input's id?",
+    "options": [
+      "name",
+      "for",
+      "id",
+      "aria-label"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The label's for value should match the input's id.",
+    "id": 105,
+    "category": "HTML"
+  },
+  {
+    "question": "Which input type is best for a date picker in supporting browsers?",
+    "options": [
+      "calendar",
+      "datetime",
+      "date",
+      "day"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "type='date' provides a date input control.",
+    "id": 106,
+    "category": "HTML"
+  },
+  {
+    "question": "Which input type is intended for numeric input?",
+    "options": [
+      "number",
+      "numeric",
+      "digits",
+      "range"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "type='number' is intended for numeric values.",
+    "id": 107,
+    "category": "HTML"
+  },
+  {
+    "question": "Which input type is designed for email addresses and enables built-in validation?",
+    "options": [
+      "mail",
+      "contact",
+      "email",
+      "text"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "type='email' triggers email-specific validation.",
+    "id": 108,
+    "category": "HTML"
+  },
+  {
+    "question": "Which input attribute prevents a field from being edited but still usually submits its value?",
+    "options": [
+      "readonly",
+      "disabled",
+      "locked",
+      "static"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "readonly prevents edits while disabled also excludes the field from submission.",
+    "id": 109,
+    "category": "HTML"
+  },
+  {
+    "question": "Which input attribute prevents editing and usually excludes the field from form submission?",
+    "options": [
+      "readonly",
+      "disabled",
+      "hidden",
+      "blocked"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "disabled form controls are generally not submitted.",
+    "id": 110,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute makes a form field mandatory before submission?",
+    "options": [
+      "validate",
+      "required",
+      "mustfill",
+      "mandatory"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "required enforces that the field must be filled in.",
+    "id": 111,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute provides hint text inside an input before the user types?",
+    "options": [
+      "label",
+      "hint",
+      "placeholder",
+      "value"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "placeholder shows temporary hint text.",
+    "id": 112,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute specifies the minimum value for an input type='number'?",
+    "options": [
+      "minimum",
+      "low",
+      "min",
+      "start"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "min sets the lower bound for numeric/date-like inputs.",
+    "id": 113,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute specifies the maximum value for an input type='number'?",
+    "options": [
+      "maximum",
+      "high",
+      "max",
+      "end"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "max sets the upper bound.",
+    "id": 114,
+    "category": "HTML"
+  },
+  {
+    "question": "Which HTML element is used to provide a list of predefined options for an input?",
+    "options": [
+      "<select>",
+      "<datalist>",
+      "<optgroup>",
+      "<choices>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<datalist> provides predefined suggestions for an input.",
+    "id": 115,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute is used on a form to specify where submitted data is sent?",
+    "options": [
+      "action",
+      "target",
+      "href",
+      "endpoint"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The action attribute specifies the submission URL.",
+    "id": 116,
+    "category": "HTML"
+  },
+  {
+    "question": "Which form attribute specifies the HTTP method used when submitting data?",
+    "options": [
+      "type",
+      "submit",
+      "method",
+      "protocol"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "method is usually GET or POST.",
+    "id": 117,
+    "category": "HTML"
+  },
+  {
+    "question": "What is the default HTTP method for a form if none is specified?",
+    "options": [
+      "POST",
+      "GET",
+      "PUT",
+      "PATCH"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The default form method is GET.",
+    "id": 118,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on a <form> is commonly used for file uploads?",
+    "options": [
+      "upload",
+      "enctype",
+      "encoding",
+      "accept"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "File uploads need an appropriate enctype such as multipart/form-data.",
+    "id": 119,
+    "category": "HTML"
+  },
+  {
+    "question": "Which value of enctype is required for file uploads?",
+    "options": [
+      "text/plain",
+      "multipart/form-data",
+      "application/json",
+      "application/x-file"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "multipart/form-data is required for file uploads.",
+    "id": 120,
+    "category": "HTML"
+  },
+  {
+    "question": "Which input type should be used for uploading a file?",
+    "options": [
+      "upload",
+      "attachment",
+      "file",
+      "document"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "type='file' lets the user choose a file.",
+    "id": 121,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to embed scalable vector graphics directly in HTML?",
+    "options": [
+      "<vector>",
+      "<svg>",
+      "<canvas>",
+      "<graphic>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<svg> embeds vector graphics markup.",
+    "id": 122,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element provides a bitmap drawing surface controlled by scripting?",
+    "options": [
+      "<paint>",
+      "<canvas>",
+      "<svg>",
+      "<draw>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<canvas> provides a scriptable bitmap canvas.",
+    "id": 123,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to provide fallback or alternative media sources for audio/video elements?",
+    "options": [
+      "<alt>",
+      "<track>",
+      "<source>",
+      "<media>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<source> supplies alternate media files.",
+    "id": 124,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag can provide captions or subtitles for video/audio?",
+    "options": [
+      "<caption>",
+      "<track>",
+      "<source>",
+      "<meta>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<track> is used for subtitles, captions, and similar timed text.",
+    "id": 125,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is most appropriate for contact information for a page or article author?",
+    "options": [
+      "<footer>",
+      "<address>",
+      "<contact>",
+      "<aside>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<address> is intended for contact information.",
+    "id": 126,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag represents the title of a work, such as a book or movie?",
+    "options": [
+      "<title>",
+      "<cite>",
+      "<q>",
+      "<blockquote>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<cite> is used for the title of a cited work.",
+    "id": 127,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used for short inline quotations?",
+    "options": [
+      "<quote>",
+      "<q>",
+      "<blockquote>",
+      "<cite>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<q> is for short inline quotations.",
+    "id": 128,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used for longer quotations from another source?",
+    "options": [
+      "<q>",
+      "<blockquote>",
+      "<cite>",
+      "<quote>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<blockquote> is for extended quotations.",
+    "id": 129,
+    "category": "HTML"
+  },
+  {
+    "question": "Which semantic element is best for content tangentially related to the main content, such as a sidebar?",
+    "options": [
+      "<aside>",
+      "<section>",
+      "<article>",
+      "<footer>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<aside> is designed for secondary or tangential content.",
+    "id": 130,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these tags help improve semantic document structure?",
+    "options": [
+      "<header>",
+      "<main>",
+      "<footer>",
+      "<nav>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All are semantic structural elements.",
+    "id": 131,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these attributes participate in built-in HTML validation?",
+    "options": [
+      "required",
+      "pattern",
+      "minlength",
+      "class"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "required, pattern, and minlength all affect validation; class does not.",
+    "id": 132,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attributes are commonly used with the <meta> tag?",
+    "options": [
+      "charset",
+      "name",
+      "content",
+      "href"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Meta tags often use charset or name/content.",
+    "id": 133,
+    "category": "HTML"
+  },
+  {
+    "question": "Which elements are suitable for table sectioning?",
+    "options": [
+      "<thead>",
+      "<tbody>",
+      "<tfoot>",
+      "<section>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "thead, tbody, and tfoot structure a table.",
+    "id": 134,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of the following input types are valid in HTML5?",
+    "options": [
+      "email",
+      "url",
+      "date",
+      "currency"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "email, url, and date are valid; currency is not a standard input type.",
+    "id": 135,
+    "category": "HTML"
+  },
+  {
+    "question": " A <button> inside a form defaults to type='submit' if no type is specified.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The default button type in a form is submit.",
+    "id": 136,
+    "category": "HTML"
+  },
+  {
+    "question": " The disabled attribute prevents a form control from being submitted.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Disabled controls are generally excluded from form submission.",
+    "id": 137,
+    "category": "HTML"
+  },
+  {
+    "question": " The readonly attribute prevents editing but still allows the value to be submitted.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Readonly fields are typically submitted.",
+    "id": 138,
+    "category": "HTML"
+  },
+  {
+    "question": " A page should generally have at most one <main> element that is not hidden.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Documents usually have a single main landmark.",
+    "id": 139,
+    "category": "HTML"
+  },
+  {
+    "question": " The <section> element should ideally be used when the content has a heading or clear thematic grouping.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Section is meant for thematic groupings, often with headings.",
+    "id": 140,
+    "category": "HTML"
+  },
+  {
+    "question": "Which code correctly associates a label with an input?",
+    "options": [
+      "<label>Name</label><input id='name'>",
+      "<label for='name'>Name</label><input id='name'>",
+      "<label id='name'>Name</label><input for='name'>",
+      "<label href='name'>Name</label><input id='name'>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The label's for must match the input's id.",
+    "code": "<label for='name'>Name</label><input id='name'>",
+    "id": 141,
+    "category": "HTML"
+  },
+  {
+    "question": "What does this form field do?",
+    "options": [
+      "Accepts only numbers",
+      "Accepts an email and may trigger built-in validation",
+      "Creates a multiline box",
+      "Uploads a file"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "type='email' creates an email field with email-oriented validation.",
+    "code": "<input type='email' required>",
+    "id": 142,
+    "category": "HTML"
+  },
+  {
+    "question": "What is the purpose of the lang attribute on the <html> element?",
+    "options": [
+      "To set the page title",
+      "To tell browsers and assistive tech the document language",
+      "To define charset",
+      "To link a translation file"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The lang attribute identifies the natural language of the document.",
+    "id": 143,
+    "category": "HTML"
+  },
+  {
+    "question": "Which HTML element is used to define machine-readable date/time values?",
+    "options": [
+      "<time>",
+      "<date>",
+      "<datetime>",
+      "<calendar>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<time> can represent dates and times.",
+    "id": 144,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on <time> provides a machine-readable representation?",
+    "options": [
+      "value",
+      "machine",
+      "datetime",
+      "content"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "datetime stores the machine-readable value.",
+    "id": 145,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on an ordered list changes the starting number?",
+    "options": [
+      "begin",
+      "value",
+      "start",
+      "index"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "start controls the initial numbering.",
+    "id": 146,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on an ordered list reverses the numbering?",
+    "options": [
+      "descending",
+      "reverse",
+      "reversed",
+      "backward"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "The reversed attribute counts down.",
+    "id": 147,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is used to define a description list?",
+    "options": [
+      "<dl>",
+      "<ol>",
+      "<ul>",
+      "<ddlist>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<dl> defines a description list.",
+    "id": 148,
+    "category": "HTML"
+  },
+  {
+    "question": "Which elements are used inside a description list?",
+    "options": [
+      "<dt>",
+      "<dd>",
+      "<li>",
+      "<dlitem>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1
+    ],
+    "explanation": "<dt> is the term and <dd> is the description.",
+    "id": 149,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on an input can be used with a regular expression for validation?",
+    "options": [
+      "regex",
+      "pattern",
+      "match",
+      "validate"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "pattern applies regex-based constraint validation.",
+    "id": 150,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute sets the minimum number of characters for text input?",
+    "options": [
+      "min",
+      "minlength",
+      "lengthmin",
+      "chars"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "minlength sets the minimum length.",
+    "id": 151,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute sets the maximum number of characters for text input?",
+    "options": [
+      "maxlength",
+      "max",
+      "lengthmax",
+      "chars"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "maxlength limits the maximum character count.",
+    "id": 152,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is used to embed external content such as a PDF or plugin-supported resource?",
+    "options": [
+      "<object>",
+      "<external>",
+      "<frame>",
+      "<portal>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<object> can embed external resources.",
+    "id": 153,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on a script tag defers execution until after parsing?",
+    "options": [
+      "late",
+      "defer",
+      "delay",
+      "async"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "defer delays script execution until after parsing.",
+    "id": 154,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on a script tag allows the script to download in parallel and execute as soon as ready?",
+    "options": [
+      "defer",
+      "async",
+      "parallel",
+      "eager"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "async scripts execute independently as soon as they finish downloading.",
+    "id": 155,
+    "category": "HTML"
+  },
+  {
+    "question": " async scripts always preserve document order relative to each other.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Async scripts do not guarantee execution order.",
+    "id": 156,
+    "category": "HTML"
+  },
+  {
+    "question": " defer scripts generally preserve their relative order.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Deferred scripts execute in document order after parsing.",
+    "id": 157,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to define document metadata for responsive design, commonly with width=device-width?",
+    "options": [
+      "<viewport>",
+      "<meta>",
+      "<screen>",
+      "<device>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Responsive viewport settings use a meta tag.",
+    "id": 158,
+    "category": "HTML"
+  },
+  {
+    "question": "Which meta tag is commonly used for responsive layouts on mobile devices?",
+    "options": [
+      "<meta name='mobile'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta responsive='true'>",
+      "<meta name='screen'>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The viewport meta tag controls layout viewport behavior.",
+    "id": 159,
+    "category": "HTML"
+  },
+  {
+    "question": "Which elements are form-associated in common usage?",
+    "options": [
+      "<input>",
+      "<select>",
+      "<textarea>",
+      "<button>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All are form controls.",
+    "id": 160,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute is used to group radio buttons together so only one can be selected?",
+    "options": [
+      "group",
+      "id",
+      "name",
+      "for"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Radio buttons with the same name behave as a group.",
+    "id": 161,
+    "category": "HTML"
+  },
+  {
+    "question": "What happens if two radio buttons share the same name?",
+    "options": [
+      "Both can be selected",
+      "Only one in the group can be selected at a time",
+      "They stop working",
+      "They become checkboxes"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Same-name radio buttons form an exclusive selection group.",
+    "id": 162,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on a checkbox or radio input indicates it is selected by default?",
+    "options": [
+      "selected",
+      "checked",
+      "default",
+      "active"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "checked preselects the control.",
+    "id": 163,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on an option makes it selected by default?",
+    "options": [
+      "checked",
+      "default",
+      "selected",
+      "active"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "selected preselects an option in a select element.",
+    "id": 164,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute allows multiple values to be selected in a <select>?",
+    "options": [
+      "many",
+      "multiple",
+      "multiselect",
+      "list"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "multiple allows selecting more than one option.",
+    "id": 165,
+    "category": "HTML"
+  },
+  {
+    "question": " The placeholder attribute is a replacement for a visible label.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Placeholder text is not a substitute for a proper label.",
+    "id": 166,
+    "category": "HTML"
+  },
+  {
+    "question": "Which elements can improve accessibility when used properly with forms?",
+    "options": [
+      "<label>",
+      "<fieldset>",
+      "<legend>",
+      "<div>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "label, fieldset, and legend provide accessible form structure.",
+    "id": 167,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is best for marking keyboard input like Ctrl+C?",
+    "options": [
+      "<kbd>",
+      "<code>",
+      "<samp>",
+      "<key>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<kbd> indicates keyboard input.",
+    "id": 168,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is best for sample output from a program?",
+    "options": [
+      "<samp>",
+      "<code>",
+      "<output>",
+      "<result>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<samp> marks sample output.",
+    "id": 169,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is best for the result of a calculation or user action in a form?",
+    "options": [
+      "<result>",
+      "<output>",
+      "<samp>",
+      "<meter>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<output> represents calculation or script results.",
+    "id": 170,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is used to represent a scalar measurement within a known range, like disk usage?",
+    "options": [
+      "<progress>",
+      "<meter>",
+      "<range>",
+      "<value>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<meter> is for measurements within a known range.",
+    "id": 171,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is used to show task progress, such as file upload progress?",
+    "options": [
+      "<meter>",
+      "<progress>",
+      "<loading>",
+      "<status>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<progress> indicates task completion progress.",
+    "id": 172,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are semantic media-related elements?",
+    "options": [
+      "<figure>",
+      "<figcaption>",
+      "<img>",
+      "<caption>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "figure, figcaption, and img are valid here; caption is for tables.",
+    "id": 173,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is used to wrap media with an optional caption?",
+    "options": [
+      "<media>",
+      "<figure>",
+      "<figcaption>",
+      "<section>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<figure> wraps self-contained media/content with an optional caption.",
+    "id": 174,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element provides the caption for a <figure>?",
+    "options": [
+      "<caption>",
+      "<figcaption>",
+      "<legend>",
+      "<label>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<figcaption> captions a figure.",
+    "id": 175,
+    "category": "HTML"
+  },
+  {
+    "question": " The hidden attribute hides content from rendering in normal circumstances.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The hidden attribute indicates content is not currently relevant/displayed.",
+    "id": 176,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute can provide an advisory tooltip on hover in many browsers?",
+    "options": [
+      "alt",
+      "title",
+      "tooltip",
+      "name"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "title often appears as a browser tooltip.",
+    "id": 177,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to define inline text that should be highlighted due to its relevance in another context, such as search results?",
+    "options": [
+      "<mark>",
+      "<strong>",
+      "<em>",
+      "<u>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<mark> indicates highlighted relevance.",
+    "id": 178,
+    "category": "HTML"
+  },
+  {
+    "question": "Which elements are used for interactive disclosure widgets in HTML?",
+    "options": [
+      "<details>",
+      "<summary>",
+      "<dialog>",
+      "<toggle>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1
+    ],
+    "explanation": "<details> and <summary> create disclosure widgets.",
+    "id": 179,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag provides the visible summary/caption for a <details> element?",
+    "options": [
+      "<title>",
+      "<summary>",
+      "<legend>",
+      "<caption>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<summary> labels the details disclosure.",
+    "id": 180,
+    "category": "HTML"
+  },
+  {
+    "question": " A <details> element can be open by default using the open attribute.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The boolean open attribute expands it initially.",
+    "id": 181,
+    "category": "HTML"
+  },
+  {
+    "question": "Which HTML element is used for a modal or dialog box in modern HTML?",
+    "options": [
+      "<popup>",
+      "<dialog>",
+      "<modal>",
+      "<window>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<dialog> represents a dialog box or subwindow.",
+    "id": 182,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on an iframe can improve security by imposing restrictions on the framed content?",
+    "options": [
+      "secure",
+      "sandbox",
+      "policy",
+      "referrer"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "sandbox restricts the capabilities of iframe content.",
+    "id": 183,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on an anchor can help mitigate reverse tabnabbing when using target='_blank'?",
+    "options": [
+      "noopener",
+      "noreferrer",
+      "rel",
+      "secure"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Use rel with values like noopener (often noreferrer too) to mitigate tabnabbing.",
+    "id": 184,
+    "category": "HTML"
+  },
+  {
+    "question": "Which rel value is commonly paired with target='_blank' for security?",
+    "options": [
+      "external",
+      "noopener",
+      "next",
+      "license"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "noopener prevents the new page from accessing window.opener.",
+    "id": 185,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these attributes are global and commonly used for accessibility or semantics?",
+    "options": [
+      "lang",
+      "dir",
+      "hidden",
+      "role"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All are broadly used across elements.",
+    "id": 186,
+    "category": "HTML"
+  },
+  {
+    "question": " The dir attribute can control text direction, such as ltr or rtl.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "dir controls text direction.",
+    "id": 187,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to link an external resource relationship such as a stylesheet or icon?",
+    "options": [
+      "<resource>",
+      "<link>",
+      "<a>",
+      "<style>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<link> defines a relationship to an external resource.",
+    "id": 188,
+    "category": "HTML"
+  },
+  {
+    "question": "Which rel value on a link element is used for stylesheets?",
+    "options": [
+      "css",
+      "stylesheet",
+      "style",
+      "theme"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "rel='stylesheet' links CSS.",
+    "id": 189,
+    "category": "HTML"
+  },
+  {
+    "question": "Which rel value is commonly used to specify the favicon?",
+    "options": [
+      "icon",
+      "favicon",
+      "shortcut",
+      "image"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "rel='icon' is commonly used for favicons.",
+    "id": 190,
+    "category": "HTML"
+  },
+  {
+    "question": "Which code creates a details widget with a summary?",
+    "options": [
+      "<details><caption>More</caption>Info</details>",
+      "<details><summary>More</summary>Info</details>",
+      "<summary><details>More</details></summary>",
+      "<toggle title='More'>Info</toggle>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "details + summary is the correct pattern.",
+    "code": "<details><summary>More</summary><p>Info</p></details>",
+    "id": 191,
+    "category": "HTML"
+  },
+  {
+    "question": "What does this code do?",
+    "options": [
+      "Shows a progress bar at 70%",
+      "Shows a meter of 70 out of 100",
+      "Creates a button",
+      "Creates an input"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The progress element shows task progress.",
+    "code": "<progress value='70' max='100'></progress>",
+    "id": 192,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attributes are commonly used on <audio> or <video> for built-in playback UI and behavior?",
+    "options": [
+      "controls",
+      "autoplay",
+      "loop",
+      "charset"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "controls, autoplay, and loop are common media attributes.",
+    "id": 193,
+    "category": "HTML"
+  },
+  {
+    "question": " The <source> tag can be nested inside <video> or <audio>.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "<source> provides alternate media sources.",
+    "id": 194,
+    "category": "HTML"
+  },
+  {
+    "question": "Which tag is used to provide metadata that search engines may use as a page description?",
+    "options": [
+      "<meta name='description' content='...'>",
+      "<description>...</description>",
+      "<meta description='...'>",
+      "<seo>...</seo>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Page descriptions are commonly set with a meta description tag.",
+    "id": 195,
+    "category": "HTML"
+  },
+  {
+    "question": "Which elements are most appropriate for code-related semantics?",
+    "options": [
+      "<code>",
+      "<pre>",
+      "<kbd>",
+      "<samp>"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All four are valid code/text semantics elements.",
+    "id": 196,
+    "category": "HTML"
+  },
+  {
+    "question": " The accept attribute on a file input can suggest permitted file types.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "accept can limit selectable file types by MIME or extension.",
+    "id": 197,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on a file input allows selecting more than one file?",
+    "options": [
+      "many",
+      "multiple",
+      "files",
+      "multifile"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "multiple allows selecting several files.",
+    "id": 198,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute can cause a browser to automatically focus a form control when the page loads?",
+    "options": [
+      "focus",
+      "autofocus",
+      "active",
+      "selected"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "autofocus requests initial focus.",
+    "id": 199,
+    "category": "HTML"
+  },
+  {
+    "question": " Only one element per document should usually use autofocus.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "medium",
+    "description": "Medium level HTML concept question.",
+    "hint": "Think about semantic HTML, forms, validation, and common HTML5 features.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Multiple autofocus elements are not recommended and behavior may vary.",
+    "id": 200,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement best describes the semantic difference between <section> and <div>?",
+    "options": [
+      "They are identical in meaning",
+      "<section> is semantic and <div> is generic",
+      "<div> is semantic and <section> is generic",
+      "<section> can only be used inside <article>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<section> conveys a thematic grouping, while <div> is a generic container.",
+    "id": 201,
+    "category": "HTML"
+  },
+  {
+    "question": "When using target='_blank' on a link, which rel value is primarily recommended to prevent the new page from gaining access to window.opener?",
+    "options": [
+      "external",
+      "noopener",
+      "license",
+      "author"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "rel='noopener' helps prevent reverse tabnabbing.",
+    "id": 202,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about the alt attribute on purely decorative images is most accurate?",
+    "options": [
+      "It should repeat the file name",
+      "It should be omitted so screen readers read the src",
+      "It should usually be empty (alt='')",
+      "It must always contain a long description"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Decorative images should usually use empty alt text so assistive technologies ignore them.",
+    "id": 203,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is most appropriate for a visible caption describing a chart image?",
+    "options": [
+      "<legend>",
+      "<figcaption>",
+      "<caption>",
+      "<label>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A figure can contain an image/chart with a figcaption.",
+    "id": 204,
+    "category": "HTML"
+  },
+  {
+    "question": "What is the best reason to use a real <button> element instead of a clickable <div> for a custom control?",
+    "options": [
+      "Buttons render faster",
+      "Buttons have built-in semantics, focus, and keyboard behavior",
+      "Divs cannot be styled",
+      "Buttons are required by validators"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Native controls provide better accessibility and keyboard support.",
+    "id": 205,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement is true about the main landmark in an HTML document?",
+    "options": [
+      "A document should never use <main>",
+      "A document may use many visible <main> elements freely",
+      "There should generally be one main content region per document",
+      "<main> is only valid inside <article>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "The main landmark should identify the dominant content of the page.",
+    "id": 206,
+    "category": "HTML"
+  },
+  {
+    "question": "Which technique is best for associating extra hint text with a form control for assistive technologies?",
+    "options": [
+      "Use title only",
+      "Use placeholder only",
+      "Reference helper text with aria-describedby",
+      "Use a surrounding <div> without attributes"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "aria-describedby lets assistive tech read associated descriptive text.",
+    "id": 207,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about placeholder text is most accurate?",
+    "options": [
+      "It is a full replacement for labels",
+      "It is always read reliably like a label",
+      "It should supplement, not replace, a visible label",
+      "It is required on all inputs"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Placeholders are not substitutes for labels and may disappear on input.",
+    "id": 208,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute is appropriate when an input has no visible label but still needs an accessible name?",
+    "options": [
+      "title",
+      "aria-label",
+      "data-label",
+      "hint"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "aria-label can provide an accessible name when necessary.",
+    "id": 209,
+    "category": "HTML"
+  },
+  {
+    "question": "Which HTML element is most appropriate for a self-contained blog post in a list of posts?",
+    "options": [
+      "<section>",
+      "<article>",
+      "<aside>",
+      "<div>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A blog post is a classic article example.",
+    "id": 210,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about <h1>–<h6> is most accurate for accessibility?",
+    "options": [
+      "Always use them in visual-size order only",
+      "Heading levels should reflect document structure, not just appearance",
+      "Only <h1> and <h2> matter",
+      "Using CSS on headings is invalid"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Headings should reflect content hierarchy, while CSS controls appearance.",
+    "id": 211,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about skipping heading levels is most accurate?",
+    "options": [
+      "It is always invalid HTML",
+      "It can confuse structure if hierarchy becomes illogical",
+      "Browsers refuse to render it",
+      "It is required after <section>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Logical heading hierarchy matters more than rigid numeric sequence.",
+    "id": 212,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is most appropriate for a collection of navigation links to other pages in the site?",
+    "options": [
+      "<aside>",
+      "<nav>",
+      "<menu>",
+      "<section>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<nav> identifies major navigation blocks.",
+    "id": 213,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement best describes the difference between <em> and <i>?",
+    "options": [
+      "They are always identical semantically",
+      "<em> carries emphasis semantics, while <i> is often alternate voice/offset text",
+      "<i> is more accessible than <em>",
+      "<em> cannot be nested"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<em> conveys emphasis; <i> is presentational/alternate voice semantics.",
+    "id": 214,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement best describes the difference between <strong> and <b>?",
+    "options": [
+      "They are exactly the same semantically",
+      "<strong> conveys importance; <b> is more stylistic/attention without importance semantics",
+      "<b> is newer HTML5 syntax",
+      "<strong> is obsolete"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "<strong> has semantic importance; <b> is stylistic attention.",
+    "id": 215,
+    "category": "HTML"
+  },
+  {
+    "question": "Which HTML feature helps browsers offer native constraint validation before submitting a form?",
+    "options": [
+      "CSS selectors",
+      "Built-in form validation attributes like required and pattern",
+      "Using JavaScript only",
+      "Only the doctype"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "HTML constraint validation comes from form control attributes.",
+    "id": 216,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about disabled form controls is correct?",
+    "options": [
+      "They are submitted like normal",
+      "They are focusable by default",
+      "They are generally excluded from submission and interaction",
+      "They become readonly"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Disabled controls are not usually interactive and are excluded from form submission.",
+    "id": 217,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about readonly controls is correct?",
+    "options": [
+      "They are excluded from submission",
+      "They can usually still be focused and submitted",
+      "They behave exactly like disabled",
+      "They are invalid on text inputs"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Readonly inputs are generally submitted and may remain focusable.",
+    "id": 218,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute is most appropriate for giving users a selectable hint list while still allowing custom text entry?",
+    "options": [
+      "multiple",
+      "autocomplete",
+      "datalist",
+      "pattern"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Use input with list attribute pointing to a datalist.",
+    "id": 219,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about the <dialog> element is most accurate?",
+    "options": [
+      "It has no native semantics",
+      "It represents dialog content and can be opened modally via scripting",
+      "It replaces all forms",
+      "It only works inside <iframe>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "dialog is the native HTML dialog element.",
+    "id": 220,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute on <iframe> restricts capabilities such as form submission, scripts, and top navigation unless allowed?",
+    "options": [
+      "policy",
+      "secure",
+      "sandbox",
+      "lock"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "sandbox restricts iframe behavior.",
+    "id": 221,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about the hidden attribute is most accurate?",
+    "options": [
+      "It only changes font color",
+      "It indicates content is not relevant for presentation in normal circumstances",
+      "It improves SEO ranking",
+      "It makes content readonly"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "hidden removes content from normal rendering and accessibility exposure in most cases.",
+    "id": 222,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is most appropriate for user-generated timestamps like 'Published on March 17, 2026' when machine-readable time is also desired?",
+    "options": [
+      "<date>",
+      "<span>",
+      "<time>",
+      "<meta>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "<time datetime='...'> supports human + machine-readable dates.",
+    "id": 223,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about <meta charset='UTF-8'> placement is most accurate?",
+    "options": [
+      "It belongs at the end of body",
+      "It should be early in head so encoding is known quickly",
+      "It belongs inside title",
+      "It is only needed for non-English pages"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Charset should appear early in the head.",
+    "id": 224,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about void elements is correct?",
+    "options": [
+      "They require explicit closing tags",
+      "They cannot have attributes",
+      "They do not have end tags in HTML syntax",
+      "They can only be used in forms"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Void elements like img and br have no closing tag.",
+    "id": 225,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about nesting interactive elements is most accurate?",
+    "options": [
+      "Putting a button inside an anchor is usually bad practice and invalid/problematic",
+      "It is recommended for accessibility",
+      "It is required for keyboard support",
+      "Browsers disallow all anchors inside buttons but allow the reverse"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Nested interactive controls create accessibility and validity issues.",
+    "id": 226,
+    "category": "HTML"
+  },
+  {
+    "question": "Which approach is best for clickable cards that navigate somewhere?",
+    "options": [
+      "Wrap everything in a <div onclick='...'>",
+      "Use a real <a> for navigation",
+      "Use <span> with tabindex='0' only",
+      "Use <b> with href"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Navigation should use anchors.",
+    "id": 227,
+    "category": "HTML"
+  },
+  {
+    "question": "Which approach is best for an action that changes page state but does not navigate?",
+    "options": [
+      "<a href='#'>",
+      "<button>",
+      "<div>",
+      "<img>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Buttons are appropriate for actions.",
+    "id": 228,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about ARIA is most accurate?",
+    "options": [
+      "ARIA should replace semantic HTML whenever possible",
+      "Native semantic HTML should be preferred before adding ARIA",
+      "ARIA is only for CSS",
+      "ARIA makes any invalid HTML correct"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Use native semantics first; ARIA supplements when needed.",
+    "id": 229,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about role='button' on a <div> is most accurate?",
+    "options": [
+      "It is always better than using <button>",
+      "It may need added keyboard handling and still is usually worse than native <button>",
+      "It automatically gains all native button behavior",
+      "It is invalid in HTML"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A real button is usually superior to a div with role=button.",
+    "id": 230,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are accessibility benefits of using proper semantic HTML?",
+    "options": [
+      "Better landmark navigation",
+      "Improved screen reader interpretation",
+      "Reduced need for extra ARIA",
+      "Guaranteed SEO ranking"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Semantic HTML helps accessibility and often reduces ARIA needs, but does not guarantee rankings.",
+    "id": 231,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are common valid uses of the <figure> element?",
+    "options": [
+      "Wrapping an image with caption",
+      "Wrapping a code example with caption",
+      "Wrapping a chart with caption",
+      "Replacing every <div>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "figure is for self-contained content that may be referenced independently.",
+    "id": 232,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these link rel values are commonly relevant for security or privacy with target='_blank'?",
+    "options": [
+      "noopener",
+      "noreferrer",
+      "stylesheet",
+      "author"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1
+    ],
+    "explanation": "noopener and noreferrer are common security/privacy-related values.",
+    "id": 233,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are valid reasons to use the <button> type attribute explicitly?",
+    "options": [
+      "To avoid accidental form submission",
+      "To declare reset behavior",
+      "To clarify intent in forms",
+      "To change CSS specificity"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Specifying button type avoids accidental submit behavior and clarifies intent.",
+    "id": 234,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are native form controls that provide built-in semantics?",
+    "options": [
+      "<input>",
+      "<select>",
+      "<textarea>",
+      "<button>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All are native controls with built-in behavior.",
+    "id": 235,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are problems with using placeholder as the only label?",
+    "options": [
+      "Text disappears on input",
+      "May reduce accessibility/usability",
+      "Can lower contrast or context clarity",
+      "Improves semantics"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Placeholder-only labeling is usually a usability/accessibility issue.",
+    "id": 236,
+    "category": "HTML"
+  },
+  {
+    "question": " The alt text for an informative image should communicate the image's purpose in context, not just describe pixels literally.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Good alt text reflects context and purpose.",
+    "id": 237,
+    "category": "HTML"
+  },
+  {
+    "question": " An empty alt attribute is appropriate for decorative images.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Decorative images should generally be ignored by screen readers.",
+    "id": 238,
+    "category": "HTML"
+  },
+  {
+    "question": " It is usually better to use native <details>/<summary> than a custom disclosure widget when the native behavior meets requirements.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Native controls improve accessibility and reduce custom JS.",
+    "id": 239,
+    "category": "HTML"
+  },
+  {
+    "question": " Using multiple <h1> elements is always invalid in HTML5.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "It's not inherently invalid, though heading structure should remain sensible.",
+    "id": 240,
+    "category": "HTML"
+  },
+  {
+    "question": " The required attribute alone guarantees server-side validation.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Client-side HTML validation does not replace server-side validation.",
+    "id": 241,
+    "category": "HTML"
+  },
+  {
+    "question": " Content inside <head> is intended mainly for metadata, not visible document content.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Visible content belongs in the body.",
+    "id": 242,
+    "category": "HTML"
+  },
+  {
+    "question": " Adding role='button' to a non-button element automatically makes Space and Enter keyboard activation work everywhere exactly like a native button.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Custom roles often need extra keyboard handling.",
+    "id": 243,
+    "category": "HTML"
+  },
+  {
+    "question": " A form with method='GET' places submitted values in the URL query string.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "GET submissions append fields to the URL.",
+    "id": 244,
+    "category": "HTML"
+  },
+  {
+    "question": " Using <table> for page layout is generally discouraged compared with semantic layout elements and CSS.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Tables should primarily be used for tabular data.",
+    "id": 245,
+    "category": "HTML"
+  },
+  {
+    "question": " The <caption> element provides a title/description for a table, not for a figure.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Figures use figcaption; tables use caption.",
+    "id": 246,
+    "category": "HTML"
+  },
+  {
+    "question": "Which code gives a text input an accessible helper description?",
+    "options": [
+      "<small id='h'>Enter full name</small><input aria-describedby='h'>",
+      "<input helper='Enter full name'>",
+      "<input title='Enter full name'>",
+      "<desc>Enter full name</desc><input>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "aria-describedby can reference helper text by id.",
+    "code": "<small id='h'>Enter full name</small>\n<input type='text' aria-describedby='h'>",
+    "id": 247,
+    "category": "HTML"
+  },
+  {
+    "question": "Which markup is best for a clickable control that opens a menu but does not navigate?",
+    "options": [
+      "<a href='#menu'>Menu</a>",
+      "<button aria-expanded='false'>Menu</button>",
+      "<div role='menu'>Menu</div>",
+      "<span tabindex='0'>Menu</span>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A button is appropriate for a toggle action.",
+    "code": "<button aria-expanded='false' aria-controls='menu'>Menu</button>",
+    "id": 248,
+    "category": "HTML"
+  },
+  {
+    "question": "What is the main issue with this code?",
+    "options": [
+      "Nothing is wrong",
+      "The image is missing meaningful alt text for a content image",
+      "The src attribute is invalid",
+      "The figure element is required"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A content image generally needs meaningful alt text.",
+    "code": "<img src='sales-chart.png'>",
+    "id": 249,
+    "category": "HTML"
+  },
+  {
+    "question": "What is the best improvement for this image if it is decorative?",
+    "options": [
+      "Add alt='decorative image'",
+      "Add alt=''",
+      "Add title='decorative'",
+      "Wrap it in <strong>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Decorative images should usually have empty alt text.",
+    "code": "<img src='border-flourish.png'>",
+    "id": 250,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about <script defer> is most accurate?",
+    "options": [
+      "It blocks parsing immediately",
+      "It downloads in parallel and executes after parsing in order",
+      "It executes before the document is parsed",
+      "It only works inline"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Deferred external scripts execute after parsing and preserve order.",
+    "id": 251,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about <script async> is most accurate?",
+    "options": [
+      "It preserves order like defer",
+      "It executes as soon as ready and order relative to other async scripts is not guaranteed",
+      "It waits until DOMContentLoaded",
+      "It only works in the body"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Async scripts can execute independently when downloaded.",
+    "id": 252,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is best for a site-wide footer containing copyright and contact links?",
+    "options": [
+      "<address>",
+      "<footer>",
+      "<aside>",
+      "<nav>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "footer is the semantic footer container.",
+    "id": 253,
+    "category": "HTML"
+  },
+  {
+    "question": "Which element is best for a thematic grouping within a page that is part of the page's outline?",
+    "options": [
+      "<div>",
+      "<section>",
+      "<span>",
+      "<mark>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "section is a thematic grouping.",
+    "id": 254,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute is the correct one to indicate that a disclosure widget is currently expanded or collapsed on its trigger control?",
+    "options": [
+      "aria-open",
+      "aria-expanded",
+      "aria-checked",
+      "open"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "aria-expanded communicates expanded/collapsed state on the control.",
+    "id": 255,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these practices improve accessible table markup when appropriate?",
+    "options": [
+      "Use <caption>",
+      "Use <th> for headers",
+      "Use scope where helpful",
+      "Use tables only for tabular data"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All help accessible and proper table semantics.",
+    "id": 256,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these practices improve accessible form markup?",
+    "options": [
+      "Use visible labels",
+      "Group related controls with fieldset/legend where useful",
+      "Rely only on color to indicate errors",
+      "Connect errors/help text to fields"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Visible labels, grouping, and linked help/error text improve accessibility.",
+    "id": 257,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are valid reasons to use aria-describedby?",
+    "options": [
+      "Attach helper text",
+      "Associate error text",
+      "Provide longer descriptions beyond the label",
+      "Replace semantic headings"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "aria-describedby is for descriptive text, not heading structure.",
+    "id": 258,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are common mistakes when creating custom interactive widgets from generic elements?",
+    "options": [
+      "Missing keyboard support",
+      "Missing focus states",
+      "Missing roles/states when needed",
+      "Using native buttons"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Custom widgets often miss accessibility behaviors.",
+    "id": 259,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these statements about the form novalidate attribute are true?",
+    "options": [
+      "It disables built-in form validation on submit",
+      "It removes server-side validation",
+      "It can be useful when handling validation entirely with custom logic",
+      "It changes the HTTP method"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      2
+    ],
+    "explanation": "novalidate disables native constraint validation on submission but not server validation.",
+    "id": 260,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are benefits of using <label for='id'>?",
+    "options": [
+      "Larger click target",
+      "Better screen reader association",
+      "Clearer semantics",
+      "Faster network loading"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Labels improve usability and accessibility.",
+    "id": 261,
+    "category": "HTML"
+  },
+  {
+    "question": " A visually hidden label can still provide accessibility when a visible label is not possible, provided it remains programmatically associated.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "A properly associated visually hidden label can still provide an accessible name.",
+    "id": 262,
+    "category": "HTML"
+  },
+  {
+    "question": " aria-label should usually be preferred over visible text labels even when a visible label fits the design.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Visible labels are generally preferred when possible.",
+    "id": 263,
+    "category": "HTML"
+  },
+  {
+    "question": " The open attribute on <details> is a boolean attribute.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "open is present/absent rather than needing a value.",
+    "id": 264,
+    "category": "HTML"
+  },
+  {
+    "question": " The sandbox attribute on an iframe can only make it more permissive, not more restrictive.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "sandbox imposes restrictions; tokens selectively relax some restrictions.",
+    "id": 265,
+    "category": "HTML"
+  },
+  {
+    "question": " HTML validation alone is sufficient to trust incoming user data on the server.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Server-side validation is still necessary.",
+    "id": 266,
+    "category": "HTML"
+  },
+  {
+    "question": "Which code most appropriately marks up a figure with caption?",
+    "options": [
+      "<img src='map.png'><caption>Store map</caption>",
+      "<figure><img src='map.png' alt='Store map'><figcaption>Store map</figcaption></figure>",
+      "<figure><caption>Store map</caption></figure>",
+      "<image caption='Store map' src='map.png'>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "figure with figcaption is the correct pattern.",
+    "code": "<figure>\n  <img src='map.png' alt='Store map'>\n  <figcaption>Store map</figcaption>\n</figure>",
+    "id": 267,
+    "category": "HTML"
+  },
+  {
+    "question": "Which code most appropriately groups shipping radio options under a shared question?",
+    "options": [
+      "<div>Shipping<input type='radio'></div>",
+      "<fieldset><legend>Shipping speed</legend>...</fieldset>",
+      "<section title='Shipping'>...</section>",
+      "<label>Shipping speed</label>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Fieldset and legend group related controls accessibly.",
+    "code": "<fieldset>\n  <legend>Shipping speed</legend>\n  <label><input type='radio' name='ship'> Standard</label>\n  <label><input type='radio' name='ship'> Express</label>\n</fieldset>",
+    "id": 268,
+    "category": "HTML"
+  },
+  {
+    "question": "Which code best marks up navigation breadcrumbs semantically?",
+    "options": [
+      "<div class='breadcrumbs'>...</div>",
+      "<nav aria-label='Breadcrumb'>...</nav>",
+      "<section role='crumbs'>...</section>",
+      "<aside>...</aside>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A nav landmark with an appropriate label is the semantic choice.",
+    "code": "<nav aria-label='Breadcrumb'>...</nav>",
+    "id": 269,
+    "category": "HTML"
+  },
+  {
+    "question": "Which code gives an external stylesheet relationship correctly?",
+    "options": [
+      "<style href='app.css'></style>",
+      "<link rel='stylesheet' href='app.css'>",
+      "<a rel='stylesheet' href='app.css'></a>",
+      "<css src='app.css'>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "External CSS is linked with a link element.",
+    "code": "<link rel='stylesheet' href='app.css'>",
+    "id": 270,
+    "category": "HTML"
+  },
+  {
+    "question": "What is the key issue with this code for an action button?",
+    "options": [
+      "It uses too many attributes",
+      "A link with href='#' is being used for a non-navigation action instead of a button",
+      "Buttons cannot be styled",
+      "Anchors are invalid in forms"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Actions should use buttons, not fake links.",
+    "code": "<a href='#' onclick='save()'>Save</a>",
+    "id": 271,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about the preload attribute on media is most accurate?",
+    "options": [
+      "It determines accessibility labels",
+      "It hints how much media should be preloaded",
+      "It is required on all videos",
+      "It replaces controls"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "preload hints browser fetching behavior.",
+    "id": 272,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about crossorigin on linked resources is most accurate?",
+    "options": [
+      "It can affect CORS handling for fetched resources",
+      "It changes the HTML outline",
+      "It is only for forms",
+      "It forces caching off"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "crossorigin configures credential/CORS behavior for supported fetches.",
+    "id": 273,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute can be used on links and other fetches to influence the HTTP referrer information sent?",
+    "options": [
+      "referrerpolicy",
+      "policy",
+      "noopener",
+      "origin"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "referrerpolicy controls referrer behavior.",
+    "id": 274,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about the download attribute on anchors is most accurate?",
+    "options": [
+      "It forces all browsers to download any URL regardless of origin/policy",
+      "It indicates the linked resource should be downloaded rather than navigated to in supported cases",
+      "It only works on <link>",
+      "It renames files server-side"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "download hints that the linked resource should be downloaded.",
+    "id": 275,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are important considerations for accessible images?",
+    "options": [
+      "Meaningful alt for informative images",
+      "Empty alt for decorative images",
+      "Avoid redundant alt that repeats adjacent text unnecessarily",
+      "Always include the word 'image'"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Alt text should be purposeful, concise, and not redundant.",
+    "id": 276,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are appropriate uses of <time>?",
+    "options": [
+      "Publishing dates",
+      "Event times",
+      "Machine-readable timestamps",
+      "Arbitrary layout wrappers"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "time is for dates/times, not generic layout.",
+    "id": 277,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are appropriate uses of <aside>?",
+    "options": [
+      "Sidebar with related links",
+      "Pull quote related to article",
+      "Advertisement related to page context",
+      "Main article content"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "aside is for tangentially related content.",
+    "id": 278,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are good reasons to prefer native controls over custom widgets?",
+    "options": [
+      "Built-in semantics",
+      "Keyboard/focus behavior",
+      "Less code to maintain",
+      "Guaranteed identical styling across browsers"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Native controls improve behavior and reduce code, though styling may vary.",
+    "id": 279,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these statements about doctype are correct?",
+    "options": [
+      "<!DOCTYPE html> triggers standards mode in modern browsers",
+      "It is not an HTML element",
+      "It should generally appear first in the document",
+      "It replaces the <html> element"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "The HTML5 doctype is simple and enables standards mode.",
+    "id": 280,
+    "category": "HTML"
+  },
+  {
+    "question": " Using CSS to make text look like a heading is a substitute for using actual heading elements semantically.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Visual styling does not replace semantic headings.",
+    "id": 281,
+    "category": "HTML"
+  },
+  {
+    "question": " A table should not be used merely to position page layout columns when the content is not tabular.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Use CSS layout and semantic structure instead of layout tables.",
+    "id": 282,
+    "category": "HTML"
+  },
+  {
+    "question": " An input with type='number' guarantees that users can only ever input locale-neutral digits and dots across all devices and browsers.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Browser behavior varies, and server-side validation is still needed.",
+    "id": 283,
+    "category": "HTML"
+  },
+  {
+    "question": " The pattern attribute can complement, but not replace, server-side validation.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Client-side constraints are not enough for security.",
+    "id": 284,
+    "category": "HTML"
+  },
+  {
+    "question": " A label can wrap an input instead of using for/id, and this can still associate the label with the control.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Wrapping the input inside label creates association.",
+    "id": 285,
+    "category": "HTML"
+  },
+  {
+    "question": " The caption for a table should be placed inside the <table> as a <caption> element.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "caption belongs within the table.",
+    "id": 286,
+    "category": "HTML"
+  },
+  {
+    "question": "Which pattern is best for an icon-only button that opens search?",
+    "options": [
+      "<button><svg>...</svg></button>",
+      "<button aria-label='Search'><svg>...</svg></button>",
+      "<div role='button'><svg>...</svg></div>",
+      "<span>🔍</span>"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "An icon-only button needs an accessible name.",
+    "code": "<button aria-label='Search'><svg aria-hidden='true'></svg></button>",
+    "id": 287,
+    "category": "HTML"
+  },
+  {
+    "question": "Which pattern is best for a visually hidden explanatory error tied to an input?",
+    "options": [
+      "Add random hidden text elsewhere",
+      "Give the error text an id and reference it with aria-describedby",
+      "Use only red border",
+      "Use title attribute"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Referenced descriptive text is the accessible pattern.",
+    "id": 288,
+    "category": "HTML"
+  },
+  {
+    "question": "Which pattern is best for a list of article teasers on a news homepage?",
+    "options": [
+      "A series of <article> elements",
+      "Only <div> elements with no headings",
+      "A table",
+      "A form"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Article teasers are self-contained content items.",
+    "id": 289,
+    "category": "HTML"
+  },
+  {
+    "question": "Which pattern is best for a set of tabs if native HTML alone is insufficient?",
+    "options": [
+      "Use generic divs with no states",
+      "Use appropriate semantics/ARIA only after considering native alternatives",
+      "Always use tables",
+      "Use only bold text"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Complex widgets may need ARIA, but native patterns should be considered first.",
+    "id": 290,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about the autocomplete attribute is most accurate?",
+    "options": [
+      "It can hint autofill behavior to browsers",
+      "It changes the input type",
+      "It disables form submission",
+      "It is only valid on password fields"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "autocomplete helps browsers fill known data.",
+    "id": 291,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about the loading='lazy' attribute on images/iframes is most accurate?",
+    "options": [
+      "It hints deferred loading until needed/near viewport",
+      "It guarantees instant rendering",
+      "It changes image format",
+      "It replaces srcset"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "loading='lazy' defers offscreen resource loading in supporting browsers.",
+    "id": 292,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about srcset and sizes is most accurate?",
+    "options": [
+      "They help browsers choose appropriate responsive image sources",
+      "They are only for SVG",
+      "They replace alt text",
+      "They apply to all elements"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "srcset/sizes support responsive image selection.",
+    "id": 293,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are common HTML mechanisms for responsive/performance-friendly images?",
+    "options": [
+      "srcset",
+      "sizes",
+      "picture/source",
+      "alt"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "srcset, sizes, and picture help source selection; alt serves accessibility, not source selection.",
+    "id": 294,
+    "category": "HTML"
+  },
+  {
+    "question": " The picture element can provide alternate image sources for art direction and format selection.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "picture with source elements can vary sources by media/type.",
+    "id": 295,
+    "category": "HTML"
+  },
+  {
+    "question": " The rel attribute on <a> is meaningless and should never be used.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "rel can express relationships and security/privacy hints.",
+    "id": 296,
+    "category": "HTML"
+  },
+  {
+    "question": "Which attribute is useful for indicating the current item in a set of navigation links, such as the current page?",
+    "options": [
+      "aria-current",
+      "current",
+      "selected",
+      "active"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "aria-current communicates which item is current.",
+    "id": 297,
+    "category": "HTML"
+  },
+  {
+    "question": "Which statement about aria-current='page' is most accurate?",
+    "options": [
+      "It can help identify the current page in a nav list for assistive tech",
+      "It replaces href",
+      "It is only valid on buttons",
+      "It hides the item visually"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "aria-current can clarify current location in navigation.",
+    "id": 298,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are good practices for anchor links that open new tabs?",
+    "options": [
+      "Warn users if appropriate",
+      "Use rel='noopener'",
+      "Use target='_blank' when the UX warrants it, not by default everywhere",
+      "Remove href"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "New-tab behavior should be deliberate and secure.",
+    "id": 299,
+    "category": "HTML"
+  },
+  {
+    "question": "Which of these are helpful accessibility considerations for dialogs?",
+    "options": [
+      "Manage focus when opening/closing",
+      "Provide a label/title",
+      "Allow keyboard dismissal when appropriate",
+      "Trap focus without any close control ever"
+    ],
+    "difficulty": "hard",
+    "description": "Hard level HTML concept question.",
+    "hint": "Think about semantic correctness, accessibility, forms, security, and advanced HTML behavior.",
+    "question_type": "multi_answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Dialogs need proper labeling and focus management.",
+    "id": 300,
+    "category": "HTML"
   }
 ]

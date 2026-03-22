@@ -1,0 +1,133 @@
+<div class="question-page">
+  <div class="question-container question-details-container">
+    <div class="details-topbar">
+      <a href="/questions" class="back-link">← Back to Questions</a>
+
+      <div class="details-actions">
+        <a href="/questions/edit/<%=question._id %>" class="btn btn-warning">Edit</a>
+        <form action="/questions/<%=question._id %>?_method=DELETE" method="POST">
+          <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="page-top">
+      <div class="page-heading">
+        <h1>Question Details</h1>
+        <p>View full question information</p>
+      </div>
+    </div>
+
+    <div class="page-card details-card">
+      <div class="card-header">
+        <h2>Question</h2>
+      </div>
+
+      <div class="details-card-body">
+        <h3 class="question-title">
+          <%=question.question %>
+        </h3>
+
+        <div class="details-badges">
+          <span class="badge uppercase badge-<%=question.category %>"><%=question.category %></span>
+          <span class="badge uppercase badge-danger"><%=question.difficulty %></span>
+          <span class="badge uppercase badge-secondary"><%=question.question_type %></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-card details-card">
+        <div class="card-header">
+            <h2>Options</h2>
+        </div>
+
+        <div class="details-section-body">
+            <div class="option-list">
+            <% question.options.forEach((option, index) => { %>
+                <% const isCorrect = question.correctIndex && question.correctIndex.includes(index); %>
+
+                <div class="detail-option <%= isCorrect ? 'correct' : '' %>">
+                <span class="option-indicator <%= isCorrect ? 'option-correct' : '' %>">
+                    <%= isCorrect ? '✓' : '' %>
+                </span>
+                <span><%= option %></span>
+                </div>
+            <% }) %>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="page-card details-card">
+      <div class="card-header">
+        <h2>Description</h2>
+      </div>
+      <div class="details-section-body">
+        <p>
+          This question checks understanding of JavaScript variable scoping and declarations.
+        </p>
+      </div>
+    </div> -->
+
+    <div class="page-card details-card">
+      <div class="card-header">
+        <h2>Hint</h2>
+      </div>
+      <div class="details-section-body">
+        <p><%=question.hint %></p>
+      </div>
+    </div>
+
+    
+    <div class="page-card details-card">
+      <div class="card-header">
+        <h2>Explanation</h2>
+      </div>
+      <div class="details-section-body">
+        <p>
+            <%= question.explanation %>
+        </p>
+      </div>
+    </div>
+    <% if (question.code) { %>
+        <div class="page-card details-card">
+            <div class="card-header">
+                <h2>Code Snippet</h2>
+            </div>
+            <div class="details-section-body">
+                <pre style="border-radius: 8px;padding: 0px;"><code id="code-block"  style="width: 100%;display: block;padding: 15px;" class="language-javascript" ></code></pre>
+            </div>
+        </div>
+    <% } %>
+  </div>
+</div>
+
+<script>
+    window.questionData = <%- JSON.stringify(question || {}) %>;
+    const question = window.questionData;
+    const codeBlock = document.getElementById("code-block");
+
+    (function detectLanguage() {
+        let highlighted;
+        if (question.category == "html") {
+            highlighted = Prism.highlight(
+                question.code,
+                Prism.languages.markup,
+                'markup'
+            );
+        } else  if (question.category == "css") {
+            highlighted = Prism.highlight(
+                question.code,
+                Prism.languages.css,
+                'css'
+            );
+        } else {
+            highlighted = Prism.highlight(
+                question.code,
+                Prism.languages.javascript,
+                'javascript'
+            );
+        }
+        codeBlock.innerHTML = highlighted;
+    })();
+</script>

@@ -2,7 +2,8 @@
   const formData = window.questionFormData || {
     questionType: 'mcq',
     options: [],
-    correctIndex: []
+    correctIndex: [],
+    code: ''
   };
 
   const questionTypeEl = document.getElementById('question_type');
@@ -13,149 +14,155 @@
   const codeTextarea = document.getElementById('code');
   const editor = document.getElementById("editor");
 
-    function detectLanguage(text) {
-        let highlighted;
+  (function updateCodeValOnLoad() {
+    setTimeout(() => {
+      editor.innerHTML = detectLanguage(formData.code);
+    }, 1)
+   
+  })();
 
-        if (categoryEl.value == "html") {
-            highlighted = Prism.highlight(
-                text,
-                Prism.languages.markup,
-                'markup'
-            );
-        } else  if (categoryEl.value == "css") {
-            highlighted = Prism.highlight(
-                text,
-                Prism.languages.css,
-                'css'
-            );
-        } else {
-            highlighted = Prism.highlight(
-                text,
-                Prism.languages.javascript,
-                'javascript'
-            );
-        }
-      return highlighted;
+  function detectLanguage(text) {
+    let highlighted;
+    if (categoryEl.value == "html") {
+      highlighted = Prism.highlight(
+        text,
+        Prism.languages.markup,
+        'markup'
+      );
+    } else  if (categoryEl.value == "css") {
+      highlighted = Prism.highlight(
+        text,
+        Prism.languages.css,
+        'css'
+      );
+    } else {
+      highlighted = Prism.highlight(
+        text,
+        Prism.languages.javascript,
+        'javascript'
+      );
     }
+    return highlighted;
+  }
 
-    function insertTextAtCursor(text) {
-        const selection = window.getSelection();
-        if (!selection.rangeCount) return;
+  function insertTextAtCursor(text) {
+    const selection = window.getSelection();
+    if (!selection.rangeCount) return;
 
-        const range = selection.getRangeAt(0);
-        range.deleteContents();
+    const range = selection.getRangeAt(0);
+    range.deleteContents();
 
-        const textNode = document.createTextNode(text);
-        range.insertNode(textNode);
+    const textNode = document.createTextNode(text);
+    range.insertNode(textNode);
 
-        range.setStartAfter(textNode);
-        range.setEndAfter(textNode);
-        selection.removeAllRanges();
-        selection.addRange(range);
-    }
+    range.setStartAfter(textNode);
+    range.setEndAfter(textNode);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
 
-    function insertLineBreak() {
-        const selection = window.getSelection();
-        if (!selection.rangeCount) return;
+  function insertLineBreak() {
+    const selection = window.getSelection();
+    if (!selection.rangeCount) return;
 
-        const range = selection.getRangeAt(0);
-        range.deleteContents();
+    const range = selection.getRangeAt(0);
+    range.deleteContents();
 
-        const br = document.createElement('br');
-        const zwsp = document.createTextNode('\u200B'); // keeps caret on same line properly
+    const br = document.createElement('br');
+    const zwsp = document.createTextNode('\u200B'); // keeps caret on same line properly
 
-        range.insertNode(zwsp);
-        range.insertNode(br);
+    range.insertNode(zwsp);
+    range.insertNode(br);
 
-        range.setStartAfter(zwsp);
-        range.setEndAfter(zwsp);
+    range.setStartAfter(zwsp);
+    range.setEndAfter(zwsp);
 
-        selection.removeAllRanges();
-        selection.addRange(range);
-    }
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
 
 
 
-    function getCursorOffset(container) {
-        const selection = window.getSelection();
-        if (!selection.rangeCount) return 0;
+  function getCursorOffset(container) {
+    const selection = window.getSelection();
+    if (!selection.rangeCount) return 0;
 
-        const range = selection.getRangeAt(0);
-        const preCaretRange = range.cloneRange();
+    const range = selection.getRangeAt(0);
+    const preCaretRange = range.cloneRange();
 
-        preCaretRange.selectNodeContents(container);
-        preCaretRange.setEnd(range.endContainer, range.endOffset);
+    preCaretRange.selectNodeContents(container);
+    preCaretRange.setEnd(range.endContainer, range.endOffset);
 
-        return preCaretRange.toString().length;
-    }
+    return preCaretRange.toString().length;
+  }
 
-    function setCursorOffset(container, offset) {
-        const selection = window.getSelection();
-        const range = document.createRange();
+  function setCursorOffset(container, offset) {
+    const selection = window.getSelection();
+    const range = document.createRange();
 
-        let currentOffset = 0;
-        let found = false;
+    let currentOffset = 0;
+    let found = false;
 
-        function walk(node) {
-            if (found) return;
+    function walk(node) {
+      if (found) return;
 
-            if (node.nodeType === Node.TEXT_NODE) {
-            const nextOffset = currentOffset + node.nodeValue.length;
+      if (node.nodeType === Node.TEXT_NODE) {
+        const nextOffset = currentOffset + node.nodeValue.length;
 
-            if (offset <= nextOffset) {
-                range.setStart(node, offset - currentOffset);
-                range.collapse(true);
-                found = true;
-                return;
-            }
-
-            currentOffset = nextOffset;
-            return;
-            }
-
-            for (let child of node.childNodes) {
-            walk(child);
-            if (found) return;
-            }
+        if (offset <= nextOffset) {
+          range.setStart(node, offset - currentOffset);
+          range.collapse(true);
+          found = true;
+          return;
         }
 
-        walk(container);
+        currentOffset = nextOffset;
+        return;
+      }
 
-        if (!found) {
-            range.selectNodeContents(container);
-            range.collapse(false);
-        }
-
-        selection.removeAllRanges();
-        selection.addRange(range);
+      for (let child of node.childNodes) {
+        walk(child);
+        if (found) return;
+      }
     }
 
-    function updateHighlight(e) {
-        const cursorOffset = getCursorOffset(editor);
-        const text = editor.innerText;
-        if (text === '\n') {
-            editor.innerHTML = '';
-            return;
-        }
-        codeTextarea.value = text;
-        editor.innerHTML = detectLanguage(text);
-        setCursorOffset(editor, cursorOffset);
+    walk(container);
+
+    if (!found) {
+        range.selectNodeContents(container);
+        range.collapse(false);
     }
 
-    editor.addEventListener("input", (event) => updateHighlight(event));
-    editor.addEventListener('keydown', function (e) {
-        if (e.key === 'Tab') {
-            e.preventDefault();
-            insertTextAtCursor('    '); // 4 spaces
-            return;
-        }
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
 
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            insertLineBreak();
-            return;
-        }
-    });
+  function updateHighlight(e) {
+    const cursorOffset = getCursorOffset(editor);
+    const text = editor.innerText;
+    if (text === '\n') {
+        editor.innerHTML = '';
+        return;
+    }
+    codeTextarea.value = text;
+    editor.innerHTML = detectLanguage(text);
+    setCursorOffset(editor, cursorOffset);
+  }
+
+  editor.addEventListener("input", (event) => updateHighlight(event));
+  editor.addEventListener('keydown', function (e) {
+      if (e.key === 'Tab') {
+          e.preventDefault();
+          insertTextAtCursor('    '); // 4 spaces
+          return;
+      }
+
+      if (e.key === 'Enter') {
+          e.preventDefault();
+          insertLineBreak();
+          return;
+      }
+  });
 
 
 

@@ -10,12 +10,11 @@ function parseCorrectIndex(value) {
 
 const Question = require("../models/question");
 
-
 exports.getQuestion = async (req, res) => {
   // If already logged in → redirect
 
    try {
-    const { category, difficulty, page = 1, limit = 10 } = req.query;
+    const { category, difficulty, questionType, page = 1, limit = 10 } = req.query;
 
     const filter = {};
 
@@ -25,6 +24,10 @@ exports.getQuestion = async (req, res) => {
 
     if (difficulty) {
       filter.difficulty = difficulty;
+    }
+
+    if (questionType) {
+      filter.question_type = questionType;
     }
 
     const pageNumber = Math.max(parseInt(page, 10) || 1, 1);
@@ -45,6 +48,7 @@ exports.getQuestion = async (req, res) => {
         questions,
         category,
         difficulty,
+        questionType,
         pagination: {
             total,
             page: pageNumber,
@@ -55,10 +59,14 @@ exports.getQuestion = async (req, res) => {
         }
     });
   } catch (error) {
-    return res.status(500).json({
+     res.status(500).render('error', {
       message: "Failed to fetch questions",
-      error: error.message
+      title: "Error"
     });
+    // return res.status(500).json({
+    //   message: "Failed to fetch questions",
+    //   error: error.message
+    // });
   }
 
  
@@ -71,17 +79,102 @@ exports.newQuestionPage = (req, res) => {
   });
 };
 
-exports.editQuestionPage = (req, res) => {
-  res.render('question/edit', {
-    title: 'Edit Question'
-  });
+exports.editQuestionPage = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const question = await Question.findById(id);
+
+    if (!question) {
+      return res.status(404).render('error', {
+        message: 'Question not found'
+      });
+    }
+    res.render('question/edit', {
+      title: 'Edit Question',
+      question
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).render('error', {
+      message: 'Server Error',
+      title: "Error"
+    });
+  }
+ 
+};
+
+exports.showQuestionPage = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const question = await Question.findById(id);
+
+    if (!question) {
+      return res.status(404).render('error', {
+        message: 'Question not found'
+      });
+    }
+    res.render('question/show', {
+      title: 'Question Details',
+      question
+    });
+
+  } catch (error) {
+    console.error(error);
+    
+    res.status(500).render('error', {
+      message: 'Server Error',
+      title: "Error"
+    });
+  }
+};
+
+exports.updateQuestion = async (req, res) => {
+  try {
+    const {
+      question,
+      difficulty,
+      category,
+      code,
+      options,
+      question_type,
+      explanation,
+      hint,
+      correctIndex
+    } = req.body;
+
+    const updatedQuestion = await Question.findByIdAndUpdate(
+      req.params.id,
+      {
+        question,
+        difficulty,
+        category,
+        code,
+        options: Array.isArray(options) ? options : options ? [options] : [],
+        question_type,
+        explanation,
+        hint,
+        correctIndex: parseCorrectIndex(correctIndex)
+      },
+      { new: true, runValidators: true }
+    );
+
+    if (!updatedQuestion) {
+      return res.status(404).render('error', { error: 'Question not found' });
+    }
+
+    res.redirect('/questions'); // redirect to list page
+  } catch (err) {
+    res.status(500).render('error', { error: err.message });
+  }
 };
 
 
 exports.createQuestion = async (req, res) => {
   try {
     const {
-      title,
+      question,
       explanation,
       hint,
       category,
@@ -91,7 +184,7 @@ exports.createQuestion = async (req, res) => {
       options
     } = req.body;
 
-    const question = new Question({
+    const questionCr = new Question({
       question: title,
       explanation,
       hint,
@@ -103,10 +196,13 @@ exports.createQuestion = async (req, res) => {
       correctIndex: parseCorrectIndex(req.body.correctIndex)
     });
 
-    await question.save();
+    await questionCr.save();
     res.redirect('/questions/new');
   } catch (error) {
     console.error(error);
-    res.status(500).send('Server Error');
+    res.status(500).render('error', {
+      message: 'Server Error',
+      title: "Error"
+    });
   }
 };
