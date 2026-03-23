@@ -10,6 +10,43 @@ function parseCorrectIndex(value) {
 
 const Question = require("../models/question");
 
+exports.getApiQuestion = async (req, res) => {
+  try {
+    const { category, difficulty, questionType, limit } = req.query;
+    const filter = {};
+    if (category) {
+      filter.category = category;
+    }
+
+    if (difficulty) {
+      filter.difficulty = difficulty;
+    }
+
+    if (questionType) {
+      filter.question_type = questionType;
+    }
+    const limitNumber = Math.max(parseInt(limit, 10) || 10, 1);
+    const [questions, total] = await Promise.all([
+      Question.aggregate([
+        { $match: filter },
+        { $sample: { size: limitNumber } }
+      ])
+    ]);
+
+    res.status(200).json({
+      questions: questions,
+      category, difficulty, question_type: questionType
+    })
+  }
+  catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch questions",
+      title: "Error"
+    });
+  }
+}
+
 exports.getQuestion = async (req, res) => {
   // If already logged in → redirect
 

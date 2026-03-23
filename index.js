@@ -8,6 +8,7 @@ const MongoStore = connectMongo.default || connectMongo;
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 const questionRoutes = require('./routes/questionRoutes');
+const apiQuestionRoutes = require('./routes/api/apiQuestionRoutes');
 const methodOverride = require('method-override');
 
 const app = express();
@@ -45,6 +46,7 @@ app.set('layout', 'layouts/layout');
 
 app.use('/', authRoutes);
 app.use('/questions', questionRoutes);
+app.use('/api/questions', apiQuestionRoutes);
 
 if (process.env.NODE_ENV !== 'production') {
   const PORT = process.env.PORT || 8080;
