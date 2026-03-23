@@ -29,7 +29,20 @@ exports.getApiQuestion = async (req, res) => {
     const [questions, total] = await Promise.all([
       Question.aggregate([
         { $match: filter },
-        { $sample: { size: limitNumber } }
+        { $sample: { size: limitNumber } },
+        {
+          $project: {
+            id: { $toString: "$_id" }, // ✅ convert ObjectId → string
+            _id: 0,                   // ✅ remove _id
+            question: 1,
+            options: 1,
+            category: 1,
+            difficulty: 1,
+            question_type: 1,
+            hint: 1,
+            explanation: 1
+          }
+        }
       ])
     ]);
 
