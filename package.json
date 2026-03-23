@@ -8,6 +8,11 @@
     "seed:admin": "node ./script/seedAdmin.js",
     "seed:question:html": "node ./script/seedQuestion.js -- --type=html",
     "seed:question:angular": "node ./script/seedQuestion.js -- --type=angular",
+    "seed:question:css": "node ./script/seedQuestion.js -- --type=css",
+    "seed:question:javascript": "node ./script/seedQuestion.js -- --type=javascript",
+    "seed:question:react": "node ./script/seedQuestion.js -- --type=react",
+    "seed:question:sql": "node ./script/seedQuestion.js -- --type=sql",
+    "seed:question:python": "node ./script/seedQuestion.js -- --type=python",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

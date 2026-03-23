@@ -1,0 +1,5628 @@
+[
+  {
+    "id": 1,
+    "question": "Which keyword declares a block-scoped variable in JavaScript?",
+    "options": [
+      "var",
+      "let",
+      "define",
+      "const var"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Basic variable declaration.",
+    "hint": "Think about ES6.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`let` creates a block-scoped variable."
+  },
+  {
+    "id": 2,
+    "question": "Which method writes a message to the browser console?",
+    "options": [
+      "console.write()",
+      "log.console()",
+      "console.log()",
+      "print()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Basic debugging method.",
+    "hint": "It starts with console.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`console.log()` prints a value to the developer console."
+  },
+  {
+    "id": 3,
+    "question": "What is the result type of `'5' + 2` in JavaScript?",
+    "options": [
+      "number",
+      "string",
+      "boolean",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String concatenation behavior.",
+    "hint": "One operand is a string.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "When one operand is a string, `+` concatenates and returns a string."
+  },
+  {
+    "id": 4,
+    "question": "Which symbol is used for strict equality comparison?",
+    "options": [
+      "==",
+      "===",
+      "!=",
+      "=<"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Comparison operators.",
+    "hint": "Strict equality checks both value and type.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`===` compares value and type without coercion."
+  },
+  {
+    "id": 5,
+    "question": "How do you write a single-line comment in JavaScript?",
+    "options": [
+      "<!-- comment -->",
+      "/* comment */",
+      "// comment",
+      "# comment"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Comment syntax.",
+    "hint": "Look for the same syntax used in many C-style languages.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`//` starts a single-line comment."
+  },
+  {
+    "id": 6,
+    "question": "Which built-in object is used to work with dates and times?",
+    "options": [
+      "Clock",
+      "Time",
+      "Date",
+      "Calendar"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Date handling basics.",
+    "hint": "It has a capital D.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "JavaScript uses the `Date` object for dates and times."
+  },
+  {
+    "id": 7,
+    "question": "What does `NaN` stand for?",
+    "options": [
+      "No assigned number",
+      "Not a number",
+      "Negative and null",
+      "New assigned number"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Special numeric value.",
+    "hint": "It is returned for invalid numeric operations.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`NaN` stands for Not a Number."
+  },
+  {
+    "id": 8,
+    "question": "Which method converts JSON text into a JavaScript object?",
+    "options": [
+      "JSON.toObject()",
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.convert()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "JSON basics.",
+    "hint": "Parsing turns text into data.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`JSON.parse()` converts JSON text into a JavaScript value."
+  },
+  {
+    "id": 9,
+    "question": "Which array method adds an item to the end of an array?",
+    "options": [
+      "push()",
+      "pop()",
+      "shift()",
+      "unshift()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array basics.",
+    "hint": "The opposite of pop().",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`push()` appends one or more items to the end of an array."
+  },
+  {
+    "id": 10,
+    "question": "Which keyword is used to define a function?",
+    "options": [
+      "func",
+      "function",
+      "def",
+      "fn"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Function declaration basics.",
+    "hint": "It is the full word.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "JavaScript uses the `function` keyword for function declarations."
+  },
+  {
+    "id": 11,
+    "question": "What is the result of `typeof true`?",
+    "options": [
+      "boolean",
+      "true",
+      "string",
+      "object"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Using typeof.",
+    "hint": "`typeof` returns a string.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`typeof true` evaluates to the string `\"boolean\"`."
+  },
+  {
+    "id": 12,
+    "question": "Which method removes the last element from an array?",
+    "options": [
+      "pop()",
+      "shift()",
+      "slice()",
+      "splice()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array basics.",
+    "hint": "It is paired with push().",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`pop()` removes and returns the last element."
+  },
+  {
+    "id": 13,
+    "question": "Which browser dialog method shows a simple alert box?",
+    "options": [
+      "message()",
+      "alert()",
+      "prompt()",
+      "confirm()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Basic browser API.",
+    "hint": "It takes a message string.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`alert()` displays a simple modal dialog."
+  },
+  {
+    "id": 14,
+    "question": "What is the index of the first element in a JavaScript array?",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "Depends on the browser"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array indexing.",
+    "hint": "JavaScript uses zero-based indexing.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Arrays are zero-indexed, so the first element is at index 0."
+  },
+  {
+    "id": 15,
+    "question": "Which operator returns the remainder of a division?",
+    "options": [
+      "/",
+      "%",
+      "//",
+      "rem"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Arithmetic operators.",
+    "hint": "It is called modulo.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`%` returns the remainder after division."
+  },
+  {
+    "id": 16,
+    "question": "Which value is returned by a function with no explicit return statement?",
+    "options": [
+      "0",
+      "null",
+      "undefined",
+      "false"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Function return behavior.",
+    "hint": "It is the default missing value in JavaScript.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Functions without `return` return `undefined`."
+  },
+  {
+    "id": 17,
+    "question": "Which method joins array elements into a string?",
+    "options": [
+      "merge()",
+      "concat()",
+      "join()",
+      "combine()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array methods.",
+    "hint": "It accepts a separator.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`join()` combines array elements into a single string."
+  },
+  {
+    "id": 18,
+    "question": "Which loop is designed to iterate while a condition is true?",
+    "options": [
+      "while",
+      "switch",
+      "case",
+      "if"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Control flow basics.",
+    "hint": "It is also the name of the keyword.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "A `while` loop repeats as long as its condition stays true."
+  },
+  {
+    "id": 19,
+    "question": "What does `typeof null` return in JavaScript?",
+    "options": [
+      "null",
+      "object",
+      "undefined",
+      "boolean"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Language quirk.",
+    "hint": "This is a well-known historical bug.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`typeof null` returns `object` because of a legacy quirk."
+  },
+  {
+    "id": 20,
+    "question": "Which method converts a JavaScript object into a JSON string?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.toString()",
+      "JSON.encode()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "JSON basics.",
+    "hint": "Stringify turns data into text.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`JSON.stringify()` serializes a JavaScript value to JSON."
+  },
+  {
+    "id": 21,
+    "question": "Which of these is a primitive type in JavaScript?",
+    "options": [
+      "array",
+      "object",
+      "string",
+      "function"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Primitive types.",
+    "hint": "Only one option is not a reference type.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`string` is a primitive type."
+  },
+  {
+    "id": 22,
+    "question": "Which keyword creates a constant binding?",
+    "options": [
+      "let",
+      "var",
+      "const",
+      "static"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Variable declarations.",
+    "hint": "It prevents reassignment of the binding.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`const` declares a constant binding."
+  },
+  {
+    "id": 23,
+    "question": "Which method removes the first element from an array?",
+    "options": [
+      "pop()",
+      "shift()",
+      "slice()",
+      "unshift()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array methods.",
+    "hint": "It changes the array length from the front.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`shift()` removes the first element."
+  },
+  {
+    "id": 24,
+    "question": "Which statement is used to handle multiple conditions based on one value?",
+    "options": [
+      "if",
+      "loop",
+      "switch",
+      "try"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Control flow basics.",
+    "hint": "It pairs with `case`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "A `switch` statement compares one expression against multiple cases."
+  },
+  {
+    "id": 25,
+    "question": "What is the result of `Boolean(0)`?",
+    "options": [
+      "true",
+      "false",
+      "0",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Boolean conversion basics.",
+    "hint": "Zero is falsy.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`0` is a falsy value, so `Boolean(0)` is `false`."
+  },
+  {
+    "id": 26,
+    "question": "JavaScript is case-sensitive.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Language basics.",
+    "hint": "Think about variable names like `myVar` vs `myvar`.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "JavaScript is case-sensitive, so different capitalization creates different identifiers."
+  },
+  {
+    "id": 27,
+    "question": "The `===` operator performs type coercion before comparing values.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Comparison basics.",
+    "hint": "Strict equality avoids coercion.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`===` does not coerce types; `==` may."
+  },
+  {
+    "id": 28,
+    "question": "Arrays in JavaScript can store values of different types.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array fundamentals.",
+    "hint": "JavaScript arrays are flexible.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Arrays can contain mixed types like numbers, strings, objects, and booleans."
+  },
+  {
+    "id": 29,
+    "question": "`const` always makes the value immutable.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Const semantics.",
+    "hint": "It protects reassignment, not deep mutation.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`const` prevents rebinding the variable, but object contents can still be mutated."
+  },
+  {
+    "id": 30,
+    "question": "`prompt()` returns user input as a string or null.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Browser APIs.",
+    "hint": "Consider what happens if the user cancels.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`prompt()` returns the entered text or `null` if canceled."
+  },
+  {
+    "id": 31,
+    "question": "`pop()` removes the first item from an array.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array methods.",
+    "hint": "Think end vs beginning.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`pop()` removes the last element, while `shift()` removes the first."
+  },
+  {
+    "id": 32,
+    "question": "`typeof []` returns `'array'`.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Type inspection.",
+    "hint": "Arrays are objects in JavaScript.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`typeof []` returns `'object'`."
+  },
+  {
+    "id": 33,
+    "question": "Functions in JavaScript can be assigned to variables.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Functions basics.",
+    "hint": "Functions are first-class values.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "JavaScript treats functions as first-class objects that can be stored in variables."
+  },
+  {
+    "id": 34,
+    "question": "`null == undefined` evaluates to true.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Equality quirks.",
+    "hint": "Loose equality has special rules.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "With loose equality, `null` and `undefined` are equal to each other."
+  },
+  {
+    "id": 35,
+    "question": "Template literals use backticks.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String syntax.",
+    "hint": "They support `${}` interpolation.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Template literals are written with backticks, not quotes."
+  },
+  {
+    "id": 36,
+    "question": "The `length` property of an array starts counting from 0.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array basics.",
+    "hint": "Length is count, not index.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Array length is the number of elements, so a 3-item array has length 3."
+  },
+  {
+    "id": 37,
+    "question": "`isNaN('hello')` returns true.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Number conversion basics.",
+    "hint": "Think about converting a non-numeric string to a number.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`isNaN('hello')` returns true because it cannot be converted to a valid number."
+  },
+  {
+    "id": 38,
+    "question": "`let` variables can be redeclared in the same scope.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Block scope rules.",
+    "hint": "`var` behaves differently.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Redeclaring a `let` variable in the same scope causes an error."
+  },
+  {
+    "id": 39,
+    "question": "An empty string is truthy in JavaScript.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Truthy and falsy values.",
+    "hint": "Empty values are often falsy.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "An empty string `''` is falsy."
+  },
+  {
+    "id": 40,
+    "question": "`break` can be used to exit a loop early.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Loop control.",
+    "hint": "It stops the current loop or switch.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`break` exits the nearest loop or switch."
+  },
+  {
+    "id": 41,
+    "question": "`document.getElementById()` returns a collection of elements.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "DOM basics.",
+    "hint": "It targets one ID only.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "It returns a single element or `null`, not a collection."
+  },
+  {
+    "id": 42,
+    "question": "Arrow functions have their own `this` binding.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Arrow function basics.",
+    "hint": "Compare them with regular functions.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Arrow functions do not create their own `this`; they lexically inherit it."
+  },
+  {
+    "id": 43,
+    "question": "`console.log(typeof NaN)` prints `'number'`.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Type system basics.",
+    "hint": "Despite its name, NaN is a numeric value.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`NaN` is considered a number type in JavaScript."
+  },
+  {
+    "id": 44,
+    "question": "`slice()` mutates the original array.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array method behavior.",
+    "hint": "Compare it with `splice()`.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`slice()` returns a shallow copy and does not mutate the original array."
+  },
+  {
+    "id": 45,
+    "question": "Objects in JavaScript store data as key-value pairs.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Object basics.",
+    "hint": "Think of properties and values.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "JavaScript objects are collections of properties with keys and values."
+  },
+  {
+    "id": 46,
+    "question": "The `in` operator can check whether a property exists in an object.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Object property checks.",
+    "hint": "It works with property names.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The `in` operator checks whether a property exists on an object or its prototype chain."
+  },
+  {
+    "id": 47,
+    "question": "`Number('')` returns NaN.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Type conversion.",
+    "hint": "Empty string converts to zero.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Number('')` returns `0`."
+  },
+  {
+    "id": 48,
+    "question": "JavaScript runs only in web browsers.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Runtime environments.",
+    "hint": "Think about Node.js.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "JavaScript also runs in environments like Node.js, Deno, and embedded engines."
+  },
+  {
+    "id": 49,
+    "question": "A `for` loop can be used to iterate over array indexes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Loop basics.",
+    "hint": "Classic `for` uses a counter.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "A standard `for` loop can iterate through array indexes with a counter variable."
+  },
+  {
+    "id": 50,
+    "question": "`undefined` means a variable has never been declared.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Undefined vs undeclared.",
+    "hint": "A declared variable can still be undefined.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "An undeclared variable is different; `undefined` commonly means declared but not assigned."
+  },
+  {
+    "id": 51,
+    "question": "Which of the following are primitive JavaScript types?",
+    "options": [
+      "string",
+      "number",
+      "object",
+      "boolean"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Primitive types.",
+    "hint": "Pick the values that are not reference types.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`string`, `number`, and `boolean` are primitive types; `object` is not."
+  },
+  {
+    "id": 52,
+    "question": "Which methods mutate the original array?",
+    "options": [
+      "push()",
+      "pop()",
+      "slice()",
+      "splice()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array mutation basics.",
+    "hint": "One option returns a copy instead.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`push()`, `pop()`, and `splice()` mutate the array; `slice()` does not."
+  },
+  {
+    "id": 53,
+    "question": "Which values are falsy in JavaScript?",
+    "options": [
+      "0",
+      "''",
+      "'0'",
+      "null"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Truthy/falsy basics.",
+    "hint": "One non-empty string is truthy.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`0`, empty string, and `null` are falsy; `'0'` is truthy."
+  },
+  {
+    "id": 54,
+    "question": "Which statements about `const` are correct?",
+    "options": [
+      "It creates a block-scoped binding",
+      "It prevents reassignment of the binding",
+      "It deep-freezes objects automatically",
+      "It must be initialized when declared"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Const basics.",
+    "hint": "Think binding, not deep immutability.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`const` is block-scoped, must be initialized, and prevents rebinding, but it does not deep-freeze objects."
+  },
+  {
+    "id": 55,
+    "question": "Which of the following are comparison operators?",
+    "options": [
+      "===",
+      "!==",
+      "=",
+      "<="
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Operator basics.",
+    "hint": "One option is assignment.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`===`, `!==`, and `<=` compare values; `=` assigns a value."
+  },
+  {
+    "id": 56,
+    "question": "Which are valid ways to create strings in JavaScript?",
+    "options": [
+      "'text'",
+      "\"text\"",
+      "`text`",
+      "(text)"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String literal syntax.",
+    "hint": "Look for quotes and backticks.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Single quotes, double quotes, and backticks can all create strings."
+  },
+  {
+    "id": 57,
+    "question": "Which statements about arrays are true?",
+    "options": [
+      "They are zero-indexed",
+      "They can hold mixed types",
+      "Their length is fixed",
+      "They are objects"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array fundamentals.",
+    "hint": "JavaScript arrays are flexible objects.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Arrays are zero-indexed, can hold mixed types, and are specialized objects."
+  },
+  {
+    "id": 58,
+    "question": "Which methods can add elements to an array?",
+    "options": [
+      "push()",
+      "unshift()",
+      "shift()",
+      "concat()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array insertion methods.",
+    "hint": "One option removes from the front.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`push()` and `unshift()` mutate by adding elements, and `concat()` returns a new combined array."
+  },
+  {
+    "id": 59,
+    "question": "Which statements about `null` are true?",
+    "options": [
+      "It represents an intentional absence of value",
+      "`typeof null` is `'object'`",
+      "It is the same as `undefined` in all comparisons",
+      "It is falsy"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Null basics.",
+    "hint": "Loose and strict equality behave differently.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`null` usually means intentional absence, `typeof null` is `'object'`, and it is falsy."
+  },
+  {
+    "id": 60,
+    "question": "Which of these are loop constructs in JavaScript?",
+    "options": [
+      "for",
+      "while",
+      "switch",
+      "do...while"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Control flow basics.",
+    "hint": "One option selects cases, not loops.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`for`, `while`, and `do...while` are loops; `switch` is not."
+  },
+  {
+    "id": 61,
+    "question": "What will be logged by this code?",
+    "options": [
+      "5",
+      "'5'",
+      "undefined",
+      "Error"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Basic string output.",
+    "hint": "Look at the quotes around 5.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The string literal `'5'` is logged as a string value.",
+    "code": "console.log('5');"
+  },
+  {
+    "id": 62,
+    "question": "What is the value of `x` after this code runs?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Increment basics.",
+    "hint": "Start from 1 and add 1.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`x` starts as 1 and becomes 2 after incrementing.",
+    "code": "let x = 1;\nx = x + 1;"
+  },
+  {
+    "id": 63,
+    "question": "What does this code output?",
+    "options": [
+      "true",
+      "false",
+      "'true'",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Boolean logging.",
+    "hint": "A boolean value is logged directly.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The code logs the boolean value `true`.",
+    "code": "console.log(3 > 2);"
+  },
+  {
+    "id": 64,
+    "question": "How many items are in the array after this code runs?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array push basics.",
+    "hint": "Count the starting items plus the pushed one.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "The original 2-item array gets one more item, so length becomes 3.",
+    "code": "const arr = [1, 2];\narr.push(3);"
+  },
+  {
+    "id": 65,
+    "question": "What does this code return?",
+    "options": [
+      "10",
+      "'10'",
+      "undefined",
+      "NaN"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Simple function return.",
+    "hint": "The function explicitly returns 10.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The function returns the number `10`.",
+    "code": "function getValue() {\n  return 10;\n}\ngetValue();"
+  },
+  {
+    "id": 66,
+    "question": "What will `typeof value` be?",
+    "options": [
+      "'number'",
+      "'string'",
+      "'boolean'",
+      "'object'"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Using typeof with strings.",
+    "hint": "The assigned value is in quotes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A quoted value is a string, so `typeof value` is `'string'`.",
+    "code": "const value = 'hello';\ntypeof value;"
+  },
+  {
+    "id": 67,
+    "question": "What will this code output?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array indexing basics.",
+    "hint": "`nums[0]` accesses the first element in the array.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Arrays use zero-based indexing, so `nums[0]` is `7`.",
+    "code": "const nums = [7, 8, 9];\nconsole.log(nums[0]);"
+  },
+  {
+    "id": 68,
+    "question": "What is the result of this expression?",
+    "options": [
+      "true",
+      "false",
+      "'1'",
+      "1"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Strict equality basics.",
+    "hint": "Both value and type match.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`1 === 1` is true because both operands have the same type and value.",
+    "code": "1 === 1"
+  },
+  {
+    "id": 69,
+    "question": "What is the final value of `name`?",
+    "options": [
+      "Sam",
+      "Alex",
+      "undefined",
+      "Error"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Variable reassignment.",
+    "hint": "A later assignment replaces the earlier value.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The second assignment changes the value to `Alex`.",
+    "code": "let name = 'Sam';\nname = 'Alex';"
+  },
+  {
+    "id": 70,
+    "question": "What does this code output?",
+    "options": [
+      "3",
+      "'3'",
+      "undefined",
+      "NaN"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String length basics.",
+    "hint": "Count the letters in `cat`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The string `cat` has length 3.",
+    "code": "console.log('cat'.length);"
+  },
+  {
+    "id": 71,
+    "question": "Which array method returns a new array containing elements that pass a test?",
+    "options": [
+      "forEach()",
+      "map()",
+      "filter()",
+      "reduce()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Intermediate array methods.",
+    "hint": "Think selection, not transformation.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`filter()` returns a new array with elements that satisfy the callback condition."
+  },
+  {
+    "id": 72,
+    "question": "What does `map()` return?",
+    "options": [
+      "A single value",
+      "A new array",
+      "The original array",
+      "A boolean"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array transformation.",
+    "hint": "It applies a function to every element.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`map()` returns a new array of transformed values."
+  },
+  {
+    "id": 73,
+    "question": "Which keyword can be used inside a class to define a constructor method?",
+    "options": [
+      "init",
+      "constructor",
+      "new",
+      "class"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Class syntax basics.",
+    "hint": "It has the same name in every class.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Classes use the `constructor` method for initialization."
+  },
+  {
+    "id": 74,
+    "question": "What does the spread operator `...` do in an array literal?",
+    "options": [
+      "Deletes elements",
+      "Expands iterable elements",
+      "Creates a closure",
+      "Freezes the array"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Spread syntax.",
+    "hint": "It can unpack values.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Spread syntax expands an iterable into individual elements."
+  },
+  {
+    "id": 75,
+    "question": "Which method is best for combining array values into a single result?",
+    "options": [
+      "filter()",
+      "find()",
+      "reduce()",
+      "every()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array aggregation.",
+    "hint": "Think accumulator.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`reduce()` combines array elements into a single accumulated value."
+  },
+  {
+    "id": 76,
+    "question": "Which statement about `let` and `var` is correct?",
+    "options": [
+      "Both are function-scoped",
+      "`let` is block-scoped and `var` is function-scoped",
+      "`var` is block-scoped and `let` is function-scoped",
+      "They behave identically"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Scope differences.",
+    "hint": "One was introduced in ES6.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`let` is block-scoped, while `var` is function-scoped."
+  },
+  {
+    "id": 77,
+    "question": "What does `Array.isArray(value)` check?",
+    "options": [
+      "Whether value is iterable",
+      "Whether value is an object",
+      "Whether value is specifically an array",
+      "Whether value has a length property"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Type checking.",
+    "hint": "This is safer than `typeof`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`Array.isArray()` reliably checks whether a value is an array."
+  },
+  {
+    "id": 78,
+    "question": "Which method returns the first element that matches a condition?",
+    "options": [
+      "filter()",
+      "find()",
+      "some()",
+      "every()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Searching arrays.",
+    "hint": "One returns a single matched element.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`find()` returns the first matching element or `undefined`."
+  },
+  {
+    "id": 79,
+    "question": "What will `Object.keys(obj)` return?",
+    "options": [
+      "An array of values",
+      "An array of key-value pairs",
+      "An array of own enumerable property names",
+      "A string of property names"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Object methods.",
+    "hint": "It returns names, not values.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`Object.keys()` returns an array of own enumerable property names."
+  },
+  {
+    "id": 80,
+    "question": "Which statement about arrow functions is correct?",
+    "options": [
+      "They can be used as constructors with `new`",
+      "They have their own `arguments` object",
+      "They lexically bind `this`",
+      "They must always use braces"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Arrow function behavior.",
+    "hint": "Focus on `this`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Arrow functions inherit `this` from the surrounding lexical scope."
+  },
+  {
+    "id": 81,
+    "question": "What is a closure in JavaScript?",
+    "options": [
+      "A way to end a loop",
+      "A function bundled with references to its outer scope",
+      "A class instance",
+      "A block-scoped variable"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Closures concept.",
+    "hint": "Think inner function remembering outer variables.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A closure is a function that retains access to variables from its outer scope."
+  },
+  {
+    "id": 82,
+    "question": "Which promise method runs whether a promise is fulfilled or rejected?",
+    "options": [
+      "then()",
+      "catch()",
+      "finally()",
+      "done()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Promises basics.",
+    "hint": "It is often used for cleanup.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`finally()` runs after settlement regardless of success or failure."
+  },
+  {
+    "id": 83,
+    "question": "Which operator provides a default only when the left side is `null` or `undefined`?",
+    "options": [
+      "||",
+      "&&",
+      "??",
+      "?:"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Nullish coalescing.",
+    "hint": "It is stricter than logical OR.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`??` returns the right operand only when the left is `null` or `undefined`."
+  },
+  {
+    "id": 84,
+    "question": "Which built-in method creates a new promise that resolves when all promises resolve?",
+    "options": [
+      "Promise.race()",
+      "Promise.any()",
+      "Promise.resolveAll()",
+      "Promise.all()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Promise combinators.",
+    "hint": "It fails fast if one promise rejects.",
+    "question_type": "mcq",
+    "correctIndex": [
+      3
+    ],
+    "explanation": "`Promise.all()` resolves when all input promises resolve and rejects if any reject."
+  },
+  {
+    "id": 85,
+    "question": "What is the purpose of `event.preventDefault()`?",
+    "options": [
+      "Stops event bubbling",
+      "Prevents the browser's default action",
+      "Removes the event listener",
+      "Stops all JavaScript execution"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "DOM events.",
+    "hint": "Think forms and links.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`preventDefault()` stops the browser's default behavior, like following a link or submitting a form."
+  },
+  {
+    "id": 86,
+    "question": "Which method creates a shallow copy of an object with enumerable properties?",
+    "options": [
+      "Object.copy()",
+      "Object.assign()",
+      "Object.clone()",
+      "Object.keys()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Object copying basics.",
+    "hint": "It can merge sources into a target.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Object.assign()` copies enumerable own properties into a target object."
+  },
+  {
+    "id": 87,
+    "question": "What does `setTimeout(fn, 0)` guarantee?",
+    "options": [
+      "The callback runs immediately",
+      "The callback runs before all other tasks",
+      "The callback is queued after the current call stack clears",
+      "The callback runs synchronously"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Event loop basics.",
+    "hint": "Think task queue.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Even with 0 delay, the callback is deferred until the current call stack is empty."
+  },
+  {
+    "id": 88,
+    "question": "Which statement about `for...of` is correct?",
+    "options": [
+      "It iterates over object keys",
+      "It iterates over iterable values",
+      "It only works on plain objects",
+      "It returns indexes of arrays"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Iteration constructs.",
+    "hint": "Think values from arrays, strings, sets.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`for...of` iterates over values from iterable objects."
+  },
+  {
+    "id": 89,
+    "question": "Which statement about `for...in` is correct?",
+    "options": [
+      "It iterates over iterable values",
+      "It iterates over enumerable property names",
+      "It only works on arrays",
+      "It ignores inherited enumerable properties"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Object iteration.",
+    "hint": "Think property names.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`for...in` iterates over enumerable property names, including inherited ones."
+  },
+  {
+    "id": 90,
+    "question": "What does destructuring allow you to do?",
+    "options": [
+      "Encrypt data",
+      "Extract values from arrays or properties from objects into variables",
+      "Prevent mutation",
+      "Convert objects into JSON"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Destructuring basics.",
+    "hint": "It is shorthand assignment.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Destructuring lets you unpack array elements or object properties into variables."
+  },
+  {
+    "id": 91,
+    "question": "Which value does `Array.prototype.sort()` use by default?",
+    "options": [
+      "Numeric ascending comparison",
+      "String Unicode code point comparison",
+      "Random order",
+      "Descending order"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Sorting basics.",
+    "hint": "Default sort can surprise with numbers.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Without a compare function, `sort()` compares elements as strings."
+  },
+  {
+    "id": 92,
+    "question": "Which method tests whether at least one array element passes a condition?",
+    "options": [
+      "every()",
+      "find()",
+      "some()",
+      "includes()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array predicates.",
+    "hint": "One means any.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`some()` returns true if at least one element passes the test."
+  },
+  {
+    "id": 93,
+    "question": "Which method tests whether all array elements pass a condition?",
+    "options": [
+      "every()",
+      "some()",
+      "filter()",
+      "reduce()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array predicates.",
+    "hint": "One means all.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`every()` returns true only if all elements satisfy the callback."
+  },
+  {
+    "id": 94,
+    "question": "What is optional chaining used for?",
+    "options": [
+      "Loop chaining",
+      "Safely accessing nested properties or methods that may be nullish",
+      "Making values immutable",
+      "Declaring private fields"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Modern syntax.",
+    "hint": "Look for `?.`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Optional chaining short-circuits when an intermediate value is `null` or `undefined`."
+  },
+  {
+    "id": 95,
+    "question": "What does `new Set([1,1,2])` contain?",
+    "options": [
+      "[1,1,2]",
+      "[1,2]",
+      "{1,1,2}",
+      "An error"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Set basics.",
+    "hint": "Sets keep unique values.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A `Set` stores unique values, so duplicates are removed."
+  },
+  {
+    "id": 96,
+    "question": "`map()` mutates the original array by default.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array methods.",
+    "hint": "Compare it with `splice()`.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`map()` returns a new array and does not mutate the original one."
+  },
+  {
+    "id": 97,
+    "question": "A closure can access variables from its outer function even after that outer function has returned.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Closures.",
+    "hint": "Think about remembered scope.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Closures preserve access to outer variables after the outer function has finished executing."
+  },
+  {
+    "id": 98,
+    "question": "`Promise.all()` resolves successfully even if one of the promises rejects.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Promise combinators.",
+    "hint": "It is fail-fast.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Promise.all()` rejects as soon as one input promise rejects."
+  },
+  {
+    "id": 99,
+    "question": "The spread operator performs a deep clone of nested objects.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Copy semantics.",
+    "hint": "Shallow vs deep copy matters.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Spread syntax makes a shallow copy, so nested objects are still shared."
+  },
+  {
+    "id": 100,
+    "question": "Arrow functions inherit `this` from their surrounding scope.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Arrow function behavior.",
+    "hint": "They do not make their own `this`.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Arrow functions lexically inherit `this`."
+  },
+  {
+    "id": 101,
+    "question": "`Object.keys()` includes non-enumerable properties.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Object inspection.",
+    "hint": "Enumerable matters.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Object.keys()` returns only own enumerable property names."
+  },
+  {
+    "id": 102,
+    "question": "`for...of` can iterate directly over strings.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Iteration basics.",
+    "hint": "Strings are iterable.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Strings are iterable, so `for...of` yields each character."
+  },
+  {
+    "id": 103,
+    "question": "Calling `sort()` on `[10, 2]` without a compare function results in `[2, 10]`.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Sorting behavior.",
+    "hint": "Default sort compares strings.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Default sort compares `'10'` and `'2'` as strings, resulting in `[10, 2]`."
+  },
+  {
+    "id": 104,
+    "question": "`finally()` on a promise receives the settled value as an argument.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Promise methods.",
+    "hint": "It is for cleanup, not transformation.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`finally()` does not receive the fulfillment value or rejection reason."
+  },
+  {
+    "id": 105,
+    "question": "`Object.freeze()` prevents adding, deleting, or changing properties on the frozen object itself.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Object immutability.",
+    "hint": "Top-level only.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`Object.freeze()` locks the object itself, though nested objects can still be mutable."
+  },
+  {
+    "id": 106,
+    "question": "The nullish coalescing operator treats `0` as missing and uses the fallback.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "`??` semantics.",
+    "hint": "Only nullish values trigger fallback.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`??` only falls back for `null` or `undefined`, not for `0` or `''`."
+  },
+  {
+    "id": 107,
+    "question": "A `Set` can contain duplicate primitive values.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Set basics.",
+    "hint": "Uniqueness is the key feature.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Sets store unique values only."
+  },
+  {
+    "id": 108,
+    "question": "`Array.from('abc')` returns `['a', 'b', 'c']`.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Iterables and conversion.",
+    "hint": "Strings can be converted element by element.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`Array.from()` converts an iterable like a string into an array of its items."
+  },
+  {
+    "id": 109,
+    "question": "`event.stopPropagation()` prevents the default browser action.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "DOM event control.",
+    "hint": "Different from `preventDefault()`.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`stopPropagation()` stops bubbling/capturing, not default behavior."
+  },
+  {
+    "id": 110,
+    "question": "`async` functions always return a promise.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Async/await basics.",
+    "hint": "Even plain returned values are wrapped.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "An `async` function returns a promise whether it returns a value or throws."
+  },
+  {
+    "id": 111,
+    "question": "Destructuring an absent object property assigns `undefined` unless a default is provided.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Destructuring behavior.",
+    "hint": "Missing properties do not throw in plain object destructuring.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Missing properties become `undefined` unless a default value is set."
+  },
+  {
+    "id": 112,
+    "question": "`parseInt('08')` always returns `NaN` in modern JavaScript.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Parsing numbers.",
+    "hint": "Modern engines default to base 10 when sensible.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "In modern JavaScript, `parseInt('08')` returns 8."
+  },
+  {
+    "id": 113,
+    "question": "Functions are objects in JavaScript.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Function internals.",
+    "hint": "They can have properties.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Functions are callable objects and can hold properties."
+  },
+  {
+    "id": 114,
+    "question": "`some()` returns true only when every element passes the test.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array predicates.",
+    "hint": "Some means at least one.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`some()` returns true if at least one element passes."
+  },
+  {
+    "id": 115,
+    "question": "The `delete` operator reduces an array's length when deleting an element.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array quirks.",
+    "hint": "It leaves a hole.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`delete arr[index]` removes the property but does not reindex or shrink length."
+  },
+  {
+    "id": 116,
+    "question": "A `Map` can use objects as keys.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Map basics.",
+    "hint": "Unlike plain objects, keys are not limited to strings/symbols.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`Map` keys can be any value, including objects."
+  },
+  {
+    "id": 117,
+    "question": "Optional chaining can be used to call a method only if it exists.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Optional chaining.",
+    "hint": "Think `obj.method?.()`.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Optional chaining safely calls a method only when it is defined."
+  },
+  {
+    "id": 118,
+    "question": "`includes()` uses strict equality semantics similar to `===` for most values.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array search basics.",
+    "hint": "Except that it can find `NaN`.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`includes()` is based on SameValueZero, similar to strict equality but treats `NaN` as equal to itself."
+  },
+  {
+    "id": 119,
+    "question": "`reduce()` must always be called with an initial accumulator value.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Reduce basics.",
+    "hint": "It is recommended but not always required.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`reduce()` can use the first array element as the initial accumulator when none is provided."
+  },
+  {
+    "id": 120,
+    "question": "`JSON.stringify()` will serialize functions as executable code strings.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "JSON limitations.",
+    "hint": "Functions are not valid JSON values.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Functions are omitted or converted to `null` depending on context, not serialized as code."
+  },
+  {
+    "id": 121,
+    "question": "Which statements about promises are true?",
+    "options": [
+      "`then()` handles fulfilled values",
+      "`catch()` handles rejected reasons",
+      "`finally()` can be used for cleanup",
+      "Promises always run synchronously"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Promises overview.",
+    "hint": "Think about settlement handlers.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "`then`, `catch`, and `finally` are all promise handlers; promises do not run synchronously in the way regular returns do."
+  },
+  {
+    "id": 122,
+    "question": "Which expressions create shallow copies of an array?",
+    "options": [
+      "arr.slice()",
+      "[...arr]",
+      "Array.from(arr)",
+      "arr.sort()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Copying arrays.",
+    "hint": "One option mutates instead.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "`slice()`, spread, and `Array.from()` create shallow copies; `sort()` mutates."
+  },
+  {
+    "id": 123,
+    "question": "Which are truthy values in JavaScript?",
+    "options": [
+      "[]",
+      "{}",
+      "''",
+      "'false'"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Truthy/falsy review.",
+    "hint": "Empty string is the exception here.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Empty arrays, empty objects, and non-empty strings are truthy."
+  },
+  {
+    "id": 124,
+    "question": "Which statements about destructuring are correct?",
+    "options": [
+      "It works with arrays",
+      "It works with objects",
+      "It can use default values",
+      "It deep-clones nested data"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Destructuring rules.",
+    "hint": "It unpacks values but does not clone deeply.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Destructuring works for arrays and objects and supports defaults, but it does not deep-clone."
+  },
+  {
+    "id": 125,
+    "question": "Which are valid ways to iterate over array values?",
+    "options": [
+      "for...of",
+      "forEach()",
+      "map()",
+      "for...in"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Iteration choices.",
+    "hint": "One option iterates property names, not values directly.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "`for...of`, `forEach`, and `map` iterate values; `for...in` iterates property names."
+  },
+  {
+    "id": 126,
+    "question": "Which statements about `this` are correct?",
+    "options": [
+      "In a regular method call, `this` usually refers to the object before the dot",
+      "Arrow functions lexically inherit `this`",
+      "`bind()` can permanently set `this` for a function",
+      "`this` inside a class method is always the global object"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Understanding `this`.",
+    "hint": "Class methods depend on how they are called unless bound.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Regular methods use the calling object, arrows inherit `this`, and `bind()` can fix it."
+  },
+  {
+    "id": 127,
+    "question": "Which collections preserve insertion order?",
+    "options": [
+      "Map",
+      "Set",
+      "Object always guarantees intuitive numeric key order only as inserted",
+      "Array"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Collections behavior.",
+    "hint": "Objects have more nuanced property ordering rules.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`Map`, `Set`, and arrays preserve insertion order; object property order rules are more nuanced."
+  },
+  {
+    "id": 128,
+    "question": "Which methods return new arrays?",
+    "options": [
+      "filter()",
+      "map()",
+      "concat()",
+      "push()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Non-mutating array methods.",
+    "hint": "One mutates and returns a length.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "`filter`, `map`, and `concat` return new arrays; `push()` mutates."
+  },
+  {
+    "id": 129,
+    "question": "Which statements about `async/await` are true?",
+    "options": [
+      "`await` can pause inside an `async` function",
+      "`async` functions return promises",
+      "`await` blocks the entire JavaScript thread globally",
+      "You can use `try/catch` with `await`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Async/await basics.",
+    "hint": "It pauses function execution, not the whole runtime.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`async`/`await` works with promises and supports `try/catch`, but `await` does not globally block the thread."
+  },
+  {
+    "id": 130,
+    "question": "Which of the following can be iterated with `for...of`?",
+    "options": [
+      "Arrays",
+      "Strings",
+      "Sets",
+      "Plain objects by default"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Iterables.",
+    "hint": "One option is not iterable unless you use helpers.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Arrays, strings, and sets are iterable; plain objects are not iterable by default."
+  },
+  {
+    "id": 131,
+    "question": "What does this code log?",
+    "options": [
+      "[2, 4, 6]",
+      "[1, 2, 3]",
+      "6",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Understanding `map()`.",
+    "hint": "Each element is doubled.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`map()` returns a new array with each element transformed.",
+    "code": "const nums = [1, 2, 3];\nconsole.log(nums.map(n => n * 2));"
+  },
+  {
+    "id": 132,
+    "question": "What will this code output?",
+    "options": [
+      "3",
+      "'3'",
+      "undefined",
+      "NaN"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Closure with outer variable.",
+    "hint": "The inner function uses the outer variable.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The returned function closes over `x` and adds it to 1.",
+    "code": "function outer() {\n  const x = 2;\n  return function() { return x + 1; };\n}\nconsole.log(outer()());"
+  },
+  {
+    "id": 133,
+    "question": "What does this code log?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "`find()` behavior.",
+    "hint": "Look for the first value greater than 0.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`find()` returns the first matching element, which is 1.",
+    "code": "console.log([0, 1, 2, 3].find(n => n > 0));"
+  },
+  {
+    "id": 134,
+    "question": "What does this code log?",
+    "options": [
+      "'fallback'",
+      "0",
+      "null",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Nullish coalescing.",
+    "hint": "`0` is not nullish.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`??` uses the left operand when it is not `null` or `undefined`, so it logs 0.",
+    "code": "console.log(0 ?? 'fallback');"
+  },
+  {
+    "id": 135,
+    "question": "What happens here?",
+    "options": [
+      "Logs `undefined`",
+      "Throws because `user` is null",
+      "Logs `'Sam'`",
+      "Logs `null`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Optional chaining.",
+    "hint": "The chain stops safely.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Optional chaining returns `undefined` instead of throwing when the base is nullish.",
+    "code": "const user = null;\nconsole.log(user?.name);"
+  },
+  {
+    "id": 136,
+    "question": "What does this code log?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "[1,2,3]"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Spread in arrays.",
+    "hint": "The array is expanded into elements.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Spread syntax inserts the array elements into the new array.",
+    "code": "const a = [2, 3];\nconsole.log([1, ...a].length);"
+  },
+  {
+    "id": 137,
+    "question": "What will be logged?",
+    "options": [
+      "true",
+      "false",
+      "TypeError",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Set uniqueness.",
+    "hint": "Duplicate 2 values collapse into one.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The set contains unique values {1,2}, so `.has(2)` is true.",
+    "code": "const s = new Set([1, 2, 2]);\nconsole.log(s.has(2));"
+  },
+  {
+    "id": 138,
+    "question": "What does this code print?",
+    "options": [
+      "ReferenceError",
+      "'number'",
+      "'undefined'",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Temporal Dead Zone after declaration?",
+    "hint": "The variable is declared and initialized before logging.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "After `let x = 5`, `typeof x` is `'number'`.",
+    "code": "let x = 5;\nconsole.log(typeof x);"
+  },
+  {
+    "id": 139,
+    "question": "What does this code log?",
+    "options": [
+      "6",
+      "10",
+      "15",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Reduce accumulator.",
+    "hint": "Start from 0 and add all elements.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`reduce()` sums the array values to 10.",
+    "code": "console.log([1,2,3,4].reduce((sum, n) => sum + n, 0));"
+  },
+  {
+    "id": 140,
+    "question": "What will this output be?",
+    "options": [
+      "'a,b,c'",
+      "['a','b','c']",
+      "'abc'",
+      "Error"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array join.",
+    "hint": "Default separator is comma? Wait use ''.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Using an empty-string separator joins values without commas.",
+    "code": "console.log(['a','b','c'].join(''));"
+  },
+  {
+    "id": 141,
+    "question": "What is the primary difference between `Object.seal()` and `Object.freeze()`?",
+    "options": [
+      "`seal()` prevents reading properties",
+      "`freeze()` prevents changing existing properties, while `seal()` allows changing existing writable properties",
+      "They are identical",
+      "`freeze()` allows adding properties"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Object integrity levels.",
+    "hint": "One is stricter.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Object.seal()` prevents adding/removing properties but can allow changing existing writable ones; `Object.freeze()` also prevents changing them."
+  },
+  {
+    "id": 142,
+    "question": "Which statement best describes the event loop in JavaScript?",
+    "options": [
+      "It runs JavaScript on multiple threads by default",
+      "It schedules execution of queued tasks after the call stack is empty",
+      "It executes only promise callbacks",
+      "It is part of the CSS engine"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Concurrency model.",
+    "hint": "Think call stack and queues.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The event loop moves queued tasks to execution when the call stack is empty."
+  },
+  {
+    "id": 143,
+    "question": "What is a memory leak in JavaScript?",
+    "options": [
+      "A syntax error in async code",
+      "Memory that is no longer needed but is still referenced and cannot be garbage-collected",
+      "A promise rejection",
+      "An infinite loop"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Performance and memory.",
+    "hint": "Think retained references.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Leaks happen when unused objects stay reachable and cannot be collected."
+  },
+  {
+    "id": 144,
+    "question": "Why can using objects as keys in plain objects be problematic compared with `Map`?",
+    "options": [
+      "Plain objects cannot store strings as keys",
+      "Object keys in plain objects are coerced to strings or symbols",
+      "Maps are slower",
+      "Maps do not preserve insertion order"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Choosing `Map` vs object.",
+    "hint": "Think key types.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Plain object keys are string/symbol based, so object keys get coerced; `Map` preserves key identity."
+  },
+  {
+    "id": 145,
+    "question": "Which statement about microtasks is correct?",
+    "options": [
+      "They always run after the next repaint",
+      "Promise callbacks are typically scheduled as microtasks",
+      "`setTimeout` callbacks are microtasks",
+      "Microtasks run only once per page load"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Event loop internals.",
+    "hint": "Compare promises with timers.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Promise reactions are handled in the microtask queue."
+  },
+  {
+    "id": 146,
+    "question": "What does `Object.create(null)` produce?",
+    "options": [
+      "An object with no prototype",
+      "A frozen object",
+      "A class instance",
+      "A null value"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Prototype control.",
+    "hint": "Think dictionary-like objects.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`Object.create(null)` creates an object without `Object.prototype` in its prototype chain."
+  },
+  {
+    "id": 147,
+    "question": "What is the purpose of a WeakMap?",
+    "options": [
+      "To store keys as strings efficiently",
+      "To allow garbage collection of object keys when no other references remain",
+      "To preserve insertion order of primitives only",
+      "To deep-clone objects"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Memory-sensitive collections.",
+    "hint": "Keys are weakly held.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "WeakMaps do not prevent their object keys from being garbage-collected."
+  },
+  {
+    "id": 148,
+    "question": "What happens when an exception is thrown inside an `async` function and not caught?",
+    "options": [
+      "The program always crashes",
+      "The function returns a rejected promise",
+      "The error is converted to `null`",
+      "The function returns `undefined`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Async error handling.",
+    "hint": "Async functions wrap outcomes in promises.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Thrown errors inside `async` functions reject the returned promise."
+  },
+  {
+    "id": 149,
+    "question": "Which statement about prototypes is correct?",
+    "options": [
+      "Only classes use prototypes",
+      "Objects can delegate property lookup through the prototype chain",
+      "Prototype lookup happens only for methods, not properties",
+      "The prototype chain is unrelated to inheritance"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Prototype-based inheritance.",
+    "hint": "Think property lookup.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "JavaScript uses prototype delegation for inheritance and shared behavior."
+  },
+  {
+    "id": 150,
+    "question": "What problem does debouncing typically solve?",
+    "options": [
+      "Ensuring a function runs continuously at a fixed rate",
+      "Delaying rapid repeated calls until activity stops",
+      "Parallelizing CPU-bound code",
+      "Preventing memory leaks"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Performance patterns.",
+    "hint": "Think search input handlers.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Debouncing waits until repeated triggering settles before calling the function."
+  },
+  {
+    "id": 151,
+    "question": "Which of these best describes hoisting?",
+    "options": [
+      "Variables are physically moved in source code",
+      "Certain declarations are processed before code execution, affecting when identifiers can be referenced",
+      "Functions cannot be called before they are declared",
+      "Only `let` variables are hoisted"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Execution context.",
+    "hint": "It is about declaration processing, not text movement.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Hoisting means declarations are registered before execution, though access rules differ by declaration type."
+  },
+  {
+    "id": 152,
+    "question": "Why is `Symbol` useful as an object property key?",
+    "options": [
+      "It automatically makes properties enumerable",
+      "It avoids accidental name collisions",
+      "It makes values immutable",
+      "It allows only numeric keys"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Advanced property keys.",
+    "hint": "Symbols are unique.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Each symbol is unique, so symbol keys help prevent key name collisions."
+  },
+  {
+    "id": 153,
+    "question": "What is tail call optimization?",
+    "options": [
+      "A required optimization in all JavaScript engines",
+      "An optimization that reuses stack frames for certain recursive calls in tail position",
+      "A DOM rendering optimization",
+      "A type coercion rule"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Runtime optimization concept.",
+    "hint": "Not widely implemented in engines despite spec interest.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Tail call optimization can reuse stack frames for tail-position calls, though support is limited."
+  },
+  {
+    "id": 154,
+    "question": "What is the difference between `==` and `Object.is()` for `NaN`?",
+    "options": [
+      "Both treat `NaN` as equal to itself",
+      "`==` says `NaN == NaN` is true, but `Object.is()` says false",
+      "`==` says false, while `Object.is()` says true",
+      "Neither can compare `NaN`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Advanced equality semantics.",
+    "hint": "`NaN` behaves unusually.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`NaN == NaN` is false, but `Object.is(NaN, NaN)` is true."
+  },
+  {
+    "id": 155,
+    "question": "Why might `for await...of` be used?",
+    "options": [
+      "To loop over CSS rules",
+      "To consume async iterables with awaited values",
+      "To make all loops asynchronous automatically",
+      "To iterate plain objects faster"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Async iteration.",
+    "hint": "Think streams and async generators.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`for await...of` consumes async iterables and awaits each yielded value."
+  },
+  {
+    "id": 156,
+    "question": "Which statement about generators is correct?",
+    "options": [
+      "They always run to completion immediately",
+      "They can pause and resume execution using `yield`",
+      "They replace promises",
+      "They cannot return values"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Generator fundamentals.",
+    "hint": "`yield` is the key.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Generators can suspend and resume execution, producing values over time."
+  },
+  {
+    "id": 157,
+    "question": "What does `Reflect.ownKeys(obj)` return?",
+    "options": [
+      "Only enumerable string keys",
+      "Only symbol keys",
+      "All own property keys including non-enumerable and symbols",
+      "Only inherited keys"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Advanced reflection.",
+    "hint": "More complete than `Object.keys()`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`Reflect.ownKeys()` returns all own keys, including non-enumerable properties and symbols."
+  },
+  {
+    "id": 158,
+    "question": "What is the main risk of using `JSON.parse(JSON.stringify(obj))` for cloning?",
+    "options": [
+      "It creates circular references",
+      "It drops unsupported values and can corrupt dates, maps, sets, functions, and undefined",
+      "It always performs a deep clone perfectly",
+      "It preserves prototype chains"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Cloning caveats.",
+    "hint": "JSON supports only JSON-safe data.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "JSON-based cloning loses unsupported types and special object semantics."
+  },
+  {
+    "id": 159,
+    "question": "Which statement about `Proxy` is correct?",
+    "options": [
+      "It can intercept fundamental operations on an object",
+      "It permanently changes the JavaScript syntax",
+      "It works only with arrays",
+      "It cannot validate property access"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Metaprogramming.",
+    "hint": "Think traps.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "A `Proxy` can intercept operations like get, set, has, and more."
+  },
+  {
+    "id": 160,
+    "question": "Why can excessive closure capture increase memory usage?",
+    "options": [
+      "Closures copy primitive values into ROM",
+      "Closures can retain references to large outer-scope objects longer than needed",
+      "Closures disable garbage collection entirely",
+      "Closures always leak memory"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Performance and memory.",
+    "hint": "Retained references matter.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Closures can unintentionally keep large objects reachable."
+  },
+  {
+    "id": 161,
+    "question": "What is the key purpose of `AbortController` in modern JavaScript APIs?",
+    "options": [
+      "To freeze objects",
+      "To cancel supported async operations such as fetch requests",
+      "To retry failed promises automatically",
+      "To schedule microtasks"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Modern web APIs.",
+    "hint": "Often used with fetch.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`AbortController` provides a signal that can cancel supported async work."
+  },
+  {
+    "id": 162,
+    "question": "Which best describes stable sorting?",
+    "options": [
+      "All browsers sort randomly",
+      "Equal elements keep their relative order",
+      "Sorting never mutates arrays",
+      "Only numeric sorts are stable"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Sorting details.",
+    "hint": "Focus on equal items.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A stable sort preserves the relative order of items considered equal."
+  },
+  {
+    "id": 163,
+    "question": "What does the Temporal Dead Zone refer to?",
+    "options": [
+      "The time before a promise resolves",
+      "The period between entering scope and initializing a `let`/`const` binding",
+      "The browser render delay",
+      "The time before a timer fires"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Advanced scope behavior.",
+    "hint": "Accessing the binding early throws.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`let` and `const` bindings exist but cannot be accessed before initialization."
+  },
+  {
+    "id": 164,
+    "question": "Why might `queueMicrotask()` be used?",
+    "options": [
+      "To schedule code in the microtask queue after the current script",
+      "To delay work by a minimum of 4ms",
+      "To run code in a web worker",
+      "To cancel an event listener"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Event loop tools.",
+    "hint": "Compare with timers.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`queueMicrotask()` schedules a callback in the microtask queue."
+  },
+  {
+    "id": 165,
+    "question": "Which statement about ESM imports is correct?",
+    "options": [
+      "Imports are dynamically hoisted only after runtime execution",
+      "Static imports are hoisted and evaluated before module body runs",
+      "Imports can appear only inside functions",
+      "ES modules do not support default exports"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Modules internals.",
+    "hint": "Static imports are analyzed early.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Static ESM imports are resolved and linked before the module body executes."
+  },
+  {
+    "id": 166,
+    "question": "A WeakMap prevents its object keys from being garbage-collected.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Weak collections.",
+    "hint": "Weak references do the opposite.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "WeakMap keys are held weakly, so they may be garbage-collected when no other references remain."
+  },
+  {
+    "id": 167,
+    "question": "Promise reaction callbacks run in the microtask queue.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Event loop internals.",
+    "hint": "Think promises vs timers.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Promise handlers are queued as microtasks."
+  },
+  {
+    "id": 168,
+    "question": "`Object.freeze()` performs a deep freeze on nested objects automatically.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Immutability depth.",
+    "hint": "Only the top-level object is frozen.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Nested objects remain mutable unless they are frozen separately."
+  },
+  {
+    "id": 169,
+    "question": "Using `delete arr[1]` on an array removes the element and shifts later indexes left.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Array internals.",
+    "hint": "It creates a sparse hole.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`delete` removes the property but leaves the array length and indexes otherwise unchanged."
+  },
+  {
+    "id": 170,
+    "question": "The prototype of an object can affect property lookup even when the property is not on the object itself.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Prototype chain.",
+    "hint": "Lookup can continue upward.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "If a property is missing on the object, JavaScript checks its prototype chain."
+  },
+  {
+    "id": 171,
+    "question": "`Object.is(+0, -0)` returns true.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Equality edge cases.",
+    "hint": "This differs from `===` in a subtle way.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Object.is(+0, -0)` is false; it distinguishes positive and negative zero."
+  },
+  {
+    "id": 172,
+    "question": "`await` outside an async function is always a syntax error in all module contexts.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Top-level await.",
+    "hint": "Modern ES modules allow it.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Top-level `await` is allowed in ES modules."
+  },
+  {
+    "id": 173,
+    "question": "A generator function is declared using `function*` syntax.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Generators.",
+    "hint": "The asterisk matters.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Generator functions use `function*`."
+  },
+  {
+    "id": 174,
+    "question": "In JavaScript, all objects are instances of `Object` in a way that always guarantees `obj instanceof Object` is true.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Prototype edge cases.",
+    "hint": "Consider `Object.create(null)`.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Objects created with `Object.create(null)` have no `Object.prototype` in the chain."
+  },
+  {
+    "id": 175,
+    "question": "A Proxy can intercept property reads and writes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Metaprogramming basics.",
+    "hint": "Think get/set traps.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "A Proxy can trap operations such as property access and assignment."
+  },
+  {
+    "id": 176,
+    "question": "The event loop executes macrotasks before finishing all pending microtasks.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Scheduling order.",
+    "hint": "Microtasks flush first after each task.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Pending microtasks are processed before the event loop moves to the next macrotask."
+  },
+  {
+    "id": 177,
+    "question": "`Map` compares keys by reference for objects.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Map semantics.",
+    "hint": "Two identical object literals are not the same key.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Object keys in a `Map` are compared by reference identity."
+  },
+  {
+    "id": 178,
+    "question": "A function declaration inside a block behaves identically across all JavaScript modes and environments.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Spec and environment nuance.",
+    "hint": "Block-scoped function behavior has historical quirks.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Block function semantics have nuanced behavior depending on strict mode and environment."
+  },
+  {
+    "id": 179,
+    "question": "Structured cloning preserves functions exactly.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Cloning APIs.",
+    "hint": "Functions are not cloneable here.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The structured clone algorithm does not clone functions."
+  },
+  {
+    "id": 180,
+    "question": "An unresolved promise by itself always causes a memory leak.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Memory behavior.",
+    "hint": "Unresolved is not automatically leaking.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A leak depends on retained references, not merely on a promise staying pending."
+  },
+  {
+    "id": 181,
+    "question": "`super` in a class method refers to the parent prototype's methods.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Class inheritance.",
+    "hint": "It is used to call parent behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`super` accesses methods on the parent class/prototype."
+  },
+  {
+    "id": 182,
+    "question": "A Symbol-keyed property is ignored by `JSON.stringify()`.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "JSON serialization.",
+    "hint": "JSON handles only string-keyed enumerable data.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Symbol-keyed properties are not included in JSON serialization."
+  },
+  {
+    "id": 183,
+    "question": "Using `bind()` returns a new function.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Function binding.",
+    "hint": "The original function is not mutated into a bound one.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`bind()` creates and returns a new bound function."
+  },
+  {
+    "id": 184,
+    "question": "Static class methods are called on instances, not on the class itself.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Class features.",
+    "hint": "Static means it belongs to the class.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Static methods are called on the class constructor, not on instances."
+  },
+  {
+    "id": 185,
+    "question": "`Promise.race()` settles with the first promise that settles, whether fulfilled or rejected.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Promise combinators.",
+    "hint": "Race means first settled.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`Promise.race()` resolves or rejects as soon as the first input settles."
+  },
+  {
+    "id": 186,
+    "question": "The `with` statement is forbidden in strict mode.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Strict mode restrictions.",
+    "hint": "It makes scope resolution ambiguous.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`with` is disallowed in strict mode."
+  },
+  {
+    "id": 187,
+    "question": "`finally` can replace the fulfilled value of a promise by returning a new ordinary value.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Promise chain semantics.",
+    "hint": "Compare it with `then`.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A normal value returned from `finally` does not replace the original fulfillment unless it throws or returns a rejected promise."
+  },
+  {
+    "id": 188,
+    "question": "ES modules are always evaluated lazily only when a function inside them is first called.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Module loading semantics.",
+    "hint": "Imports are linked/evaluated before use.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "ES modules are loaded and evaluated during module graph execution, not first function call."
+  },
+  {
+    "id": 189,
+    "question": "A `Set` uses SameValueZero semantics for value equality.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Set equality.",
+    "hint": "`NaN` is considered equal to itself here.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Sets use SameValueZero, which treats `NaN` as equal to `NaN`."
+  },
+  {
+    "id": 190,
+    "question": "Tail recursion is guaranteed not to overflow the stack in all mainstream JavaScript engines.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Runtime support reality.",
+    "hint": "Specification possibilities are not universal implementation guarantees.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Proper tail calls are not universally implemented in mainstream engines."
+  },
+  {
+    "id": 191,
+    "question": "Which statements about the event loop are true?",
+    "options": [
+      "Promise callbacks are typically microtasks",
+      "`setTimeout` callbacks are macrotasks",
+      "Microtasks are drained before the next macrotask begins",
+      "Rendering may occur between tasks"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Event loop deep dive.",
+    "hint": "Think microtasks, tasks, and rendering.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "These are core event loop behaviors in modern JavaScript environments."
+  },
+  {
+    "id": 192,
+    "question": "Which operations create shallow copies rather than deep copies?",
+    "options": [
+      "`{...obj}`",
+      "`Object.assign({}, obj)`",
+      "`arr.slice()`",
+      "`structuredClone(obj)`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Copy semantics.",
+    "hint": "One option performs deep structured cloning for supported types.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Spread, `Object.assign`, and `slice` are shallow-copy operations."
+  },
+  {
+    "id": 193,
+    "question": "Which statements about `Map` are correct?",
+    "options": [
+      "It preserves insertion order",
+      "It can use objects as keys",
+      "Its keys are limited to strings",
+      "It has a `size` property"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Map basics.",
+    "hint": "One option confuses `Map` with plain objects.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Maps preserve insertion order, allow object keys, and expose `.size`."
+  },
+  {
+    "id": 194,
+    "question": "Which are valid ways to preserve `this` in callbacks?",
+    "options": [
+      "Using an arrow function",
+      "Using `bind()`",
+      "Storing `const self = this` in outer scope",
+      "Using `preventDefault()`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Managing `this`.",
+    "hint": "One option is unrelated to binding.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Arrow functions, `bind`, and aliasing `this` can preserve context."
+  },
+  {
+    "id": 195,
+    "question": "Which statements about `Proxy` are true?",
+    "options": [
+      "It can intercept property access",
+      "It can intercept property assignment",
+      "It can intercept the `in` operator",
+      "It requires a class declaration"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Proxy traps.",
+    "hint": "No class is required.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Proxies can trap many fundamental operations and do not require classes."
+  },
+  {
+    "id": 196,
+    "question": "Which values are treated specially by `Object.is()` compared with `===`?",
+    "options": [
+      "`NaN`",
+      "`+0` and `-0`",
+      "Strings",
+      "Booleans"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Equality edge cases.",
+    "hint": "Look for the famous exceptions.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1
+    ],
+    "explanation": "`Object.is()` differs from `===` for `NaN` and signed zeros."
+  },
+  {
+    "id": 197,
+    "question": "Which statements about modules are true?",
+    "options": [
+      "Static imports are resolved before module execution",
+      "Modules have their own scope",
+      "`export default` is allowed",
+      "You can conditionally place a static import inside an `if` block"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "ES modules.",
+    "hint": "One option violates syntax rules.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Modules are scoped, support default export, and static imports are resolved before execution."
+  },
+  {
+    "id": 198,
+    "question": "Which are valid reasons to choose `WeakMap` over `Map`?",
+    "options": [
+      "Associating metadata with object keys without preventing their garbage collection",
+      "Avoiding manual cleanup in some object-lifecycle scenarios",
+      "Needing iteration over all entries",
+      "Using primitive keys"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "WeakMap use cases.",
+    "hint": "WeakMaps are non-iterable and require object keys.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1
+    ],
+    "explanation": "WeakMaps are useful when keys should not be kept alive solely by the collection."
+  },
+  {
+    "id": 199,
+    "question": "Which statements about generators are correct?",
+    "options": [
+      "They can yield multiple values over time",
+      "They return iterator objects",
+      "They can receive values back through `.next(value)`",
+      "They always run asynchronously"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Generator behavior.",
+    "hint": "Generators are not inherently async unless using async generators.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Generators yield values lazily and support bidirectional communication through `next()`."
+  },
+  {
+    "id": 200,
+    "question": "Which can cause accidental memory retention?",
+    "options": [
+      "Long-lived closures capturing large objects",
+      "Global caches without eviction",
+      "Detached DOM nodes still referenced by listeners",
+      "Using `const` for primitives"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Memory leak patterns.",
+    "hint": "One option is unrelated.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Closures, unmanaged caches, and detached-but-referenced nodes can all retain memory."
+  },
+  {
+    "id": 201,
+    "question": "What will this code log?",
+    "options": [
+      "3",
+      "undefined",
+      "ReferenceError",
+      "2"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Closure in loop with `let`.",
+    "hint": "Each iteration gets its own binding with `let`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      3
+    ],
+    "explanation": "The callback closes over the final iteration's own `i` value 2 for that scheduled callback.",
+    "code": "for (let i = 0; i < 3; i++) {\n  if (i === 2) setTimeout(() => console.log(i), 0);\n}"
+  },
+  {
+    "id": 202,
+    "question": "What does this code output?",
+    "options": [
+      "1 2",
+      "2 1",
+      "1 1",
+      "2 2"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Microtask vs macrotask ordering simplified? Actually promise then after sync.",
+    "hint": "Synchronous logs happen before promise handlers.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The synchronous `console.log(1)` runs first, then the microtask logs 2.",
+    "code": "console.log(1);\nPromise.resolve().then(() => console.log(2));"
+  },
+  {
+    "id": 203,
+    "question": "What happens here?",
+    "options": [
+      "Logs `undefined`",
+      "Throws a ReferenceError",
+      "Logs 5",
+      "Logs null"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Temporal Dead Zone.",
+    "hint": "The variable is accessed before initialization.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Accessing a `let` binding before initialization throws a ReferenceError.",
+    "code": "console.log(x);\nlet x = 5;"
+  },
+  {
+    "id": 204,
+    "question": "What does this code log?",
+    "options": [
+      "true",
+      "false",
+      "TypeError",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Object reference identity in Maps.",
+    "hint": "The same object reference is used for set and get.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Maps compare object keys by reference, and the same `key` object is reused.",
+    "code": "const key = {};\nconst m = new Map();\nm.set(key, 'ok');\nconsole.log(m.get(key) === 'ok');"
+  },
+  {
+    "id": 205,
+    "question": "What will this code output?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "Error"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Prototype method resolution.",
+    "hint": "`super` calls the parent method result plus 1? Let's inspect.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`super.value()` returns 1, and the child method adds 1, producing 2.",
+    "code": "class A { value() { return 1; } }\nclass B extends A { value() { return super.value() + 1; } }\nconsole.log(new B().value());"
+  },
+  {
+    "id": 206,
+    "question": "What is the result?",
+    "options": [
+      "'number'",
+      "'undefined'",
+      "'object'",
+      "Throws"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "`typeof null` quirk revisited in code.",
+    "hint": "Historic behavior remains.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`typeof null` returns `'object'`.",
+    "code": "console.log(typeof null);"
+  },
+  {
+    "id": 207,
+    "question": "What does this code log?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "Error"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Set size after duplicate insertion.",
+    "hint": "Duplicate values are ignored.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The set contains only 1 and 2, so its size is 2.",
+    "code": "const s = new Set([1, 1, 2]);\nconsole.log(s.size);"
+  },
+  {
+    "id": 208,
+    "question": "What does this code produce?",
+    "options": [
+      "`{ a: 1, b: 2 }`",
+      "`{ a: 1 }`",
+      "`{ b: 2 }`",
+      "Throws"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Object spread merge order.",
+    "hint": "Later properties add or overwrite earlier ones.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Object spread merges properties into a new object.",
+    "code": "const a = { a: 1 };\nconst b = { b: 2 };\nconsole.log({ ...a, ...b });"
+  },
+  {
+    "id": 209,
+    "question": "What is logged?",
+    "options": [
+      "42",
+      "undefined",
+      "TypeError",
+      "null"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Optional chaining with missing method.",
+    "hint": "The call short-circuits.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Because `obj.fn` is undefined, `obj.fn?.()` evaluates to undefined.",
+    "code": "const obj = {};\nconsole.log(obj.fn?.());"
+  },
+  {
+    "id": 210,
+    "question": "What happens here?",
+    "options": [
+      "Logs 6",
+      "Logs 3",
+      "Logs 1",
+      "Throws"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Reduce without initial value on 3 items.",
+    "hint": "First element becomes initial accumulator.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The reduction computes `((1+2)+3)=6`.",
+    "code": "console.log([1,2,3].reduce((a,b) => a + b));"
+  },
+  {
+    "id": 211,
+    "question": "Which keyword declares a variable with function scope?",
+    "options": [
+      "let",
+      "var",
+      "const",
+      "scope"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Scope basics.",
+    "hint": "This was the older keyword before ES6.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`var` is function-scoped."
+  },
+  {
+    "id": 212,
+    "question": "Which method converts a string like `'42'` to an integer using base 10 when specified?",
+    "options": [
+      "Number.parse()",
+      "parseFloat()",
+      "parseInt()",
+      "toInteger()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Parsing basics.",
+    "hint": "It accepts a radix.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`parseInt()` parses integers from strings."
+  },
+  {
+    "id": 213,
+    "question": "Which operator is used to assign a value to a variable?",
+    "options": [
+      "==",
+      "===",
+      "=",
+      "=>"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Assignment basics.",
+    "hint": "Not a comparison operator.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`=` assigns a value."
+  },
+  {
+    "id": 214,
+    "question": "Which method returns a substring based on start and end indexes?",
+    "options": [
+      "slice()",
+      "push()",
+      "repeat()",
+      "trim()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String methods.",
+    "hint": "It also works on arrays.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`slice()` extracts part of a string."
+  },
+  {
+    "id": 215,
+    "question": "Which value is produced by `typeof undefined`?",
+    "options": [
+      "'null'",
+      "'undefined'",
+      "undefined",
+      "'object'"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Type basics.",
+    "hint": "The result is a string.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`typeof undefined` returns the string `'undefined'`."
+  },
+  {
+    "id": 216,
+    "question": "Which array method adds an item to the beginning of an array?",
+    "options": [
+      "push()",
+      "shift()",
+      "prepend()",
+      "unshift()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array basics.",
+    "hint": "It is the opposite of shift().",
+    "question_type": "mcq",
+    "correctIndex": [
+      3
+    ],
+    "explanation": "`unshift()` adds elements to the start of an array."
+  },
+  {
+    "id": 217,
+    "question": "Which method removes whitespace from both ends of a string?",
+    "options": [
+      "clean()",
+      "trim()",
+      "strip()",
+      "slice()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String methods.",
+    "hint": "Common cleanup method.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`trim()` removes leading and trailing whitespace."
+  },
+  {
+    "id": 218,
+    "question": "Which built-in object is commonly used for mathematical operations like rounding?",
+    "options": [
+      "Calc",
+      "Math",
+      "Number",
+      "Arithmetic"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Math operations.",
+    "hint": "It has static methods like `floor` and `round`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The `Math` object provides mathematical utilities."
+  },
+  {
+    "id": 219,
+    "question": "What does `confirm()` return when the user clicks OK?",
+    "options": [
+      "'OK'",
+      "true",
+      "1",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Browser dialog behavior.",
+    "hint": "It returns a boolean.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`confirm()` returns true for OK and false for Cancel."
+  },
+  {
+    "id": 220,
+    "question": "Which operator combines conditions so both must be true?",
+    "options": [
+      "||",
+      "&&",
+      "??",
+      "!"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Logical operators.",
+    "hint": "This is logical AND.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`&&` requires both operands to be truthy."
+  },
+  {
+    "id": 221,
+    "question": "`trim()` changes the original string value.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String immutability.",
+    "hint": "Strings are immutable.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "String methods return new strings because strings are immutable."
+  },
+  {
+    "id": 222,
+    "question": "`unshift()` returns the new length of the array.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array methods.",
+    "hint": "Like `push()`, it returns a length.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`unshift()` mutates the array and returns the new length."
+  },
+  {
+    "id": 223,
+    "question": "`Math.random()` can return 1 exactly.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Math basics.",
+    "hint": "It returns a value in [0,1).",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Math.random()` returns a number from 0 inclusive up to but not including 1."
+  },
+  {
+    "id": 224,
+    "question": "`parseFloat('3.14')` returns a number.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Parsing values.",
+    "hint": "Float parsing yields a numeric result.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`parseFloat()` parses a floating-point number."
+  },
+  {
+    "id": 225,
+    "question": "Template literals can span multiple lines.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Template literal features.",
+    "hint": "Backticks allow this.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Template literals support multiline strings."
+  },
+  {
+    "id": 226,
+    "question": "`switch` statements can use `break` to avoid falling through to the next case.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Control flow.",
+    "hint": "Without it, execution continues.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`break` stops fall-through in a `switch`."
+  },
+  {
+    "id": 227,
+    "question": "`Number('42')` and `parseInt('42', 10)` always behave identically for every input.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Type conversion.",
+    "hint": "Consider strings with extra characters.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "They can differ for inputs like `'42px'`."
+  },
+  {
+    "id": 228,
+    "question": "The `continue` statement skips to the next loop iteration.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Loop control.",
+    "hint": "It does not exit the loop entirely.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`continue` skips the rest of the current iteration."
+  },
+  {
+    "id": 229,
+    "question": "A `switch` statement compares cases using strict equality.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Switch behavior.",
+    "hint": "No type coercion like loose equality.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`switch` uses strict comparison semantics for matching cases."
+  },
+  {
+    "id": 230,
+    "question": "`toUpperCase()` mutates the original string.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String immutability.",
+    "hint": "It returns a new value.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Strings are immutable, so `toUpperCase()` returns a new string."
+  },
+  {
+    "id": 231,
+    "question": "Which of the following are string methods?",
+    "options": [
+      "trim()",
+      "toUpperCase()",
+      "push()",
+      "includes()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String method recognition.",
+    "hint": "One option belongs to arrays.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`trim`, `toUpperCase`, and `includes` are string methods."
+  },
+  {
+    "id": 232,
+    "question": "Which values are commonly returned by browser dialog APIs?",
+    "options": [
+      "`alert()` returns `undefined`",
+      "`confirm()` returns a boolean",
+      "`prompt()` can return `null`",
+      "`console.log()` opens a modal"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Basic browser APIs.",
+    "hint": "One option is not a dialog API.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "`alert`, `confirm`, and `prompt` have these standard return behaviors."
+  },
+  {
+    "id": 233,
+    "question": "Which statements about `var` are true?",
+    "options": [
+      "It is function-scoped",
+      "It can be redeclared in the same scope",
+      "It has a block scope like `let`",
+      "It is hoisted"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Legacy variable behavior.",
+    "hint": "Compare with `let`.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`var` is function-scoped, hoisted, and can be redeclared in the same scope."
+  },
+  {
+    "id": 234,
+    "question": "Which are valid arithmetic operators in JavaScript?",
+    "options": [
+      "+",
+      "-",
+      "*",
+      "%%"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Basic operators.",
+    "hint": "One option is not valid JavaScript syntax.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "`+`, `-`, and `*` are arithmetic operators."
+  },
+  {
+    "id": 235,
+    "question": "Which values are falsy?",
+    "options": [
+      "false",
+      "NaN",
+      "[]",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Truthy/falsy recap.",
+    "hint": "Empty array is truthy.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "`false`, `NaN`, and `undefined` are falsy."
+  },
+  {
+    "id": 236,
+    "question": "What will this code log?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Simple arithmetic.",
+    "hint": "Add 2 and 3.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The expression evaluates to 5.",
+    "code": "console.log(2 + 3);"
+  },
+  {
+    "id": 237,
+    "question": "What does this code output?",
+    "options": [
+      "'HI'",
+      "'hi'",
+      "'Hi'",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Uppercasing strings.",
+    "hint": "Look at the method used.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`toUpperCase()` converts the string to uppercase.",
+    "code": "console.log('hi'.toUpperCase());"
+  },
+  {
+    "id": 238,
+    "question": "What is the final length of the array?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Array mutation.",
+    "hint": "One item is unshifted to a 2-item array.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "After `unshift`, the array has three elements.",
+    "code": "const arr = [2, 3];\narr.unshift(1);\nconsole.log(arr.length);"
+  },
+  {
+    "id": 239,
+    "question": "What does this code log?",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "Error"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "String includes.",
+    "hint": "The substring is present.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`includes()` returns true when the substring exists.",
+    "code": "console.log('javascript'.includes('script'));"
+  },
+  {
+    "id": 240,
+    "question": "What will be printed?",
+    "options": [
+      "'42'",
+      "42",
+      "NaN",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "description": "Parsing integers.",
+    "hint": "The string contains a valid integer.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`parseInt('42', 10)` returns the number 42.",
+    "code": "console.log(parseInt('42', 10));"
+  },
+  {
+    "id": 241,
+    "question": "Which method returns a shallow copy of part of an array without mutating it?",
+    "options": [
+      "splice()",
+      "slice()",
+      "shift()",
+      "copyWithin()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Non-mutating extraction.",
+    "hint": "Compare with `splice()`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`slice()` returns a shallow copy and leaves the original array unchanged."
+  },
+  {
+    "id": 242,
+    "question": "Which method can flatten an array by one level and transform values in one step?",
+    "options": [
+      "flat()",
+      "map()",
+      "flatMap()",
+      "reduce()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Intermediate array methods.",
+    "hint": "It combines mapping and flattening.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`flatMap()` maps each element and flattens one level."
+  },
+  {
+    "id": 243,
+    "question": "What is the main purpose of `try...catch`?",
+    "options": [
+      "Declaring variables",
+      "Handling runtime exceptions",
+      "Creating promises",
+      "Iterating arrays"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Error handling.",
+    "hint": "It captures thrown errors.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`try...catch` handles exceptions that occur in the `try` block."
+  },
+  {
+    "id": 244,
+    "question": "Which object method returns an array of `[key, value]` pairs?",
+    "options": [
+      "Object.keys()",
+      "Object.values()",
+      "Object.entries()",
+      "Object.props()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Object utilities.",
+    "hint": "It returns pairs.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`Object.entries()` returns key-value pair arrays."
+  },
+  {
+    "id": 245,
+    "question": "Which operator can be used to spread function arguments from an array?",
+    "options": [
+      "??",
+      "...",
+      "&&",
+      "::"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Spread syntax in calls.",
+    "hint": "Same operator as unpacking arrays.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Spread syntax expands array elements into function arguments."
+  },
+  {
+    "id": 246,
+    "question": "What does `Promise.allSettled()` return?",
+    "options": [
+      "Only fulfilled values",
+      "The first settled promise",
+      "An array describing the outcome of each promise",
+      "A boolean"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Promise combinators.",
+    "hint": "Unlike `Promise.all`, it does not fail fast.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`Promise.allSettled()` returns the status and value/reason for every input promise."
+  },
+  {
+    "id": 247,
+    "question": "Which method returns a new array with all sub-array elements concatenated to a specified depth?",
+    "options": [
+      "concat()",
+      "flatten()",
+      "flat()",
+      "reduce()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Flattening arrays.",
+    "hint": "Standard built-in method.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "`flat()` flattens nested arrays up to the given depth."
+  },
+  {
+    "id": 248,
+    "question": "What is the primary use of `new Map()` compared with a plain object?",
+    "options": [
+      "Faster string concatenation",
+      "Key-value storage with arbitrary key types",
+      "Creating private class fields",
+      "Making arrays immutable"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Data structure choice.",
+    "hint": "Object keys are more limited.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Map` supports arbitrary key types and has dedicated collection APIs."
+  },
+  {
+    "id": 249,
+    "question": "Which value does `Array.prototype.findIndex()` return when nothing matches?",
+    "options": [
+      "false",
+      "null",
+      "undefined",
+      "-1"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Search methods.",
+    "hint": "Index-not-found conventions matter.",
+    "question_type": "mcq",
+    "correctIndex": [
+      3
+    ],
+    "explanation": "`findIndex()` returns `-1` when no element matches."
+  },
+  {
+    "id": 250,
+    "question": "What does rest syntax do in function parameters?",
+    "options": [
+      "Expands an array into arguments",
+      "Collects remaining arguments into an array",
+      "Creates a promise",
+      "Copies objects deeply"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Rest parameters.",
+    "hint": "Opposite direction of spread.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Rest parameters gather remaining arguments into an array."
+  },
+  {
+    "id": 251,
+    "question": "`Object.entries()` returns only enumerable own properties.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Object utilities.",
+    "hint": "Like `Object.keys()`, it ignores inherited non-enumerables.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`Object.entries()` lists own enumerable string-keyed properties."
+  },
+  {
+    "id": 252,
+    "question": "`flatMap()` always flattens arrays to infinite depth.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array flattening.",
+    "hint": "It flattens only one level.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`flatMap()` maps and flattens one level."
+  },
+  {
+    "id": 253,
+    "question": "A function created with `bind()` can still be called later as a normal function value.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Function binding.",
+    "hint": "Binding returns a new callable function.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`bind()` returns a new function with bound `this` and optional arguments."
+  },
+  {
+    "id": 254,
+    "question": "`some()` stops iterating as soon as it finds a matching element.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array predicates.",
+    "hint": "Short-circuiting matters.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`some()` short-circuits on the first truthy match."
+  },
+  {
+    "id": 255,
+    "question": "`every()` returns true for an empty array.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array predicate edge case.",
+    "hint": "Think vacuous truth.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "By definition, `every()` returns true on an empty array."
+  },
+  {
+    "id": 256,
+    "question": "`Promise.allSettled()` rejects if any input promise rejects.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Promise combinators.",
+    "hint": "This one waits for all outcomes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Promise.allSettled()` never rejects due to input rejection; it reports all results."
+  },
+  {
+    "id": 257,
+    "question": "Rest parameters must be the last parameter in a function definition.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Function syntax rules.",
+    "hint": "There can only be one rest parameter.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Rest parameters must appear last."
+  },
+  {
+    "id": 258,
+    "question": "Spreading an object copies inherited properties too.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Object spread behavior.",
+    "hint": "It copies own enumerable properties.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Object spread copies own enumerable properties, not inherited ones."
+  },
+  {
+    "id": 259,
+    "question": "`find()` and `filter()` return the same type of result.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Array search methods.",
+    "hint": "One returns one item; the other returns an array.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`find()` returns a single element or `undefined`, while `filter()` returns an array."
+  },
+  {
+    "id": 260,
+    "question": "Using `await` with a non-promise value wraps it in a resolved promise-like flow and returns the value.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Async/await behavior.",
+    "hint": "`await` works with plain values too.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`await` treats non-promise values as already resolved."
+  },
+  {
+    "id": 261,
+    "question": "Which statements about `try...catch...finally` are true?",
+    "options": [
+      "`catch` can access the thrown error",
+      "`finally` runs after `try`/`catch` in normal cases",
+      "`finally` is useful for cleanup",
+      "`catch` is required whenever `finally` is used"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Error handling flow.",
+    "hint": "One option is not required by syntax.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "`catch` is optional if you use `finally`."
+  },
+  {
+    "id": 262,
+    "question": "Which methods can produce arrays from iterable or object data?",
+    "options": [
+      "Array.from()",
+      "Object.keys()",
+      "Object.values()",
+      "Number()"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Creating arrays.",
+    "hint": "One option converts to a number instead.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "These methods return arrays."
+  },
+  {
+    "id": 263,
+    "question": "Which are common use cases for `reduce()`?",
+    "options": [
+      "Summing numbers",
+      "Grouping values",
+      "Building an object lookup",
+      "Always replacing `map()` in every case"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Reduce use cases.",
+    "hint": "One option is too absolute.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "`reduce()` is flexible for accumulation tasks such as sums, grouping, and lookups."
+  },
+  {
+    "id": 264,
+    "question": "Which statements about `Map` are true?",
+    "options": [
+      "It has `.get()` and `.set()` methods",
+      "It preserves insertion order",
+      "It can be iterated with `for...of`",
+      "It uses only string keys"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "`Map` basics.",
+    "hint": "One option describes plain object limitations instead.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Maps support arbitrary keys and are iterable."
+  },
+  {
+    "id": 265,
+    "question": "Which expressions can safely create a shallow copy of an object?",
+    "options": [
+      "`{...obj}`",
+      "`Object.assign({}, obj)`",
+      "`structuredClone(obj)`",
+      "`JSON.parse(JSON.stringify(obj))`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Object cloning options.",
+    "hint": "Different tradeoffs, but each creates a new object value.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All four can create clones, though the last two behave differently and with caveats."
+  },
+  {
+    "id": 266,
+    "question": "What will this code log?",
+    "options": [
+      "[1, 2]",
+      "[2, 4]",
+      "[1, 2, 2, 4]",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Using `map()` for transformation.",
+    "hint": "Each element is doubled.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The callback doubles each element, producing `[2, 4]`.",
+    "code": "console.log([1, 2].map(n => n * 2));"
+  },
+  {
+    "id": 267,
+    "question": "What does this code output?",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "`findIndex()` basics.",
+    "hint": "It returns the index of 20.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "The element 20 is at index 1.",
+    "code": "console.log([10, 20, 30].findIndex(n => n === 20));"
+  },
+  {
+    "id": 268,
+    "question": "What is logged by this code?",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Rest parameters and reduce.",
+    "hint": "Sum the three provided numbers.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The rest parameter collects `[1,2,3]`, whose sum is 6.",
+    "code": "function sum(...nums) {\n  return nums.reduce((a, b) => a + b, 0);\n}\nconsole.log(sum(1, 2, 3));"
+  },
+  {
+    "id": 269,
+    "question": "What does this code log?",
+    "options": [
+      "['a', 1]",
+      "['b', 2]",
+      "'a'",
+      "1"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "`Object.entries()` result shape.",
+    "hint": "The first entry is the key-value pair for `a`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`Object.entries()` returns arrays of `[key, value]`, so the first entry is `['a', 1]`.",
+    "code": "console.log(Object.entries({ a: 1, b: 2 })[0]);"
+  },
+  {
+    "id": 270,
+    "question": "What does this code log?",
+    "options": [
+      "'fallback'",
+      "''",
+      "null",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "description": "Nullish coalescing with empty string.",
+    "hint": "Empty string is not nullish.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Because `''` is not null or undefined, it is returned.",
+    "code": "console.log('' ?? 'fallback');"
+  },
+  {
+    "id": 271,
+    "question": "Which feature allows objects to customize behavior for operations like addition or string conversion via well-known symbols?",
+    "options": [
+      "Decorators",
+      "Well-known Symbols such as `Symbol.toPrimitive`",
+      "Closures",
+      "Rest parameters"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Advanced language hooks.",
+    "hint": "Think symbol-based metaprogramming.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Well-known symbols like `Symbol.toPrimitive` let objects customize coercion."
+  },
+  {
+    "id": 272,
+    "question": "What does `structuredClone()` do?",
+    "options": [
+      "Performs a structured deep clone for supported data types",
+      "Creates a shallow copy only",
+      "Serializes directly to JSON",
+      "Freezes the object"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Modern cloning API.",
+    "hint": "Unlike JSON cloning, it supports more built-in data types.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`structuredClone()` deeply clones many structured values."
+  },
+  {
+    "id": 273,
+    "question": "Which statement about garbage collection is most accurate?",
+    "options": [
+      "JavaScript developers can force immediate collection reliably in standard code",
+      "Garbage collection reclaims memory for unreachable values",
+      "Only primitive values are garbage-collected",
+      "Closures disable garbage collection"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Memory management.",
+    "hint": "Reachability is the key concept.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Garbage collectors free memory for values that are no longer reachable."
+  },
+  {
+    "id": 274,
+    "question": "What is the purpose of `FinalizationRegistry`?",
+    "options": [
+      "Guaranteed immediate cleanup callbacks",
+      "Requesting notification after objects are garbage-collected, with no timing guarantees",
+      "Freezing objects after use",
+      "Replacing `try/finally`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Advanced memory APIs.",
+    "hint": "Its callbacks are not deterministic.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`FinalizationRegistry` can register cleanup behavior after collection, but timing is not guaranteed."
+  },
+  {
+    "id": 275,
+    "question": "Why is using `Array.prototype.forEach()` with `async` callbacks often problematic?",
+    "options": [
+      "It changes the array type",
+      "It does not await the async callbacks in sequence or aggregate them by itself",
+      "It blocks the event loop",
+      "It makes promises synchronous"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Async iteration pitfalls.",
+    "hint": "`forEach` ignores returned promises.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`forEach()` doesn't await async callbacks, so sequencing and error handling can surprise you."
+  },
+  {
+    "id": 276,
+    "question": "What does `import()` return?",
+    "options": [
+      "A module namespace promise",
+      "A synchronous module object",
+      "A string path",
+      "A class"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Dynamic imports.",
+    "hint": "It is asynchronous.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Dynamic `import()` returns a promise for the module namespace object."
+  },
+  {
+    "id": 277,
+    "question": "Which statement about sparse arrays is correct?",
+    "options": [
+      "Holes behave exactly like explicit `undefined` in every method",
+      "Some array methods skip holes during iteration",
+      "Sparse arrays cannot exist in JavaScript",
+      "Holes always reduce array length automatically"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Array internals.",
+    "hint": "Iteration methods treat holes specially.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Many array methods skip holes, which differs from explicit `undefined` in some cases."
+  },
+  {
+    "id": 278,
+    "question": "What problem does throttling solve?",
+    "options": [
+      "Ensuring a function runs only after activity fully stops",
+      "Limiting how often a function can run within a period",
+      "Creating more microtasks",
+      "Preventing `this` rebinding"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Performance control patterns.",
+    "hint": "Compare with debouncing.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Throttling limits call frequency over time."
+  },
+  {
+    "id": 279,
+    "question": "Which statement about `Promise.any()` is correct?",
+    "options": [
+      "It rejects as soon as one promise rejects",
+      "It fulfills as soon as one promise fulfills, or rejects if all reject",
+      "It waits for all promises to fulfill",
+      "It is identical to `Promise.race()`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Promise combinators.",
+    "hint": "Focus on first fulfillment.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`Promise.any()` resolves on the first fulfillment and rejects only if all inputs reject."
+  },
+  {
+    "id": 280,
+    "question": "Why can `for...in` be risky for arrays?",
+    "options": [
+      "It cannot read indexes",
+      "It may iterate inherited enumerable properties and does not guarantee intended array-value semantics",
+      "It always sorts indexes descending",
+      "It throws on sparse arrays"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Iteration correctness.",
+    "hint": "Prefer value-oriented iteration for arrays.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "`for...in` iterates property names and can include inherited enumerable properties."
+  },
+  {
+    "id": 281,
+    "question": "`structuredClone()` preserves functions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Structured clone limitations.",
+    "hint": "Functions are not cloneable.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Functions cannot be cloned by the structured clone algorithm."
+  },
+  {
+    "id": 282,
+    "question": "`Promise.any()` rejects with an `AggregateError` when all input promises reject.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Promise combinator details.",
+    "hint": "It reports all failures together.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`Promise.any()` rejects with `AggregateError` if none fulfill."
+  },
+  {
+    "id": 283,
+    "question": "A sparse array hole and an explicit `undefined` element are treated identically by all array methods.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Sparse array behavior.",
+    "hint": "Methods like `map` and `forEach` can skip holes.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Holes and explicit `undefined` behave differently in some operations."
+  },
+  {
+    "id": 284,
+    "question": "`import()` can be used conditionally at runtime.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Dynamic imports.",
+    "hint": "Unlike static imports, it is an expression.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Dynamic import is runtime-based and can be called conditionally."
+  },
+  {
+    "id": 285,
+    "question": "`WeakRef` guarantees when an object will be collected.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Weak references.",
+    "hint": "Garbage collection timing is nondeterministic.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Weak references do not guarantee collection timing."
+  },
+  {
+    "id": 286,
+    "question": "Using `queueMicrotask()` schedules a callback before the current synchronous code finishes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Microtask timing.",
+    "hint": "Current stack first, then microtasks.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Microtasks run after the current call stack completes."
+  },
+  {
+    "id": 287,
+    "question": "`for await...of` can iterate over an async generator.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Async iteration.",
+    "hint": "That is one of its main use cases.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Async generators are async iterables and work with `for await...of`."
+  },
+  {
+    "id": 288,
+    "question": "A bound function created with `bind()` can never be used with `new`.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Bound functions and constructors.",
+    "hint": "There are nuanced rules here.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Bound functions can still be constructable if the target function is constructable."
+  },
+  {
+    "id": 289,
+    "question": "A Proxy target must always be an object or function.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Proxy requirements.",
+    "hint": "Primitives cannot be proxied directly.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Proxy targets must be objects, including functions."
+  },
+  {
+    "id": 290,
+    "question": "In JavaScript, property enumeration order on plain objects is fully arbitrary.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Object property order.",
+    "hint": "There are specified ordering rules.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "JavaScript defines ordering rules for integer-like keys, strings, and symbols."
+  },
+  {
+    "id": 291,
+    "question": "Which are common causes of race-condition-like bugs in async JavaScript code?",
+    "options": [
+      "Reading stale state after awaited operations",
+      "Multiple overlapping requests updating shared UI state",
+      "Assuming promise completion order matches start order",
+      "Using `const` for variables"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Async state pitfalls.",
+    "hint": "One option is unrelated.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Async operations can finish out of order and overwrite newer state."
+  },
+  {
+    "id": 292,
+    "question": "Which statements about structured cloning are true?",
+    "options": [
+      "It can clone many built-in structured data types",
+      "It preserves function objects",
+      "It can handle circular references for supported types",
+      "It is often a better clone choice than JSON for rich data"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Structured clone overview.",
+    "hint": "Functions are not supported.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Structured cloning handles many data types and circular references better than JSON."
+  },
+  {
+    "id": 293,
+    "question": "Which operations can a Proxy commonly intercept?",
+    "options": [
+      "Property reads",
+      "Property writes",
+      "Function calls on proxied functions",
+      "Object construction on proxied constructors"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Proxy traps overview.",
+    "hint": "There are specific traps for each of these.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Proxies can intercept all of these operations."
+  },
+  {
+    "id": 294,
+    "question": "Which statements about garbage collection are true?",
+    "options": [
+      "Reachability matters",
+      "Reference cycles can still be collected by modern GC",
+      "Developers should avoid unnecessary long-lived references",
+      "`delete` guarantees immediate memory release"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Memory management facts.",
+    "hint": "Deletion does not force immediate GC.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Modern collectors handle cycles and rely on reachability."
+  },
+  {
+    "id": 295,
+    "question": "Which patterns are often used to control high-frequency events like scroll or resize?",
+    "options": [
+      "Debounce",
+      "Throttle",
+      "RequestAnimationFrame scheduling",
+      "Blocking the event loop intentionally"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Performance patterns.",
+    "hint": "One option is harmful, not a pattern to use.",
+    "question_type": "multi-answer",
+    "correctIndex": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Debouncing, throttling, and rAF scheduling are standard patterns."
+  },
+  {
+    "id": 296,
+    "question": "Which value is logged first by this code?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "No output"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Event loop ordering.",
+    "hint": "Synchronous code runs before queued tasks.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The synchronous `console.log(1)` runs before promise or timer callbacks.",
+    "code": "console.log(1);\nPromise.resolve().then(() => console.log(2));\nsetTimeout(() => console.log(3), 0);"
+  },
+  {
+    "id": 297,
+    "question": "What is logged?",
+    "options": [
+      "true",
+      "false",
+      "TypeError",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "`Object.is` with NaN.",
+    "hint": "Unlike `===`, it treats NaN as same.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "`Object.is(NaN, NaN)` is true.",
+    "code": "console.log(Object.is(NaN, NaN));"
+  },
+  {
+    "id": 298,
+    "question": "What does this code output?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "undefined"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Generator basics.",
+    "hint": "The first `next()` returns the first yielded value.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The generator yields 1 first.",
+    "code": "function* gen() {\n  yield 1;\n  yield 2;\n}\nconsole.log(gen().next().value);"
+  },
+  {
+    "id": 299,
+    "question": "What happens here?",
+    "options": [
+      "Prints `'ok'`",
+      "Prints `undefined`",
+      "Throws",
+      "Prints `{}`"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Dynamic import-ish? Avoid env dependency. Use Proxy.",
+    "hint": "The `get` trap returns a fixed value.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The proxy intercepts property access and returns `'ok'`.",
+    "code": "const p = new Proxy({}, { get() { return 'ok'; } });\nconsole.log(p.anything);"
+  },
+  {
+    "id": 300,
+    "question": "What does this code log?",
+    "options": [
+      "'number'",
+      "'default'",
+      "'string'",
+      "Throws"
+    ],
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "description": "Custom primitive conversion.",
+    "hint": "Look for `Symbol.toPrimitive`.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The object customizes primitive coercion to return 7, whose type is number.",
+    "code": "const obj = {\n  [Symbol.toPrimitive]() { return 7; }\n};\nconsole.log(typeof (+obj));"
+  }
+]

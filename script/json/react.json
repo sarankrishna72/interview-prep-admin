@@ -1,0 +1,2702 @@
+[
+  {
+    "id": 1,
+    "question": "A counter button calls `setCount(count + 1)` twice inside the same click handler, but the value only increases by 1. What is the best fix?",
+    "options": [
+      "Wrap both calls in `setTimeout`",
+      "Use `setCount(prev => prev + 1)` twice",
+      "Move the state into a ref",
+      "Call `forceUpdate()` after the second set"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Both updates read the same stale `count` value in the same event.",
+    "explanation": "React batches state updates. Using the functional form makes each update receive the latest state, so two increments become +2."
+  },
+  {
+    "id": 2,
+    "question": "A child component loses its input state whenever a list is re-ordered. Each row is rendered with `key={index}`. What is the most likely cause?",
+    "options": [
+      "The child needs `React.memo`",
+      "The input should be uncontrolled",
+      "Index keys are unstable when list order changes",
+      "The parent should use `useRef` instead of state"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Think about how React matches old and new list items.",
+    "explanation": "Using the array index as the key can cause React to reuse the wrong component instance after reordering, which makes local state appear to jump or reset."
+  },
+  {
+    "id": 3,
+    "question": "A profile editor updates `user.name` by mutating the existing object and then calling `setUser(user)`, but the UI does not re-render. Why?",
+    "options": [
+      "React ignores object state completely",
+      "The same object reference was passed back into state",
+      "Objects cannot be stored in React state",
+      "The component needs `useMemo`"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "React state updates are compared by reference for objects.",
+    "explanation": "Because the object was mutated in place, React receives the same reference and may skip the re-render. Create a new object instead."
+  },
+  {
+    "id": 4,
+    "question": "A form input becomes impossible to type into after setting `value={name}`. What is missing?",
+    "options": [
+      "A `useRef` to the input",
+      "An `onChange` handler that updates `name`",
+      "A `key` prop on the input",
+      "A `defaultValue` prop"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "A controlled input needs a way to push user changes back into state.",
+    "explanation": "Once you set `value`, the input becomes controlled. Without an `onChange` that updates state, the displayed value never changes."
+  },
+  {
+    "id": 5,
+    "question": "A component re-renders too often because it derives `fullName` from `firstName` and `lastName` by storing it in state and syncing it in an effect. What is the better approach?",
+    "options": [
+      "Keep the effect but add `useCallback`",
+      "Store `fullName` in a ref instead",
+      "Compute `fullName` directly during render",
+      "Move `fullName` into context"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This value can be derived from existing state every render.",
+    "explanation": "Derived values like `fullName` usually should not live in separate state. Compute them during render to avoid redundant effects and possible bugs."
+  },
+  {
+    "id": 6,
+    "question": "A parent passes `onSave={() => save(form)}` to a memoized child. The child still re-renders on every parent render. What is the main reason?",
+    "options": [
+      "Memoized children always re-render",
+      "A new function is created on each render",
+      "The child must use `useEffect`",
+      "The parent needs `useReducer`"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Check whether the prop reference is stable across renders.",
+    "explanation": "Inline arrow functions create a new function each render. `React.memo` only helps when props are referentially equal."
+  },
+  {
+    "id": 7,
+    "question": "A list renders correctly at first, but after filtering, clicking 'Edit' opens the wrong item. Each row key is based on the index. What should you use instead?",
+    "options": [
+      "The item id from the data",
+      "The array length",
+      "The current filter value",
+      "A random number for each render"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Keys should identify the same item across renders.",
+    "explanation": "Use a stable unique identifier from the data, such as `item.id`, so React can keep the correct component instance associated with the correct row."
+  },
+  {
+    "id": 8,
+    "question": "A modal form should reset every time a different record is opened. The form component keeps old local state. What is a simple React way to force a fresh instance for each record?",
+    "options": [
+      "Wrap it in `Suspense`",
+      "Give the form a key based on the record id",
+      "Use `useMemo` around the form",
+      "Use `React.Fragment`"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Changing a component's key tells React it is a different instance.",
+    "explanation": "When the key changes, React unmounts the old component and mounts a new one, which resets local state for the newly selected record."
+  },
+  {
+    "id": 9,
+    "question": "A checkbox uses `checked={isDone}` but clicking it has no effect. What is the most likely missing piece?",
+    "options": [
+      "An `onChange` handler that updates `isDone`",
+      "A `defaultChecked` prop",
+      "A `useMemo` wrapper",
+      "A `name` attribute"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Like text inputs, controlled checkboxes need state updates on user interaction.",
+    "explanation": "A controlled checkbox needs `checked` plus `onChange`. Without updating state, the checkbox will remain stuck."
+  },
+  {
+    "id": 10,
+    "question": "A component stores `isAdmin` in state even though it can be computed from `user.role === 'admin'`. What is the main downside?",
+    "options": [
+      "React forbids boolean state",
+      "It creates duplicated state that can get out of sync",
+      "Booleans cannot be memoized",
+      "It prevents event handlers from running"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Consider whether this value already exists in another form.",
+    "explanation": "If a value can be derived from existing props or state, storing it separately introduces unnecessary synchronization problems."
+  },
+  {
+    "id": 11,
+    "question": "You call `setItems(items.push(newItem))` and the UI breaks. What went wrong?",
+    "options": [
+      "`push` returns the new array length, not the new array",
+      "`push` only works in class components",
+      "Arrays cannot be stored in state",
+      "You must use `useReducer` for arrays"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Check what `Array.prototype.push` returns.",
+    "explanation": "Besides mutating the original array, `push` returns a number. You should create a new array such as `[...items, newItem]`."
+  },
+  {
+    "id": 12,
+    "question": "A parent component renders a list of expensive child cards. Only one card changes at a time, but all cards re-render. What would help first if props for unchanged cards are stable?",
+    "options": [
+      "Replace the list with context",
+      "Wrap the child card with `React.memo`",
+      "Convert the list to a class component",
+      "Use `useEffect` in each child"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Skip work for children whose props did not change.",
+    "explanation": "`React.memo` can prevent unnecessary re-renders for unchanged children when their props are referentially stable."
+  },
+  {
+    "id": 13,
+    "question": "A controlled input shows a warning because it sometimes receives `undefined` as its value. What is the safest fix?",
+    "options": [
+      "Always pass a string such as `value={name ?? ''}`",
+      "Remove the `name` state entirely",
+      "Use `defaultValue` and `value` together",
+      "Wrap the input in `memo`"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Avoid switching an input between controlled and uncontrolled modes.",
+    "explanation": "Using a fallback like an empty string keeps the input controlled for its entire lifetime and avoids the React warning."
+  },
+  {
+    "id": 14,
+    "question": "A child initializes local state from `props.value` and then ignores future prop changes. Which approach is usually better if the parent should stay the source of truth?",
+    "options": [
+      "Keep duplicated local state and sync it with an effect",
+      "Read and display the prop directly",
+      "Store the prop inside a ref only once",
+      "Use `useLayoutEffect` instead"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Ask whether local state is actually needed.",
+    "explanation": "If the parent owns the value, the child should usually use the prop directly. Copying props into state often causes stale UI and synchronization bugs."
+  },
+  {
+    "id": 15,
+    "question": "A search field should only update the results after the user stops typing for 300ms. Which solution fits best?",
+    "options": [
+      "Debounce the search side effect",
+      "Call `setState` three times",
+      "Move the input to context",
+      "Use `React.memo` on the input"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is mainly about reducing how often the side effect runs.",
+    "explanation": "Debouncing delays the fetch or filter until typing pauses, which avoids unnecessary requests and makes the UI smoother."
+  },
+  {
+    "id": 16,
+    "question": "A component uses `Math.random()` to create keys for list items on every render. What problem does this cause?",
+    "options": [
+      "React will treat every item as new on every render",
+      "Keys become globally duplicated across the whole app",
+      "The component becomes a server component",
+      "Random keys improve performance by skipping reconciliation"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Stable keys are important across renders, not just unique within one render.",
+    "explanation": "If keys change every render, React cannot match previous items to current items, so it remounts them and loses local state."
+  },
+  {
+    "id": 17,
+    "question": "An alert should focus its close button immediately after it appears. Which hook is most appropriate for holding the DOM node?",
+    "options": [
+      "useState",
+      "useRef",
+      "useMemo",
+      "useContext"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "You need a mutable reference to a DOM element.",
+    "explanation": "`useRef` is the standard way to access a DOM node in React so you can call methods like `focus()`."
+  },
+  {
+    "id": 18,
+    "question": "A parent passes a large object literal as a prop: `<Chart options={{ responsive: true }} />`. A memoized child still re-renders. What is the likely reason?",
+    "options": [
+      "Object literals create a new reference each render",
+      "Memoized children ignore object props",
+      "Objects are always deep-compared in React",
+      "The child must use a reducer"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Referential equality matters for memoization.",
+    "explanation": "Each render creates a brand-new object literal. Even with the same contents, the new reference makes `React.memo` see the prop as changed."
+  },
+  {
+    "id": 19,
+    "question": "A component maps over items and returns two sibling elements per item without a wrapper. What is the cleanest React fix?",
+    "options": [
+      "Return the siblings inside `<>...</>` or a wrapper element",
+      "Use `dangerouslySetInnerHTML`",
+      "Call `ReactDOM.render` inside the loop",
+      "Move the loop into CSS"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Each iteration must return a single React node.",
+    "explanation": "React components and map callbacks must return one parent node. A fragment is a clean way to group siblings without extra DOM."
+  },
+  {
+    "id": 20,
+    "question": "A button click handler needs the latest state value and also updates that same state. Which pattern avoids stale values most reliably?",
+    "options": [
+      "Read from a global variable",
+      "Use the functional state updater",
+      "Use `document.querySelector` to read the DOM",
+      "Move the state to props immediately"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The update should be based on the previous state, not a potentially stale closure.",
+    "explanation": "The functional updater receives the most recent state value at update time, making it the safest choice when the next state depends on the previous one."
+  },
+  {
+    "id": 21,
+    "question": "A component keeps `loading`, `data`, and `error` in three separate states that always change together during requests. Which hook can make this logic easier to reason about?",
+    "options": [
+      "useReducer",
+      "useImperativeHandle",
+      "useId",
+      "useMemo"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is a multi-step state transition with related fields.",
+    "explanation": "`useReducer` is useful when several state values change together through defined actions such as request start, success, and failure."
+  },
+  {
+    "id": 22,
+    "question": "A parent re-renders frequently because of a clock, but a child only needs static props. What simple technique can avoid unnecessary child renders?",
+    "options": [
+      "Wrap the child in `React.memo`",
+      "Move the child into a portal",
+      "Use `useEffect` in the child",
+      "Replace props with DOM attributes"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The child should be able to skip work when its props do not change.",
+    "explanation": "`React.memo` allows a function component to skip re-rendering when its props stay the same."
+  },
+  {
+    "id": 23,
+    "question": "You need to show a temporary draft text while the user types, but only submit the final saved value to the server. Which approach is best?",
+    "options": [
+      "Store the draft in component state and submit when needed",
+      "Store the draft only in CSS",
+      "Use `useMemo` to mutate props",
+      "Keep the draft inside JSX directly"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This value changes over time and affects rendering.",
+    "explanation": "Component state is the right place for UI values like draft text because changes should re-render the component."
+  },
+  {
+    "id": 24,
+    "question": "A component sets state directly during render when a prop is missing, causing an infinite loop. Why is this happening?",
+    "options": [
+      "State updates during render trigger another render immediately",
+      "Props cannot be read in render",
+      "Only class components can update state",
+      "Effects run before render"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Render should stay pure and not cause side effects.",
+    "explanation": "Calling a state setter during render schedules another render, which reaches the same code again and loops indefinitely."
+  },
+  {
+    "id": 25,
+    "question": "A reusable button component should accept any inner content, such as text or an icon. Which prop pattern is standard in React?",
+    "options": [
+      "Use the `children` prop",
+      "Use `innerHTML` directly",
+      "Use `useRef` for content injection",
+      "Store the content in context only"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "React components commonly render nested content passed between their tags.",
+    "explanation": "`children` is the conventional prop for nested content like text, icons, or arbitrary elements."
+  },
+  {
+    "id": 26,
+    "question": "A component fetches data inside `useEffect`, but the request runs after every render. The effect has no dependency array. What should you do if it only needs to run on mount?",
+    "options": [
+      "Pass an empty dependency array",
+      "Replace `useEffect` with `useMemo`",
+      "Move the fetch into render",
+      "Use `useId`"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "No dependency array means the effect runs after every completed render.",
+    "explanation": "An empty dependency array tells React to run the effect once after the initial mount, which fits one-time setup like an initial fetch."
+  },
+  {
+    "id": 27,
+    "question": "An effect subscribes to a websocket but never unsubscribes. What kind of bug is most likely over time?",
+    "options": [
+      "Memory leaks and duplicate subscriptions",
+      "Automatic memoization of messages",
+      "Props becoming read-only",
+      "React skipping all re-renders"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think about what happens when the component unmounts or the effect re-runs.",
+    "explanation": "Without cleanup, old subscriptions remain active. That can leak memory and cause the same event to fire multiple times."
+  },
+  {
+    "id": 28,
+    "question": "An effect depends on `userId`, but `userId` is missing from the dependency array. What issue can this cause?",
+    "options": [
+      "The effect may use stale values",
+      "The component becomes a class component",
+      "React will not allow hooks anymore",
+      "The dependency array becomes optional"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The effect body closes over variables from the render where it was created.",
+    "explanation": "If a used value is omitted from dependencies, React will not re-run the effect when that value changes, which can leave the effect using stale data."
+  },
+  {
+    "id": 29,
+    "question": "A component fetches data when `query` changes, but slower old requests sometimes overwrite newer results. What is a good fix?",
+    "options": [
+      "Track the latest request and ignore outdated responses or abort them",
+      "Fetch only during render",
+      "Use `key={Math.random()}`",
+      "Wrap the setter in `useMemo`"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is a race condition between multiple async requests.",
+    "explanation": "When multiple requests are in flight, an older one can resolve later and overwrite newer data. Abort controllers or request guards prevent stale results from winning."
+  },
+  {
+    "id": 30,
+    "question": "A modal should close when Escape is pressed. You add a `keydown` listener in `useEffect`. What else should the effect do?",
+    "options": [
+      "Return a cleanup function that removes the listener",
+      "Use `memo` to cache the event",
+      "Call `setState` in render",
+      "Use `useId` for the key"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Anything you add outside React often needs cleanup.",
+    "explanation": "Effects that register global listeners should clean them up on unmount or before re-running so you do not leak handlers."
+  },
+  {
+    "id": 31,
+    "question": "You want to measure an element's size right after React updates the DOM, before the browser paints. Which hook is more appropriate?",
+    "options": [
+      "useEffect",
+      "useLayoutEffect",
+      "useMemo",
+      "useCallback"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is about DOM measurement timing.",
+    "explanation": "`useLayoutEffect` runs after DOM mutations but before paint, which is useful for synchronous layout measurement or style adjustments."
+  },
+  {
+    "id": 32,
+    "question": "A timer effect references `count`, but the interval callback always logs the initial value. What is the root problem?",
+    "options": [
+      "A stale closure captured an old `count` value",
+      "Intervals cannot be used in React",
+      "State only works in class components",
+      "The component forgot to use `children`"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The callback sees values from the render where it was created.",
+    "explanation": "This is a stale closure issue. The interval callback captured the old `count`, so you must include dependencies, use a ref, or use functional updates depending on the goal."
+  },
+  {
+    "id": 33,
+    "question": "A form field should be focused automatically when a dialog opens. What is the common React sequence?",
+    "options": [
+      "Attach a ref to the input and call `ref.current.focus()` in an effect",
+      "Use `useMemo` to focus it during render",
+      "Put `autofocus` in CSS",
+      "Store the DOM node in state"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "You need both access to the DOM node and a post-render timing hook.",
+    "explanation": "The DOM element is available through a ref after mount. An effect is the right place to call `focus()`."
+  },
+  {
+    "id": 34,
+    "question": "A parent calculates a very expensive filtered list on every render, even when the source data has not changed. Which hook can help cache that calculation?",
+    "options": [
+      "useMemo",
+      "useId",
+      "useImperativeHandle",
+      "useContext"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is about memoizing a computed value.",
+    "explanation": "`useMemo` can memoize expensive calculations and recompute them only when their dependencies change."
+  },
+  {
+    "id": 35,
+    "question": "A child receives a callback prop and is wrapped in `React.memo`, but the callback identity changes every render. Which hook can stabilize the function reference?",
+    "options": [
+      "useCallback",
+      "useEffect",
+      "useId",
+      "useTransition"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is like `useMemo`, but for functions.",
+    "explanation": "`useCallback` memoizes a function reference so children relying on referential equality can avoid unnecessary re-renders."
+  },
+  {
+    "id": 36,
+    "question": "A memoized calculation returns stale data because its dependency array is missing `items`. What is the fix?",
+    "options": [
+      "Add `items` to the dependency array",
+      "Remove `useMemo` and put the result in a ref",
+      "Call the calculation from CSS",
+      "Change the memo to `useId`"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Memoized values must list what they actually depend on.",
+    "explanation": "If `items` affects the calculation, it belongs in the dependency array so React knows when to recompute the memoized result."
+  },
+  {
+    "id": 37,
+    "question": "A function defined inside a component uses `theme` from props. You memoize the function with `useCallback([])`, but it keeps using the old theme. Why?",
+    "options": [
+      "The empty dependency array froze the old closure",
+      "Callbacks ignore props entirely",
+      "useCallback forces synchronous rendering",
+      "Theme values cannot be memoized"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Memoized functions still capture values from the render where they were created.",
+    "explanation": "Because `theme` was omitted from dependencies, the callback kept the closure from the first render and therefore uses stale props."
+  },
+  {
+    "id": 38,
+    "question": "A component derives a sorted list with `items.sort()` inside `useMemo`. Sometimes parent data appears mutated. What is the issue?",
+    "options": [
+      "The array was sorted in place",
+      "useMemo sorts arrays asynchronously",
+      "React cannot render sorted arrays",
+      "The dependency array must always be empty"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Consider whether the sorting method mutates the original array.",
+    "explanation": "`Array.prototype.sort()` mutates the array. If `items` comes from props or state, clone it first, for example with `[...items].sort(...)`."
+  },
+  {
+    "id": 39,
+    "question": "A component stores an interval id in state only so it can clear the interval later. Which alternative is usually better?",
+    "options": [
+      "Store the interval id in a ref",
+      "Store it in JSX",
+      "Use context for the interval id",
+      "Call `clearInterval` with no id"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Does this value affect rendering?",
+    "explanation": "Interval ids do not belong in visible UI. A ref can hold mutable values across renders without causing re-renders."
+  },
+  {
+    "id": 40,
+    "question": "An effect should only run when `roomId` changes, but the dependency array includes a freshly created `options` object. The effect keeps re-running. What is the best fix?",
+    "options": [
+      "Memoize `options` or build it inside the effect from `roomId`",
+      "Remove the effect completely",
+      "Use index keys in the parent",
+      "Convert the component to a class"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "A changing object reference can retrigger the effect even if the meaningful data did not change.",
+    "explanation": "If `options` is recreated on every render, the effect will keep seeing a new dependency. Memoizing it or constructing it from stable primitives solves the problem."
+  },
+  {
+    "id": 41,
+    "question": "A resize listener effect needs the latest `width` value, but you do not want to re-register the listener on every render. Which pattern often helps?",
+    "options": [
+      "Store the latest value in a ref that the listener reads",
+      "Move width to CSS only",
+      "Call `setWidth` during render",
+      "Use `React.memo` around the listener"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Separate the stable listener subscription from the changing value it needs.",
+    "explanation": "A ref can hold the latest value without forcing the effect to tear down and re-add the listener every time state changes."
+  },
+  {
+    "id": 42,
+    "question": "A component fetches data in `useEffect` and then immediately sets `loading` to false outside the promise handlers. What bug does that create?",
+    "options": [
+      "Loading ends before the request completes",
+      "The effect will never run",
+      "The fetch turns synchronous",
+      "React stops batching updates"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think about async timing.",
+    "explanation": "Setting `loading` to false immediately after starting the request hides the loading state too early. It should happen after success or failure completes."
+  },
+  {
+    "id": 43,
+    "question": "A component uses `useEffect` to synchronize a third-party chart library with React props. What should the effect depend on?",
+    "options": [
+      "The values that affect the chart instance",
+      "Nothing, effects ignore dependencies",
+      "Only `children`",
+      "The component file name"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Dependencies should match the data used to update the chart.",
+    "explanation": "The effect should list the props and state it reads so the chart updates when relevant values change and stays stable otherwise."
+  },
+  {
+    "id": 44,
+    "question": "A memoized child receives both `data` and `selectedId`. The parent recomputes `data` as a new array each render. What limits the benefit of `React.memo` here?",
+    "options": [
+      "The changing `data` reference makes props unequal",
+      "React.memo only works for strings",
+      "selectedId prevents all memoization",
+      "Children cannot receive arrays as props"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Even unchanged contents count as changed if the reference is different.",
+    "explanation": "Because the array reference changes every render, `React.memo` sees a prop change and re-renders the child."
+  },
+  {
+    "id": 45,
+    "question": "A click handler uses a memoized callback with `[]`, but inside it reads `count` and then sets state based on that value. Sometimes it behaves incorrectly. What is the best fix?",
+    "options": [
+      "Include `count` in dependencies or use a functional state update",
+      "Replace the callback with CSS transitions",
+      "Move the button into a portal",
+      "Store `count` in a random global variable"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The callback is holding on to an old value.",
+    "explanation": "An empty dependency array freezes the callback's closure. Add the needed dependencies, or use the functional updater if the next state depends on previous state."
+  },
+  {
+    "id": 46,
+    "question": "A component computes `visibleTodos` with `useMemo`, but the computation is trivial and the dependency list is large. What is the best principle here?",
+    "options": [
+      "Use memoization only when it provides a clear benefit",
+      "Always memoize every computed value",
+      "Never memoize arrays",
+      "Move all derived values into state"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Memoization has its own complexity cost.",
+    "explanation": "`useMemo` is not automatically a performance win. Simple calculations often do not need it, and overusing it can make code harder to maintain."
+  },
+  {
+    "id": 47,
+    "question": "A parent uses `useCallback` for every single event handler, even tiny ones, but there is no memoized child depending on them. What is the best assessment?",
+    "options": [
+      "This may add noise without meaningful benefit",
+      "It is required for all React handlers",
+      "It turns handlers into effects",
+      "It prevents state updates from batching"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Optimization hooks are useful when they solve a real referential-equality problem.",
+    "explanation": "`useCallback` is most helpful when stable function references matter, such as memoized children or effect dependencies. Otherwise it can just add complexity."
+  },
+  {
+    "id": 48,
+    "question": "A component needs to expose a `focus()` method to its parent through a ref. Which React API pair is commonly used?",
+    "options": [
+      "forwardRef and useImperativeHandle",
+      "useMemo and React.memo",
+      "useId and useReducer",
+      "createPortal and Suspense"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is about customizing what a parent sees through a ref.",
+    "explanation": "`forwardRef` passes the ref into the component, and `useImperativeHandle` lets you define the methods or values exposed on that ref."
+  },
+  {
+    "id": 49,
+    "question": "An effect should run after the user submits a form, not during initial mount. Which approach is clearer than using a complex mount-skip flag effect?",
+    "options": [
+      "Handle the logic directly in the submit event flow when possible",
+      "Run the effect on every render",
+      "Store the form in a random module variable",
+      "Use `useId`"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Sometimes the simplest fix is to move logic closer to the event that triggers it.",
+    "explanation": "Not everything belongs in an effect. If an action is caused by a specific user event, running the logic in that event path is often clearer than syncing with effects."
+  },
+  {
+    "id": 50,
+    "question": "A component reads from `localStorage` during every render to initialize a theme. What is the cleaner optimization?",
+    "options": [
+      "Use a lazy `useState` initializer to read once on mount",
+      "Read from localStorage in JSX each time",
+      "Put localStorage inside CSS variables only",
+      "Call `useEffect` from inside a loop"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This value is only needed for the initial state.",
+    "explanation": "Passing a function to `useState` lets React call it only for the initial render, avoiding repeated localStorage reads."
+  },
+  {
+    "id": 51,
+    "question": "A deeply nested component needs access to the current theme, and passing the theme through five intermediate components is getting noisy. What React feature fits best?",
+    "options": [
+      "Context",
+      "Portals",
+      "Fragments",
+      "Error boundaries"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This problem is usually called prop drilling.",
+    "explanation": "Context allows a value like theme to be provided once and consumed by nested components without threading it through every intermediate level."
+  },
+  {
+    "id": 52,
+    "question": "A context provider passes `{ user, setUser }` as an inline object value. All consumers re-render whenever the provider re-renders, even if `user` is unchanged. Why?",
+    "options": [
+      "The context value object gets a new reference every render",
+      "Context consumers always re-render on any parent render",
+      "Providers cannot pass functions",
+      "Context only works with strings"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Referential equality matters for context values too.",
+    "explanation": "Consumers re-render when the provider's `value` prop changes by reference. Inline objects create a fresh reference each render, so memoizing the value can help."
+  },
+  {
+    "id": 53,
+    "question": "A login form submits and the browser reloads the page unexpectedly. The handler is attached to `<form onSubmit={handleSubmit}>`. What did you likely forget?",
+    "options": [
+      "Call `event.preventDefault()` in the submit handler",
+      "Wrap the form in `Suspense`",
+      "Use `useRef` for the form element",
+      "Add a random key to the form"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Native form submission still happens unless you stop it.",
+    "explanation": "In React, form submit handlers still receive the browser event. Prevent the default submission if you want a client-side flow."
+  },
+  {
+    "id": 54,
+    "question": "A multi-step form stores all field values in many separate `useState` calls, and the update logic is becoming hard to manage. What is a strong alternative?",
+    "options": [
+      "useReducer",
+      "useId",
+      "useLayoutEffect",
+      "React.Fragment"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is a complex state machine with many related transitions.",
+    "explanation": "`useReducer` centralizes form state transitions and can make complex update logic easier to test and maintain."
+  },
+  {
+    "id": 55,
+    "question": "A parent wants to reset an entire form back to its initial local state after successful submission. Which is a straightforward React approach?",
+    "options": [
+      "Change the form component's key",
+      "Use `useMemo` on the form",
+      "Mutate every child input manually through the DOM",
+      "Wrap the form in a portal"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Resetting local state can be achieved by remounting.",
+    "explanation": "Changing the key remounts the form component, which resets its local state and uncontrolled inputs in a simple, predictable way."
+  },
+  {
+    "id": 56,
+    "question": "A text input uses `defaultValue` and later the parent expects it to update when props change, but it does not. Why?",
+    "options": [
+      "`defaultValue` only sets the initial value for an uncontrolled input",
+      "`defaultValue` forces controlled mode forever",
+      "Inputs cannot receive props",
+      "React ignores all form updates after mount"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think about the difference between controlled and uncontrolled inputs.",
+    "explanation": "`defaultValue` applies only on the initial render. If the parent must control later updates, use `value` and `onChange` instead."
+  },
+  {
+    "id": 57,
+    "question": "A custom hook calls another hook inside an `if` statement depending on a prop. Why is this unsafe?",
+    "options": [
+      "Hooks must be called in the same order on every render",
+      "Hooks only work in class components",
+      "Custom hooks cannot accept props",
+      "Conditional logic is forbidden in JavaScript"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "React relies on consistent hook ordering.",
+    "explanation": "Calling hooks conditionally changes the hook order between renders, which breaks React's internal hook bookkeeping."
+  },
+  {
+    "id": 58,
+    "question": "A component throws an error during render, and you want to show a fallback UI instead of a blank screen for that subtree. What React feature is designed for this?",
+    "options": [
+      "Error boundary",
+      "Portal",
+      "Fragment",
+      "StrictMode"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is about handling render-time errors in a section of the tree.",
+    "explanation": "Error boundaries catch errors in rendering and lifecycle methods below them and can show fallback UI for that part of the tree."
+  },
+  {
+    "id": 59,
+    "question": "A lazily loaded settings page should show a spinner while the code chunk is downloading. Which pair is used for this pattern?",
+    "options": [
+      "React.lazy and Suspense",
+      "useReducer and useRef",
+      "Context and Fragment",
+      "StrictMode and Portal"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is the standard React code-splitting pattern.",
+    "explanation": "`React.lazy` loads a component dynamically, and `Suspense` provides the fallback UI while that component is still loading."
+  },
+  {
+    "id": 60,
+    "question": "You render a modal with `createPortal`, but clicks inside the modal still bubble to React parents. What is true?",
+    "options": [
+      "Events still bubble through the React tree even across portals",
+      "Portals disable all event bubbling",
+      "Portals only work for forms",
+      "Portals require class components"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "A portal changes DOM placement, not the logical React ownership.",
+    "explanation": "Portals render DOM elsewhere, but the component still belongs to the same React tree, so events bubble through React as usual."
+  },
+  {
+    "id": 61,
+    "question": "A component uses `useId` to generate keys for a mapped list. Why is this not the intended use?",
+    "options": [
+      "Keys should come from stable item identity, not a per-component id helper",
+      "useId only works in class components",
+      "useId can only generate numeric ids",
+      "Keys must always be array indexes"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think about what keys are identifying.",
+    "explanation": "`useId` is mainly for generating stable ids for accessibility relationships, not for replacing proper list keys from your data."
+  },
+  {
+    "id": 62,
+    "question": "A server-rendered app shows a hydration mismatch because the component renders `Date.now()` directly in JSX. Why does that happen?",
+    "options": [
+      "The server and client can render different values for time-based expressions",
+      "Hydration only works for static HTML files",
+      "Date.now() is not valid JavaScript in React",
+      "The client cannot read timestamps"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Hydration expects the first client render to match the server HTML.",
+    "explanation": "Values like `Date.now()` or `Math.random()` can differ between server and client, causing the HTML to mismatch during hydration."
+  },
+  {
+    "id": 63,
+    "question": "A component uses `window.innerWidth` during render in an SSR app and crashes on the server. Why?",
+    "options": [
+      "The `window` object does not exist during server rendering",
+      "SSR blocks all props",
+      "React cannot render numbers on the server",
+      "Hooks are disabled in SSR"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The server environment is not the browser.",
+    "explanation": "Server rendering runs in a non-browser environment, so browser globals like `window` are unavailable until client-side code runs."
+  },
+  {
+    "id": 64,
+    "question": "An app should show one fallback while a code-split route component loads, but not block the entire page shell. What is the best placement for Suspense?",
+    "options": [
+      "Wrap only the route content area that can suspend",
+      "Wrap the whole app with no granularity",
+      "Put Suspense inside every button",
+      "Replace Suspense with Fragment"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Fallback boundaries are more useful when they are placed close to where loading can happen.",
+    "explanation": "A focused `Suspense` boundary lets the rest of the interface remain visible while only the loading part shows a fallback."
+  },
+  {
+    "id": 65,
+    "question": "A context consumer re-renders when unrelated values in the same large context object change. What architectural improvement can help?",
+    "options": [
+      "Split the context into smaller contexts by concern",
+      "Replace context with random keys",
+      "Convert all consumers to class components",
+      "Use only uncontrolled inputs"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Consumers update when the context value they subscribe to changes.",
+    "explanation": "If one giant context contains many unrelated values, consumers can re-render too broadly. Splitting contexts reduces unnecessary updates."
+  },
+  {
+    "id": 66,
+    "question": "A form uses one state object for all fields. Updating one field with `setForm({ name: value })` causes other fields to disappear. Why?",
+    "options": [
+      "The update replaced the whole object instead of merging it",
+      "React auto-deletes empty inputs",
+      "Objects are not allowed in state",
+      "The setter must receive an event"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Unlike class `setState`, the `useState` setter replaces the value.",
+    "explanation": "With `useState`, object state is replaced, not shallow-merged. You must spread existing fields, such as `setForm(prev => ({ ...prev, name: value }))`."
+  },
+  {
+    "id": 67,
+    "question": "A file input should be cleared after upload, but setting its `value` from state is awkward. What is a common approach?",
+    "options": [
+      "Use a ref to reset the input or remount it with a new key",
+      "Control it like a text input with `value` only",
+      "Store the file DOM node in context",
+      "Use `useMemo` to clear it"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "File inputs behave differently from normal text inputs.",
+    "explanation": "File inputs are commonly handled as uncontrolled inputs. A ref or remounting with a different key is a practical way to reset them."
+  },
+  {
+    "id": 68,
+    "question": "An autocomplete field makes a request on every keystroke and feels laggy. Besides debouncing, which React feature can help keep typing responsive while expensive results update?",
+    "options": [
+      "useTransition",
+      "useImperativeHandle",
+      "useId",
+      "useDebugValue"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This hook lets you mark some updates as less urgent.",
+    "explanation": "`useTransition` allows urgent UI like typing to stay responsive while a slower state update, such as rendering heavy search results, happens with lower priority."
+  },
+  {
+    "id": 69,
+    "question": "A search UI should show stale results while a new query is being processed instead of clearing immediately. Which hook can help defer the expensive update?",
+    "options": [
+      "useDeferredValue",
+      "useLayoutEffect",
+      "useContext",
+      "useImperativeHandle"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The input value changes immediately, but another value can lag behind intentionally.",
+    "explanation": "`useDeferredValue` lets a derived value update later, which is useful when you want to keep the previous heavy result visible while the new one catches up."
+  },
+  {
+    "id": 70,
+    "question": "An app uses StrictMode in development and an effect seems to run twice on mount. What is the most accurate explanation?",
+    "options": [
+      "StrictMode intentionally re-invokes certain behaviors in development to reveal side-effect bugs",
+      "React is broken in development mode",
+      "Effects always run twice in production",
+      "StrictMode disables cleanup"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This behavior is specific to development checks.",
+    "explanation": "In development, StrictMode may mount, unmount, and re-mount components to help surface unsafe effects and missing cleanup logic."
+  },
+  {
+    "id": 71,
+    "question": "A parent wants a child component to provide both a label and a click target, but the parent should decide the wrapper layout. Which pattern is flexible here?",
+    "options": [
+      "Render props or composition via children",
+      "Force the child to own all layout",
+      "Use index keys",
+      "Store the label in a ref"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think about sharing behavior while allowing customizable markup.",
+    "explanation": "Composition patterns like children or render props let the parent control layout while the child or hook provides reusable behavior."
+  },
+  {
+    "id": 72,
+    "question": "A component should subscribe to a store using an external library and stay consistent with concurrent rendering. Which React hook is designed for external store subscriptions?",
+    "options": [
+      "useSyncExternalStore",
+      "useReducer",
+      "useLayoutEffect",
+      "useId"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This hook was added specifically for external stores.",
+    "explanation": "`useSyncExternalStore` provides a safe pattern for reading and subscribing to external stores in modern React rendering modes."
+  },
+  {
+    "id": 73,
+    "question": "A subtree receives a very large object through context, but only one tiny field is needed by a particular consumer. What is one practical improvement?",
+    "options": [
+      "Read only the needed field through a smaller context or selector pattern",
+      "Duplicate the whole object in local state",
+      "Replace context with DOM queries",
+      "Use random keys on consumers"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Large shared values can make updates broader than necessary.",
+    "explanation": "Narrowing what consumers subscribe to reduces unnecessary renders and makes the data flow easier to reason about."
+  },
+  {
+    "id": 74,
+    "question": "A route change should restore scroll to top for new pages, but preserve scroll inside a chat panel. What React-friendly idea helps separate those concerns?",
+    "options": [
+      "Manage page scroll and chat panel scroll independently through refs/effects",
+      "Use one global scroll reset for every element",
+      "Replace scrolling with context only",
+      "Use `useMemo` on CSS"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Different scroll containers often need different logic.",
+    "explanation": "Page-level window scroll and inner panel scroll are different concerns. Refs and focused effects let you reset only the correct container."
+  },
+  {
+    "id": 75,
+    "question": "A component needs a unique id to connect `<label htmlFor>` with an `<input id>`, and it must stay stable across server and client renders. Which hook is appropriate?",
+    "options": [
+      "useId",
+      "useReducer",
+      "useTransition",
+      "useDebugValue"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is the main accessibility use case for this hook.",
+    "explanation": "`useId` generates stable unique ids suitable for accessibility relationships and SSR-safe rendering."
+  },
+  {
+    "id": 76,
+    "question": "A shopping cart total is computed from items with `reduce`. A teammate stores the total in separate state and updates it from many places. What is the strongest critique?",
+    "options": [
+      "The total is derived data and should usually be calculated from items",
+      "Totals must always be stored in refs",
+      "Derived values cannot use arrays",
+      "React does not allow numbers in state"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Ask whether the total already exists implicitly in another source of truth.",
+    "explanation": "The cart items are the source of truth. Storing the derived total separately increases the chance of inconsistencies."
+  },
+  {
+    "id": 77,
+    "question": "A component passes `isOpen` and `setIsOpen` through many layers just so a nested dialog trigger can use them. Which improvement is often reasonable?",
+    "options": [
+      "Create a focused context for the dialog state",
+      "Use random props names at each level",
+      "Move the trigger into the root DOM only",
+      "Replace state with a CSS comment"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is another prop drilling problem.",
+    "explanation": "A small context around the dialog feature can remove repetitive plumbing and keep the dialog state close to where it is needed."
+  },
+  {
+    "id": 78,
+    "question": "A custom hook called `useDebouncedValue` uses `setTimeout` internally. What cleanup should it usually perform?",
+    "options": [
+      "Clear the timeout when the value changes or the component unmounts",
+      "Call `focus()` on the timeout",
+      "Memoize the timeout id in JSX",
+      "Replace the timeout with `children`"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Any scheduled work that can outlive a render often needs cleanup.",
+    "explanation": "Clearing the previous timeout prevents outdated delayed updates from firing after the input changed or the component unmounted."
+  },
+  {
+    "id": 79,
+    "question": "A memoized selector-like calculation depends on `items` and `filter`, but `filter` is an object that is recreated every render. How can you reduce unnecessary recalculation?",
+    "options": [
+      "Use stable primitive dependencies or memoize the filter object",
+      "Call the selector from CSS instead",
+      "Wrap the result in a portal",
+      "Use index keys"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The issue is not the calculation itself but an unstable dependency reference.",
+    "explanation": "If a dependency is recreated every render, memoization loses value. Stabilize the object or depend on the primitives that actually matter."
+  },
+  {
+    "id": 80,
+    "question": "A tab panel should preserve its internal state when hidden, but another tab panel should reset each time it appears. Which statement is most accurate?",
+    "options": [
+      "Whether state is preserved depends on whether the component stays mounted",
+      "Hidden components always keep state and can never reset",
+      "All tab panels always reset automatically",
+      "State preservation depends only on CSS display rules"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think about mount versus unmount, not just visibility.",
+    "explanation": "If the component remains mounted, its state is preserved. If it unmounts and mounts again, its local state resets."
+  },
+  {
+    "id": 81,
+    "question": "A custom hook needs to expose state and actions to a component. What is the usual return shape?",
+    "options": [
+      "Return the needed values and functions, often as an object or tuple",
+      "Return rendered JSX only",
+      "Return a DOM node directly",
+      "Return a class instance always"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Hooks encapsulate logic, not UI markup.",
+    "explanation": "Custom hooks typically return state and functions so components can decide how to render and interact with that logic."
+  },
+  {
+    "id": 82,
+    "question": "A component uses `useReducer` for a wizard. Several transitions depend on the current state and an action type. Where should this branching logic live?",
+    "options": [
+      "Inside the reducer function",
+      "Inside CSS media queries",
+      "In `React.memo`",
+      "In `useId`"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Reducers centralize how state changes in response to actions.",
+    "explanation": "A reducer is designed to map the current state and an action to the next state, making complex transition logic explicit."
+  },
+  {
+    "id": 83,
+    "question": "A child component receives a prop called `config` that is built from many parent values. The child only needs two primitive flags. What is a performance-friendly simplification?",
+    "options": [
+      "Pass only the primitive values the child actually needs",
+      "Wrap the whole app in context",
+      "Use `setTimeout` around the prop",
+      "Convert the child to a DOM element"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Narrowing props can improve clarity and referential stability.",
+    "explanation": "Passing only the needed primitive props avoids unnecessary object churn and makes the child easier to understand and memoize."
+  },
+  {
+    "id": 84,
+    "question": "A component uses `useMemo` to cache a value, but then mutates the memoized object later. Why is that risky?",
+    "options": [
+      "Memoization does not make mutation safe; shared references can cause confusing bugs",
+      "useMemo forbids objects completely",
+      "Mutating memoized values improves consistency",
+      "Memoized objects always deep-clone themselves"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The problem is mutation of shared references, not memoization itself.",
+    "explanation": "A memoized object can still be reused across renders. Mutating it later can create subtle bugs because other logic may assume it is stable and immutable."
+  },
+  {
+    "id": 85,
+    "question": "A component subscribes to a third-party API and sets state after unmount, causing a warning in older React versions and a real bug. What should you do?",
+    "options": [
+      "Cancel the async work or ignore the result after unmount",
+      "Move the API call into render",
+      "Use `children` instead of state",
+      "Replace all hooks with refs"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Avoid updating state after the component is gone.",
+    "explanation": "Clean up subscriptions and guard async results so the component does not try to update state after it has unmounted."
+  },
+  {
+    "id": 86,
+    "question": "A reusable hook called `useToggle` returns `[value, toggle]`. A teammate wants it to return JSX to save code. What is the best response?",
+    "options": [
+      "Hooks should encapsulate logic; rendering should stay in components",
+      "Hooks must return JSX for reusability",
+      "Hooks cannot return functions",
+      "Hooks only work if they render DOM directly"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Separate logic reuse from UI reuse.",
+    "explanation": "Custom hooks are for sharing stateful logic. Components are responsible for returning JSX."
+  },
+  {
+    "id": 87,
+    "question": "A component fetches user data and posts analytics in the same `useEffect`. Why might splitting this into two effects be better?",
+    "options": [
+      "Each effect can focus on one concern with its own dependencies",
+      "React only allows one statement per effect",
+      "Two effects always run faster than one",
+      "Effects cannot contain async code"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Consider whether these side effects really depend on the same values.",
+    "explanation": "Separate effects make dependencies clearer and reduce the chance that an unrelated change will re-run both pieces of logic."
+  },
+  {
+    "id": 88,
+    "question": "An expensive chart should only re-render when `data` changes, but the parent also passes a changing `themeClassName` string. Which assessment is correct?",
+    "options": [
+      "If the chart uses the theme prop, the re-render is legitimate",
+      "Strings always break React.memo",
+      "The chart should ignore props",
+      "Changing strings never triggers re-renders"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Optimization should not prevent correct rendering.",
+    "explanation": "If a prop affects rendered output, re-rendering when it changes is expected. Optimization should target only truly unnecessary work."
+  },
+  {
+    "id": 89,
+    "question": "A hook uses `useEffect` to mirror one state value into another state value just to keep them synchronized. What is a common smell here?",
+    "options": [
+      "It may be duplicating state that should be derived directly",
+      "Effects are illegal in hooks",
+      "State cannot depend on state",
+      "Mirroring state always improves correctness"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Synchronization effects often hide duplicated state.",
+    "explanation": "If one value can be computed from another, mirroring them with an effect usually adds complexity and risk of inconsistency."
+  },
+  {
+    "id": 90,
+    "question": "A component renders a huge list, and even with memoization the DOM itself is too large and slow. What broader technique is appropriate?",
+    "options": [
+      "List virtualization or windowing",
+      "Replacing hooks with classes",
+      "Adding more context providers",
+      "Using more fragments"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Sometimes the issue is not JavaScript work but rendering too many DOM nodes.",
+    "explanation": "Virtualization renders only the visible subset of a large list, which reduces DOM size and improves performance significantly."
+  },
+  {
+    "id": 91,
+    "question": "A component sets a boolean flag in state just to remember whether it has mounted once. What is often a lighter alternative when that flag does not affect rendering?",
+    "options": [
+      "A ref",
+      "A portal",
+      "A fragment",
+      "Context"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Does this information need to trigger a render?",
+    "explanation": "A ref can hold mutable data across renders without causing re-renders, which is suitable for bookkeeping values like 'has mounted'."
+  },
+  {
+    "id": 92,
+    "question": "A parent wants to pass behavior to a child, but the child also needs to decide when to call it. Which API style is natural in React?",
+    "options": [
+      "Pass a callback prop",
+      "Pass a CSS selector string",
+      "Pass a DOM node id only",
+      "Use `setState` from the child on the parent directly"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "React commonly passes behavior downward as props.",
+    "explanation": "Callback props let parents provide behavior while children decide when that behavior should be triggered."
+  },
+  {
+    "id": 93,
+    "question": "A component should expose the current status text for screen readers when an async save completes. Which React concern is most relevant here?",
+    "options": [
+      "Accessible markup and state-driven announcements",
+      "Portals only",
+      "Memoization only",
+      "Keys only"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is about accessibility and updating UI from state.",
+    "explanation": "React makes it straightforward to update ARIA-friendly status text from state so assistive technologies can announce important changes."
+  },
+  {
+    "id": 94,
+    "question": "A state update depends on both the previous state and the current props. Which approach is reasonable in a function component?",
+    "options": [
+      "Use the functional state updater and close over the current prop when appropriate",
+      "Mutate the prop directly",
+      "Move all logic to CSS",
+      "Call hooks conditionally"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Previous state should come from React; current props can still be read from the render.",
+    "explanation": "The functional updater gives you the latest previous state, and the callback can still use the current prop value from the render that scheduled the update."
+  },
+  {
+    "id": 95,
+    "question": "A custom hook returns a callback that consumers place in dependency arrays. What should the hook author consider?",
+    "options": [
+      "Whether the returned callback needs a stable identity",
+      "That dependency arrays are ignored for custom hooks",
+      "That callbacks can never be returned from hooks",
+      "That hooks should return DOM nodes instead"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Hook APIs should consider how consumers will use the returned values.",
+    "explanation": "If consumers will rely on referential stability, the hook may need to memoize returned callbacks or document that they change each render."
+  },
+  {
+    "id": 96,
+    "question": "A component reads a prop called `initialCount` and uses it in `useState(initialCount)`. Later the prop changes, but the state does not. Why?",
+    "options": [
+      "The initial state argument is only used on the first render",
+      "useState ignores props forever",
+      "Props cannot contain numbers",
+      "State automatically syncs only in StrictMode"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Initial means initial.",
+    "explanation": "The `useState` initializer is only used when the component first mounts. Later prop changes do not reset that state unless you do so explicitly."
+  },
+  {
+    "id": 97,
+    "question": "A child component is wrapped in `React.memo`, but it receives `children` that are freshly created elements every render. What is true?",
+    "options": [
+      "Changing `children` references can still cause the memoized child to re-render",
+      "children are ignored by memo",
+      "React.memo deep-compares all children trees for free",
+      "Memoized components cannot accept children"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "children are just another prop from React's point of view.",
+    "explanation": "If the `children` prop changes by reference or content, `React.memo` can still re-render the component, because `children` participates in prop comparison."
+  },
+  {
+    "id": 98,
+    "question": "A component conditionally renders different forms in the same place. Sometimes state is preserved between forms when it should not be. What can help clarify identity?",
+    "options": [
+      "Use distinct keys for the different forms",
+      "Use array indexes everywhere",
+      "Remove all local state",
+      "Wrap with StrictMode only"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "React preserves state based on position and identity.",
+    "explanation": "Giving distinct components or branches stable keys helps React understand that they are different identities and should not share state."
+  },
+  {
+    "id": 99,
+    "question": "A reducer action payload sometimes omits fields, and the reducer spreads it blindly into state. What risk does this introduce?",
+    "options": [
+      "State can become accidentally inconsistent or partially overwritten",
+      "Reducers stop working with objects",
+      "Payloads are always deep-merged safely",
+      "React throws on any missing field automatically"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Reducer updates should be intentional and predictable.",
+    "explanation": "Blindly spreading partial payloads can accidentally clear or overwrite unrelated state. Reducers should update fields explicitly when possible."
+  },
+  {
+    "id": 100,
+    "question": "A component uses a memoized selector and still feels slow. Profiling shows the parent renders thousands of rows. What should you do before adding more hooks?",
+    "options": [
+      "Profile and identify the real bottleneck, such as rendering too many rows",
+      "Memoize every variable immediately",
+      "Replace all arrays with objects",
+      "Use random keys for faster diffing"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Optimization should be driven by evidence, not guesswork.",
+    "explanation": "If the main bottleneck is rendering thousands of DOM nodes, adding more memoization hooks may not solve the real problem. Measure first."
+  },
+  {
+    "id": 101,
+    "question": "Interview scenario: A search page feels slow. Profiling shows typing is fast until a huge result list updates. What is the best first React-specific improvement?",
+    "options": [
+      "Mark the result update as non-urgent with `useTransition` or defer the derived value",
+      "Move the input into a class component",
+      "Replace the list with localStorage",
+      "Call the API from render"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Separate urgent typing updates from slower rendering work.",
+    "explanation": "React concurrent features like `useTransition` and `useDeferredValue` help keep input responsive while heavy UI updates happen with lower priority."
+  },
+  {
+    "id": 102,
+    "question": "Interview scenario: A memoized `ProductRow` still re-renders for every keystroke in the parent. You discover the parent passes `onAdd={() => addToCart(product.id)}`. What is the likely improvement?",
+    "options": [
+      "Stabilize the callback pattern, for example by passing `product.id` separately or memoizing the handler",
+      "Remove `React.memo` from the child",
+      "Use index as key",
+      "Move the button outside React"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The child receives a new function every render.",
+    "explanation": "The inline callback changes identity each time. Restructuring props or memoizing the handler can let `React.memo` do its job more effectively."
+  },
+  {
+    "id": 103,
+    "question": "Interview scenario: An effect fetches user details whenever `filters` change. `filters` is built inline from several primitives, so the effect runs constantly. What is the best fix?",
+    "options": [
+      "Depend on the primitive filter values or memoize the filters object",
+      "Remove the dependency array",
+      "Use `useId` instead of filters",
+      "Wrap the fetch in `React.memo`"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The logical data is stable, but the object reference is not.",
+    "explanation": "Effects should depend on stable values. Inline object creation creates a new reference on every render, causing unnecessary refetches."
+  },
+  {
+    "id": 104,
+    "question": "Interview scenario: A dashboard uses one large context with auth, theme, locale, and notifications. Toggling theme makes many unrelated consumers re-render. What architectural change is strongest?",
+    "options": [
+      "Split the context into smaller providers by concern",
+      "Replace all context with refs",
+      "Use random keys on consumers",
+      "Move everything into one reducer only"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Large shared state can make updates too broad.",
+    "explanation": "Separating unrelated values into focused contexts reduces unnecessary consumer updates and keeps each context easier to reason about."
+  },
+  {
+    "id": 105,
+    "question": "Interview scenario: A list item component stores `isEditing` locally. After inserting a new item at the top, the wrong row stays in edit mode. What is the most probable cause?",
+    "options": [
+      "Unstable list keys, often using the array index",
+      "Too many fragments",
+      "A missing `useMemo` in the child",
+      "Context providers inside the list"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The wrong state is being preserved for the wrong item.",
+    "explanation": "This is a classic sign of unstable keys. React is reusing component instances by position rather than true item identity."
+  },
+  {
+    "id": 106,
+    "question": "Interview scenario: A complex filter panel mirrors props into local state with three effects, and bugs appear when parent data changes. What high-level refactor is most promising?",
+    "options": [
+      "Reduce duplicated state and keep a clearer single source of truth",
+      "Add more effects to synchronize faster",
+      "Convert all values into refs",
+      "Use more random keys"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Most synchronization bugs come from storing the same fact in multiple places.",
+    "explanation": "When the same information exists in both parent props and local state, keeping them synchronized becomes fragile. Prefer deriving values or explicitly owning state in one place."
+  },
+  {
+    "id": 107,
+    "question": "Interview scenario: A route-level component uses `React.lazy`, but users see the whole page disappear behind a spinner during navigation. What would improve UX?",
+    "options": [
+      "Place Suspense boundaries more narrowly so only the loading region falls back",
+      "Remove code splitting entirely",
+      "Use `useRef` on the route",
+      "Wrap every text node in Suspense"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Fallback boundaries can be as small as you need.",
+    "explanation": "A broad `Suspense` boundary can blank the whole page. A narrower boundary keeps the shell visible while only the changing content shows loading UI."
+  },
+  {
+    "id": 108,
+    "question": "Interview scenario: A custom `useInterval` hook sets an interval with a callback from props. The interval keeps calling an old callback. What common implementation detail fixes this?",
+    "options": [
+      "Store the latest callback in a ref that the interval reads",
+      "Call the callback from JSX instead",
+      "Use `useId` for the interval",
+      "Wrap the callback in a fragment"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The timer should stay stable while the callback can change.",
+    "explanation": "A ref-based pattern lets the interval stay registered once while always calling the latest callback, avoiding stale closure issues."
+  },
+  {
+    "id": 109,
+    "question": "Interview scenario: A table component memoizes each row, but the parent still rebuilds `columns` and `actions` arrays inline on every render. Why does performance still suffer?",
+    "options": [
+      "Unstable prop references keep invalidating memoization",
+      "Memoized rows ignore array props",
+      "Arrays are always deep-compared efficiently",
+      "Rows cannot receive functions"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Memoization only helps when props are stable.",
+    "explanation": "If parent props change by reference each render, memoized rows still re-render. Stable columns/actions definitions or redesigned props may be needed."
+  },
+  {
+    "id": 110,
+    "question": "Interview scenario: A server-rendered component shows a hydration warning only in production. It renders different content based on `window.innerWidth` during the first render. What is the root issue?",
+    "options": [
+      "The initial server and client renders do not match",
+      "Hydration is disabled in production",
+      "window is faster in development only",
+      "SSR requires class components"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The first client render must match the HTML produced on the server.",
+    "explanation": "Branching on browser-only values during the initial render can produce different markup between server and client, which causes hydration mismatches."
+  },
+  {
+    "id": 111,
+    "question": "Interview scenario: A settings page stores all form data in one object and updates nested fields with manual object spreads. Bugs are growing. What is a pragmatic refactor?",
+    "options": [
+      "Use a reducer or a form-state abstraction with clear update actions",
+      "Put every nested field in context immediately",
+      "Replace state with direct DOM mutation",
+      "Use `useMemo` instead of updates"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The issue is maintainability of complex updates.",
+    "explanation": "When nested form updates become hard to reason about, a reducer or dedicated abstraction can centralize and clarify the allowed transitions."
+  },
+  {
+    "id": 112,
+    "question": "Interview scenario: Users report duplicate toast messages after navigating away and back several times. The toast listener is registered in an effect. What bug do you suspect first?",
+    "options": [
+      "Missing effect cleanup leading to multiple active subscriptions",
+      "Too many fragments around the toast",
+      "A missing key on the page title",
+      "A lazy component without Suspense"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The symptom grows over repeated mounts.",
+    "explanation": "Duplicate events after navigation strongly suggest that old listeners were not unsubscribed when the component unmounted or the effect re-ran."
+  },
+  {
+    "id": 113,
+    "question": "Interview scenario: A parent fetches data and passes it into a chart. The chart library mutates the data array, causing bugs elsewhere. What is the safest boundary fix?",
+    "options": [
+      "Pass a defensive copy to the mutating library",
+      "Tell React to freeze the array automatically",
+      "Move the array into context",
+      "Use index keys on points"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The third-party library is mutating shared data.",
+    "explanation": "If another library mutates input data, isolate that mutation by passing a copied structure so React state and props remain immutable."
+  },
+  {
+    "id": 114,
+    "question": "Interview scenario: A design system input supports both controlled and uncontrolled usage, but warnings appear when consumers switch between modes. What API rule should the component enforce?",
+    "options": [
+      "A given instance should stay either controlled or uncontrolled for its lifetime",
+      "It should switch modes automatically on every keystroke",
+      "It should always ignore `defaultValue`",
+      "It should store all values in context only"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Switching between modes is what React warns about.",
+    "explanation": "Components should make controlled versus uncontrolled usage explicit and avoid changing modes after mount, because that causes confusing behavior and warnings."
+  },
+  {
+    "id": 115,
+    "question": "Interview scenario: A modal closes when clicking inside it because the backdrop click handler sees bubbled events. What is the simplest fix?",
+    "options": [
+      "Stop propagation on the modal content or check the event target correctly",
+      "Move the modal to a class component",
+      "Use `useMemo` on the click event",
+      "Add random keys to the backdrop"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The problem is event bubbling, not rendering.",
+    "explanation": "Backdrop click handlers often need either target checks or `stopPropagation()` on inner content so inside clicks do not trigger the outer close action."
+  },
+  {
+    "id": 116,
+    "question": "Interview scenario: A custom hook triggers an analytics event in an effect whenever `user` changes. In development, the analytics event fires twice. What should you investigate first?",
+    "options": [
+      "StrictMode's development-only re-invocation behavior and whether the effect is idempotent",
+      "Whether React dropped support for analytics",
+      "Whether the hook returned JSX",
+      "Whether `children` is missing"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Development behavior can intentionally surface non-idempotent effects.",
+    "explanation": "StrictMode can intentionally re-run mount behavior in development, so effects that send analytics need to be designed to avoid double-counting in that environment."
+  },
+  {
+    "id": 117,
+    "question": "Interview scenario: A page passes a giant `user` object to many children, but each child only uses one field. What refactor would improve clarity and often performance?",
+    "options": [
+      "Pass narrower props closer to what each child actually needs",
+      "Replace props with DOM ids",
+      "Wrap the whole tree in Suspense",
+      "Move everything to one global variable"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Smaller, more specific props reduce coupling.",
+    "explanation": "Passing narrow props makes components easier to understand, reduces accidental re-renders from unrelated object reference changes, and improves reuse."
+  },
+  {
+    "id": 118,
+    "question": "Interview scenario: A child component starts an expensive calculation in render and memoizes the JSX output instead of the data. What is the better target for memoization?",
+    "options": [
+      "Memoize the expensive calculation result, not just the rendered wrapper",
+      "Memoize the CSS file",
+      "Memoize the key prop",
+      "Memoize the component name string"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Optimize the expensive part of the work.",
+    "explanation": "If the costly work is computing data, memoizing the calculation is more meaningful than memoizing a light JSX wrapper around it."
+  },
+  {
+    "id": 119,
+    "question": "Interview scenario: A component reads query params and sets local state from them in an effect, but browser back/forward navigation causes subtle sync bugs. What is the better principle?",
+    "options": [
+      "Prefer deriving UI directly from the current source of truth when possible",
+      "Duplicate the params into more state variables",
+      "Convert query params to refs only",
+      "Use `forceUpdate` after navigation"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Two copies of the same navigation state can drift apart.",
+    "explanation": "If the URL is the source of truth, mirroring it into separate local state can create synchronization bugs. Deriving from the current URL is often safer."
+  },
+  {
+    "id": 120,
+    "question": "Interview scenario: A list virtualization library works, but keyboard navigation breaks because focused rows unmount when scrolled away. What should you consider?",
+    "options": [
+      "Accessibility and focus management tradeoffs when virtualizing interactive content",
+      "Replacing virtualization with more context",
+      "Using random keys for focus stability",
+      "Moving focus tracking to CSS only"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Performance solutions can introduce UX and accessibility constraints.",
+    "explanation": "Virtualization improves performance but can unmount off-screen interactive elements. Focus handling and accessibility need explicit design in such cases."
+  },
+  {
+    "id": 121,
+    "question": "Interview scenario: You need a reusable pattern for fetch states: idle, loading, success, and error. What React design is especially suitable?",
+    "options": [
+      "A reducer representing explicit state transitions",
+      "A single boolean and many ad hoc effects",
+      "A random key on the fetch button",
+      "A fragment around the API call"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "These states form a small state machine.",
+    "explanation": "A reducer models fetch flows clearly by making allowed states and transitions explicit, which is easier to reason about than scattered booleans."
+  },
+  {
+    "id": 122,
+    "question": "Interview scenario: A parent updates many unrelated state values, and a child only needs one stable callback. Which broader lesson is most correct?",
+    "options": [
+      "State structure and prop design often matter more than adding optimization hooks everywhere",
+      "The only solution is `useCallback` on every line",
+      "Hooks automatically fix poor state modeling",
+      "React performance depends only on CSS size"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Optimization is not just about sprinkling hooks; architecture matters.",
+    "explanation": "Good state ownership, narrow props, and stable data flow usually provide bigger gains than blindly adding memoization hooks."
+  },
+  {
+    "id": 123,
+    "question": "Interview scenario: A bug only appears when quickly opening and closing a modal that fetches data. Sometimes a stale response sets state after the modal closes. What should the code do?",
+    "options": [
+      "Abort or ignore obsolete async responses during cleanup",
+      "Fetch twice to confirm the result",
+      "Use `children` to cancel promises",
+      "Store the response in CSS"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The component lifecycle and async timing are crossing paths.",
+    "explanation": "When the component can unmount before a request finishes, cleanup should cancel or ignore that result so closed UI does not receive stale updates."
+  },
+  {
+    "id": 124,
+    "question": "Interview scenario: A hook returns `{ data, reload }`, but consuming components put `reload` in effect dependencies and trigger loops because `reload` changes every render. What should the hook likely do?",
+    "options": [
+      "Return a stable `reload` callback when its semantics allow that",
+      "Tell consumers to ignore all dependencies",
+      "Return JSX instead of functions",
+      "Use a portal for the callback"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Hook return values are part of the public API and should be ergonomic.",
+    "explanation": "If consumers are expected to depend on `reload`, the hook should often memoize it so it does not change identity unnecessarily."
+  },
+  {
+    "id": 125,
+    "question": "Interview scenario: A parent conditionally renders either `<UserForm />` or `<AdminForm />` in the same spot, and some field state leaks between them. What is the best fix?",
+    "options": [
+      "Give the two branches distinct keys or distinct identities",
+      "Wrap both forms in the same fragment",
+      "Use index keys inside each form",
+      "Move the state to CSS"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "React preserves state based on position and identity.",
+    "explanation": "If two different forms occupy the same position, React may preserve state unless you make their identities distinct. Separate keys or component identities solve that."
+  },
+  {
+    "id": 126,
+    "question": "Interview scenario: A `useEffect` logs analytics using an object literal dependency like `{ page, section }`, so the effect runs every render. What should change?",
+    "options": [
+      "Depend on `page` and `section` directly or memoize the object",
+      "Remove all dependencies",
+      "Replace the effect with `useId`",
+      "Convert analytics to JSX"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Object literals create new references.",
+    "explanation": "Effects should depend on stable values. Inline objects are new references on every render and retrigger the effect unnecessarily."
+  },
+  {
+    "id": 127,
+    "question": "Interview scenario: A large form rerenders every field on each keystroke because the whole form state lives in one parent component. What is a reasonable optimization direction?",
+    "options": [
+      "Split state by concern or memoize field components with stable props",
+      "Move everything into one giant context value",
+      "Use random keys on inputs",
+      "Replace all handlers with refs"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Consider both state ownership and prop stability.",
+    "explanation": "When every field depends on one giant parent render, state partitioning and memoized field components can reduce unnecessary rerenders."
+  },
+  {
+    "id": 128,
+    "question": "Interview scenario: A component needs the previous prop value to compare against the current one. What is a common pattern?",
+    "options": [
+      "Store the previous value in a ref updated from an effect",
+      "Call a hook conditionally only when the prop changes",
+      "Use `children` to remember it",
+      "Read it from the DOM"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Refs can persist values across renders without causing rerenders.",
+    "explanation": "A ref is commonly used to hold the previous value, and an effect can update it after each render."
+  },
+  {
+    "id": 129,
+    "question": "Interview scenario: A custom hook fetches data and exposes `status`, `data`, and `error`. Which state model is clearer than three unrelated booleans?",
+    "options": [
+      "A reducer or discriminated state shape for async states",
+      "A random key on the fetch button",
+      "A portal for errors",
+      "A fragment around the data"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Idle, loading, success, and error are mutually related states.",
+    "explanation": "A reducer or explicit state machine makes impossible combinations less likely, such as being both loading and success at once."
+  },
+  {
+    "id": 130,
+    "question": "Interview scenario: A component updates a list by sorting props directly before rendering. Why is that risky?",
+    "options": [
+      "It mutates props and can create side effects outside the component",
+      "React requires sorting in effects only",
+      "Props are deep-cloned automatically",
+      "Sorting always improves memoization"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Props should be treated as immutable input.",
+    "explanation": "Mutating props breaks React's immutability expectations and can affect parent state or sibling behavior unexpectedly."
+  },
+  {
+    "id": 131,
+    "question": "Interview scenario: A parent passes down a `user` object from context, but only the avatar URL changes often. What targeted improvement can reduce broad rerenders?",
+    "options": [
+      "Provide narrower context values or separate contexts for frequently changing fields",
+      "Turn off context updates entirely",
+      "Use index keys on consumers",
+      "Store context in localStorage only"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Changing one field in a large object can rerender every consumer.",
+    "explanation": "Breaking large context values into focused pieces helps only the relevant consumers update when a specific field changes."
+  },
+  {
+    "id": 132,
+    "question": "Interview scenario: A child component uses `useEffect` to copy a prop into local state so it can display it. The parent changes the prop and the UI briefly flickers. What is the likely cause?",
+    "options": [
+      "The component is duplicating derived state and syncing too late",
+      "Effects run before render",
+      "Props update asynchronously only on weekends",
+      "Local state cannot hold strings"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The value probably did not need to be mirrored in state at all.",
+    "explanation": "Copying a prop into local state with an effect creates a lagging second source of truth. Rendering the prop directly is often the cleaner fix."
+  },
+  {
+    "id": 133,
+    "question": "Interview scenario: A hook creates a new `AbortController` on every render instead of per request. What bug can that create?",
+    "options": [
+      "The wrong request may be aborted or cleanup may not match the active request",
+      "React stops rendering fetch results",
+      "The hook becomes synchronous",
+      "AbortController only works in class components"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Controller lifetime should match request lifetime.",
+    "explanation": "Abort logic should be tied to the specific request being made. Recreating controllers at the wrong time can break cleanup or abort the wrong work."
+  },
+  {
+    "id": 134,
+    "question": "Interview scenario: A page repeatedly re-renders because a parent computes `const value = expensiveFn(data)` directly in render. Profiling shows this is the bottleneck. What is the cleanest first fix?",
+    "options": [
+      "Memoize the expensive calculation with correct dependencies",
+      "Move the calculation into a random global variable",
+      "Use `useId` around the value",
+      "Replace the page with a portal"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The expensive work depends on predictable inputs.",
+    "explanation": "If profiling shows the calculation is costly and based on stable inputs, `useMemo` can avoid recomputing it unnecessarily."
+  },
+  {
+    "id": 135,
+    "question": "Interview scenario: A toast component should animate out before unmounting, but parent state removes it instantly. What pattern helps?",
+    "options": [
+      "Track a local exit state or use a transition library before actually unmounting",
+      "Call `setState` during render",
+      "Use index keys to delay unmount",
+      "Move the toast into context only"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Unmounting immediately leaves no time for the exit animation.",
+    "explanation": "To animate out, the component usually needs a brief intermediate 'exiting' state or a transition utility so it remains mounted until the animation finishes."
+  },
+  {
+    "id": 136,
+    "question": "Interview scenario: A custom input component forwards all props to `<input>` but forgets to forward the ref. What practical issue does this cause?",
+    "options": [
+      "Parents cannot directly focus or measure the underlying input",
+      "The input stops accepting text",
+      "Controlled mode becomes impossible",
+      "Refs only work with buttons"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Some consumers need imperative access to the real DOM element.",
+    "explanation": "Without ref forwarding, parent components cannot obtain a ref to the actual input DOM node for focusing, selection, or measurement."
+  },
+  {
+    "id": 137,
+    "question": "Interview scenario: A component initializes state from `props.items[0]`, but `items` arrives asynchronously and is empty at first. What safer pattern fits best?",
+    "options": [
+      "Handle the empty case explicitly and update state when the source data becomes available if needed",
+      "Assume the first item always exists",
+      "Move the items array into CSS",
+      "Use `useMemo` with no dependencies"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Async data often means initial values may be missing.",
+    "explanation": "Code should guard against empty initial data and make state initialization logic explicit once the data actually exists."
+  },
+  {
+    "id": 138,
+    "question": "Interview scenario: Two sibling components both fetch the same user data separately on mount. What is a likely architectural improvement?",
+    "options": [
+      "Lift the data fetching up or share it through a focused hook/provider",
+      "Fetch more often to keep them in sync",
+      "Use random keys on both siblings",
+      "Convert one sibling to a fragment"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Duplicate requests often signal duplicated state ownership.",
+    "explanation": "Fetching shared data at a higher level or through a dedicated shared abstraction avoids duplicated requests and keeps both siblings consistent."
+  },
+  {
+    "id": 139,
+    "question": "Interview scenario: A memoized component receives a prop `style={{ color: theme.primary }}` and still rerenders often. Why?",
+    "options": [
+      "The inline style object is a new reference each render",
+      "Memoized components ignore style props",
+      "Styles are compared by CSS only",
+      "React strips style objects from props"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Inline objects affect referential equality.",
+    "explanation": "Each render creates a fresh style object, so memoization sees the prop as changed even if the color value is the same."
+  },
+  {
+    "id": 140,
+    "question": "Interview scenario: A reducer grows very large and mixes unrelated features like auth, cart, and theme. What is a maintainability concern?",
+    "options": [
+      "The reducer is handling too many concerns and may need to be split",
+      "Large reducers are always faster",
+      "Reducers can only manage one string",
+      "React forbids more than 20 actions"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Centralization helps until concerns become unrelated and tangled.",
+    "explanation": "A giant reducer can become hard to test and reason about. Splitting by feature often improves clarity and maintainability."
+  },
+  {
+    "id": 141,
+    "question": "Interview scenario: A component wants to derive visible rows from `rows`, `sort`, and `filter`, but it stores `visibleRows` in state and updates it from multiple handlers. What is the cleaner model?",
+    "options": [
+      "Compute visible rows from the source inputs during render or memoization",
+      "Store more copies of visibleRows for each handler",
+      "Move visibleRows into a ref and mutate it",
+      "Use `forceUpdate` after sorting"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This output is derived from existing inputs.",
+    "explanation": "Derived collections are often better computed from source state instead of being stored separately and manually synchronized."
+  },
+  {
+    "id": 142,
+    "question": "Interview scenario: A component should close when clicking outside, but the outside-click logic runs even before the ref is attached on first mount. What should you verify?",
+    "options": [
+      "That the effect subscribes after mount and checks `ref.current` safely",
+      "That refs are available during module evaluation",
+      "That `children` contains a DOM node",
+      "That the component uses `useId`"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Timing matters when DOM refs are involved.",
+    "explanation": "Outside-click handlers should be registered after the element exists, and the logic should guard against null refs during initial mount."
+  },
+  {
+    "id": 143,
+    "question": "Interview scenario: A page renders markdown preview from user input on every keystroke and becomes slow. What combination is most promising?",
+    "options": [
+      "Debounce or defer the expensive preview update and memoize heavy parsing",
+      "Use random keys on the textarea",
+      "Move the markdown string into CSS",
+      "Replace input state with a portal"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Separate urgent typing from heavy derived rendering work.",
+    "explanation": "Parsing markdown on every keystroke can be expensive. Deferring the preview and memoizing the parse step can keep typing responsive."
+  },
+  {
+    "id": 144,
+    "question": "Interview scenario: A modal contains a form and should restore previous unsaved values if reopened within the same session. Which identity choice matters?",
+    "options": [
+      "Keep the form component mounted or preserve its state outside the modal instance",
+      "Always change its key on open",
+      "Use index keys inside the form",
+      "Use `useMemo` on the submit button"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Preserved state depends on whether the component instance survives.",
+    "explanation": "If the form unmounts and remounts fresh each time, local draft state is lost. Preserving the instance or lifting draft state out keeps unsaved values."
+  },
+  {
+    "id": 145,
+    "question": "Interview scenario: A list item component uses `useEffect(() => subscribe(id), [])`. Later the `id` prop changes but the subscription does not. Why?",
+    "options": [
+      "The effect omitted `id` from its dependencies and stayed subscribed to the old item",
+      "Empty arrays automatically track props",
+      "Subscriptions update through keys only",
+      "Effects ignore props by design"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The effect body uses a prop that can change.",
+    "explanation": "Because `id` is missing from dependencies, the effect never re-runs for the new id and keeps the old subscription active."
+  },
+  {
+    "id": 146,
+    "question": "Interview scenario: A context value contains a callback that updates state. Consumers use that callback in dependency arrays. What should the provider consider?",
+    "options": [
+      "Whether the callback reference should be memoized for stable consumption",
+      "That dependency arrays deep-compare functions",
+      "That callbacks cannot live in context",
+      "That context ignores function identity"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Consumer ergonomics depends on provider API stability.",
+    "explanation": "If consumers depend on the callback, unstable function references from the provider can trigger extra work. Memoizing them may be appropriate."
+  },
+  {
+    "id": 147,
+    "question": "Interview scenario: A component fetches in response to a prop change and sets `error` on failure, but when the prop changes again the old error still shows during the new request. What is a good UX fix?",
+    "options": [
+      "Clear or reset error state when starting the next request",
+      "Keep the old error forever for debugging",
+      "Move the error into a ref only",
+      "Use a random key on the error message"
+    ],
+    "category": "React",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Request start is usually a distinct state transition.",
+    "explanation": "When a new request begins, the UI should often reset stale error state so the new loading attempt starts from a clean state."
+  },
+  {
+    "id": 148,
+    "question": "Interview scenario: A component wraps every child in `React.memo`, but data still changes frequently and profiling shows little gain. What lesson fits best?",
+    "options": [
+      "Memoization is not a substitute for good state flow and measured bottlenecks",
+      "React.memo always guarantees big speedups",
+      "The solution is more keys",
+      "Rendering speed depends only on file size"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Optimization tools help only when they target the real problem.",
+    "explanation": "If props change frequently or the bottleneck lies elsewhere, blanket memoization may offer little benefit. Measure first and optimize the right layer."
+  },
+  {
+    "id": 149,
+    "question": "Interview scenario: A hook returns a large object with many values and actions, but most consumers need only one value. What API improvement may help long-term?",
+    "options": [
+      "Expose smaller focused hooks or narrower return values",
+      "Return even more fields for flexibility",
+      "Replace hooks with DOM attributes",
+      "Use one global mutable variable instead"
+    ],
+    "category": "React",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Smaller APIs are easier to consume and can reduce accidental rerenders.",
+    "explanation": "Focused hooks and narrower return shapes improve discoverability, reduce coupling, and often make component rerenders easier to control."
+  },
+  {
+    "id": 150,
+    "question": "Interview scenario: A component calculates selection state from props but stores it in local state so it can be toggled. Users report the selection resets unexpectedly when parents rerender. What should you inspect first?",
+    "options": [
+      "Whether ownership of selection state is unclear between parent and child",
+      "Whether `children` is missing",
+      "Whether the CSS file loaded",
+      "Whether the reducer name is too short"
+    ],
+    "category": "React",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "State bugs often come from unclear ownership boundaries.",
+    "explanation": "If both parent props and child local state appear to control the same selection, the source of truth is ambiguous. Clarifying ownership usually fixes the reset behavior."
+  }
+]

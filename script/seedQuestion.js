@@ -1,18 +1,13 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 const Question = require('../models/question');
-const html = require('./json/html.json'); 
-const angular = require('./json/angular.json'); 
 const args = process.argv.slice(2);
 const questionTypeArg = args.find(arg => arg.startsWith('--type='));
 
 const questionType = questionTypeArg ? questionTypeArg.split('=')[1] : 'html';
 
 const seedQuestion = async () => {
-    let data = html;
-    if (questionType == "angular") {
-        data = angular;
-    }
+    let data = require(`./json/${questionType}.json`);
     for (const que of data) {
         try {
              const {
@@ -33,7 +28,7 @@ const seedQuestion = async () => {
                 category: category.toLowerCase(),
                 code,
                 options,
-                question_type,
+                question_type: (question_type == 'multi-answer' ? 'multi_answer' : question_type),
                 explanation,
                 hint,
                 correctIndex

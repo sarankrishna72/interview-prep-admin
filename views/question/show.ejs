@@ -5,9 +5,12 @@
 
       <div class="details-actions">
         <a href="/questions/edit/<%=question._id %>" class="btn btn-warning">Edit</a>
-        <form action="/questions/<%=question._id %>?_method=DELETE" method="POST">
-          <button type="submit" class="btn btn-danger">Delete</button>
-        </form>
+         <form action="/questions/delete/<%= question._id %>?_method=DELETE" method="POST" style="display:inline;">
+            <button type="submit" class="btn btn-danger "
+              onclick="return confirm('Are you sure you want to delete this question?')">
+              Delete
+            </button>
+          </form>
       </div>
     </div>
 
@@ -57,6 +60,17 @@
         </div>
     </div>
 
+    <% if (question.code) { %>
+      <div class="page-card details-card">
+        <div class="card-header">
+            <h2>Code Snippet</h2>
+        </div>
+        <div class="details-section-body">
+            <pre style="border-radius: 8px;padding: 0px;"><code id="code-block"  style="width: 100%;display: block;padding: 15px;" class="language-javascript" ></code></pre>
+        </div>
+      </div>
+    <% } %>
+
 
     <!-- <div class="page-card details-card">
       <div class="card-header">
@@ -89,16 +103,7 @@
         </p>
       </div>
     </div>
-    <% if (question.code) { %>
-        <div class="page-card details-card">
-            <div class="card-header">
-                <h2>Code Snippet</h2>
-            </div>
-            <div class="details-section-body">
-                <pre style="border-radius: 8px;padding: 0px;"><code id="code-block"  style="width: 100%;display: block;padding: 15px;" class="language-javascript" ></code></pre>
-            </div>
-        </div>
-    <% } %>
+    
   </div>
 </div>
 

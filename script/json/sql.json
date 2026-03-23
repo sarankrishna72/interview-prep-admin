@@ -1,0 +1,2702 @@
+[
+  {
+    "id": 1,
+    "question": "Which clause filters rows before grouping in a SELECT query?",
+    "options": [
+      "HAVING",
+      "WHERE",
+      "ORDER BY",
+      "LIMIT"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think about row filtering before aggregate calculations happen.",
+    "explanation": "`WHERE` filters individual rows before grouping. `HAVING` filters groups after aggregation."
+  },
+  {
+    "id": 2,
+    "question": "Which clause is used to sort query results?",
+    "options": [
+      "GROUP BY",
+      "ORDER BY",
+      "SORT BY",
+      "ARRANGE BY"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This clause controls ascending or descending output order.",
+    "explanation": "`ORDER BY` sorts result rows, optionally with `ASC` or `DESC`."
+  },
+  {
+    "id": 3,
+    "question": "Which statement is used to retrieve data from a table?",
+    "options": [
+      "GET",
+      "OPEN",
+      "SELECT",
+      "FETCH ROWS"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This is the core query keyword in SQL.",
+    "explanation": "`SELECT` retrieves data from one or more tables."
+  },
+  {
+    "id": 4,
+    "question": "Which statement inserts a new row into a table?",
+    "options": [
+      "ADD ROW",
+      "CREATE ROW",
+      "INSERT INTO",
+      "PUT INTO"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Think of the standard SQL verb for adding data.",
+    "explanation": "`INSERT INTO` adds new rows to a table."
+  },
+  {
+    "id": 5,
+    "question": "Which statement modifies existing rows in a table?",
+    "options": [
+      "CHANGE",
+      "UPDATE",
+      "MODIFY ROW",
+      "ALTER DATA"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This statement changes stored values.",
+    "explanation": "`UPDATE` changes data in existing rows."
+  },
+  {
+    "id": 6,
+    "question": "Which statement removes rows from a table without dropping the table itself?",
+    "options": [
+      "DROP",
+      "DELETE",
+      "REMOVE TABLE",
+      "CLEAR"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "You want to remove data, not the table definition.",
+    "explanation": "`DELETE` removes rows while leaving the table structure in place."
+  },
+  {
+    "id": 7,
+    "question": "Which statement removes an entire table definition and its data?",
+    "options": [
+      "DELETE",
+      "TRUNCATE ROWS",
+      "DROP TABLE",
+      "REMOVE"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This removes the object itself.",
+    "explanation": "`DROP TABLE` deletes both the table structure and its data."
+  },
+  {
+    "id": 8,
+    "question": "Which keyword prevents NULL values in a column definition?",
+    "options": [
+      "UNIQUE",
+      "DEFAULT",
+      "NOT NULL",
+      "CHECKED"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This constraint requires a real value.",
+    "explanation": "`NOT NULL` ensures the column cannot store NULL."
+  },
+  {
+    "id": 9,
+    "question": "Which constraint uniquely identifies each row in a table?",
+    "options": [
+      "FOREIGN KEY",
+      "UNIQUE",
+      "PRIMARY KEY",
+      "INDEX"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This is the main row identity constraint.",
+    "explanation": "A `PRIMARY KEY` uniquely identifies each row and cannot be NULL."
+  },
+  {
+    "id": 10,
+    "question": "Which constraint ensures values in a column are unique but still allows NULL depending on settings?",
+    "options": [
+      "PRIMARY KEY",
+      "UNIQUE",
+      "FOREIGN KEY",
+      "CHECK"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It enforces no duplicate non-null values.",
+    "explanation": "`UNIQUE` prevents duplicate values. In MySQL, multiple NULLs are typically allowed in a UNIQUE column."
+  },
+  {
+    "id": 11,
+    "question": "Which MySQL attribute automatically generates increasing integer values for new rows?",
+    "options": [
+      "SERIALIZE",
+      "AUTO_INCREMENT",
+      "IDENTITY_ALWAYS",
+      "NEXTVAL"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Commonly used on integer primary keys.",
+    "explanation": "`AUTO_INCREMENT` automatically generates numeric values for inserted rows."
+  },
+  {
+    "id": 12,
+    "question": "Which aggregate function returns the number of rows?",
+    "options": [
+      "SUM()",
+      "COUNT()",
+      "TOTAL()",
+      "ROWS()"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This function counts matching rows.",
+    "explanation": "`COUNT()` returns how many rows or non-NULL values match."
+  },
+  {
+    "id": 13,
+    "question": "Which aggregate function returns the largest value in a column?",
+    "options": [
+      "TOP()",
+      "UPPER()",
+      "MAX()",
+      "LAST()"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Think of the maximum value.",
+    "explanation": "`MAX()` returns the largest value in the selected set."
+  },
+  {
+    "id": 14,
+    "question": "Which aggregate function returns the smallest value in a column?",
+    "options": [
+      "MIN()",
+      "LOW()",
+      "SMALL()",
+      "FIRST()"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think of the minimum value.",
+    "explanation": "`MIN()` returns the smallest value in the selected set."
+  },
+  {
+    "id": 15,
+    "question": "Which aggregate function returns the average of numeric values?",
+    "options": [
+      "MEAN()",
+      "AVG()",
+      "AVERAGE()",
+      "MID()"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Standard SQL aggregate for arithmetic mean.",
+    "explanation": "`AVG()` computes the arithmetic average of numeric values."
+  },
+  {
+    "id": 16,
+    "question": "Which aggregate function adds numeric values together?",
+    "options": [
+      "COUNT()",
+      "MERGE()",
+      "SUM()",
+      "ADD()"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This aggregate totals numbers.",
+    "explanation": "`SUM()` adds numeric values across matching rows."
+  },
+  {
+    "id": 17,
+    "question": "Which operator is commonly used to match a pattern such as names starting with 'A'?",
+    "options": [
+      "IN",
+      "LIKE",
+      "BETWEEN",
+      "MATCHES"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This often works with `%` and `_`.",
+    "explanation": "`LIKE` supports simple pattern matching, such as `A%` for values starting with A."
+  },
+  {
+    "id": 18,
+    "question": "Which condition checks for missing values?",
+    "options": [
+      "= NULL",
+      "IS NULL",
+      "== NULL",
+      "NULL()"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "NULL uses special comparison syntax.",
+    "explanation": "`IS NULL` is the correct way to test for NULL because NULL is not compared with `=`."
+  },
+  {
+    "id": 19,
+    "question": "Which keyword removes duplicate rows from a SELECT result?",
+    "options": [
+      "UNIQUE",
+      "DISTINCT",
+      "DIFFERENT",
+      "ONLY"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It returns each result combination once.",
+    "explanation": "`DISTINCT` removes duplicate rows from the query result."
+  },
+  {
+    "id": 20,
+    "question": "Which clause limits the number of returned rows in MySQL?",
+    "options": [
+      "TOP",
+      "LIMIT",
+      "ROWNUM",
+      "FETCH FIRST"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is the MySQL-specific row limiting clause.",
+    "explanation": "`LIMIT` restricts how many rows MySQL returns."
+  },
+  {
+    "id": 21,
+    "question": "Which join returns only rows with matches in both tables?",
+    "options": [
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "INNER JOIN",
+      "FULL JOIN"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Only matching rows from both sides should remain.",
+    "explanation": "`INNER JOIN` returns rows where the join condition matches in both tables."
+  },
+  {
+    "id": 22,
+    "question": "Which join returns all rows from the left table and matching rows from the right table?",
+    "options": [
+      "LEFT JOIN",
+      "INNER JOIN",
+      "CROSS JOIN",
+      "SELF JOIN"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Keep all rows from the left side.",
+    "explanation": "`LEFT JOIN` preserves all rows from the left table and fills unmatched right-side columns with NULL."
+  },
+  {
+    "id": 23,
+    "question": "Which clause groups rows for aggregate calculations?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "HAVING",
+      "PARTITION BY"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This clause creates groups before aggregates are computed.",
+    "explanation": "`GROUP BY` groups rows so aggregate functions can operate per group."
+  },
+  {
+    "id": 24,
+    "question": "Which clause filters grouped results after aggregation?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "ORDER BY",
+      "LIMIT"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This works after groups and aggregates are formed.",
+    "explanation": "`HAVING` filters grouped results after aggregation."
+  },
+  {
+    "id": 25,
+    "question": "Which keyword tests whether a value falls within a range inclusively?",
+    "options": [
+      "INSIDE",
+      "BETWEEN",
+      "RANGE",
+      "WITHIN"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The endpoints are included.",
+    "explanation": "`BETWEEN` checks whether a value is between two bounds inclusively."
+  },
+  {
+    "id": 26,
+    "question": "Which operator tests whether a value matches any value in a list?",
+    "options": [
+      "ANYOF",
+      "IN",
+      "HAS",
+      "WITH"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Often used like `status IN ('new','done')`.",
+    "explanation": "`IN` tests whether a value matches one of several specified values."
+  },
+  {
+    "id": 27,
+    "question": "Which statement empties a table much faster than DELETE in many cases by removing all rows at once?",
+    "options": [
+      "REMOVE ALL",
+      "CLEAR TABLE",
+      "TRUNCATE TABLE",
+      "DROP ROWS"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This keeps the table but clears its data efficiently.",
+    "explanation": "`TRUNCATE TABLE` removes all rows quickly and resets storage characteristics in many cases."
+  },
+  {
+    "id": 28,
+    "question": "Which clause assigns a temporary name to a column or expression in the result set?",
+    "options": [
+      "AS",
+      "NAME",
+      "ALIAS",
+      "RENAME"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is used for readable output names.",
+    "explanation": "`AS` assigns an alias to a column or expression."
+  },
+  {
+    "id": 29,
+    "question": "Which function returns the current date and time in MySQL?",
+    "options": [
+      "CURRENT()",
+      "NOW()",
+      "DATE_NOW()",
+      "SYSDATEONLY()"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Commonly used in inserts and audits.",
+    "explanation": "`NOW()` returns the current date and time."
+  },
+  {
+    "id": 30,
+    "question": "Which function returns the current date without the time portion?",
+    "options": [
+      "TODAY()",
+      "CURRENT_DATE()",
+      "DATE()",
+      "NOWDATE()"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Date only, no time component.",
+    "explanation": "`CURRENT_DATE()` returns the current date."
+  },
+  {
+    "id": 31,
+    "question": "Which operator combines two conditions where both must be true?",
+    "options": [
+      "OR",
+      "AND",
+      "XOR",
+      "ALL"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Both conditions must hold.",
+    "explanation": "`AND` requires both conditions to evaluate to true."
+  },
+  {
+    "id": 32,
+    "question": "Which operator combines conditions where at least one must be true?",
+    "options": [
+      "OR",
+      "AND",
+      "BOTH",
+      "MERGE"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Only one matching condition is enough.",
+    "explanation": "`OR` returns true when at least one condition is true."
+  },
+  {
+    "id": 33,
+    "question": "Which keyword reverses a condition, such as excluding a set of values?",
+    "options": [
+      "NO",
+      "NOT",
+      "EXCEPT",
+      "ANTI"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This negates conditions.",
+    "explanation": "`NOT` negates a condition, such as `NOT IN` or `NOT LIKE`."
+  },
+  {
+    "id": 34,
+    "question": "Which SQL command creates a new table?",
+    "options": [
+      "BUILD TABLE",
+      "ADD TABLE",
+      "CREATE TABLE",
+      "NEW TABLE"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This defines a table schema.",
+    "explanation": "`CREATE TABLE` defines a new table and its columns."
+  },
+  {
+    "id": 35,
+    "question": "Which SQL command adds a new column to an existing table?",
+    "options": [
+      "UPDATE TABLE",
+      "ALTER TABLE",
+      "MODIFY TABLE",
+      "CHANGE TABLE"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Used when changing table structure.",
+    "explanation": "`ALTER TABLE` is used to modify an existing table definition, including adding columns."
+  },
+  {
+    "id": 36,
+    "question": "Which data type is commonly used for variable-length strings in MySQL?",
+    "options": [
+      "TEXTVAR",
+      "VARCHAR",
+      "STRING",
+      "CHARVAR"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This stores strings up to a specified maximum length.",
+    "explanation": "`VARCHAR` stores variable-length character data."
+  },
+  {
+    "id": 37,
+    "question": "Which data type is commonly used for whole numbers?",
+    "options": [
+      "FLOAT",
+      "INTEGER",
+      "DATE",
+      "BOOLEAN"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think of standard numeric identity columns.",
+    "explanation": "`INTEGER` (or `INT`) stores whole numbers."
+  },
+  {
+    "id": 38,
+    "question": "Which data type is commonly used for values with decimal precision such as prices?",
+    "options": [
+      "INT",
+      "DATE",
+      "DECIMAL",
+      "BOOLEAN"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Currency should avoid floating point rounding surprises.",
+    "explanation": "`DECIMAL` stores fixed-point numbers and is a good choice for monetary values."
+  },
+  {
+    "id": 39,
+    "question": "Which constraint links a column to a primary key in another table?",
+    "options": [
+      "UNIQUE",
+      "FOREIGN KEY",
+      "CHECK",
+      "REFERENCE ONLY"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This enforces referential integrity between tables.",
+    "explanation": "A `FOREIGN KEY` links related rows across tables and can enforce valid references."
+  },
+  {
+    "id": 40,
+    "question": "Which keyword can be used in ORDER BY to sort largest-to-smallest?",
+    "options": [
+      "ASC",
+      "DESC",
+      "DOWN",
+      "REVERSE"
+    ],
+    "category": "MySQL",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Descending order is required.",
+    "explanation": "`DESC` sorts results in descending order."
+  },
+  {
+    "id": 41,
+    "question": "What is the main difference between WHERE and HAVING?",
+    "options": [
+      "WHERE filters groups and HAVING filters rows",
+      "WHERE filters rows before grouping and HAVING filters groups after aggregation",
+      "They are identical",
+      "HAVING works only with ORDER BY"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think about the stage of query execution.",
+    "explanation": "`WHERE` filters individual rows before grouping. `HAVING` filters grouped results after aggregates are calculated."
+  },
+  {
+    "id": 42,
+    "question": "Why would you add an index to a column frequently used in search conditions?",
+    "options": [
+      "To reduce storage size",
+      "To speed up lookups and filtering",
+      "To automatically encrypt the column",
+      "To allow NULL values"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Indexes help the database find rows faster.",
+    "explanation": "Indexes improve query performance by allowing MySQL to locate matching rows more efficiently."
+  },
+  {
+    "id": 43,
+    "question": "What is the main downside of adding too many indexes?",
+    "options": [
+      "Queries become impossible",
+      "Writes can become slower and storage usage increases",
+      "Foreign keys stop working",
+      "SELECT always ignores them"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Indexes help reads, but they also must be maintained.",
+    "explanation": "Each insert, update, and delete may need index maintenance, and indexes consume additional storage."
+  },
+  {
+    "id": 44,
+    "question": "When joining `orders` to `customers`, which join is appropriate if you only want orders that have a matching customer row?",
+    "options": [
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "INNER JOIN",
+      "CROSS JOIN"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Unmatched rows should be excluded.",
+    "explanation": "`INNER JOIN` returns only rows with matching records in both tables."
+  },
+  {
+    "id": 45,
+    "question": "Which query pattern is best for finding customers that do not have any orders?",
+    "options": [
+      "INNER JOIN orders and filter non-null ids",
+      "LEFT JOIN orders and filter where order id IS NULL",
+      "CROSS JOIN orders",
+      "GROUP BY customer id without a join"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "You want customers preserved even when no order exists.",
+    "explanation": "A `LEFT JOIN` keeps all customers, and `WHERE orders.id IS NULL` finds those without matching orders."
+  },
+  {
+    "id": 46,
+    "question": "What does `COUNT(*)` count?",
+    "options": [
+      "Only non-null values in the first column",
+      "All matching rows",
+      "Only distinct rows",
+      "Only rows with primary keys"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The asterisk means all rows, not a specific column.",
+    "explanation": "`COUNT(*)` counts all matching rows regardless of NULLs in individual columns."
+  },
+  {
+    "id": 47,
+    "question": "What does `COUNT(column_name)` count?",
+    "options": [
+      "All rows including NULL values",
+      "Only rows where the specified column is not NULL",
+      "Only distinct values automatically",
+      "Only rows added today"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This aggregate ignores NULLs in that column.",
+    "explanation": "`COUNT(column_name)` counts non-NULL values in the specified column."
+  },
+  {
+    "id": 48,
+    "question": "Why is `SELECT *` usually discouraged in production queries?",
+    "options": [
+      "It is invalid SQL",
+      "It can fetch unnecessary columns and make queries less stable",
+      "It always disables indexes",
+      "It can only query one table"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think about bandwidth, readability, and schema changes.",
+    "explanation": "`SELECT *` can retrieve more data than needed and makes queries more fragile when schemas change."
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of a composite index?",
+    "options": [
+      "To split a table into partitions",
+      "To index multiple columns together",
+      "To automatically compress data",
+      "To replace foreign keys"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "More than one column participates in the same index definition.",
+    "explanation": "A composite index stores multiple columns in one index structure, which can speed up queries using those columns together."
+  },
+  {
+    "id": 50,
+    "question": "For an index on `(last_name, first_name)`, which query can best use the leftmost prefix?",
+    "options": [
+      "WHERE first_name = 'Ana'",
+      "WHERE last_name = 'Lee'",
+      "WHERE age = 30",
+      "WHERE city = 'Paris'"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "MySQL can often use the leading part of a composite index.",
+    "explanation": "A composite index on `(last_name, first_name)` can efficiently support queries filtering on `last_name` alone."
+  },
+  {
+    "id": 51,
+    "question": "What is a foreign key mainly used for?",
+    "options": [
+      "To sort rows faster",
+      "To enforce valid references between tables",
+      "To auto-generate ids",
+      "To remove duplicates"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is about referential integrity.",
+    "explanation": "Foreign keys ensure child-table values reference valid parent-table rows, if enforcement is enabled."
+  },
+  {
+    "id": 52,
+    "question": "Why might `DELETE FROM logs` be slower than `TRUNCATE TABLE logs` when removing all rows?",
+    "options": [
+      "DELETE cannot remove rows",
+      "DELETE logs individual row removals and often does more work",
+      "TRUNCATE requires a WHERE clause",
+      "TRUNCATE always preserves auto-increment values"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think row-by-row versus bulk behavior.",
+    "explanation": "`DELETE` may remove rows one by one and generate more logging/locking overhead, while `TRUNCATE` is a bulk operation."
+  },
+  {
+    "id": 53,
+    "question": "Which statement about `NULL` is correct?",
+    "options": [
+      "`NULL = NULL` evaluates true",
+      "`NULL` means zero",
+      "`NULL` represents unknown or missing data",
+      "`NULL` and empty string are always identical"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "NULL is special in SQL logic.",
+    "explanation": "`NULL` represents missing or unknown data and uses special comparison semantics."
+  },
+  {
+    "id": 54,
+    "question": "What does `COALESCE(col, 'fallback')` do?",
+    "options": [
+      "Returns NULL if any argument is NULL",
+      "Returns the first non-NULL argument",
+      "Counts missing values",
+      "Converts strings to uppercase"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is often used to replace NULL in output.",
+    "explanation": "`COALESCE` returns the first non-NULL expression from its argument list."
+  },
+  {
+    "id": 55,
+    "question": "Which query returns the top 5 highest salaries?",
+    "options": [
+      "SELECT salary FROM employees LIMIT 5",
+      "SELECT salary FROM employees ORDER BY salary DESC LIMIT 5",
+      "SELECT MAX(salary) FROM employees LIMIT 5",
+      "SELECT TOP 5 salary FROM employees"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "You need sorting plus limiting.",
+    "explanation": "`ORDER BY salary DESC LIMIT 5` returns the five highest salary values."
+  },
+  {
+    "id": 56,
+    "question": "What is the purpose of `DISTINCT` in `COUNT(DISTINCT department_id)`?",
+    "options": [
+      "It counts rows twice",
+      "It counts unique non-NULL department ids",
+      "It sorts departments alphabetically",
+      "It removes the need for GROUP BY"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Duplicates should be collapsed before counting.",
+    "explanation": "`COUNT(DISTINCT ...)` counts unique non-NULL values."
+  },
+  {
+    "id": 57,
+    "question": "What is the difference between CHAR and VARCHAR?",
+    "options": [
+      "CHAR is variable length and VARCHAR is fixed length",
+      "CHAR is fixed length and VARCHAR is variable length",
+      "They are identical in MySQL",
+      "VARCHAR stores only numbers"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think fixed-width versus variable-width storage.",
+    "explanation": "`CHAR` is fixed length, while `VARCHAR` stores variable-length strings."
+  },
+  {
+    "id": 58,
+    "question": "Why is DECIMAL often preferred over FLOAT for money?",
+    "options": [
+      "FLOAT cannot store positive numbers",
+      "DECIMAL avoids many floating point rounding issues",
+      "DECIMAL is always faster",
+      "FLOAT cannot be indexed"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Precision matters for currency.",
+    "explanation": "`DECIMAL` is a fixed-point type, so it is more appropriate for exact monetary calculations."
+  },
+  {
+    "id": 59,
+    "question": "What does `ON DELETE CASCADE` do on a foreign key?",
+    "options": [
+      "Deletes the parent only",
+      "Automatically deletes matching child rows when the parent row is deleted",
+      "Prevents any delete on the parent",
+      "Deletes indexes too"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think child rows following parent-row deletion.",
+    "explanation": "`ON DELETE CASCADE` automatically removes related child rows when the referenced parent row is deleted."
+  },
+  {
+    "id": 60,
+    "question": "Which clause is evaluated first in a typical SELECT query?",
+    "options": [
+      "ORDER BY",
+      "HAVING",
+      "WHERE",
+      "LIMIT"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Think about filtering before sorting or limiting.",
+    "explanation": "In a simplified logical order, `WHERE` is applied before grouping, having, sorting, and limiting."
+  },
+  {
+    "id": 61,
+    "question": "Why might a query with `OR` conditions sometimes perform worse than expected?",
+    "options": [
+      "OR is not valid SQL",
+      "It can make index usage harder depending on the query and indexes",
+      "OR always forces a full table lock",
+      "OR disables LIMIT"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Multiple alternative predicates can complicate optimization.",
+    "explanation": "`OR` predicates may reduce efficient index usage in some plans, depending on schema and conditions."
+  },
+  {
+    "id": 62,
+    "question": "What is the purpose of `EXPLAIN` in MySQL?",
+    "options": [
+      "It rewrites data",
+      "It shows how MySQL plans to execute a query",
+      "It encrypts a query",
+      "It validates user permissions only"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is a query analysis tool.",
+    "explanation": "`EXPLAIN` reveals the query execution plan, such as access type, possible indexes, and estimated rows."
+  },
+  {
+    "id": 63,
+    "question": "What does a full table scan mean?",
+    "options": [
+      "MySQL reads the whole table to find matches",
+      "MySQL skips all rows",
+      "Only index pages are read",
+      "The table is physically reordered"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "No efficient targeted access path was chosen.",
+    "explanation": "A full table scan means MySQL examines all table rows because it lacks or does not use a more selective access path."
+  },
+  {
+    "id": 64,
+    "question": "Which pattern can usually use an index with LIKE most effectively?",
+    "options": [
+      "LIKE '%abc'",
+      "LIKE '%abc%'",
+      "LIKE 'abc%'",
+      "LIKE '_abc%' only"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "A leading wildcard often hurts index use.",
+    "explanation": "A prefix search like `LIKE 'abc%'` can often use an index, unlike patterns starting with `%`."
+  },
+  {
+    "id": 65,
+    "question": "What is normalization mainly intended to reduce?",
+    "options": [
+      "CPU usage only",
+      "Data redundancy and update anomalies",
+      "Network latency only",
+      "Index count"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think about cleaner relational design.",
+    "explanation": "Normalization reduces redundant data storage and helps avoid insert, update, and delete anomalies."
+  },
+  {
+    "id": 66,
+    "question": "What is denormalization mainly intended to improve in some systems?",
+    "options": [
+      "Code formatting",
+      "Read performance or simpler reporting at the cost of redundancy",
+      "Primary key uniqueness",
+      "Transaction rollback"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Sometimes redundancy is accepted for faster reads.",
+    "explanation": "Denormalization can improve read-heavy workloads or simplify reporting, but it increases redundancy and maintenance complexity."
+  },
+  {
+    "id": 67,
+    "question": "What does `UNION` do by default?",
+    "options": [
+      "Combines results and keeps duplicates",
+      "Combines results and removes duplicates",
+      "Joins tables by matching columns",
+      "Filters NULLs only"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Compare it to `UNION ALL`.",
+    "explanation": "`UNION` combines result sets and removes duplicate rows."
+  },
+  {
+    "id": 68,
+    "question": "What does `UNION ALL` do?",
+    "options": [
+      "Combines results and keeps duplicates",
+      "Sorts both queries",
+      "Requires identical table names",
+      "Aggregates rows"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This version does less duplicate elimination work.",
+    "explanation": "`UNION ALL` appends results from both queries and keeps duplicates."
+  },
+  {
+    "id": 69,
+    "question": "Why must the SELECT statements in a UNION have compatible column counts?",
+    "options": [
+      "Because UNION merges rows positionally",
+      "Because MySQL requires identical table names",
+      "Because ORDER BY is forbidden otherwise",
+      "Because only numeric columns are allowed"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Columns are combined by position.",
+    "explanation": "A UNION aligns result columns by position, so each SELECT must return the same number of compatible columns."
+  },
+  {
+    "id": 70,
+    "question": "What is a correlated subquery?",
+    "options": [
+      "A subquery that references columns from the outer query",
+      "A subquery that always returns one row",
+      "A subquery used only in FROM",
+      "A subquery that cannot use aggregates"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The inner query depends on the outer row.",
+    "explanation": "A correlated subquery uses values from the outer query, so it may run conceptually once per outer row."
+  },
+  {
+    "id": 71,
+    "question": "When is EXISTS often a good choice?",
+    "options": [
+      "When you need exact arithmetic",
+      "When you only care whether at least one matching row exists",
+      "When sorting large text blobs",
+      "When adding columns"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Presence matters more than returned values.",
+    "explanation": "`EXISTS` is useful when you only need to know whether a related row exists."
+  },
+  {
+    "id": 72,
+    "question": "What is the main benefit of a view?",
+    "options": [
+      "It stores data separately by default",
+      "It can encapsulate complex query logic behind a reusable virtual table",
+      "It always runs faster than base tables",
+      "It replaces indexes"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think abstraction and reuse.",
+    "explanation": "A view presents a reusable query result definition, which can simplify access and permissions."
+  },
+  {
+    "id": 73,
+    "question": "What is a stored procedure?",
+    "options": [
+      "A permanent index",
+      "A saved set of SQL statements that can be executed later",
+      "A type of foreign key",
+      "A transaction log"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is server-side programmable logic.",
+    "explanation": "A stored procedure is a named routine containing SQL logic that can be called repeatedly."
+  },
+  {
+    "id": 74,
+    "question": "What does `DEFAULT CURRENT_TIMESTAMP` commonly do on a DATETIME or TIMESTAMP column?",
+    "options": [
+      "Blocks inserts",
+      "Automatically stores the current timestamp when no value is provided",
+      "Deletes old rows",
+      "Creates an index"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is often used for created-at columns.",
+    "explanation": "It populates the column with the current timestamp when an insert omits a value."
+  },
+  {
+    "id": 75,
+    "question": "What is the purpose of `ALTER TABLE ... ADD COLUMN`?",
+    "options": [
+      "To rename a database",
+      "To add a new column to an existing table",
+      "To delete all rows",
+      "To create a view"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This changes table structure, not data content.",
+    "explanation": "`ALTER TABLE ... ADD COLUMN` modifies an existing table definition by adding a new column."
+  },
+  {
+    "id": 76,
+    "question": "What is the purpose of `ALTER TABLE ... MODIFY COLUMN` or `CHANGE COLUMN`?",
+    "options": [
+      "To alter a column definition",
+      "To join two tables",
+      "To duplicate rows",
+      "To enforce sorting"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This updates an existing column's structure.",
+    "explanation": "These ALTER TABLE forms change a column's definition, such as type, size, or name."
+  },
+  {
+    "id": 77,
+    "question": "Why is `LIMIT 20 OFFSET 1000` sometimes slow on large tables?",
+    "options": [
+      "OFFSET makes MySQL skip many rows before returning results",
+      "LIMIT is invalid above 100",
+      "OFFSET disables indexes completely",
+      "MySQL must sort in reverse only"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Skipping many rows still costs work.",
+    "explanation": "Large offsets can be expensive because MySQL may need to scan and discard many rows before returning the requested page."
+  },
+  {
+    "id": 78,
+    "question": "What is keyset pagination mainly intended to improve compared with large OFFSET pagination?",
+    "options": [
+      "Color themes",
+      "More efficient paging using a last-seen key",
+      "Automatic deduplication",
+      "Foreign key enforcement"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think 'start after this row' rather than 'skip N rows'.",
+    "explanation": "Keyset pagination uses a stable sort key and a last-seen value, which is often more efficient than large offsets."
+  },
+  {
+    "id": 79,
+    "question": "Which transaction statement makes changes permanent?",
+    "options": [
+      "ROLLBACK",
+      "COMMIT",
+      "SAVEPOINT",
+      "REVERT"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This finalizes the transaction.",
+    "explanation": "`COMMIT` makes the current transaction's changes permanent."
+  },
+  {
+    "id": 80,
+    "question": "Which transaction statement undoes uncommitted changes?",
+    "options": [
+      "ROLLBACK",
+      "COMMIT",
+      "MERGE",
+      "UNDO ALL"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This cancels the current transaction's work.",
+    "explanation": "`ROLLBACK` reverts changes made in the current uncommitted transaction."
+  },
+  {
+    "id": 81,
+    "question": "What is the purpose of a SAVEPOINT?",
+    "options": [
+      "It drops a table safely",
+      "It marks a point within a transaction that you can roll back to",
+      "It speeds up all SELECT queries",
+      "It creates an index backup"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think partial rollback inside a transaction.",
+    "explanation": "A `SAVEPOINT` lets you roll back part of a transaction without undoing everything."
+  },
+  {
+    "id": 82,
+    "question": "What does atomicity in ACID mean?",
+    "options": [
+      "Transactions are always fast",
+      "A transaction happens completely or not at all",
+      "Queries are always parallel",
+      "Every column is indexed"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "All-or-nothing behavior is the key idea.",
+    "explanation": "Atomicity means a transaction either fully succeeds or fully fails, with no partial result left behind."
+  },
+  {
+    "id": 83,
+    "question": "What does consistency in ACID refer to?",
+    "options": [
+      "Every query uses the same execution plan",
+      "Transactions move the database from one valid state to another",
+      "Rows are always sorted",
+      "All tables have the same schema"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Constraints and rules should remain satisfied.",
+    "explanation": "Consistency means transactions preserve database rules and constraints, taking the database from one valid state to another."
+  },
+  {
+    "id": 84,
+    "question": "What does isolation in ACID refer to?",
+    "options": [
+      "Backups are compressed",
+      "Concurrent transactions do not interfere in unsafe ways",
+      "Only one user can connect",
+      "All queries are serialized always"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This concerns concurrency behavior.",
+    "explanation": "Isolation describes how transaction effects are separated from each other during concurrent execution."
+  },
+  {
+    "id": 85,
+    "question": "What does durability in ACID mean?",
+    "options": [
+      "Deleted rows can be recovered automatically",
+      "Committed changes survive crashes according to the database guarantees",
+      "Indexes never fragment",
+      "Transactions cannot fail"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think persistence after commit.",
+    "explanation": "Durability means once a transaction commits, its effects are persisted and should survive failures according to the system's guarantees."
+  },
+  {
+    "id": 86,
+    "question": "A query filters by `status`, sorts by `created_at`, and only selects `id` and `created_at`. Which index is often a strong candidate?",
+    "options": [
+      "(created_at, id)",
+      "(status, created_at, id)",
+      "(id) only",
+      "No index can help"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think about matching filter, sort, and selected columns together.",
+    "explanation": "An index on `(status, created_at, id)` can support filtering by status, ordering by created_at, and even covering selected columns."
+  },
+  {
+    "id": 87,
+    "question": "What is a covering index?",
+    "options": [
+      "An index that hides deleted rows",
+      "An index containing all columns needed to satisfy a query without reading the table rows",
+      "An index that only covers text columns",
+      "An index used only in backups"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The engine may answer the query directly from the index.",
+    "explanation": "A covering index includes all columns needed by the query, reducing extra table lookups."
+  },
+  {
+    "id": 88,
+    "question": "Why can functions on indexed columns hurt performance, such as `WHERE YEAR(order_date)=2025`?",
+    "options": [
+      "Functions may prevent efficient index use on the original column values",
+      "Functions automatically drop indexes",
+      "MySQL forbids functions in WHERE",
+      "YEAR() only works on text"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Transforming the column can make the index less useful.",
+    "explanation": "Applying a function to an indexed column can make it harder for MySQL to use the index efficiently; range predicates on the raw column are often better."
+  },
+  {
+    "id": 89,
+    "question": "Which predicate is often more index-friendly than `WHERE YEAR(order_date)=2025`?",
+    "options": [
+      "WHERE YEAR(order_date) BETWEEN 2025 AND 2025",
+      "WHERE order_date >= '2025-01-01' AND order_date < '2026-01-01'",
+      "WHERE DATE_FORMAT(order_date,'%Y')='2025'",
+      "WHERE CAST(order_date AS CHAR) LIKE '2025%'"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Use a direct range on the original datetime/date column.",
+    "explanation": "A range predicate on the raw column often allows MySQL to use an index more effectively."
+  },
+  {
+    "id": 90,
+    "question": "What is a deadlock?",
+    "options": [
+      "A backup running slowly",
+      "Two or more transactions waiting on each other in a cycle",
+      "A duplicate primary key",
+      "A failed SELECT without WHERE"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is a concurrency problem involving locks.",
+    "explanation": "A deadlock occurs when transactions wait on each other's locks in a cycle, so one must be rolled back."
+  },
+  {
+    "id": 91,
+    "question": "What is the usual application-level response when MySQL detects a deadlock and rolls back one transaction?",
+    "options": [
+      "Drop the table",
+      "Retry the transaction logic safely",
+      "Ignore the error permanently",
+      "Disable indexes"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Deadlocks can happen even in correct concurrent systems.",
+    "explanation": "The common approach is to catch the deadlock error and retry the transaction because one side was rolled back to break the cycle."
+  },
+  {
+    "id": 92,
+    "question": "What is a non-repeatable read?",
+    "options": [
+      "Reading the same row twice in one transaction and seeing different committed values",
+      "Reading uncommitted data",
+      "Seeing phantom inserted rows only",
+      "Losing all indexes"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The same row changes between two reads.",
+    "explanation": "A non-repeatable read happens when a transaction reads a row, another transaction commits an update, and the first transaction reads a different value later."
+  },
+  {
+    "id": 93,
+    "question": "What is a phantom read?",
+    "options": [
+      "A row disappears from disk",
+      "Repeating a range query and seeing extra or missing rows due to another committed insert/delete",
+      "Reading your own writes",
+      "A failed foreign key check"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think about a set of rows matching a condition changing between reads.",
+    "explanation": "A phantom read occurs when repeated range queries return a different set of rows because another transaction inserted or deleted matching rows."
+  },
+  {
+    "id": 94,
+    "question": "Which isolation level is generally weakest among the standard MySQL transaction isolation levels?",
+    "options": [
+      "SERIALIZABLE",
+      "REPEATABLE READ",
+      "READ COMMITTED",
+      "READ UNCOMMITTED"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      3
+    ],
+    "hint": "This level allows the most anomalies.",
+    "explanation": "`READ UNCOMMITTED` is the weakest standard level and can allow dirty reads."
+  },
+  {
+    "id": 95,
+    "question": "Which isolation level prevents dirty reads but can still allow non-repeatable reads?",
+    "options": [
+      "READ COMMITTED",
+      "READ UNCOMMITTED",
+      "SERIALIZABLE",
+      "NONE"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Committed data only, but repeated reads can still differ.",
+    "explanation": "`READ COMMITTED` prevents dirty reads but still allows non-repeatable reads."
+  },
+  {
+    "id": 96,
+    "question": "In InnoDB, what is MySQL's default isolation level?",
+    "options": [
+      "READ UNCOMMITTED",
+      "READ COMMITTED",
+      "REPEATABLE READ",
+      "SERIALIZABLE"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This is the default in common MySQL setups.",
+    "explanation": "InnoDB defaults to `REPEATABLE READ`."
+  },
+  {
+    "id": 97,
+    "question": "Why can long-running transactions be problematic?",
+    "options": [
+      "They always corrupt tables",
+      "They can hold locks longer, increase contention, and delay cleanup",
+      "They disable joins",
+      "They force full table scans"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Open transactions affect concurrency and storage cleanup.",
+    "explanation": "Long-running transactions can hold locks and old row versions longer, which increases contention and resource usage."
+  },
+  {
+    "id": 98,
+    "question": "What is the main purpose of normalization to third normal form in transactional systems?",
+    "options": [
+      "To maximize duplicate data",
+      "To reduce redundancy and dependency anomalies",
+      "To avoid all joins forever",
+      "To replace primary keys"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think about clean write-oriented schema design.",
+    "explanation": "Third normal form aims to reduce redundancy and update anomalies by organizing columns around proper dependencies."
+  },
+  {
+    "id": 99,
+    "question": "When might denormalization be justified?",
+    "options": [
+      "Never",
+      "When read performance or reporting simplicity outweighs added redundancy and maintenance cost",
+      "Only for tiny tables",
+      "Only when foreign keys are disabled"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Trade-offs matter.",
+    "explanation": "Denormalization can be worthwhile in read-heavy workloads or reporting systems, even though it adds redundancy."
+  },
+  {
+    "id": 100,
+    "question": "What is the purpose of partitioning a very large table?",
+    "options": [
+      "To turn columns into JSON",
+      "To divide the table into manageable pieces for maintenance and some query patterns",
+      "To remove the need for indexes",
+      "To bypass transactions"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It can help management and certain access patterns.",
+    "explanation": "Partitioning splits a large table into partitions, which can improve maintenance and some filtered query patterns depending on design."
+  },
+  {
+    "id": 101,
+    "question": "What is the main difference between `WHERE EXISTS (...)` and `WHERE id IN (...)` in practice?",
+    "options": [
+      "They are always identical in performance",
+      "They can produce similar results, but execution plans and performance may differ by query shape and indexes",
+      "EXISTS cannot use indexes",
+      "IN cannot return rows"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Semantics may align, but optimization can differ.",
+    "explanation": "`EXISTS` and `IN` can often express similar logic, but the optimizer may execute them differently depending on indexes and subquery shape."
+  },
+  {
+    "id": 102,
+    "question": "A report query is slow because it joins huge tables and then filters late. What is a strong general optimization idea?",
+    "options": [
+      "Add random ORDER BY clauses",
+      "Reduce rows earlier with selective predicates and proper indexes",
+      "Convert all joins to CROSS JOIN",
+      "Use SELECT * everywhere"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Less data flowing through joins usually helps.",
+    "explanation": "Applying selective filters earlier and indexing join/filter columns can greatly reduce work in large joins."
+  },
+  {
+    "id": 103,
+    "question": "Why can `SELECT ... FOR UPDATE` be useful?",
+    "options": [
+      "It disables transactions",
+      "It locks selected rows for an upcoming update in the current transaction",
+      "It creates a backup",
+      "It drops duplicate rows"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think row-level locking for safe modification.",
+    "explanation": "`FOR UPDATE` locks selected rows so concurrent transactions cannot modify them in conflicting ways until the transaction finishes."
+  },
+  {
+    "id": 104,
+    "question": "What is the risk of using `SELECT MAX(id)+1` to generate the next id in concurrent systems?",
+    "options": [
+      "It is always faster than AUTO_INCREMENT",
+      "Two transactions can compute the same next id",
+      "It disables indexes",
+      "It prevents inserts from committing"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Concurrent inserts can race.",
+    "explanation": "In concurrent environments, multiple sessions may read the same max value and generate duplicate candidate ids."
+  },
+  {
+    "id": 105,
+    "question": "A query uses `ORDER BY created_at DESC LIMIT 20`, but performance is poor. Which improvement is often worth checking first?",
+    "options": [
+      "Whether there is a supporting index on the sort/filter columns",
+      "Whether DISTINCT is removed",
+      "Whether the table name is shorter",
+      "Whether AUTO_INCREMENT is enabled"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Sorting can be expensive without the right index.",
+    "explanation": "An appropriate index can reduce the amount of sorting work and support fast retrieval of the top rows."
+  },
+  {
+    "id": 106,
+    "question": "What is the main benefit of adding a composite index on `(customer_id, created_at)` for queries that filter by customer and sort by created_at?",
+    "options": [
+      "It can support both the filter and the sort more efficiently",
+      "It removes the need for a primary key",
+      "It automatically partitions the table",
+      "It prevents deadlocks"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The column order should reflect query usage.",
+    "explanation": "A composite index matching the filter and sort pattern can improve both row location and ordered retrieval."
+  },
+  {
+    "id": 107,
+    "question": "Why can low-selectivity indexes be less useful?",
+    "options": [
+      "MySQL refuses to build them",
+      "If many rows share the same value, the index may not narrow the search enough",
+      "They only work on text",
+      "They always corrupt statistics"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think about how many rows each value matches.",
+    "explanation": "If an indexed value matches a large fraction of rows, using the index may not save much work compared with scanning."
+  },
+  {
+    "id": 108,
+    "question": "What are query planner statistics used for?",
+    "options": [
+      "Encrypting tables",
+      "Helping MySQL estimate row counts and choose execution plans",
+      "Formatting SQL",
+      "Resetting transactions"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The optimizer needs data distribution information.",
+    "explanation": "Statistics help the optimizer estimate cardinality and choose efficient execution strategies."
+  },
+  {
+    "id": 109,
+    "question": "Why can stale optimizer statistics hurt performance?",
+    "options": [
+      "They make SQL invalid",
+      "MySQL may choose poor plans based on inaccurate row estimates",
+      "They disable joins",
+      "They force deadlocks"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Bad estimates can lead to bad plans.",
+    "explanation": "If row distribution estimates are inaccurate, the optimizer may select a suboptimal execution plan."
+  },
+  {
+    "id": 110,
+    "question": "A table stores status values like `new`, `paid`, and `cancelled`. Why can a lookup table with a foreign key sometimes be better than hard-coded text everywhere?",
+    "options": [
+      "It enforces consistency and centralizes allowed values",
+      "It makes joins disappear",
+      "It prevents indexing",
+      "It always uses less storage than any other design"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think consistency and controlled vocabulary.",
+    "explanation": "A lookup table can enforce valid values and make business meanings easier to manage consistently."
+  },
+  {
+    "id": 111,
+    "question": "What is the main purpose of `ON DUPLICATE KEY UPDATE` in MySQL?",
+    "options": [
+      "To drop duplicate indexes",
+      "To insert a row or update it when a unique key conflict occurs",
+      "To ignore primary keys entirely",
+      "To merge tables structurally"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is a MySQL upsert-style feature.",
+    "explanation": "`ON DUPLICATE KEY UPDATE` lets MySQL update an existing row when an insert would violate a unique key."
+  },
+  {
+    "id": 112,
+    "question": "How does `INSERT IGNORE` differ from `ON DUPLICATE KEY UPDATE`?",
+    "options": [
+      "It silently skips certain insert errors instead of updating existing rows",
+      "It updates more columns automatically",
+      "It requires no indexes",
+      "It deletes duplicates"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "One skips errors; the other performs an update action.",
+    "explanation": "`INSERT IGNORE` suppresses certain errors like duplicate-key violations and skips problematic rows rather than updating them."
+  },
+  {
+    "id": 113,
+    "question": "Why might a generated column be useful?",
+    "options": [
+      "It lets MySQL store or index a value derived from other columns",
+      "It replaces transactions",
+      "It removes the need for SELECT",
+      "It forbids NULL"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think computed data derived from base columns.",
+    "explanation": "Generated columns can compute derived values and, in some cases, be indexed for faster querying."
+  },
+  {
+    "id": 114,
+    "question": "What is a good reason to avoid very large TEXT/BLOB columns in frequently queried OLTP tables when not needed?",
+    "options": [
+      "They can increase I/O and memory overhead for common queries",
+      "They make SQL invalid",
+      "They disable primary keys",
+      "They force SERIALIZABLE isolation"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Wide rows can make ordinary access heavier.",
+    "explanation": "Large row sizes can increase I/O and memory costs, especially if queries touch those rows frequently."
+  },
+  {
+    "id": 115,
+    "question": "A team stores comma-separated ids in one column instead of a junction table. What is the main relational design problem?",
+    "options": [
+      "It breaks normalization and makes querying/indexing relationships harder",
+      "It is the fastest possible design always",
+      "It improves foreign key enforcement",
+      "It simplifies joins without trade-offs"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think many-to-many modeling.",
+    "explanation": "Storing multiple ids in one column breaks first normal form and makes integrity checks and efficient querying much harder."
+  },
+  {
+    "id": 116,
+    "question": "Which design is usually appropriate for a many-to-many relationship such as students enrolling in courses?",
+    "options": [
+      "A single VARCHAR containing course ids",
+      "A junction table with foreign keys to both tables",
+      "A trigger only",
+      "A view without tables"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "You need one row per association.",
+    "explanation": "A junction table models each relationship cleanly and supports proper indexing and referential integrity."
+  },
+  {
+    "id": 117,
+    "question": "Why is idempotency important in retrying database writes from applications?",
+    "options": [
+      "It ensures retried operations do not accidentally create duplicate side effects",
+      "It disables transactions",
+      "It makes every query faster",
+      "It replaces unique constraints"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Retries should be safe.",
+    "explanation": "Idempotent designs help ensure that repeating the same request after timeouts or deadlocks does not create unintended duplicate results."
+  },
+  {
+    "id": 118,
+    "question": "Scenario: A monthly sales report is slow because it filters with `WHERE DATE(created_at) = '2026-03-01'`. What is a better rewrite?",
+    "options": [
+      "WHERE created_at = '2026-03-01'",
+      "WHERE created_at >= '2026-03-01' AND created_at < '2026-03-02'",
+      "WHERE YEAR(created_at)=2026 AND MONTH(created_at)=3 AND DAY(created_at)=1",
+      "WHERE CAST(created_at AS CHAR) LIKE '2026-03-01%'"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Avoid wrapping the indexed datetime column in a function.",
+    "explanation": "A half-open range on the raw datetime column is usually more index-friendly than applying `DATE()` to the column."
+  },
+  {
+    "id": 119,
+    "question": "Scenario: Pagination on `orders` with `LIMIT 20 OFFSET 500000` is too slow. What is a stronger alternative?",
+    "options": [
+      "Use keyset pagination based on the last seen sort key",
+      "Add more OFFSET",
+      "Remove ORDER BY",
+      "Use SELECT *"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Skipping huge numbers of rows is expensive.",
+    "explanation": "Keyset pagination avoids scanning and discarding massive offsets by resuming from the last seen key."
+  },
+  {
+    "id": 120,
+    "question": "Scenario: Two workers both read 'pending' jobs and process the same job. What database-side concept can help coordinate safe claiming?",
+    "options": [
+      "Row-level locking in a transaction, such as selecting rows for update",
+      "Dropping the primary key",
+      "Using DISTINCT",
+      "Changing VARCHAR to CHAR"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Concurrent workers need coordination.",
+    "explanation": "A transactional row-claiming pattern with locking can prevent multiple workers from processing the same job."
+  },
+  {
+    "id": 121,
+    "question": "Scenario: A dashboard query joins five tables and uses `SELECT *`, but the frontend only needs three columns. What is the most direct improvement?",
+    "options": [
+      "Select only the needed columns",
+      "Add UNION",
+      "Drop foreign keys",
+      "Convert all LEFT JOINs to CROSS JOIN"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Reduce unnecessary data transfer and processing.",
+    "explanation": "Selecting only necessary columns reduces I/O, network transfer, and often execution overhead."
+  },
+  {
+    "id": 122,
+    "question": "Scenario: An update transaction reads a row, waits for user input for 30 seconds, then writes. Why is this dangerous?",
+    "options": [
+      "The long transaction can hold locks and increase contention",
+      "MySQL forbids waits over 10 seconds",
+      "The row becomes read-only forever",
+      "The primary key changes automatically"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Keep transactions short when possible.",
+    "explanation": "Waiting inside an open transaction increases lock duration and can block other work or cause more deadlocks."
+  },
+  {
+    "id": 123,
+    "question": "Scenario: A report repeatedly queries summary totals from a huge fact table every minute. What architectural idea may help?",
+    "options": [
+      "Pre-aggregated summary tables or materialization strategy",
+      "Use RANDOM() in the query",
+      "Drop all indexes",
+      "Replace SUM() with COUNT()"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Compute once, read many times.",
+    "explanation": "For heavy repeated reporting, precomputed summaries can drastically reduce query cost."
+  },
+  {
+    "id": 124,
+    "question": "Scenario: Developers compare text dates like `WHERE order_date = '03/01/2026'` in a DATE column and get inconsistent behavior. What should be improved?",
+    "options": [
+      "Use proper ISO-style date literals and correct data types",
+      "Convert the DATE column to VARCHAR",
+      "Disable strict mode",
+      "Store all dates as integers only"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Data type correctness matters.",
+    "explanation": "Using proper date types and consistent date literal formats avoids parsing ambiguity and improves correctness."
+  },
+  {
+    "id": 125,
+    "question": "Scenario: A slow query joins on `orders.customer_id = customers.id`, but `orders.customer_id` has no index. What is the most likely improvement?",
+    "options": [
+      "Add an index on the join column used in the large table",
+      "Rename the table",
+      "Drop the primary key from customers",
+      "Use ORDER BY first"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Join columns are prime indexing candidates.",
+    "explanation": "Indexing join columns often improves join performance substantially, especially on larger tables."
+  },
+  {
+    "id": 126,
+    "question": "Scenario: A team uses soft deletes with a `deleted_at` column, and many queries forget to exclude deleted rows. What is one maintainability improvement?",
+    "options": [
+      "Use a consistent data access layer or view that applies the filter by default",
+      "Drop the column and hard delete everything",
+      "Use TEXT instead of DATETIME",
+      "Replace deleted_at with AUTO_INCREMENT"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Consistency of filtering matters.",
+    "explanation": "Centralizing the soft-delete predicate in a view or shared query layer reduces accidental inclusion of deleted rows."
+  },
+  {
+    "id": 127,
+    "question": "Scenario: A query plan changed after large data growth and became slow. What should you inspect first?",
+    "options": [
+      "The execution plan and whether indexes/statistics still fit the data shape",
+      "The font used in the SQL editor",
+      "Whether LIMIT was spelled in uppercase",
+      "Whether the table has comments"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Growth can change optimal plans.",
+    "explanation": "Data growth can change selectivity and plan quality, so check EXPLAIN output, indexes, and statistics first."
+  },
+  {
+    "id": 128,
+    "question": "Scenario: You need to ensure that an email address appears only once among active users, but soft-deleted users may reuse old emails. What is the general idea?",
+    "options": [
+      "Design a uniqueness rule that reflects the business condition, such as an appropriate unique index strategy",
+      "Remove all constraints",
+      "Store duplicate emails and fix later",
+      "Use COUNT(*) before every insert without constraints"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The constraint should match the real business rule.",
+    "explanation": "Production schemas should encode real uniqueness rules as close to the database as possible, rather than relying only on pre-check queries."
+  },
+  {
+    "id": 129,
+    "question": "Scenario: A developer uses an application-side 'check then insert' flow to enforce uniqueness and still gets duplicates under concurrency. Why?",
+    "options": [
+      "Two requests can pass the check before either insert commits",
+      "MySQL ignores duplicate values",
+      "SELECT always locks the table",
+      "UNIQUE constraints do not work concurrently"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think race condition.",
+    "explanation": "Application-side pre-checks alone are not enough under concurrency. A database uniqueness constraint is needed to enforce correctness."
+  },
+  {
+    "id": 130,
+    "question": "Scenario: A query on a nullable column uses `!= 'cancelled'` and unexpectedly misses NULL rows too. Why?",
+    "options": [
+      "Comparisons with NULL evaluate to unknown, so NULL rows are not matched",
+      "MySQL converts NULL to 'cancelled'",
+      "!= includes NULL automatically",
+      "The column became indexed"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "NULL has three-valued logic behavior.",
+    "explanation": "`NULL` is not equal to or unequal to ordinary values in the usual sense, so `!=` does not include NULL rows unless handled explicitly."
+  },
+  {
+    "id": 131,
+    "question": "Scenario: You need to report categories with zero products as well as categories with products. Which join is appropriate?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN from categories to products",
+      "CROSS JOIN",
+      "SELF JOIN"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Keep all categories even when no product matches.",
+    "explanation": "A `LEFT JOIN` from categories preserves categories without matching products."
+  },
+  {
+    "id": 132,
+    "question": "Scenario: A query calculates `SUM(price * quantity)` many times in reports. What schema/query feature might help if this exact expression is heavily reused?",
+    "options": [
+      "A generated column or pre-aggregated design, depending on workload",
+      "Drop all indexes",
+      "Use VARCHAR for prices",
+      "Replace SUM with COUNT"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think reusable derived value.",
+    "explanation": "If a derived expression is heavily reused, a generated column or summary design can reduce repeated computation depending on use case."
+  },
+  {
+    "id": 133,
+    "question": "Scenario: A transaction inserts an order and then an order_items row, but the second insert fails. What should happen in a correct transactional design?",
+    "options": [
+      "Commit the order anyway",
+      "Roll back both inserts so partial data is not left behind",
+      "Drop the table",
+      "Ignore the failure"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Atomicity matters.",
+    "explanation": "A transaction should roll back both operations so the database does not keep incomplete order data."
+  },
+  {
+    "id": 134,
+    "question": "Scenario: A query is slow because it returns millions of rows to the application, which then filters most of them in code. What is the first fix?",
+    "options": [
+      "Push the filtering into SQL so fewer rows leave the database",
+      "Increase network timeout",
+      "Convert rows to JSON sooner",
+      "Disable indexes"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Do the filtering where the data lives.",
+    "explanation": "Filtering in SQL reduces transferred data and lets MySQL use indexes and set-based execution."
+  },
+  {
+    "id": 135,
+    "question": "Scenario: An analytics job needs exact reproducible totals across reruns. Why is using FLOAT risky?",
+    "options": [
+      "FLOAT may introduce binary rounding differences",
+      "FLOAT cannot store decimals at all",
+      "FLOAT disables aggregation",
+      "FLOAT cannot be inserted"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Exact math matters.",
+    "explanation": "Floating-point types can introduce rounding artifacts, so fixed-point types like DECIMAL are safer for exact totals."
+  },
+  {
+    "id": 136,
+    "question": "Scenario: A foreign key creation fails because child rows already contain values not present in the parent table. What is the root issue?",
+    "options": [
+      "Referential integrity is already violated in existing data",
+      "MySQL requires VARCHAR keys only",
+      "Primary keys cannot be referenced",
+      "Indexes prevent foreign keys"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The existing rows must satisfy the constraint first.",
+    "explanation": "A foreign key cannot be added if current child rows reference nonexistent parent keys."
+  },
+  {
+    "id": 137,
+    "question": "Scenario: A team wants faster writes and suggests removing all indexes, including the primary key. What is the best response?",
+    "options": [
+      "Indexes should be chosen carefully, not removed blindly; primary keys and essential access paths still matter",
+      "Removing all indexes is always best",
+      "Primary keys are optional in production tables",
+      "Queries do not benefit from indexes"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Write speed is only one side of the trade-off.",
+    "explanation": "Blindly removing indexes harms correctness and read performance. Production schemas need a balanced index strategy."
+  },
+  {
+    "id": 138,
+    "question": "Scenario: A migration adds a NOT NULL column to a table with existing rows. What must be considered?",
+    "options": [
+      "Existing rows need a valid value, such as a default or a backfill strategy",
+      "MySQL fills all rows with random data",
+      "NOT NULL affects only new rows",
+      "The table must be empty"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Old rows must satisfy the new constraint too.",
+    "explanation": "When adding a NOT NULL column, existing rows need a value through a default, update, or staged migration plan."
+  },
+  {
+    "id": 139,
+    "question": "Scenario: A table stores user timezone names separately from timestamps. Why is this often useful?",
+    "options": [
+      "It preserves context needed to interpret times correctly for users",
+      "It makes indexes disappear",
+      "It removes the need for DATETIME columns",
+      "It guarantees all queries are fast"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "UTC storage alone may not preserve user display intent.",
+    "explanation": "Storing timezone context can be important when converting or displaying timestamps correctly for users."
+  },
+  {
+    "id": 140,
+    "question": "Scenario: A query on `email` should be case-insensitive according to business rules. What must be checked?",
+    "options": [
+      "Collation and comparison behavior should match the intended case-sensitivity rule",
+      "AUTO_INCREMENT settings",
+      "Foreign key cascade options",
+      "Transaction isolation only"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "String comparison behavior depends on collation settings.",
+    "explanation": "Case sensitivity in comparisons depends on collation and design choices, so the schema and queries should match the business rule."
+  },
+  {
+    "id": 141,
+    "question": "Scenario: A nightly job deletes old audit rows in one giant statement and causes long lock pressure. What is a safer strategy?",
+    "options": [
+      "Delete in smaller batches inside controlled loops",
+      "Drop the database first",
+      "Remove the WHERE clause",
+      "Convert the table to VARCHAR"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Large write operations can create contention and long-running transactions.",
+    "explanation": "Batching large deletes reduces lock duration, transaction size, and operational risk compared with one massive delete."
+  },
+  {
+    "id": 142,
+    "question": "What is the main purpose of a surrogate key such as an auto-increment id?",
+    "options": [
+      "To provide a stable technical identifier independent of business meaning",
+      "To replace all unique constraints",
+      "To eliminate foreign keys",
+      "To guarantee faster queries in every case"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think of identity separate from business attributes.",
+    "explanation": "A surrogate key gives each row a stable technical identifier even if business attributes change."
+  },
+  {
+    "id": 143,
+    "question": "When can a natural key be a good primary key choice?",
+    "options": [
+      "When the real-world attribute is truly unique, stable, and compact enough for the workload",
+      "Whenever any text column exists",
+      "Only when there are no foreign keys",
+      "Only for temporary tables"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Natural keys work best when their business meaning stays stable.",
+    "explanation": "A natural key can be appropriate if it is genuinely unique, unlikely to change, and practical to reference."
+  },
+  {
+    "id": 144,
+    "question": "Why can wide composite primary keys increase storage costs?",
+    "options": [
+      "Because secondary indexes often store the primary key value too",
+      "Because MySQL duplicates the whole table per key",
+      "Because primary keys disable compression",
+      "Because only text keys are allowed"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "In InnoDB, the primary key affects secondary index size.",
+    "explanation": "In InnoDB, secondary index entries include the primary key, so a wide primary key can increase index storage overhead."
+  },
+  {
+    "id": 145,
+    "question": "Scenario: A developer wraps a column in `LOWER(email)` for every lookup. What schema-level option may help if case-insensitive search is required often?",
+    "options": [
+      "Choose an appropriate case-insensitive collation or supporting indexed design",
+      "Replace the email column with JSON",
+      "Drop all indexes",
+      "Use UNION instead"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Repeated functions in predicates can hurt index usage.",
+    "explanation": "A suitable collation or schema/index design can provide case-insensitive comparisons without applying a function in every query."
+  },
+  {
+    "id": 146,
+    "question": "What is the main purpose of `CHECK` constraints in SQL designs where supported and enforced?",
+    "options": [
+      "To restrict column values according to a rule",
+      "To speed up joins automatically",
+      "To create a hidden index",
+      "To replace transactions"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think domain validation at the database level.",
+    "explanation": "`CHECK` constraints enforce allowed-value rules, such as ensuring quantity is nonnegative."
+  },
+  {
+    "id": 147,
+    "question": "Scenario: A report groups by month using formatted strings and sorts incorrectly, such as '1','10','11','2'. What is a better approach?",
+    "options": [
+      "Group and sort by proper date parts or a real month key, not display strings alone",
+      "Use RANDOM() before ORDER BY",
+      "Convert all months to TEXT permanently",
+      "Remove GROUP BY"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Display formatting is not always a good sort key.",
+    "explanation": "Using actual date parts or sortable month keys preserves correct chronological order."
+  },
+  {
+    "id": 148,
+    "question": "Why is it usually better to store one fact per row instead of repeating columns like phone1, phone2, phone3?",
+    "options": [
+      "It keeps the schema more normalized and queryable",
+      "It makes joins impossible",
+      "It guarantees no NULL values",
+      "It removes the need for foreign keys"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Repeating groups are a classic normalization issue.",
+    "explanation": "A separate related table for repeatable attributes is usually cleaner, more scalable, and easier to query than repeated numbered columns."
+  },
+  {
+    "id": 149,
+    "question": "Scenario: A migration renames a column used by many queries and reports. What non-data step is critical before production rollout?",
+    "options": [
+      "Review and update dependent application code, views, procedures, and reports",
+      "Only restart MySQL",
+      "Drop all indexes first",
+      "Change the server timezone"
+    ],
+    "category": "MySQL",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Schema changes often have downstream dependencies.",
+    "explanation": "Column renames can break queries and application code, so dependent objects and code paths must be updated and tested."
+  },
+  {
+    "id": 150,
+    "question": "What is the main purpose of `ANALYZE TABLE` in MySQL maintenance?",
+    "options": [
+      "To update table/index statistics for the optimizer",
+      "To encrypt the table",
+      "To delete fragmented rows",
+      "To commit all transactions"
+    ],
+    "category": "MySQL",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This influences optimizer estimates.",
+    "explanation": "`ANALYZE TABLE` updates statistics that help the optimizer choose efficient execution plans."
+  }
+]

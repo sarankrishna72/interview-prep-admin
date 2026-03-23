@@ -17,6 +17,7 @@ exports.postLogin = async (req, res) => {
     }
 
     const user = await User.findOne({ email: email.toLowerCase().trim() });
+    console.log(user)
     if (!user) {
       return renderLoginError(res, "Invalid email or password");
     }

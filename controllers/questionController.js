@@ -14,7 +14,7 @@ exports.getQuestion = async (req, res) => {
   // If already logged in → redirect
 
    try {
-    const { category, difficulty, questionType, page = 1, limit = 10 } = req.query;
+    const { category, difficulty, questionType, page = 1, limit = 30 } = req.query;
 
     const filter = {};
 
@@ -130,6 +130,32 @@ exports.showQuestionPage = async (req, res) => {
   }
 };
 
+exports.deleteQuestion = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const question = await Question.findByIdAndDelete(id);
+
+    if (!question) {
+      return res.status(404).render('error', {
+        message: 'Question not found',
+        title: 'Error'
+      });
+    }
+
+    // Redirect to question list after delete
+    res.redirect('/questions');
+
+  } catch (error) {
+    console.error(error);
+
+    res.status(500).render('error', {
+      message: 'Server Error',
+      title: 'Error'
+    });
+  }
+};
+
 exports.updateQuestion = async (req, res) => {
   try {
     const {
@@ -185,7 +211,7 @@ exports.createQuestion = async (req, res) => {
     } = req.body;
 
     const questionCr = new Question({
-      question: title,
+      question,
       explanation,
       hint,
       category,

@@ -26,6 +26,7 @@
             <option value="angular">Angular</option>
             <option value="react">React JS</option>
             <option value="python">Python</option>
+            <option value="mysql">MySQL</option>
           </select>
         </div>
 
@@ -158,7 +159,7 @@
                       </a>
 
                       <!-- DELETE -->
-                      <form action="/questions/delete/<%= question._id %>" method="POST" style="display:inline;">
+                      <form action="/questions/delete/<%= question._id %>?_method=DELETE" method="POST" style="display:inline;">
                         <button type="submit" class="btn btn-danger btn-sm"
                           onclick="return confirm('Are you sure you want to delete this question?')">
                           Delete
@@ -209,6 +210,6 @@
     if (questionType.value) {
       queryParams +=  `questionType=${questionType.value}&`
     }
-    window.location.href = `/questions?${queryParams}page=1&limit=10`
+    window.location.href = `/questions?${queryParams}page=1&limit=30`
   })
 </script>

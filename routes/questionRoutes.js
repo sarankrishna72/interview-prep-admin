@@ -9,5 +9,5 @@ router.get('/edit/:id', authMiddleware, questionController.editQuestionPage);
 router.put('/edit/:id', authMiddleware, questionController.updateQuestion);
 router.post('/', authMiddleware, questionController.createQuestion);
 router.get('/detail/:id', authMiddleware, questionController.showQuestionPage);
+router.delete('/delete/:id', authMiddleware, questionController.deleteQuestion);
 module.exports = router;
-

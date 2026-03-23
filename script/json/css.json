@@ -1,0 +1,2282 @@
+[
+  {
+    "id": 1,
+    "question": "Which CSS feature is used to set the background color of an element?",
+    "options": [
+      "background-color",
+      "color",
+      "background-image",
+      "fill"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "Use the property that fills the element’s background with a color.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The background-color property sets an element’s background color."
+  },
+  {
+    "id": 2,
+    "question": "Which CSS feature is used to change the text color?",
+    "options": [
+      "font-color",
+      "text-color",
+      "color",
+      "foreground"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "This property controls the foreground color of text.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "The color property changes text color."
+  },
+  {
+    "id": 3,
+    "question": "Which CSS feature is used to add space inside an element, between the content and border?",
+    "options": [
+      "margin",
+      "gap",
+      "padding",
+      "spacing"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "Think about inner spacing, not outer spacing.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "Padding adds space inside an element."
+  },
+  {
+    "id": 4,
+    "question": "Which CSS feature is used to add space outside an element’s border?",
+    "options": [
+      "padding",
+      "margin",
+      "gap",
+      "border-spacing"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "This is the outer spacing around an element.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Margin adds space outside an element’s border."
+  },
+  {
+    "id": 5,
+    "question": "Which CSS feature is used to round the corners of an element?",
+    "options": [
+      "corner-radius",
+      "radius",
+      "border-radius",
+      "round"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It starts with the word 'border'.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "border-radius rounds the corners of an element."
+  },
+  {
+    "id": 6,
+    "question": "Which CSS feature is used to control an element’s transparency?",
+    "options": [
+      "visibility",
+      "opacity",
+      "display",
+      "alpha"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "A value of 0 makes the element fully transparent.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "opacity controls the transparency of an element."
+  },
+  {
+    "id": 7,
+    "question": "Which CSS feature is used to apply a shadow effect to text?",
+    "options": [
+      "box-shadow",
+      "font-shadow",
+      "text-shadow",
+      "shadow"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "This property specifically targets characters.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "text-shadow applies a shadow effect to text."
+  },
+  {
+    "id": 8,
+    "question": "Which CSS feature is used to apply a shadow effect to an element box?",
+    "options": [
+      "text-shadow",
+      "box-shadow",
+      "shadow",
+      "outline-shadow"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "This affects the element box itself.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "box-shadow applies a shadow effect to the element’s box."
+  },
+  {
+    "id": 9,
+    "question": "Which CSS feature is used to control the size of text?",
+    "options": [
+      "text-size",
+      "font-size",
+      "size",
+      "font-scale"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It begins with 'font'.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "font-size controls the size of text."
+  },
+  {
+    "id": 10,
+    "question": "Which CSS feature is used to control spacing between letters?",
+    "options": [
+      "word-spacing",
+      "line-height",
+      "letter-spacing",
+      "text-indent"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It targets individual characters.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "letter-spacing controls spacing between letters."
+  },
+  {
+    "id": 11,
+    "question": "Which CSS feature is used to control spacing between words?",
+    "options": [
+      "letter-spacing",
+      "word-spacing",
+      "line-height",
+      "text-indent"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It affects gaps between whole words.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "word-spacing controls spacing between words."
+  },
+  {
+    "id": 12,
+    "question": "Which CSS feature is used to control the height of each line of text?",
+    "options": [
+      "line-height",
+      "font-size",
+      "letter-spacing",
+      "text-height"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It affects vertical spacing between lines.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "line-height sets the height of each line box."
+  },
+  {
+    "id": 13,
+    "question": "Which CSS feature is used to make text bold?",
+    "options": [
+      "font-style",
+      "font-weight",
+      "text-decoration",
+      "font-variant"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "Normal and bold are common values.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "font-weight controls text thickness."
+  },
+  {
+    "id": 14,
+    "question": "Which CSS feature is used to make text italic?",
+    "options": [
+      "font-weight",
+      "font-style",
+      "text-transform",
+      "font-family"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "One common value is italic.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "font-style can make text italic."
+  },
+  {
+    "id": 15,
+    "question": "Which CSS feature is used to underline text?",
+    "options": [
+      "text-decoration",
+      "font-style",
+      "border-bottom",
+      "text-transform"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It can also create overlines and line-through effects.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "text-decoration is used to underline text."
+  },
+  {
+    "id": 16,
+    "question": "Which CSS feature is used to convert text to uppercase?",
+    "options": [
+      "text-decoration",
+      "font-variant",
+      "text-transform",
+      "text-case"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "This property changes text casing.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "text-transform can convert text to uppercase."
+  },
+  {
+    "id": 17,
+    "question": "Which CSS feature is used to set the font family of text?",
+    "options": [
+      "font-face",
+      "font-family",
+      "typeface",
+      "font-style"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It chooses the typeface stack.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "font-family sets which fonts are used."
+  },
+  {
+    "id": 18,
+    "question": "Which CSS feature is used to align inline content horizontally inside a block container?",
+    "options": [
+      "justify-content",
+      "align-items",
+      "text-align",
+      "place-items"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "This is commonly used with left, center, and right.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "text-align aligns inline content horizontally."
+  },
+  {
+    "id": 19,
+    "question": "Which CSS feature is used to indent the first line of text in a block?",
+    "options": [
+      "line-height",
+      "text-indent",
+      "letter-spacing",
+      "padding-left"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It affects only the first line.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "text-indent indents the first line of text."
+  },
+  {
+    "id": 20,
+    "question": "Which CSS feature is used to control how long an animation takes to complete one cycle?",
+    "options": [
+      "animation-name",
+      "animation-duration",
+      "transition-duration",
+      "animation-delay"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "This property expects a time value like 2s.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "animation-duration sets how long one animation cycle lasts."
+  },
+  {
+    "id": 21,
+    "question": "Which CSS feature is used to delay the start of an animation?",
+    "options": [
+      "animation-duration",
+      "animation-delay",
+      "transition-delay",
+      "animation-timing-function"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It uses a time value before the animation begins.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "animation-delay delays the start of an animation."
+  },
+  {
+    "id": 22,
+    "question": "Which CSS feature is used to specify the timing curve of an animation?",
+    "options": [
+      "animation-fill-mode",
+      "animation-timing-function",
+      "transition-property",
+      "animation-play-state"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "Examples include ease, linear, and ease-in-out.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "animation-timing-function defines the pacing curve of an animation."
+  },
+  {
+    "id": 23,
+    "question": "Which CSS feature is used to determine whether an animation repeats?",
+    "options": [
+      "animation-iteration-count",
+      "animation-direction",
+      "animation-duration",
+      "animation-fill-mode"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It can be a number or infinite.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "animation-iteration-count controls repetition."
+  },
+  {
+    "id": 24,
+    "question": "Which CSS feature is used to pause or runs an animation?",
+    "options": [
+      "animation-direction",
+      "animation-play-state",
+      "animation-fill-mode",
+      "transition"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "Common values are running and paused.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "animation-play-state pauses or runs an animation."
+  },
+  {
+    "id": 25,
+    "question": "Which CSS feature is used to choose which CSS property should transition?",
+    "options": [
+      "transition-duration",
+      "transition-property",
+      "transition-delay",
+      "transition-timing-function"
+    ],
+    "category": "CSS",
+    "difficulty": "easy",
+    "description": "Easy level CSS concept question.",
+    "hint": "It names the property that should animate on change.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "transition-property specifies which property transitions."
+  },
+  {
+    "id": 26,
+    "question": "Which CSS feature is used to control how long a transition lasts?",
+    "options": [
+      "animation-duration",
+      "transition-duration",
+      "transition-delay",
+      "transition-property"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It uses values like 200ms or 1s.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "transition-duration sets the duration of a transition."
+  },
+  {
+    "id": 27,
+    "question": "Which CSS feature is used to delay the start of a transition?",
+    "options": [
+      "transition-delay",
+      "animation-delay",
+      "transition-duration",
+      "transition-property"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It postpones the transition after a change occurs.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "transition-delay delays the start of a transition."
+  },
+  {
+    "id": 28,
+    "question": "Which CSS feature is used to define the speed curve of a transition?",
+    "options": [
+      "transition-duration",
+      "transition-timing-function",
+      "animation-timing-function",
+      "transition-property"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It controls easing for transitions.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "transition-timing-function defines the pacing curve of a transition."
+  },
+  {
+    "id": 29,
+    "question": "Which CSS feature is used to set an element to use Flexbox layout?",
+    "options": [
+      "display: block",
+      "display: grid",
+      "display: flex",
+      "position: flex"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "You enable the layout by changing the display mode.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "display: flex makes an element a flex container."
+  },
+  {
+    "id": 30,
+    "question": "Which CSS feature is used to set an element to use CSS Grid layout?",
+    "options": [
+      "display: flex",
+      "display: inline-grid",
+      "display: grid",
+      "position: grid"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "You enable grid by changing the display mode.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "display: grid makes an element a grid container."
+  },
+  {
+    "id": 31,
+    "question": "Which CSS feature is used to change the main axis of a flex container from row to column?",
+    "options": [
+      "align-items",
+      "flex-direction",
+      "justify-content",
+      "flex-wrap"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "This property controls the main axis direction.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "flex-direction sets the direction of flex items."
+  },
+  {
+    "id": 32,
+    "question": "Which CSS feature is used to distributes flex items along the main axis?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "align-content",
+      "place-items"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "This affects the main axis.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "justify-content aligns flex items along the main axis."
+  },
+  {
+    "id": 33,
+    "question": "Which CSS feature is used to align flex items along the cross axis?",
+    "options": [
+      "justify-content",
+      "align-items",
+      "justify-items",
+      "place-content"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "This affects the cross axis for a single line of items.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "align-items aligns flex items along the cross axis."
+  },
+  {
+    "id": 34,
+    "question": "Which CSS feature is used to allow flex items to move onto multiple lines?",
+    "options": [
+      "flex-direction",
+      "flex-wrap",
+      "align-content",
+      "flex-flow"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "Without it, items stay on a single line by default.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "flex-wrap controls whether flex items wrap."
+  },
+  {
+    "id": 35,
+    "question": "Which CSS feature is used to combine flex-direction and flex-wrap into one shorthand?",
+    "options": [
+      "flex",
+      "flex-flow",
+      "flow",
+      "wrap-direction"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It combines two flex container properties.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "flex-flow is shorthand for flex-direction and flex-wrap."
+  },
+  {
+    "id": 36,
+    "question": "Which CSS feature is used to control the initial main size of a flex item before remaining space is distributed?",
+    "options": [
+      "flex-grow",
+      "flex-basis",
+      "width",
+      "flex-shrink"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It acts as the starting size in flex layout.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "flex-basis sets the initial main size of a flex item."
+  },
+  {
+    "id": 37,
+    "question": "Which CSS feature is used to allow a flex item to grow and take extra space?",
+    "options": [
+      "flex-basis",
+      "flex-grow",
+      "flex-shrink",
+      "order"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "A value greater than 0 lets it expand.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "flex-grow controls how a flex item grows."
+  },
+  {
+    "id": 38,
+    "question": "Which CSS feature is used to control how a flex item shrinks when space is limited?",
+    "options": [
+      "flex-grow",
+      "flex-shrink",
+      "flex-basis",
+      "order"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It works when the container is too small.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "flex-shrink controls how a flex item shrinks."
+  },
+  {
+    "id": 39,
+    "question": "Which CSS feature is used to change the visual order of a flex item without changing the HTML order?",
+    "options": [
+      "z-index",
+      "order",
+      "position",
+      "flex-order"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "This affects the sequence of flex items.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "order changes the visual order of flex items."
+  },
+  {
+    "id": 40,
+    "question": "Which CSS feature is used to define the columns of a CSS Grid container?",
+    "options": [
+      "grid-template-rows",
+      "grid-template-columns",
+      "grid-auto-flow",
+      "grid-column"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It specifies the track sizes for columns.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "grid-template-columns defines grid columns."
+  },
+  {
+    "id": 41,
+    "question": "Which CSS feature is used to define the rows of a CSS Grid container?",
+    "options": [
+      "grid-template-columns",
+      "grid-template-rows",
+      "grid-auto-rows",
+      "grid-row"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It specifies the track sizes for rows.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "grid-template-rows defines grid rows."
+  },
+  {
+    "id": 42,
+    "question": "Which CSS feature is used to places a grid item along the row tracks?",
+    "options": [
+      "grid-column",
+      "grid-row",
+      "grid-template-rows",
+      "row-gap"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is used on the grid item itself.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "grid-row controls a grid item’s row placement."
+  },
+  {
+    "id": 43,
+    "question": "Which CSS feature is used to places a grid item along the column tracks?",
+    "options": [
+      "grid-column",
+      "grid-row",
+      "grid-template-columns",
+      "column-gap"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is used on the grid item itself.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "grid-column controls a grid item’s column placement."
+  },
+  {
+    "id": 44,
+    "question": "Which CSS feature is used to set the gap between rows and columns in Grid or Flex layouts?",
+    "options": [
+      "margin",
+      "padding",
+      "gap",
+      "border-spacing"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "This property works on modern grid and flex containers.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "gap sets spacing between items in grid and flex layouts."
+  },
+  {
+    "id": 45,
+    "question": "Which CSS feature is used to set only the row gap in a Grid or Flex layout?",
+    "options": [
+      "row-gap",
+      "grid-row",
+      "column-gap",
+      "gap-row"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It targets vertical spacing between tracks or wrapped lines.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "row-gap sets only row spacing."
+  },
+  {
+    "id": 46,
+    "question": "Which CSS feature is used to set only the column gap in a Grid or Flex layout?",
+    "options": [
+      "column-gap",
+      "grid-column",
+      "row-gap",
+      "gap-column"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It targets horizontal spacing between tracks or columns.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "column-gap sets only column spacing."
+  },
+  {
+    "id": 47,
+    "question": "Which CSS feature is used to position an element relative to its normal position?",
+    "options": [
+      "position: absolute",
+      "position: fixed",
+      "position: relative",
+      "position: sticky"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "Offsets are applied from the element’s normal position.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "position: relative keeps the element in normal flow and allows offsets."
+  },
+  {
+    "id": 48,
+    "question": "Which CSS feature is used to remove an element from normal flow and positions it relative to the nearest positioned ancestor?",
+    "options": [
+      "position: relative",
+      "position: fixed",
+      "position: absolute",
+      "position: sticky"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is often used inside a relatively positioned parent.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "position: absolute positions an element relative to the nearest positioned ancestor."
+  },
+  {
+    "id": 49,
+    "question": "Which CSS feature is used to keep an element fixed relative to the viewport?",
+    "options": [
+      "position: absolute",
+      "position: relative",
+      "position: fixed",
+      "position: sticky"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It stays in place when the page scrolls.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "position: fixed positions an element relative to the viewport."
+  },
+  {
+    "id": 50,
+    "question": "Which CSS feature is used to behave like relative until a scroll threshold is reached, then sticks?",
+    "options": [
+      "position: absolute",
+      "position: sticky",
+      "position: fixed",
+      "position: static"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is useful for sticky headers.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "position: sticky sticks an element after a threshold is reached."
+  },
+  {
+    "id": 51,
+    "question": "Which CSS feature is used to control stacking order for positioned elements?",
+    "options": [
+      "order",
+      "z-index",
+      "stack-order",
+      "layer"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "Higher values generally appear in front.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "z-index controls stacking order."
+  },
+  {
+    "id": 52,
+    "question": "Which CSS feature is used to clip overflowing content or adds scrollbars?",
+    "options": [
+      "display",
+      "overflow",
+      "clip-path",
+      "visibility"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "Common values include hidden, auto, and scroll.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "overflow controls what happens when content exceeds an element’s box."
+  },
+  {
+    "id": 53,
+    "question": "Which CSS feature is used to control only horizontal overflow?",
+    "options": [
+      "overflow-x",
+      "overflow-y",
+      "overflow-inline",
+      "overflow"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It affects left-to-right overflow behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "overflow-x controls horizontal overflow."
+  },
+  {
+    "id": 54,
+    "question": "Which CSS feature is used to control only vertical overflow?",
+    "options": [
+      "overflow-y",
+      "overflow-x",
+      "overflow-block",
+      "overflow"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It affects top-to-bottom overflow behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "overflow-y controls vertical overflow."
+  },
+  {
+    "id": 55,
+    "question": "Which CSS feature is used to change the mouse cursor when hovering an element?",
+    "options": [
+      "pointer-events",
+      "cursor",
+      "caret-color",
+      "appearance"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "One common value is pointer.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "cursor changes the mouse cursor over an element."
+  },
+  {
+    "id": 56,
+    "question": "Which CSS feature is used to hides an element but still keeps its layout space reserved?",
+    "options": [
+      "display: none",
+      "visibility: hidden",
+      "opacity: 0",
+      "overflow: hidden"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "The element is invisible, but its space remains.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "visibility: hidden hides an element while keeping its layout space."
+  },
+  {
+    "id": 57,
+    "question": "Which CSS feature is used to remove an element from the layout entirely?",
+    "options": [
+      "visibility: hidden",
+      "opacity: 0",
+      "display: none",
+      "position: absolute"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "The element no longer takes up space.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "display: none removes an element from the layout flow."
+  },
+  {
+    "id": 58,
+    "question": "Which CSS feature is used to limit the maximum width of an element?",
+    "options": [
+      "width",
+      "max-width",
+      "min-width",
+      "fit-width"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It prevents the element from growing beyond a certain size.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "max-width sets the maximum width of an element."
+  },
+  {
+    "id": 59,
+    "question": "Which CSS feature is used to ensure an element cannot become narrower than a certain value?",
+    "options": [
+      "width",
+      "max-width",
+      "min-width",
+      "fit-content"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It defines the minimum allowed width.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "min-width sets the minimum width of an element."
+  },
+  {
+    "id": 60,
+    "question": "Which CSS feature is used to limit the maximum height of an element?",
+    "options": [
+      "height",
+      "max-height",
+      "min-height",
+      "fit-height"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It prevents the element from becoming taller than a certain size.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "max-height sets the maximum height of an element."
+  },
+  {
+    "id": 61,
+    "question": "Which CSS feature is used to ensure an element cannot become shorter than a certain value?",
+    "options": [
+      "height",
+      "max-height",
+      "min-height",
+      "fit-content"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It defines the minimum allowed height.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "min-height sets the minimum height of an element."
+  },
+  {
+    "id": 62,
+    "question": "Which CSS feature is used to control how replaced content like an image should fit inside its box?",
+    "options": [
+      "background-size",
+      "object-fit",
+      "fit-content",
+      "object-position"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "Common values include cover and contain.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "object-fit controls how replaced content fits inside its box."
+  },
+  {
+    "id": 63,
+    "question": "Which CSS feature is used to set the position of replaced content like an image inside its box?",
+    "options": [
+      "background-position",
+      "object-position",
+      "object-fit",
+      "position"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It works together with object-fit.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "object-position sets the alignment of replaced content inside its box."
+  },
+  {
+    "id": 64,
+    "question": "Which CSS feature is used to set the color of a text cursor in an input or editable area?",
+    "options": [
+      "cursor-color",
+      "caret-color",
+      "accent-color",
+      "text-color"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It affects the blinking insertion point.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "caret-color sets the color of the text insertion caret."
+  },
+  {
+    "id": 65,
+    "question": "Which CSS feature is used to set the highlight color for certain native form controls in supporting browsers?",
+    "options": [
+      "accent-color",
+      "appearance",
+      "color-scheme",
+      "outline-color"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It customizes the browser-provided accent color.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "accent-color sets the accent color of some native controls."
+  },
+  {
+    "id": 66,
+    "question": "Which CSS feature is used to change how the browser draws native form control styling?",
+    "options": [
+      "accent-color",
+      "appearance",
+      "display",
+      "visibility"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "Setting it to none can remove platform-native styling.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "appearance controls native styling of UI elements."
+  },
+  {
+    "id": 67,
+    "question": "Which CSS feature is used to prevent text from wrapping onto multiple lines?",
+    "options": [
+      "word-break",
+      "white-space",
+      "overflow-wrap",
+      "text-wrap"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "One common value is nowrap.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "white-space controls how whitespace and line breaks are handled."
+  },
+  {
+    "id": 68,
+    "question": "Which CSS feature is used to allow long words to break and wrap to the next line when necessary?",
+    "options": [
+      "white-space",
+      "overflow-wrap",
+      "word-spacing",
+      "text-overflow"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It used to be known as word-wrap.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "overflow-wrap allows long words to wrap."
+  },
+  {
+    "id": 69,
+    "question": "Which CSS feature is used to control how words break when they reach the end of a line?",
+    "options": [
+      "word-break",
+      "overflow-wrap",
+      "white-space",
+      "hyphens"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It affects line-breaking behavior for words.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "word-break controls how words break at line boundaries."
+  },
+  {
+    "id": 70,
+    "question": "Which CSS feature is used to add hyphenation opportunities to text in supported languages?",
+    "options": [
+      "word-break",
+      "overflow-wrap",
+      "hyphens",
+      "text-overflow"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "Automatic hyphenation depends on language support.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "hyphens controls hyphenation behavior."
+  },
+  {
+    "id": 71,
+    "question": "Which CSS feature is used to show an ellipsis when inline content overflows a single line box?",
+    "options": [
+      "overflow",
+      "text-overflow",
+      "white-space",
+      "clip-path"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is commonly used with nowrap and hidden overflow.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "text-overflow can display an ellipsis for clipped text."
+  },
+  {
+    "id": 72,
+    "question": "Which CSS feature is used to define a grid track size range with a minimum and maximum value?",
+    "options": [
+      "calc()",
+      "clamp()",
+      "minmax()",
+      "attr()"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is often used in grid-template-columns.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "minmax() defines a size range for a grid track."
+  },
+  {
+    "id": 73,
+    "question": "Which CSS feature is used to repeats a grid track pattern in Grid layouts?",
+    "options": [
+      "repeat()",
+      "calc()",
+      "var()",
+      "counter()"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It reduces repetition in grid-template definitions.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "repeat() repeats a grid track pattern."
+  },
+  {
+    "id": 74,
+    "question": "Which CSS feature is used to create a custom property reference in CSS?",
+    "options": [
+      "calc()",
+      "env()",
+      "var()",
+      "attr()"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is used with custom properties like --brand-color.",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "explanation": "var() reads the value of a custom property."
+  },
+  {
+    "id": 75,
+    "question": "Which CSS feature is used to perform calculations such as 100% - 2rem in CSS?",
+    "options": [
+      "var()",
+      "calc()",
+      "clamp()",
+      "attr()"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It can combine different compatible units.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "calc() performs calculations in CSS."
+  },
+  {
+    "id": 76,
+    "question": "Which CSS feature is used to clamps a responsive value between a minimum and maximum?",
+    "options": [
+      "minmax()",
+      "clamp()",
+      "calc()",
+      "fit-content()"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It accepts three arguments: min, preferred, and max.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "clamp() constrains a value between minimum and maximum bounds."
+  },
+  {
+    "id": 77,
+    "question": "Which CSS feature is used to load custom fonts defined by the author?",
+    "options": [
+      "@font-face",
+      "@import",
+      "@supports",
+      "@font-family"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "This at-rule defines downloadable fonts.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@font-face lets authors define custom fonts."
+  },
+  {
+    "id": 78,
+    "question": "Which CSS feature is used to import another style sheet into the current one?",
+    "options": [
+      "@import",
+      "@media",
+      "@supports",
+      "@layer"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is an at-rule placed near the top of a stylesheet.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@import imports another stylesheet."
+  },
+  {
+    "id": 79,
+    "question": "Which CSS feature is used to apply CSS only when a media condition matches?",
+    "options": [
+      "@supports",
+      "@media",
+      "@container",
+      "@import"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is used for responsive design and media queries.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "@media applies rules conditionally based on media features."
+  },
+  {
+    "id": 80,
+    "question": "Which CSS feature is used to apply CSS only if the browser supports a feature?",
+    "options": [
+      "@media",
+      "@supports",
+      "@property",
+      "@font-face"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is useful for feature queries.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "@supports checks whether the browser supports a CSS feature."
+  },
+  {
+    "id": 81,
+    "question": "Which CSS feature is used to style an element when it is hovered by the pointer?",
+    "options": [
+      ":focus",
+      ":hover",
+      "::before",
+      ":active"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It is a pseudo-class triggered by pointer hover.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": ":hover matches when the pointing device is over an element."
+  },
+  {
+    "id": 82,
+    "question": "Which CSS feature is used to style an element while it is being activated, such as during a mouse click?",
+    "options": [
+      ":visited",
+      ":active",
+      ":checked",
+      "::after"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "This pseudo-class is usually brief during interaction.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": ":active matches an element while it is being activated."
+  },
+  {
+    "id": 83,
+    "question": "Which CSS feature is used to style a link that has already been visited?",
+    "options": [
+      ":link",
+      ":visited",
+      ":focus",
+      ":target"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It applies only to visited hyperlinks.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": ":visited matches links the user has already visited."
+  },
+  {
+    "id": 84,
+    "question": "Which CSS feature is used to style an element when it receives keyboard or programmatic focus?",
+    "options": [
+      ":focus",
+      ":hover",
+      ":focus-visible",
+      "::selection"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It applies when the element is focused.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": ":focus matches a focused element."
+  },
+  {
+    "id": 85,
+    "question": "Which CSS feature is used to style an element when focus should be visibly indicated, usually for keyboard navigation?",
+    "options": [
+      ":focus-visible",
+      ":focus-within",
+      ":focus",
+      ":target"
+    ],
+    "category": "CSS",
+    "difficulty": "medium",
+    "description": "Medium level CSS concept question.",
+    "hint": "It helps avoid unnecessary focus rings for pointer interactions.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": ":focus-visible matches focused elements when a visible focus indicator is appropriate."
+  },
+  {
+    "id": 86,
+    "question": "Which CSS feature is used to style a parent element when it or one of its descendants has focus?",
+    "options": [
+      ":focus-within",
+      ":focus",
+      ":has()",
+      ":target"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "This is useful for styling form groups.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": ":focus-within matches an element if it or a descendant has focus."
+  },
+  {
+    "id": 87,
+    "question": "Which CSS feature is used to style a checkbox or radio input when it is selected?",
+    "options": [
+      ":selected",
+      ":checked",
+      ":active",
+      ":enabled"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It applies to checked form controls.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": ":checked matches checked radio buttons and checkboxes."
+  },
+  {
+    "id": 88,
+    "question": "Which CSS feature is used to style a form control that is disabled?",
+    "options": [
+      ":readonly",
+      ":disabled",
+      ":invalid",
+      ":empty"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "This pseudo-class applies to disabled controls.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": ":disabled matches disabled form controls."
+  },
+  {
+    "id": 89,
+    "question": "Which CSS feature is used to style a form control that is enabled?",
+    "options": [
+      ":enabled",
+      ":active",
+      ":valid",
+      ":open"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It is the opposite of :disabled.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": ":enabled matches enabled form controls."
+  },
+  {
+    "id": 90,
+    "question": "Which CSS feature is used to match an element when it is the target of the current URL fragment?",
+    "options": [
+      ":target",
+      ":visited",
+      ":current",
+      ":scope"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It is related to hash links in the URL.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": ":target matches the element referenced by the URL fragment."
+  },
+  {
+    "id": 91,
+    "question": "Which CSS feature is used to create generated content before an element’s actual content?",
+    "options": [
+      "::before",
+      "::after",
+      ":before",
+      "::marker"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It is a pseudo-element, not a pseudo-class.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "::before inserts generated content before an element’s content."
+  },
+  {
+    "id": 92,
+    "question": "Which CSS feature is used to create generated content after an element’s actual content?",
+    "options": [
+      "::before",
+      "::after",
+      ":after",
+      "::selection"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It is a pseudo-element, not a pseudo-class.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "::after inserts generated content after an element’s content."
+  },
+  {
+    "id": 93,
+    "question": "Which CSS feature is used to style the selected portion of text?",
+    "options": [
+      "::selection",
+      "::marker",
+      "::placeholder",
+      ":selection"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It affects text selected by the user.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "::selection styles selected text."
+  },
+  {
+    "id": 94,
+    "question": "Which CSS feature is used to style placeholder text inside an input or textarea?",
+    "options": [
+      "::placeholder",
+      "::before",
+      "::marker",
+      ":placeholder"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "This pseudo-element targets placeholder text.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "::placeholder styles placeholder text."
+  },
+  {
+    "id": 95,
+    "question": "Which CSS feature is used to match the direct child of a parent in a selector like nav > a?",
+    "options": [
+      ">",
+      "+",
+      "~",
+      " "
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "This combinator selects only immediate children.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The > combinator matches direct children."
+  },
+  {
+    "id": 96,
+    "question": "Which CSS feature is used to match the adjacent sibling in a selector like h2 + p?",
+    "options": [
+      ">",
+      "+",
+      "~",
+      " "
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It selects the next sibling only.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "The + combinator matches the adjacent sibling."
+  },
+  {
+    "id": 97,
+    "question": "Which CSS feature is used to match all following siblings in a selector like h2 ~ p?",
+    "options": [
+      "~",
+      "+",
+      " >",
+      " "
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It selects later siblings, not just the next one.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The ~ combinator matches general following siblings."
+  },
+  {
+    "id": 98,
+    "question": "Which CSS feature is used to match descendants in a selector like article p?",
+    "options": [
+      "child combinator (>)",
+      "descendant combinator (space)",
+      "adjacent sibling combinator (+)",
+      "general sibling combinator (~)"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "This selector uses a space between selectors.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "A space is the descendant combinator."
+  },
+  {
+    "id": 99,
+    "question": "Which CSS feature is used to select an element by its ID in CSS?",
+    "options": [
+      ".class",
+      "#id",
+      "id()",
+      "@id"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "An ID selector begins with a hash symbol.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "#id is the syntax for selecting an element by ID."
+  },
+  {
+    "id": 100,
+    "question": "Which CSS feature is used to select an element by its class in CSS?",
+    "options": [
+      "#class",
+      ".class",
+      "class()",
+      "@class"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "A class selector begins with a period.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": ".class is the syntax for selecting an element by class."
+  },
+  {
+    "id": 101,
+    "question": "Which CSS feature is used to select all elements in CSS?",
+    "options": [
+      "*",
+      ".all",
+      "all",
+      "<>"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "This is the universal selector.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "* is the universal selector."
+  },
+  {
+    "id": 102,
+    "question": "Which CSS feature is used to targets elements with an attribute like [type=\"email\"]?",
+    "options": [
+      "pseudo-class",
+      "attribute selector",
+      "combinator",
+      "universal selector"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "Square brackets are used for this kind of selector.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Square-bracket selectors are attribute selectors."
+  },
+  {
+    "id": 103,
+    "question": "Which CSS feature is used to set how list item markers should appear?",
+    "options": [
+      "marker-style",
+      "list-style-type",
+      "bullet-style",
+      "list-type"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "Values include disc, decimal, and none.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "list-style-type controls the appearance of list markers."
+  },
+  {
+    "id": 104,
+    "question": "Which CSS feature is used to position list item markers inside or outside the content flow?",
+    "options": [
+      "list-style-position",
+      "list-position",
+      "marker-position",
+      "list-style-type"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "Its common values are inside and outside.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "list-style-position controls the position of list markers."
+  },
+  {
+    "id": 105,
+    "question": "Which CSS feature is used to remove the default bullet or number marker from a list?",
+    "options": [
+      "list-style: hidden",
+      "list-style: none",
+      "display: none",
+      "marker: none"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "A shorthand with the value none is commonly used.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "list-style: none removes list markers."
+  },
+  {
+    "id": 106,
+    "question": "Which CSS feature is used to specify whether table cells share borders or keep them separated?",
+    "options": [
+      "border-spacing",
+      "border-collapse",
+      "table-layout",
+      "collapse-borders"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "A common value is collapse.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "border-collapse controls whether table borders collapse."
+  },
+  {
+    "id": 107,
+    "question": "Which CSS feature is used to set the spacing between table cell borders when borders are separate?",
+    "options": [
+      "cell-spacing",
+      "border-spacing",
+      "border-collapse",
+      "gap"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It applies when border-collapse is separate.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "border-spacing sets space between table cell borders."
+  },
+  {
+    "id": 108,
+    "question": "Which CSS feature is used to control the algorithm used for laying out table columns?",
+    "options": [
+      "layout-table",
+      "table-layout",
+      "grid-template-columns",
+      "border-collapse"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "Common values are auto and fixed.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "table-layout controls the table column layout algorithm."
+  },
+  {
+    "id": 109,
+    "question": "Which CSS feature is used to draw a line around an element without affecting layout space like border can?",
+    "options": [
+      "border",
+      "outline",
+      "box-shadow",
+      "text-decoration"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It is drawn outside the border edge.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "outline draws a line around an element without taking up space."
+  },
+  {
+    "id": 110,
+    "question": "Which CSS feature is used to set the style of an element’s border, such as solid or dashed?",
+    "options": [
+      "border-type",
+      "border-style",
+      "border-width",
+      "outline-style"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "This property controls dashed, dotted, or solid lines.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "border-style sets the style of the border."
+  },
+  {
+    "id": 111,
+    "question": "Which CSS feature is used to set the width of an element’s border?",
+    "options": [
+      "border-size",
+      "border-width",
+      "outline-width",
+      "stroke-width"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It controls thickness, not color or style.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "border-width sets the width of the border."
+  },
+  {
+    "id": 112,
+    "question": "Which CSS feature is used to set the color of an element’s border?",
+    "options": [
+      "outline-color",
+      "border-color",
+      "stroke-color",
+      "color"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It controls the border’s color specifically.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "border-color sets the color of the border."
+  },
+  {
+    "id": 113,
+    "question": "Which CSS feature is used to draw only the top border of an element?",
+    "options": [
+      "border-top",
+      "border-upper",
+      "top-border",
+      "outline-top"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "This shorthand targets one side only.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "border-top sets the top border."
+  },
+  {
+    "id": 114,
+    "question": "Which CSS feature is used to draw only the left border of an element?",
+    "options": [
+      "border-left",
+      "left-border",
+      "border-inline-start",
+      "outline-left"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "This shorthand targets one side only.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "border-left sets the left border."
+  },
+  {
+    "id": 115,
+    "question": "Which CSS feature is used to control whether the background extends under the border, padding, or content box?",
+    "options": [
+      "background-origin",
+      "background-clip",
+      "clip-path",
+      "background-size"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "Values include border-box, padding-box, and content-box.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "background-clip controls the painting area of the background."
+  },
+  {
+    "id": 116,
+    "question": "Which CSS feature is used to control whether a background image is positioned relative to the border box, padding box, or content box?",
+    "options": [
+      "background-position",
+      "background-origin",
+      "background-clip",
+      "transform-origin"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It defines the box used as the positioning area.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "background-origin sets the background positioning area."
+  },
+  {
+    "id": 117,
+    "question": "Which CSS feature is used to set the size of a background image?",
+    "options": [
+      "object-fit",
+      "background-size",
+      "background-repeat",
+      "background-origin"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "Common values include cover and contain.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "background-size sets the size of a background image."
+  },
+  {
+    "id": 118,
+    "question": "Which CSS feature is used to position a background image inside an element?",
+    "options": [
+      "background-position",
+      "object-position",
+      "background-origin",
+      "position"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "It controls where the image appears inside the box.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "background-position sets the position of a background image."
+  },
+  {
+    "id": 119,
+    "question": "Which CSS feature is used to control whether a background image repeats?",
+    "options": [
+      "background-repeat",
+      "background-size",
+      "background-attachment",
+      "repeat-image"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "Common values include no-repeat and repeat-x.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "background-repeat controls whether a background image repeats."
+  },
+  {
+    "id": 120,
+    "question": "Which CSS feature is used to control whether a background image scrolls with the page or stays fixed?",
+    "options": [
+      "background-position",
+      "background-attachment",
+      "position",
+      "attachment"
+    ],
+    "category": "CSS",
+    "difficulty": "hard",
+    "description": "Hard level CSS concept question.",
+    "hint": "One common value is fixed.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "background-attachment controls scrolling behavior of a background image."
+  }
+]

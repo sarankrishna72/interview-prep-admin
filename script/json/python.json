@@ -1,0 +1,2702 @@
+[
+  {
+    "id": 1,
+    "question": "Which symbol is used for assignment in Python?",
+    "options": [
+      "=",
+      "==",
+      ":=",
+      "->"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think about basic variable assignment syntax.",
+    "explanation": "`=` assigns a value to a variable. `==` compares values, while `:=` is the walrus operator used in expressions."
+  },
+  {
+    "id": 2,
+    "question": "Which function prints output to the console in Python?",
+    "options": [
+      "echo()",
+      "print()",
+      "console.log()",
+      "write()"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is one of Python's most commonly used built-ins.",
+    "explanation": "`print()` sends output to standard output in Python."
+  },
+  {
+    "id": 3,
+    "question": "Which literal creates a list in Python?",
+    "options": [
+      "{1, 2, 3}",
+      "(1, 2, 3)",
+      "[1, 2, 3]",
+      "<1, 2, 3>"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Lists use square brackets.",
+    "explanation": "`[1, 2, 3]` creates a list. Parentheses create tuples, and curly braces create sets or dictionaries."
+  },
+  {
+    "id": 4,
+    "question": "Which literal creates a tuple in Python?",
+    "options": [
+      "[1, 2]",
+      "(1, 2)",
+      "{1, 2}",
+      "tuple[1, 2]"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Tuples commonly use parentheses.",
+    "explanation": "`(1, 2)` creates a tuple in Python."
+  },
+  {
+    "id": 5,
+    "question": "Which data type is mutable?",
+    "options": [
+      "tuple",
+      "str",
+      "list",
+      "int"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "One of these can be changed in place.",
+    "explanation": "Lists are mutable. Tuples, strings, and integers are immutable."
+  },
+  {
+    "id": 6,
+    "question": "How do you write a single-line comment in Python?",
+    "options": [
+      "// comment",
+      "/* comment */",
+      "# comment",
+      "<!-- comment -->"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Python comments begin with a hash symbol.",
+    "explanation": "Single-line comments in Python start with `#`."
+  },
+  {
+    "id": 7,
+    "question": "Which built-in returns the number of items in a list?",
+    "options": [
+      "size()",
+      "count()",
+      "len()",
+      "length()"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "It works on many containers, not just lists.",
+    "explanation": "`len()` returns the number of items in a sequence or collection."
+  },
+  {
+    "id": 8,
+    "question": "What does `type(x)` return?",
+    "options": [
+      "The value of x",
+      "The type of x",
+      "A string representation only",
+      "The memory address of x"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It inspects what kind of object a value is.",
+    "explanation": "`type(x)` returns the type object of `x`."
+  },
+  {
+    "id": 9,
+    "question": "Which keyword defines a function in Python?",
+    "options": [
+      "func",
+      "function",
+      "def",
+      "lambda"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Regular named functions begin with this keyword.",
+    "explanation": "Python uses `def` to define a named function."
+  },
+  {
+    "id": 10,
+    "question": "Which keyword is used to import a module?",
+    "options": [
+      "using",
+      "include",
+      "require",
+      "import"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      3
+    ],
+    "hint": "Python has a very direct keyword for loading modules.",
+    "explanation": "The `import` keyword loads modules in Python."
+  },
+  {
+    "id": 11,
+    "question": "What is the result of `3 // 2`?",
+    "options": [
+      "1.5",
+      "1",
+      "2",
+      "0"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is floor division.",
+    "explanation": "`//` performs floor division, so `3 // 2` evaluates to `1`."
+  },
+  {
+    "id": 12,
+    "question": "What does `3 / 2` return in Python 3?",
+    "options": [
+      "1",
+      "1.0",
+      "1.5",
+      "2"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Regular division returns a float in Python 3.",
+    "explanation": "In Python 3, `/` performs true division, so `3 / 2` is `1.5`."
+  },
+  {
+    "id": 13,
+    "question": "Which expression checks whether `x` is in a list named `items`?",
+    "options": [
+      "x inside items",
+      "x in items",
+      "contains(items, x)",
+      "items.has(x)"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Python uses a readable membership operator.",
+    "explanation": "The `in` operator checks membership, as in `x in items`."
+  },
+  {
+    "id": 14,
+    "question": "What does `range(3)` produce when converted to a list?",
+    "options": [
+      "[1, 2, 3]",
+      "[0, 1, 2]",
+      "[0, 1, 2, 3]",
+      "[3]"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The start defaults to 0, and the end is excluded.",
+    "explanation": "`range(3)` represents 0, 1, and 2, so `list(range(3))` is `[0, 1, 2]`."
+  },
+  {
+    "id": 15,
+    "question": "Which method adds one item to the end of a list?",
+    "options": [
+      "push()",
+      "append()",
+      "add()",
+      "insertEnd()"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Lists have a simple built-in method for this.",
+    "explanation": "`append()` adds a single item to the end of a list."
+  },
+  {
+    "id": 16,
+    "question": "What does `my_list.pop()` do with no index argument?",
+    "options": [
+      "Deletes the whole list",
+      "Returns and removes the last item",
+      "Returns the first item only",
+      "Sorts the list"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think about the default behavior of stack-like removal.",
+    "explanation": "`pop()` without an index removes and returns the last item in the list."
+  },
+  {
+    "id": 17,
+    "question": "Which string method converts text to lowercase?",
+    "options": [
+      "small()",
+      "lower()",
+      "downcase()",
+      "casefolded()"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is a very common string method.",
+    "explanation": "`lower()` returns a lowercase version of the string."
+  },
+  {
+    "id": 18,
+    "question": "What is the value of `bool([])`?",
+    "options": [
+      "True",
+      "False",
+      "[]",
+      "None"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Empty containers are falsy in Python.",
+    "explanation": "An empty list is falsy, so `bool([])` returns `False`."
+  },
+  {
+    "id": 19,
+    "question": "Which value is truthy in Python?",
+    "options": [
+      "0",
+      "''",
+      "[]",
+      "'hello'"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      3
+    ],
+    "hint": "Non-empty strings are truthy.",
+    "explanation": "A non-empty string like `'hello'` is truthy, while `0`, `''`, and `[]` are falsy."
+  },
+  {
+    "id": 20,
+    "question": "Which keyword is used for exception handling cleanup that always runs?",
+    "options": [
+      "except",
+      "finally",
+      "else",
+      "assert"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This block runs whether an exception happens or not.",
+    "explanation": "`finally` is used for cleanup code that should always run."
+  },
+  {
+    "id": 21,
+    "question": "How do you open a file for reading in text mode?",
+    "options": [
+      "open('file.txt', 'r')",
+      "read('file.txt')",
+      "file.open('file.txt')",
+      "open.read('file.txt')"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The default text-reading mode is explicit here.",
+    "explanation": "`open('file.txt', 'r')` opens a file for reading in text mode."
+  },
+  {
+    "id": 22,
+    "question": "Which data structure stores key-value pairs?",
+    "options": [
+      "list",
+      "tuple",
+      "dict",
+      "set"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Python uses a mapping type for this.",
+    "explanation": "A `dict` stores key-value pairs."
+  },
+  {
+    "id": 23,
+    "question": "What does slicing `text[:3]` return?",
+    "options": [
+      "Characters after index 3",
+      "First 3 characters",
+      "Only index 3",
+      "Everything except first 3"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The start defaults to the beginning, and the end is excluded.",
+    "explanation": "`text[:3]` returns the substring from the beginning up to, but not including, index 3."
+  },
+  {
+    "id": 24,
+    "question": "Which keyword exits a loop immediately?",
+    "options": [
+      "skip",
+      "break",
+      "pass",
+      "return"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It stops the loop right away.",
+    "explanation": "`break` terminates the nearest enclosing loop immediately."
+  },
+  {
+    "id": 25,
+    "question": "Which keyword skips to the next loop iteration?",
+    "options": [
+      "continue",
+      "next",
+      "skip",
+      "pass"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It does not end the loop, only the current iteration.",
+    "explanation": "`continue` skips the rest of the current iteration and moves to the next one."
+  },
+  {
+    "id": 26,
+    "question": "What is the main difference between a list and a tuple?",
+    "options": [
+      "Lists are faster in every case",
+      "Tuples are mutable, lists are immutable",
+      "Lists are mutable, tuples are immutable",
+      "Tuples cannot contain strings"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "One can be changed in place, the other cannot.",
+    "explanation": "Lists are mutable, while tuples are immutable."
+  },
+  {
+    "id": 27,
+    "question": "Which expression creates a dictionary comprehension?",
+    "options": [
+      "{x: x*x for x in range(3)}",
+      "[x: x*x for x in range(3)]",
+      "(x: x*x for x in range(3))",
+      "dict(x => x*x for x in range(3))"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It uses braces and a key-value pair expression.",
+    "explanation": "`{x: x*x for x in range(3)}` is a valid dictionary comprehension."
+  },
+  {
+    "id": 28,
+    "question": "What does `enumerate(items)` provide in a loop?",
+    "options": [
+      "Only values",
+      "Only indexes",
+      "Pairs of index and value",
+      "Sorted values"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "It is commonly used when you need position and value together.",
+    "explanation": "`enumerate(items)` yields pairs of `(index, value)` during iteration."
+  },
+  {
+    "id": 29,
+    "question": "Which built-in is best for combining multiple iterables item by item?",
+    "options": [
+      "merge()",
+      "zip()",
+      "map()",
+      "join()"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It pairs elements from each iterable in order.",
+    "explanation": "`zip()` groups elements from multiple iterables into tuples by position."
+  },
+  {
+    "id": 30,
+    "question": "What is the purpose of `*args` in a function definition?",
+    "options": [
+      "To force keyword-only arguments",
+      "To collect variable positional arguments",
+      "To unpack dictionaries only",
+      "To define default values"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It lets a function accept an arbitrary number of positional arguments.",
+    "explanation": "`*args` collects extra positional arguments into a tuple."
+  },
+  {
+    "id": 31,
+    "question": "What is the purpose of `**kwargs` in a function definition?",
+    "options": [
+      "To collect variable keyword arguments",
+      "To multiply dictionaries",
+      "To unpack only tuples",
+      "To force positional-only arguments"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It collects named arguments not explicitly declared.",
+    "explanation": "`**kwargs` collects extra keyword arguments into a dictionary."
+  },
+  {
+    "id": 32,
+    "question": "What is the output of `list('abc')`?",
+    "options": [
+      "['abc']",
+      "['a', 'b', 'c']",
+      "('a', 'b', 'c')",
+      "abc"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Strings are iterable character by character.",
+    "explanation": "`list('abc')` converts the string into a list of characters: `['a', 'b', 'c']`."
+  },
+  {
+    "id": 33,
+    "question": "Which statement about default mutable arguments is correct?",
+    "options": [
+      "They are recreated on every call",
+      "They persist across calls",
+      "They are forbidden in Python",
+      "They automatically deep copy"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is a classic Python gotcha.",
+    "explanation": "Default argument values are evaluated once when the function is defined, so mutable defaults persist across calls."
+  },
+  {
+    "id": 34,
+    "question": "Why is this pattern risky? `def add_item(item, items=[]): ...`",
+    "options": [
+      "Lists cannot be default arguments",
+      "The same list is reused across calls",
+      "Python converts it to a tuple",
+      "The function cannot return values"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The default is created once, not each time the function is called.",
+    "explanation": "The default list is shared between calls, which can cause unexpected accumulation of values."
+  },
+  {
+    "id": 35,
+    "question": "What does the `with` statement help manage?",
+    "options": [
+      "Only loops",
+      "Context managers and automatic cleanup",
+      "Imports only",
+      "Class inheritance"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is often used with files and locks.",
+    "explanation": "The `with` statement works with context managers to ensure setup and cleanup happen reliably."
+  },
+  {
+    "id": 36,
+    "question": "Which method is called when entering a context manager?",
+    "options": [
+      "__start__",
+      "__enter__",
+      "__init__",
+      "__open__"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It pairs with another dunder method for exit.",
+    "explanation": "`__enter__` runs when entering a context manager."
+  },
+  {
+    "id": 37,
+    "question": "Which method is called when exiting a context manager?",
+    "options": [
+      "__close__",
+      "__leave__",
+      "__exit__",
+      "__del__"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "It receives exception details if one occurred.",
+    "explanation": "`__exit__` runs when leaving a context manager."
+  },
+  {
+    "id": 38,
+    "question": "What does a generator function use to produce values lazily?",
+    "options": [
+      "return many",
+      "yield",
+      "send",
+      "next"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It pauses and resumes function execution.",
+    "explanation": "A generator function uses `yield` to produce values lazily."
+  },
+  {
+    "id": 39,
+    "question": "What does `next(iterator)` do?",
+    "options": [
+      "Resets the iterator",
+      "Returns the next item from an iterator",
+      "Sorts the iterator",
+      "Converts it to a list"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Iterators produce one item at a time.",
+    "explanation": "`next(iterator)` retrieves the next available item from an iterator."
+  },
+  {
+    "id": 40,
+    "question": "What happens when an iterator is exhausted and `next()` is called without a default?",
+    "options": [
+      "It returns None",
+      "It restarts from the beginning",
+      "It raises StopIteration",
+      "It raises IndexError"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Iterators signal exhaustion with a specific exception.",
+    "explanation": "Calling `next()` on an exhausted iterator raises `StopIteration`."
+  },
+  {
+    "id": 41,
+    "question": "Which built-in is used to sort an iterable without modifying the original?",
+    "options": [
+      "sort()",
+      "sorted()",
+      "order()",
+      "arrange()"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "One returns a new sorted list.",
+    "explanation": "`sorted()` returns a new sorted list and leaves the original iterable unchanged."
+  },
+  {
+    "id": 42,
+    "question": "Which list method sorts a list in place?",
+    "options": [
+      "sorted()",
+      "order()",
+      "sort()",
+      "arrange()"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Unlike `sorted()`, this one mutates the list.",
+    "explanation": "`list.sort()` sorts the list in place."
+  },
+  {
+    "id": 43,
+    "question": "What is the result of `{'a', 'b', 'a'}`?",
+    "options": [
+      "['a', 'b', 'a']",
+      "{'a', 'b', 'a'}",
+      "A set with two unique elements",
+      "An error"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Sets remove duplicates.",
+    "explanation": "Sets keep only unique values, so the resulting set has two elements: `'a'` and `'b'`."
+  },
+  {
+    "id": 44,
+    "question": "Which statement about sets is correct?",
+    "options": [
+      "Sets preserve insertion order as a language guarantee for all Python concepts",
+      "Sets allow duplicate values",
+      "Sets are useful for membership tests and unique values",
+      "Sets use key-value pairs"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Think about uniqueness and fast membership checks.",
+    "explanation": "Sets are designed for unique elements and efficient membership testing."
+  },
+  {
+    "id": 45,
+    "question": "What does `dict.get('missing')` return by default if the key is absent?",
+    "options": [
+      "KeyError",
+      "0",
+      "''",
+      "None"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      3
+    ],
+    "hint": "Unlike bracket access, it does not raise an error by default.",
+    "explanation": "`dict.get('missing')` returns `None` when the key is absent unless you provide a default value."
+  },
+  {
+    "id": 46,
+    "question": "Which keyword declares that a function intends to rebind a module-level variable?",
+    "options": [
+      "outer",
+      "global",
+      "nonlocal",
+      "static"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is used for variables defined at module scope.",
+    "explanation": "`global` tells Python that assignment should target a module-level variable."
+  },
+  {
+    "id": 47,
+    "question": "Which keyword is used to rebind a variable from the nearest enclosing function scope?",
+    "options": [
+      "global",
+      "self",
+      "nonlocal",
+      "outer"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "It is used inside nested functions.",
+    "explanation": "`nonlocal` allows rebinding a variable from the nearest enclosing non-global scope."
+  },
+  {
+    "id": 48,
+    "question": "What is the result type of a list comprehension like `[x*x for x in range(3)]`?",
+    "options": [
+      "tuple",
+      "generator",
+      "list",
+      "set"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "The brackets matter here.",
+    "explanation": "Square brackets create a list, so the result is a list."
+  },
+  {
+    "id": 49,
+    "question": "What does `(x*x for x in range(3))` create?",
+    "options": [
+      "A list",
+      "A generator expression",
+      "A tuple",
+      "A set"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Parentheses plus a comprehension-like expression create this lazy object.",
+    "explanation": "A generator expression produces values lazily rather than building a full list immediately."
+  },
+  {
+    "id": 50,
+    "question": "Which built-in can apply a function to every item in an iterable?",
+    "options": [
+      "apply()",
+      "map()",
+      "filter()",
+      "reduce()"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It transforms each element.",
+    "explanation": "`map()` applies a function to each item of an iterable."
+  },
+  {
+    "id": 51,
+    "question": "Which built-in can keep only items matching a condition?",
+    "options": [
+      "select()",
+      "filter()",
+      "where()",
+      "grep()"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is commonly paired with a predicate function.",
+    "explanation": "`filter()` keeps elements for which the predicate returns true."
+  },
+  {
+    "id": 52,
+    "question": "What is the recommended idiom for checking if a key exists in a dictionary?",
+    "options": [
+      "dict.has_key(key)",
+      "key in my_dict",
+      "exists(my_dict, key)",
+      "my_dict.contains(key)"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Python uses the membership operator here too.",
+    "explanation": "Use `key in my_dict` to check whether a dictionary contains a key."
+  },
+  {
+    "id": 53,
+    "question": "Which statement about `is` is correct?",
+    "options": [
+      "It compares values for equality",
+      "It compares object identity",
+      "It always behaves like `==`",
+      "It only works with strings"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It answers whether two references point to the same object.",
+    "explanation": "`is` checks object identity, while `==` checks value equality."
+  },
+  {
+    "id": 54,
+    "question": "Why is `x == None` usually discouraged in favor of `x is None`?",
+    "options": [
+      "`==` is invalid syntax",
+      "`is None` is the identity-based, idiomatic check for None",
+      "`== None` is always slower by specification",
+      "None cannot be compared"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "None is a singleton in Python.",
+    "explanation": "`None` is a singleton, so `is None` is the idiomatic and reliable identity check."
+  },
+  {
+    "id": 55,
+    "question": "What does `pass` do in Python?",
+    "options": [
+      "Stops the program",
+      "Skips the current loop iteration",
+      "Acts as a no-op placeholder",
+      "Raises an exception"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "It is useful when syntax requires a statement but no action is needed.",
+    "explanation": "`pass` does nothing and is commonly used as a placeholder."
+  },
+  {
+    "id": 56,
+    "question": "What is the role of `__name__ == '__main__'`?",
+    "options": [
+      "It checks whether the file is being run as the main script",
+      "It checks whether the module is compiled",
+      "It imports the main module",
+      "It names the current class"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This pattern controls code that should only run when executed directly.",
+    "explanation": "When a file is run directly, `__name__` is set to `'__main__'`, so this guard prevents code from running on import."
+  },
+  {
+    "id": 57,
+    "question": "Which f-string is valid in Python?",
+    "options": [
+      "f'Hello {name}'",
+      "'Hello ${name}'",
+      "formatf('Hello {name}')",
+      "f('Hello', name)"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Python interpolates expressions inside braces with a leading prefix.",
+    "explanation": "An f-string begins with `f` and places expressions inside `{}`."
+  },
+  {
+    "id": 58,
+    "question": "What does `''.join(parts)` do?",
+    "options": [
+      "Splits a string into parts",
+      "Joins an iterable of strings into one string",
+      "Creates a list of characters",
+      "Appends to a tuple"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The separator is the empty string here.",
+    "explanation": "`''.join(parts)` concatenates all strings in `parts` with no separator."
+  },
+  {
+    "id": 59,
+    "question": "Which module is commonly used for JSON encoding and decoding?",
+    "options": [
+      "pickle",
+      "json",
+      "csv",
+      "marshal"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It has the same name as the format.",
+    "explanation": "The standard library `json` module handles JSON serialization and deserialization."
+  },
+  {
+    "id": 60,
+    "question": "What does `json.loads()` do?",
+    "options": [
+      "Loads JSON from a file path directly",
+      "Parses a JSON string into Python objects",
+      "Serializes Python objects to JSON",
+      "Encrypts JSON data"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The `s` stands for string.",
+    "explanation": "`json.loads()` parses a JSON-formatted string into Python objects."
+  },
+  {
+    "id": 61,
+    "question": "What does `json.dumps()` do?",
+    "options": [
+      "Reads JSON from stdin",
+      "Writes JSON only to files",
+      "Serializes Python objects to a JSON string",
+      "Deletes invalid JSON"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "It is the opposite of `loads()`.",
+    "explanation": "`json.dumps()` converts Python objects into a JSON-formatted string."
+  },
+  {
+    "id": 62,
+    "question": "What does `self` refer to inside an instance method?",
+    "options": [
+      "The class itself",
+      "The current instance",
+      "The parent class only",
+      "A global singleton"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is the first parameter of instance methods by convention.",
+    "explanation": "`self` refers to the current instance on which the method was called."
+  },
+  {
+    "id": 63,
+    "question": "What does `cls` typically refer to inside a class method?",
+    "options": [
+      "The current instance",
+      "The current class",
+      "A closure variable",
+      "The module"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is used by methods decorated with `@classmethod`.",
+    "explanation": "`cls` refers to the class and is conventionally the first parameter of a class method."
+  },
+  {
+    "id": 64,
+    "question": "Which decorator defines a class method?",
+    "options": [
+      "@static",
+      "@classmethod",
+      "@class",
+      "@method"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It receives `cls` instead of `self`.",
+    "explanation": "`@classmethod` defines a method bound to the class rather than an instance."
+  },
+  {
+    "id": 65,
+    "question": "Which decorator defines a static method?",
+    "options": [
+      "@staticmethod",
+      "@classmethod",
+      "@property",
+      "@abstractmethod"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This method does not receive `self` or `cls` automatically.",
+    "explanation": "`@staticmethod` defines a method that behaves like a regular function placed inside the class namespace."
+  },
+  {
+    "id": 66,
+    "question": "What is the purpose of `@property`?",
+    "options": [
+      "To define a read-only module",
+      "To access a method like an attribute",
+      "To make a class static",
+      "To prevent inheritance"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It lets you expose computed values with attribute syntax.",
+    "explanation": "`@property` allows a method to be accessed like an attribute, often for computed or validated values."
+  },
+  {
+    "id": 67,
+    "question": "What is method overriding?",
+    "options": [
+      "Calling a parent method explicitly",
+      "Defining a method in a subclass with the same name as in the parent",
+      "Decorating a method twice",
+      "Changing a method argument at runtime"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It changes inherited behavior in a subclass.",
+    "explanation": "Method overriding happens when a subclass provides its own implementation of a method defined in a parent class."
+  },
+  {
+    "id": 68,
+    "question": "What does `super()` usually help with?",
+    "options": [
+      "Creating static methods",
+      "Calling methods from a parent class",
+      "Converting objects to strings",
+      "Stopping inheritance"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is common in subclass constructors and overrides.",
+    "explanation": "`super()` provides access to parent-class methods in the method resolution order."
+  },
+  {
+    "id": 69,
+    "question": "What does MRO stand for in Python OOP?",
+    "options": [
+      "Method Resolution Order",
+      "Multiple Return Objects",
+      "Main Runtime Operation",
+      "Module Reference Option"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It describes how Python searches classes for methods and attributes.",
+    "explanation": "MRO stands for Method Resolution Order, the order Python follows when resolving attributes in inheritance hierarchies."
+  },
+  {
+    "id": 70,
+    "question": "Which built-in shows the method resolution order of a class?",
+    "options": [
+      "dir()",
+      "mro()",
+      "vars()",
+      "order()"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is available on classes.",
+    "explanation": "`ClassName.mro()` returns the method resolution order for that class."
+  },
+  {
+    "id": 71,
+    "question": "What is the purpose of `__init__`?",
+    "options": [
+      "It is always the constructor return value",
+      "It initializes a newly created instance",
+      "It destroys an instance",
+      "It creates inheritance"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It runs after a new instance is created.",
+    "explanation": "`__init__` initializes the instance after object creation."
+  },
+  {
+    "id": 72,
+    "question": "Which method provides the informal string representation often used by `print(obj)` if defined?",
+    "options": [
+      "__repr__",
+      "__str__",
+      "__format__",
+      "__call__"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is meant for user-friendly display.",
+    "explanation": "`__str__` provides a readable string representation for end users."
+  },
+  {
+    "id": 73,
+    "question": "Which method is meant to provide a more unambiguous developer-oriented representation?",
+    "options": [
+      "__dev__",
+      "__repr__",
+      "__print__",
+      "__debug__"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is often used in debugging.",
+    "explanation": "`__repr__` is intended to provide an unambiguous representation useful for developers."
+  },
+  {
+    "id": 74,
+    "question": "What does `callable(obj)` check?",
+    "options": [
+      "Whether obj is a function only",
+      "Whether obj can be called like a function",
+      "Whether obj is iterable",
+      "Whether obj is mutable"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Classes with `__call__` can also satisfy it.",
+    "explanation": "`callable(obj)` returns True if the object can be called, such as functions or objects implementing `__call__`."
+  },
+  {
+    "id": 75,
+    "question": "What is duck typing in Python?",
+    "options": [
+      "Types must be explicitly declared",
+      "Behavior matters more than exact type",
+      "Only ducks can be iterables",
+      "Classes cannot inherit"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Python often cares about what an object can do.",
+    "explanation": "Duck typing means code typically relies on an object's behavior or interface rather than its exact type."
+  },
+  {
+    "id": 76,
+    "question": "What does `isinstance(x, MyClass)` check?",
+    "options": [
+      "Whether x has the same value as MyClass",
+      "Whether x is an instance of MyClass or its subclasses",
+      "Whether x was imported from MyClass",
+      "Whether x has the same name"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is type-related but inheritance-aware.",
+    "explanation": "`isinstance(x, MyClass)` checks whether `x` is an instance of `MyClass` or a subclass thereof."
+  },
+  {
+    "id": 77,
+    "question": "What is the purpose of abstract base classes?",
+    "options": [
+      "To guarantee compiled bytecode",
+      "To define common interfaces and partially enforce implementation",
+      "To replace all inheritance",
+      "To store only constants"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "They are often used with the `abc` module.",
+    "explanation": "Abstract base classes let you define shared interfaces and require subclasses to implement certain methods."
+  },
+  {
+    "id": 78,
+    "question": "Which module provides support for abstract base classes?",
+    "options": [
+      "typing",
+      "abc",
+      "inspect",
+      "functools"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It has a short three-letter name.",
+    "explanation": "The `abc` module provides tools for abstract base classes."
+  },
+  {
+    "id": 79,
+    "question": "What does `@dataclass` primarily reduce?",
+    "options": [
+      "Import time",
+      "Boilerplate for classes storing data",
+      "Runtime errors automatically",
+      "Need for type hints"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It can generate methods like `__init__` and `__repr__`.",
+    "explanation": "`@dataclass` reduces boilerplate in classes that mainly store data by generating common methods automatically."
+  },
+  {
+    "id": 80,
+    "question": "Which statement about type hints is correct?",
+    "options": [
+      "Python enforces them strictly at runtime by default",
+      "They improve readability and tooling but are not enforced automatically",
+      "They replace unit tests",
+      "They only work with classes"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "They are mainly for humans and tools unless extra runtime checking is added.",
+    "explanation": "Type hints improve clarity and static analysis, but Python does not enforce them at runtime by default."
+  },
+  {
+    "id": 81,
+    "question": "What does `Optional[int]` mean in typing?",
+    "options": [
+      "An int with default value 0",
+      "A value that can be int or None",
+      "A nullable string only",
+      "An int list"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It allows one additional special value.",
+    "explanation": "`Optional[int]` means the value can be `int` or `None`."
+  },
+  {
+    "id": 82,
+    "question": "What is the main benefit of list comprehensions over manual loops in many simple cases?",
+    "options": [
+      "They are always faster than any loop",
+      "They can be more concise and readable for straightforward transformations",
+      "They support recursion automatically",
+      "They avoid memory allocation"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think readability and concise transformation.",
+    "explanation": "List comprehensions are often more concise and readable for simple filtering or transformation tasks."
+  },
+  {
+    "id": 83,
+    "question": "What does `lambda x: x + 1` create?",
+    "options": [
+      "A named class",
+      "An anonymous function",
+      "A generator",
+      "A decorator"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is a small inline function expression.",
+    "explanation": "`lambda x: x + 1` creates an anonymous function that adds 1 to its input."
+  },
+  {
+    "id": 84,
+    "question": "When is a generator often preferable to building a full list?",
+    "options": [
+      "When you need random indexing frequently",
+      "When you want lazy iteration and lower memory usage",
+      "When you need in-place mutation",
+      "When you need duplicate keys"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is useful for large or streaming data.",
+    "explanation": "Generators produce items lazily, which can reduce memory usage and allow streaming-style processing."
+  },
+  {
+    "id": 85,
+    "question": "What does `any([False, False, True])` return?",
+    "options": [
+      "False",
+      "True",
+      "None",
+      "[True]"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It returns true if at least one element is truthy.",
+    "explanation": "`any()` returns True because at least one item in the iterable is truthy."
+  },
+  {
+    "id": 86,
+    "question": "What does `all([True, True, False])` return?",
+    "options": [
+      "True",
+      "False",
+      "None",
+      "0"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It requires every element to be truthy.",
+    "explanation": "`all()` returns False because not every item in the iterable is truthy."
+  },
+  {
+    "id": 87,
+    "question": "What is the output of `list(zip([1,2], ['a','b']))`?",
+    "options": [
+      "[(1, 'a'), (2, 'b')]",
+      "[1, 'a', 2, 'b']",
+      "{1: 'a', 2: 'b'}",
+      "('a', 1), ('b', 2)"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Each position is paired into a tuple.",
+    "explanation": "`zip()` combines elements by position, so converting it to a list yields `[(1, 'a'), (2, 'b')]`."
+  },
+  {
+    "id": 88,
+    "question": "Which module is commonly used for functional helpers like `reduce` and caching decorators?",
+    "options": [
+      "functools",
+      "itertools",
+      "collections",
+      "operator"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It contains `reduce`, `lru_cache`, and more.",
+    "explanation": "The `functools` module provides helpers like `reduce` and decorators such as `lru_cache`."
+  },
+  {
+    "id": 89,
+    "question": "What does `functools.lru_cache` help optimize?",
+    "options": [
+      "Database connections",
+      "Repeated function calls with the same arguments",
+      "File permissions",
+      "Class inheritance order"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It memoizes recent results.",
+    "explanation": "`lru_cache` caches results of function calls so repeated calls with the same arguments can return faster."
+  },
+  {
+    "id": 90,
+    "question": "Which module provides iterator-building tools like `chain()` and `islice()`?",
+    "options": [
+      "collections",
+      "itertools",
+      "typing",
+      "pathlib"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is widely used for iterator algebra.",
+    "explanation": "The `itertools` module provides efficient iterator-building tools such as `chain()` and `islice()`."
+  },
+  {
+    "id": 91,
+    "question": "What does `collections.Counter` help count?",
+    "options": [
+      "Only characters in strings",
+      "Hashable items in an iterable",
+      "Only integers",
+      "Only dictionary keys"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It tallies occurrences of items.",
+    "explanation": "`collections.Counter` counts occurrences of hashable items in an iterable."
+  },
+  {
+    "id": 92,
+    "question": "What is the best built-in exception to raise for an invalid function argument value?",
+    "options": [
+      "ImportError",
+      "ValueError",
+      "StopIteration",
+      "EOFError"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The argument exists, but the value is not acceptable.",
+    "explanation": "`ValueError` is commonly used when a function gets the right type of argument but an inappropriate value."
+  },
+  {
+    "id": 93,
+    "question": "Which exception is typically raised when a dictionary key is missing and accessed with brackets?",
+    "options": [
+      "IndexError",
+      "KeyError",
+      "NameError",
+      "LookupStop"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is specific to mapping lookup failures.",
+    "explanation": "Accessing a missing dictionary key with brackets raises `KeyError`."
+  },
+  {
+    "id": 94,
+    "question": "Which exception is typically raised when accessing a list index out of range?",
+    "options": [
+      "ValueError",
+      "TypeError",
+      "IndexError",
+      "AttributeError"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "This is the sequence-indexing error.",
+    "explanation": "Accessing an invalid list index raises `IndexError`."
+  },
+  {
+    "id": 95,
+    "question": "What does `raise` do in Python?",
+    "options": [
+      "Prints a warning only",
+      "Starts a loop",
+      "Throws an exception",
+      "Imports a module"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "It signals an error or re-raises one.",
+    "explanation": "`raise` is used to throw an exception."
+  },
+  {
+    "id": 96,
+    "question": "What is the purpose of `else` on a `try` statement?",
+    "options": [
+      "It always runs before try",
+      "It runs if no exception occurs in the try block",
+      "It runs only on any exception",
+      "It is invalid with try"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is different from `finally`.",
+    "explanation": "The `else` block on a `try` statement runs only if the `try` block completes without raising an exception."
+  },
+  {
+    "id": 97,
+    "question": "What is the difference between shallow copy and deep copy?",
+    "options": [
+      "There is no difference in Python",
+      "Shallow copy duplicates nested objects recursively, deep copy does not",
+      "Deep copy recursively copies nested objects, shallow copy does not",
+      "Deep copy works only on lists"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "Nested mutable objects are the key distinction.",
+    "explanation": "A shallow copy copies the outer container but keeps references to nested objects, while a deep copy recursively copies nested objects too."
+  },
+  {
+    "id": 98,
+    "question": "Which module provides `deepcopy`?",
+    "options": [
+      "copy",
+      "clone",
+      "pickle",
+      "types"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It has a simple, direct name.",
+    "explanation": "The `copy` module provides both `copy()` and `deepcopy()`."
+  },
+  {
+    "id": 99,
+    "question": "What does `pathlib.Path` primarily improve over raw string paths?",
+    "options": [
+      "It compiles paths to bytecode",
+      "It provides an object-oriented API for filesystem paths",
+      "It avoids all filesystem errors",
+      "It only works on Linux"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It makes path manipulation more expressive.",
+    "explanation": "`pathlib.Path` offers an object-oriented and often more readable way to work with filesystem paths."
+  },
+  {
+    "id": 100,
+    "question": "Which module is commonly used to work with regular expressions?",
+    "options": [
+      "regexlib",
+      "re",
+      "match",
+      "pattern"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is short and built into the standard library.",
+    "explanation": "Python's standard-library regular expression module is `re`."
+  },
+  {
+    "id": 101,
+    "question": "What does `re.search()` do?",
+    "options": [
+      "Matches only at the start of the string",
+      "Searches for the pattern anywhere in the string",
+      "Replaces all matches",
+      "Splits a string"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is more flexible than start-only matching.",
+    "explanation": "`re.search()` looks for the first occurrence of the pattern anywhere in the string."
+  },
+  {
+    "id": 102,
+    "question": "What does `re.match()` do?",
+    "options": [
+      "Searches anywhere in the string",
+      "Matches only at the beginning of the string",
+      "Finds all matches",
+      "Compiles a regex only"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Its behavior is anchored to the start.",
+    "explanation": "`re.match()` attempts a match only at the beginning of the string."
+  },
+  {
+    "id": 103,
+    "question": "Which statement about `async def` is correct?",
+    "options": [
+      "It defines a coroutine function",
+      "It creates a thread automatically",
+      "It runs code in parallel by default",
+      "It is identical to `def`"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It is part of Python's async programming model.",
+    "explanation": "`async def` defines a coroutine function that can be awaited within an event loop."
+  },
+  {
+    "id": 104,
+    "question": "What does `await` do?",
+    "options": [
+      "Blocks all Python execution globally",
+      "Pauses a coroutine until an awaitable completes",
+      "Starts a new process",
+      "Turns a list into an iterator"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It works inside async functions.",
+    "explanation": "`await` suspends the current coroutine until the awaited operation completes."
+  },
+  {
+    "id": 105,
+    "question": "Which module is commonly used for asynchronous I/O event loops in the standard library?",
+    "options": [
+      "threading",
+      "multiprocessing",
+      "asyncio",
+      "queue"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      2
+    ],
+    "hint": "It is the core async library in the standard library.",
+    "explanation": "The `asyncio` module provides event-loop-based asynchronous programming tools."
+  },
+  {
+    "id": 106,
+    "question": "What problem does the Global Interpreter Lock (GIL) most directly affect in CPython?",
+    "options": [
+      "It prevents all I/O concurrency",
+      "It limits parallel execution of Python bytecode in threads",
+      "It forbids multiprocessing",
+      "It disables async/await"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is about CPU-bound multithreading in CPython.",
+    "explanation": "In CPython, the GIL prevents multiple threads from executing Python bytecode in parallel, which matters most for CPU-bound workloads."
+  },
+  {
+    "id": 107,
+    "question": "For CPU-bound work in CPython, which approach often scales better than threads?",
+    "options": [
+      "More recursion",
+      "multiprocessing",
+      "asyncio.sleep()",
+      "Using sets"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think separate processes rather than threads.",
+    "explanation": "For CPU-bound work, `multiprocessing` often scales better because separate processes avoid sharing the GIL."
+  },
+  {
+    "id": 108,
+    "question": "For many concurrent network requests, which approach is often appropriate?",
+    "options": [
+      "Deep recursion",
+      "asyncio",
+      "Only using tuples",
+      "Using property decorators"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is an I/O-bound concurrency scenario.",
+    "explanation": "For many concurrent I/O-bound tasks, `asyncio` is often an efficient approach."
+  },
+  {
+    "id": 109,
+    "question": "Which module is typically used to create virtual environments from the standard library?",
+    "options": [
+      "envlib",
+      "venv",
+      "virtual",
+      "pipenv"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It ships with Python.",
+    "explanation": "The standard library `venv` module is commonly used to create virtual environments."
+  },
+  {
+    "id": 110,
+    "question": "What is the main purpose of a virtual environment?",
+    "options": [
+      "To speed up Python syntax",
+      "To isolate project dependencies",
+      "To replace package managers",
+      "To compile Python to C"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It keeps packages for one project from affecting another.",
+    "explanation": "Virtual environments isolate project dependencies and interpreter context."
+  },
+  {
+    "id": 111,
+    "question": "Which file commonly lists project dependencies in many Python projects?",
+    "options": [
+      "package.json",
+      "requirements.txt",
+      "dependencies.yaml",
+      "pom.xml"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is a plain-text convention used by pip-based workflows.",
+    "explanation": "`requirements.txt` commonly lists Python package dependencies."
+  },
+  {
+    "id": 112,
+    "question": "What does `pip install -r requirements.txt` do?",
+    "options": [
+      "Removes packages",
+      "Installs packages listed in the file",
+      "Runs unit tests",
+      "Builds a virtual environment automatically"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "The `-r` flag means read requirements from a file.",
+    "explanation": "It installs the packages specified in `requirements.txt`."
+  },
+  {
+    "id": 113,
+    "question": "Which statement about `pickle` is correct?",
+    "options": [
+      "It is safe for untrusted data by default",
+      "It serializes Python objects but should not be used with untrusted input",
+      "It only supports dictionaries",
+      "It produces human-readable JSON"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Security is an important concern here.",
+    "explanation": "`pickle` can serialize many Python objects, but loading pickled data from untrusted sources is unsafe."
+  },
+  {
+    "id": 114,
+    "question": "What does `__iter__` typically return?",
+    "options": [
+      "A boolean",
+      "An iterator object",
+      "A list only",
+      "A class method"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is part of Python's iteration protocol.",
+    "explanation": "`__iter__` should return an iterator object for the iterable."
+  },
+  {
+    "id": 115,
+    "question": "What does `__next__` do on an iterator?",
+    "options": [
+      "Returns the next item or raises StopIteration",
+      "Resets iteration",
+      "Returns all remaining items",
+      "Deletes the iterator"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It is the companion to `next()`.",
+    "explanation": "`__next__` returns the next item from an iterator or raises `StopIteration` when exhausted."
+  },
+  {
+    "id": 116,
+    "question": "Why might you prefer `pathlib.Path.read_text()` over manual open/read/close in some simple cases?",
+    "options": [
+      "It is always faster in every situation",
+      "It offers a concise API for common path operations",
+      "It reads binary files only",
+      "It automatically parses JSON"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think convenience and readability.",
+    "explanation": "`Path.read_text()` provides a concise and readable way to read text from a file in simple cases."
+  },
+  {
+    "id": 117,
+    "question": "What does `setdefault()` on a dictionary do?",
+    "options": [
+      "Deletes a key if present",
+      "Returns the value for a key, inserting a default if missing",
+      "Sorts the dictionary",
+      "Locks the dictionary"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is useful when building grouped structures.",
+    "explanation": "`setdefault()` returns the existing value for a key or inserts and returns a default value if the key is absent."
+  },
+  {
+    "id": 118,
+    "question": "Which built-in converts an iterable of pairs into a dictionary?",
+    "options": [
+      "map()",
+      "dict()",
+      "set()",
+      "tuple()"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It can accept key-value pair iterables.",
+    "explanation": "`dict()` can build a dictionary from an iterable of key-value pairs."
+  },
+  {
+    "id": 119,
+    "question": "What is the output of `dict([('a', 1), ('b', 2)])`?",
+    "options": [
+      "{'a': 1, 'b': 2}",
+      "[('a', 1), ('b', 2)]",
+      "{1: 'a', 2: 'b'}",
+      "An error"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It turns pairs into key-value mappings.",
+    "explanation": "`dict([('a', 1), ('b', 2)])` creates `{'a': 1, 'b': 2}`."
+  },
+  {
+    "id": 120,
+    "question": "Why is `if my_list:` often preferred over `if len(my_list) > 0:` in Python?",
+    "options": [
+      "It is more idiomatic and directly uses truthiness",
+      "len() is invalid for lists",
+      "It avoids creating the list",
+      "It only works for tuples"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Python containers have truthiness semantics.",
+    "explanation": "Using `if my_list:` is more idiomatic because non-empty containers are truthy and empty ones are falsy."
+  },
+  {
+    "id": 121,
+    "question": "Which module helps inspect function signatures and live objects?",
+    "options": [
+      "inspect",
+      "debug",
+      "signature",
+      "analysis"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It is part of the standard library and useful for introspection.",
+    "explanation": "The `inspect` module provides introspection utilities such as examining function signatures."
+  },
+  {
+    "id": 122,
+    "question": "What does `del my_list[0]` do?",
+    "options": [
+      "Returns and removes the first item",
+      "Deletes the first item without returning it",
+      "Clears the entire list",
+      "Sets the first item to None"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "`del` removes items but does not return them.",
+    "explanation": "`del my_list[0]` removes the first element from the list without returning it."
+  },
+  {
+    "id": 123,
+    "question": "Which statement about string immutability is correct?",
+    "options": [
+      "Strings can be changed in place",
+      "Strings are immutable, so operations create new strings",
+      "Strings are mutable only in functions",
+      "Strings can only be changed with slicing"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Methods like `replace()` return new strings.",
+    "explanation": "Strings are immutable in Python, so operations that appear to modify them actually create new strings."
+  },
+  {
+    "id": 124,
+    "question": "What is the result of `'a' * 3`?",
+    "options": [
+      "aaa",
+      "['a', 'a', 'a']",
+      "3a",
+      "An error"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "String repetition uses the multiplication operator.",
+    "explanation": "Multiplying a string by 3 repeats it three times, producing `'aaa'`."
+  },
+  {
+    "id": 125,
+    "question": "What does `reversed([1, 2, 3])` return?",
+    "options": [
+      "A list `[3, 2, 1]`",
+      "An iterator-like reverse iterator",
+      "Nothing",
+      "A tuple"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It does not immediately build a list by itself.",
+    "explanation": "`reversed()` returns a reverse iterator, which you can convert to a list if needed."
+  },
+  {
+    "id": 126,
+    "question": "What is a common reason to use `collections.defaultdict`?",
+    "options": [
+      "It forbids missing keys",
+      "It provides automatic default values for missing keys",
+      "It sorts keys by default",
+      "It makes dictionaries immutable"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "It is handy for grouping and counting patterns.",
+    "explanation": "`defaultdict` creates missing keys automatically using a default factory, which simplifies many patterns."
+  },
+  {
+    "id": 127,
+    "question": "Which statement about `assert` is correct?",
+    "options": [
+      "It is mainly for internal sanity checks and can be disabled with optimization",
+      "It always runs and should replace all error handling",
+      "It creates logs only",
+      "It is used only in async code"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It is not a substitute for validating external input in production paths.",
+    "explanation": "`assert` is commonly used for internal checks, and assertions can be disabled when Python runs with optimization flags."
+  },
+  {
+    "id": 128,
+    "question": "You review a function that builds a report and uses `data.sort()` on an input list from the caller. Later tests fail because the caller's list order changed. What is the best fix?",
+    "options": [
+      "Replace `sort()` with `sorted(data)` or sort a copy",
+      "Use `reverse()` instead",
+      "Convert the list to a tuple after sorting",
+      "Call `data.clear()` first"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The bug comes from mutating input data owned by the caller.",
+    "explanation": "`list.sort()` mutates the original list. Using `sorted(data)` or sorting a copy avoids unexpected side effects on the caller's data."
+  },
+  {
+    "id": 129,
+    "question": "A service caches expensive results in a default argument like `def f(x, cache={}): ...`. Requests start leaking data between calls. Why?",
+    "options": [
+      "The default dictionary is recreated each call",
+      "The same default dictionary persists across calls",
+      "Dictionaries cannot store cached values",
+      "Functions cannot accept dictionaries"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is the mutable default argument pitfall again, now in a real scenario.",
+    "explanation": "Default argument values are evaluated once at function definition time, so the same dictionary is shared across calls."
+  },
+  {
+    "id": 130,
+    "question": "A teammate writes `if status == None:` in many places. What is the recommended review comment?",
+    "options": [
+      "Use `status is None` for the idiomatic identity check",
+      "Use `status equals None`",
+      "Use `None(status)`",
+      "Convert None to a string first"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "None is a singleton object in Python.",
+    "explanation": "The idiomatic way to test for `None` is `is None`, because it checks identity and expresses intent clearly."
+  },
+  {
+    "id": 131,
+    "question": "A CSV processing script loads a huge file into a list before transforming it, and memory spikes. What Python feature is most appropriate to reduce memory usage?",
+    "options": [
+      "Generators or iterator-based processing",
+      "Nested lists",
+      "Global variables",
+      "Static methods"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Process records lazily instead of materializing everything at once.",
+    "explanation": "Generators and iterator-based pipelines allow processing one item at a time, which can greatly reduce memory usage for large files."
+  },
+  {
+    "id": 132,
+    "question": "An API client needs to make many concurrent HTTP requests efficiently. What Python approach is often a good fit?",
+    "options": [
+      "Deep inheritance",
+      "asyncio-based I/O",
+      "Using only lists",
+      "Replacing functions with classes"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "This is an I/O-bound concurrency problem.",
+    "explanation": "`asyncio` is often a strong fit for many concurrent I/O-bound operations like network requests."
+  },
+  {
+    "id": 133,
+    "question": "A code review shows `except:` with no exception type in application logic. What is the main concern?",
+    "options": [
+      "It can catch unexpected exceptions and hide real bugs",
+      "It only catches syntax errors",
+      "It improves debugging",
+      "It is required for cleanup"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Bare except blocks are very broad.",
+    "explanation": "A bare `except:` can catch nearly everything, including system-exiting exceptions, and may hide bugs that should surface."
+  },
+  {
+    "id": 134,
+    "question": "A function returns either a list or `None`, and callers keep forgetting to check for `None`. What design improvement is often better?",
+    "options": [
+      "Return an empty list when no items exist if that makes semantic sense",
+      "Raise StopIteration directly from every function",
+      "Convert the return value to a tuple always",
+      "Use `print()` instead of return"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "A more consistent return type often simplifies caller code.",
+    "explanation": "If 'no results' is naturally represented by an empty list, returning `[]` instead of `None` can make the API safer and easier to use."
+  },
+  {
+    "id": 135,
+    "question": "A script uses `open(path).read()` repeatedly and sometimes leaves file descriptors open in production. What is the best fix?",
+    "options": [
+      "Use `with open(path) as f:`",
+      "Call `read()` twice",
+      "Convert paths to strings first",
+      "Use `global f`"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think context managers and cleanup.",
+    "explanation": "Using `with open(...) as f:` ensures the file is closed reliably, even if an error occurs."
+  },
+  {
+    "id": 136,
+    "question": "A teammate uses `from module import *` in application code. What is the strongest reason to avoid it?",
+    "options": [
+      "It can pollute the namespace and make code harder to understand",
+      "It makes imports faster",
+      "It is required for packages",
+      "It prevents circular imports automatically"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Explicit imports improve readability and reduce surprises.",
+    "explanation": "Wildcard imports make it unclear where names come from and can overwrite existing names unexpectedly."
+  },
+  {
+    "id": 137,
+    "question": "A program checks whether a list is empty by comparing `my_list == []` everywhere. What Pythonic alternative is better?",
+    "options": [
+      "Use `if not my_list:`",
+      "Use `if my_list is []:`",
+      "Use `if len(my_list) == None:`",
+      "Use `if my_list.empty():`"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Containers already have truthiness semantics.",
+    "explanation": "`if not my_list:` is the idiomatic way to check whether a list is empty in Python."
+  },
+  {
+    "id": 138,
+    "question": "A team wants to serialize user-submitted data with `pickle` and store it for later loading. What is the main security concern?",
+    "options": [
+      "Pickle is unsafe to load from untrusted sources",
+      "Pickle cannot store dictionaries",
+      "Pickle only works with bytes of fixed size",
+      "Pickle automatically encrypts data"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "The danger is during deserialization, not basic serialization capability.",
+    "explanation": "Loading pickled data from untrusted sources can execute arbitrary code, so `pickle` should not be used for untrusted input."
+  },
+  {
+    "id": 139,
+    "question": "A function uses recursion for very deep tree traversal and starts failing on huge inputs. What is the practical risk?",
+    "options": [
+      "Python automatically converts it to iteration",
+      "It may hit the recursion limit",
+      "It disables garbage collection",
+      "It makes integers mutable"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Python has a maximum recursion depth by default.",
+    "explanation": "Deep recursion can hit Python's recursion limit and raise `RecursionError`."
+  },
+  {
+    "id": 140,
+    "question": "A teammate writes `result = my_dict['count']` even when the key may be missing. What safer alternative avoids a KeyError if zero is acceptable by default?",
+    "options": [
+      "`my_dict.get('count', 0)`",
+      "`my_dict['count', 0]`",
+      "`get(my_dict.count, 0)`",
+      "`my_dict.default('count', 0)`"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Use a dictionary method with a fallback default.",
+    "explanation": "`my_dict.get('count', 0)` returns the value if present or `0` if the key is missing."
+  },
+  {
+    "id": 141,
+    "question": "A command-line tool needs two independent versions of the same library for different projects on the same machine. What should you recommend?",
+    "options": [
+      "Use virtual environments",
+      "Rename the library folder manually",
+      "Store dependencies in one global site-packages only",
+      "Use `assert` statements"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Isolation of dependencies is the key requirement.",
+    "explanation": "Virtual environments isolate dependencies per project, allowing different versions of the same package to coexist cleanly."
+  },
+  {
+    "id": 142,
+    "question": "A loop builds a string with repeated `result += part` over many fragments and becomes slow. Which pattern is usually better?",
+    "options": [
+      "Collect parts in a list and use `''.join(parts)`",
+      "Use `set(part)`",
+      "Convert everything to bytes first always",
+      "Wrap the loop in `enumerate`"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Repeated string concatenation can be inefficient for many parts.",
+    "explanation": "Because strings are immutable, repeated concatenation can create many intermediate strings. Building a list and using `join()` is usually more efficient."
+  },
+  {
+    "id": 143,
+    "question": "You need a fast way to remove duplicates from a list when order does not matter. Which type is most suitable?",
+    "options": [
+      "tuple",
+      "set",
+      "dict",
+      "str"
+    ],
+    "category": "Python",
+    "difficulty": "easy",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "hint": "Think uniqueness rather than indexing.",
+    "explanation": "A set automatically keeps only unique values, making it a simple option when order does not matter."
+  },
+  {
+    "id": 144,
+    "question": "A bug report shows that a class attribute list is unexpectedly shared across all instances. What is the likely cause?",
+    "options": [
+      "It was defined at the class level instead of per instance",
+      "Lists cannot be used in classes",
+      "Each instance copied it incorrectly",
+      "Python caches all lists globally"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Class attributes are shared unless shadowed by instance attributes.",
+    "explanation": "Mutable class attributes are shared by all instances, so instance-specific mutable data should usually be created in `__init__`."
+  },
+  {
+    "id": 145,
+    "question": "A background job is CPU-bound and threads do not speed it up in CPython. What is the most relevant reason?",
+    "options": [
+      "The GIL limits parallel execution of Python bytecode across threads",
+      "Threads only work for web apps",
+      "Lists are not thread-safe",
+      "Asyncio disables threads"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "This is the classic CPython threading limitation for CPU-bound tasks.",
+    "explanation": "In CPython, the GIL prevents true parallel execution of Python bytecode in multiple threads, so CPU-bound workloads often benefit more from multiprocessing."
+  },
+  {
+    "id": 146,
+    "question": "A package import triggers database connections as a side effect, causing tests to fail just by importing the module. What design issue is most likely present?",
+    "options": [
+      "Too much work is happening at import time",
+      "Imports should always open databases",
+      "The module needs more global variables",
+      "Python imports are lazy by default"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Imports should usually avoid heavy side effects.",
+    "explanation": "Heavy side effects at import time make code harder to test and reason about. Setup work is often better deferred into explicit functions or runtime entry points."
+  },
+  {
+    "id": 147,
+    "question": "A function catches an exception, logs it, and then silently returns None, masking production failures. What is a better general practice when the error is not recoverable?",
+    "options": [
+      "Re-raise or let the exception propagate after logging",
+      "Always convert it to False",
+      "Use `pass` in the except block",
+      "Replace the function with a lambda"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Do not hide failures that callers need to know about.",
+    "explanation": "If the function cannot recover meaningfully, swallowing the exception can hide real problems. Logging and re-raising is often the better approach."
+  },
+  {
+    "id": 148,
+    "question": "A review comment says a custom class should implement `__repr__` for debugging. What is the main benefit?",
+    "options": [
+      "Developers get a clearer, more useful representation in logs and consoles",
+      "It makes the object hashable automatically",
+      "It speeds up instantiation",
+      "It prevents inheritance"
+    ],
+    "category": "Python",
+    "difficulty": "medium",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Think debugging and introspection.",
+    "explanation": "A helpful `__repr__` makes objects much easier to inspect in logs, tracebacks, and interactive sessions."
+  },
+  {
+    "id": 149,
+    "question": "What is the main purpose of `heapq` in Python's standard library?",
+    "options": [
+      "To work with priority queues and heap-based operations",
+      "To serialize objects to binary",
+      "To inspect stack frames",
+      "To create virtual environments"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "It is commonly used when you need efficient access to the smallest item.",
+    "explanation": "`heapq` provides heap-based operations and is often used to implement priority queues efficiently."
+  },
+  {
+    "id": 150,
+    "question": "A function signature uses `/` like `def f(a, b, /, c): ...`. What does the `/` indicate?",
+    "options": [
+      "Arguments before `/` are positional-only",
+      "Arguments after `/` are keyword-only",
+      "The function must return a float",
+      "The function is asynchronous"
+    ],
+    "category": "Python",
+    "difficulty": "hard",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "hint": "Python supports both positional-only and keyword-only markers in function signatures.",
+    "explanation": "In Python function signatures, `/` marks the parameters before it as positional-only."
+  }
+]

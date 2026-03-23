@@ -398,5 +398,5612 @@
     "correctIndex": [0],
     "hint": "Contains common directives.",
     "explanation": "CommonModule provides directives like *ngIf and *ngFor."
+  },
+   {
+    "question": "What is Angular primarily used for?",
+    "options": [
+      "Building single-page web applications",
+      "Managing SQL databases",
+      "Creating operating systems",
+      "Hosting servers"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think about front-end development.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular is a front-end framework for building single-page applications.",
+    "id": 1
+  },
+  {
+    "question": "Which company maintains Angular?",
+    "options": [
+      "Meta",
+      "Google",
+      "Microsoft",
+      "Amazon"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It is one of the major tech companies.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Angular is developed and maintained by Google.",
+    "id": 2
+  },
+  {
+    "question": "What is the purpose of a component in Angular?",
+    "options": [
+      "To define UI and logic for a view",
+      "To store database records",
+      "To compile TypeScript to JavaScript",
+      "To send HTTP packets directly"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think about the basic building block of Angular UI.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "A component controls a view and its behavior.",
+    "id": 3
+  },
+  {
+    "question": "Which file usually contains a component template?",
+    "options": [
+      "HTML file",
+      "SQL file",
+      "YAML file",
+      "Dockerfile"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It describes the UI markup.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular templates are usually written in HTML files.",
+    "id": 4
+  },
+  {
+    "question": "What does interpolation use in Angular templates?",
+    "options": [
+      "{{ value }}",
+      "[[ value ]]",
+      "(( value ))",
+      "<< value >>"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It renders values in templates.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Interpolation uses double curly braces.",
+    "id": 5
+  },
+  {
+    "question": "What is property binding syntax in Angular?",
+    "options": [
+      "[property]=\"value\"",
+      "(property)=\"value\"",
+      "{{property}}",
+      "*property=\"value\""
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It binds component data to DOM properties.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Property binding uses square brackets.",
+    "id": 6
+  },
+  {
+    "question": "What is event binding syntax in Angular?",
+    "options": [
+      "(event)=\"handler()\"",
+      "[event]=\"handler()\"",
+      "{{event}}",
+      "*event=\"handler()\""
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It listens to user actions.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Event binding uses parentheses.",
+    "id": 7
+  },
+  {
+    "question": "What does *ngIf do?",
+    "options": [
+      "Conditionally adds/removes elements",
+      "Repeats elements in a loop",
+      "Applies dynamic styles",
+      "Creates services"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It works with true/false conditions.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "*ngIf conditionally renders elements.",
+    "id": 8
+  },
+  {
+    "question": "What does *ngFor do?",
+    "options": [
+      "Loops over a collection",
+      "Hides elements",
+      "Creates modules",
+      "Sends HTTP requests"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It is used with arrays.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "*ngFor repeats a template for each item in a collection.",
+    "id": 9
+  },
+  {
+    "question": "What is the purpose of @Input()?",
+    "options": [
+      "Receive data from a parent component",
+      "Send data to a parent component",
+      "Create routes",
+      "Inject a service"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think parent to child.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@Input() allows parent-to-child data flow.",
+    "id": 10
+  },
+  {
+    "question": "What is the purpose of @Output()?",
+    "options": [
+      "Emit events to a parent component",
+      "Read route parameters",
+      "Create a directive",
+      "Register providers"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It usually works with EventEmitter.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@Output() is used for child-to-parent communication.",
+    "id": 11
+  },
+  {
+    "question": "Which class is commonly used with @Output()?",
+    "options": [
+      "EventEmitter",
+      "HttpClient",
+      "FormGroup",
+      "ActivatedRoute"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It emits values upward.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "EventEmitter emits custom events from child components.",
+    "code": "import { EventEmitter, Output } from '@angular/core';",
+    "id": 12
+  },
+  {
+    "question": "What is a directive in Angular?",
+    "options": [
+      "A class that adds behavior to elements",
+      "A built-in database connector",
+      "A CSS preprocessor",
+      "A backend controller"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Components are a special kind of it.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Directives add behavior to DOM elements.",
+    "id": 13
+  },
+  {
+    "question": "Which Angular decorator defines a component?",
+    "options": [
+      "@Component",
+      "@Injectable",
+      "@NgModule",
+      "@Pipe"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It describes selector, template, and styles.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@Component marks a class as an Angular component.",
+    "code": "import { Component } from '@angular/core';",
+    "id": 14
+  },
+  {
+    "question": "Which decorator marks a class as injectable?",
+    "options": [
+      "@Injectable",
+      "@Directive",
+      "@Pipe",
+      "@HostListener"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used for services.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@Injectable marks a class for dependency injection.",
+    "code": "import { Injectable } from '@angular/core';",
+    "id": 15
+  },
+  {
+    "question": "What is Angular Router used for?",
+    "options": [
+      "Navigation between views",
+      "Creating CSS animations",
+      "Compiling templates",
+      "Writing unit tests"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It handles routes and URLs.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular Router manages navigation in an SPA.",
+    "id": 16
+  },
+  {
+    "question": "What is a service in Angular mainly used for?",
+    "options": [
+      "Sharing logic and data",
+      "Rendering templates",
+      "Styling components",
+      "Defining HTML structure"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think reuse across components.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Services hold reusable business logic and shared state.",
+    "id": 17
+  },
+  {
+    "question": "What does dependency injection help with?",
+    "options": [
+      "Providing class dependencies automatically",
+      "Styling components",
+      "Generating random IDs",
+      "Optimizing images"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It reduces manual object creation.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Dependency injection supplies dependencies to classes.",
+    "id": 18
+  },
+  {
+    "question": "Which lifecycle hook runs after Angular initializes component inputs?",
+    "options": [
+      "ngOnInit",
+      "ngOnDestroy",
+      "ngAfterViewChecked",
+      "constructor"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It is very commonly used for setup.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngOnInit runs after inputs are initialized.",
+    "id": 19
+  },
+  {
+    "question": "Which lifecycle hook is used for cleanup before a component is destroyed?",
+    "options": [
+      "ngOnDestroy",
+      "ngOnChanges",
+      "ngAfterContentInit",
+      "ngDoCheck"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Unsubscribe here.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngOnDestroy is the cleanup hook.",
+    "id": 20
+  },
+  {
+    "question": "What is the purpose of a pipe in Angular?",
+    "options": [
+      "Transform display values in templates",
+      "Create routes",
+      "Inject services",
+      "Define modules"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Examples: date, currency.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Pipes format displayed values.",
+    "id": 21
+  },
+  {
+    "question": "Which symbol is used to apply a pipe in a template?",
+    "options": [
+      "|",
+      "&",
+      "%",
+      "#"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Same symbol often used in shell pipelines.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Pipes are used with the | symbol.",
+    "code": "{{ price | currency }}",
+    "id": 22
+  },
+  {
+    "question": "What does the async pipe do?",
+    "options": [
+      "Subscribes to async values and unsubscribes automatically",
+      "Formats dates",
+      "Creates Observables",
+      "Caches HTTP responses"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Useful with Observables.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The async pipe handles Observables/Promises in templates.",
+    "code": "{{ user$ | async | json }}",
+    "id": 23
+  },
+  {
+    "question": "Which Angular feature is used for forms with explicit model classes?",
+    "options": [
+      "Reactive forms",
+      "Attribute directives",
+      "Resolvers",
+      "Guards"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "They use FormControl and FormGroup.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Reactive forms are model-driven.",
+    "id": 24
+  },
+  {
+    "question": "Which module is needed for two-way binding with ngModel?",
+    "options": [
+      "FormsModule",
+      "HttpClientModule",
+      "RouterModule",
+      "CommonModule"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Template-driven forms need it.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngModel is provided by FormsModule.",
+    "id": 25
+  },
+  {
+    "question": "Which module provides HttpClient?",
+    "options": [
+      "HttpClientModule",
+      "FormsModule",
+      "BrowserAnimationsModule",
+      "RouterTestingModule"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Needed for API calls.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "HttpClient comes from HttpClientModule.",
+    "id": 26
+  },
+  {
+    "question": "What does routerLink do?",
+    "options": [
+      "Creates declarative navigation links",
+      "Registers HTTP interceptors",
+      "Bootstraps the app",
+      "Declares inputs"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used in templates.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "routerLink binds navigation to an element.",
+    "code": "<a routerLink=\"/home\">Home</a>",
+    "id": 27
+  },
+  {
+    "question": "Where are route parameters commonly read from?",
+    "options": [
+      "ActivatedRoute",
+      "HttpClient",
+      "EventEmitter",
+      "Renderer2"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It exposes paramMap and queryParamMap.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ActivatedRoute gives access to route info.",
+    "id": 28
+  },
+  {
+    "question": "What is the purpose of a standalone component?",
+    "options": [
+      "It can be used without declaring it in an NgModule",
+      "It cannot use directives",
+      "It replaces TypeScript",
+      "It is only for testing"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Modern Angular feature.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Standalone components reduce reliance on NgModules.",
+    "id": 29
+  },
+  {
+    "question": "What is the default change detection strategy called?",
+    "options": [
+      "Default",
+      "OnPush",
+      "Manual",
+      "Strict"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "There is another strategy for performance.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular uses the Default strategy unless changed.",
+    "id": 30
+  },
+  {
+    "question": "Which template syntax adds a CSS class conditionally?",
+    "options": [
+      "[class.active]=\"isActive\"",
+      "(class.active)=\"isActive\"",
+      "*class.active=\"isActive\"",
+      "{{class.active}}"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It starts with [class.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Class binding can add/remove classes conditionally.",
+    "code": "<button [class.active]=\"isActive\">Save</button>",
+    "id": 31
+  },
+  {
+    "question": "Which template syntax binds multiple styles using an object?",
+    "options": [
+      "[ngStyle]",
+      "[ngClass]",
+      "*ngStyle",
+      "(style)"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used for dynamic styling.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngStyle binds style values from an object.",
+    "code": "<div [ngStyle]=\"{ color: textColor, fontSize: size + 'px' }\"></div>",
+    "id": 32
+  },
+  {
+    "question": "What does ngClass do?",
+    "options": [
+      "Adds/removes CSS classes dynamically",
+      "Loops through arrays",
+      "Navigates to a route",
+      "Creates a service"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used for conditional classes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngClass dynamically manages CSS classes.",
+    "code": "<div [ngClass]=\"{ selected: isSelected }\"></div>",
+    "id": 33
+  },
+  {
+    "question": "What is template reference variable syntax?",
+    "options": [
+      "#name",
+      "$name",
+      "@name",
+      "%name"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used inside templates.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Template reference variables begin with #.",
+    "code": "<input #emailInput>",
+    "id": 34
+  },
+  {
+    "question": "What is the purpose of ViewChild?",
+    "options": [
+      "Access a child component or DOM element from the class",
+      "Create a service",
+      "Register routes",
+      "Format data"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used in the component class.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ViewChild gets a reference to a child or template element.",
+    "code": "import { ViewChild } from '@angular/core';",
+    "id": 35
+  },
+  {
+    "question": "What does the disabled attribute binding look like?",
+    "options": [
+      "[disabled]=\"isDisabled\"",
+      "(disabled)=\"isDisabled\"",
+      "*disabled=\"isDisabled\"",
+      "{{disabled}}"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Square brackets.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Property binding can control disabled state.",
+    "code": "<button [disabled]=\"isDisabled\">Submit</button>",
+    "id": 36
+  },
+  {
+    "question": "What does boolean attribute binding affect?",
+    "options": [
+      "DOM property state",
+      "Route guard result",
+      "HTTP response body",
+      "Module imports"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Example: disabled, checked.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Binding a boolean property updates the element state.",
+    "id": 37
+  },
+  {
+    "question": "What is the role of main.ts in a typical Angular app?",
+    "options": [
+      "Bootstraps the root application",
+      "Defines global CSS",
+      "Stores environment variables",
+      "Contains route guards"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It usually bootstraps AppComponent.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "main.ts starts the Angular application.",
+    "id": 38
+  },
+  {
+    "question": "Which Angular package provides basic structural directives like ngIf and ngFor?",
+    "options": [
+      "CommonModule",
+      "FormsModule",
+      "HttpClientModule",
+      "ServiceWorkerModule"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Needed often in standalone components.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "CommonModule provides common directives and pipes.",
+    "id": 39
+  },
+  {
+    "question": "What is a template in Angular?",
+    "options": [
+      "HTML with Angular syntax",
+      "A REST endpoint",
+      "A build script",
+      "A dependency provider"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It controls what users see.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Templates define the view using HTML plus Angular template syntax.",
+    "id": 40
+  },
+  {
+    "question": "Can an Angular component have inline template and styles?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Look at @Component metadata.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Components can use inline template and styles via template and styles properties.",
+    "id": 41
+  },
+  {
+    "question": "Does Angular support one-way data binding?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think about template to class or class to template.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Interpolation, property binding, and event binding are one-way patterns.",
+    "id": 42
+  },
+  {
+    "question": "Is EventEmitter typically used with @Output()?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Child to parent.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "EventEmitter is the common way to emit custom output events.",
+    "id": 43
+  },
+  {
+    "question": "Does *ngIf repeat elements over an array?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Another directive handles loops.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "*ngIf is for conditional rendering, not loops.",
+    "id": 44
+  },
+  {
+    "question": "Does Angular use TypeScript by default?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think of .ts files.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular projects are primarily written in TypeScript.",
+    "id": 45
+  },
+  {
+    "question": "Is FormsModule required for ngModel?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Template-driven forms.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngModel comes from FormsModule.",
+    "id": 46
+  },
+  {
+    "question": "Can a pipe be chained with another pipe?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Multiple transformations are possible.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Pipes can be chained in templates.",
+    "code": "{{ amount | currency | uppercase }}",
+    "id": 47
+  },
+  {
+    "question": "Does routerLink perform navigation?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It works in templates.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "routerLink is used for declarative navigation.",
+    "id": 48
+  },
+  {
+    "question": "Should reusable business logic usually go into services?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Keeps components lean.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Services are the standard place for shared logic.",
+    "id": 49
+  },
+  {
+    "question": "Can a standalone component import CommonModule directly?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Modern Angular setup.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Standalone components declare their own imports.",
+    "id": 50
+  },
+  {
+    "question": "Is ngOnDestroy useful for unsubscribing?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Avoid memory leaks.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngOnDestroy is commonly used for cleanup work.",
+    "id": 51
+  },
+  {
+    "question": "What is Angular primarily used for in Angular basics?",
+    "options": [
+      "Building single-page web applications",
+      "Managing SQL databases",
+      "Creating operating systems",
+      "Hosting servers"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think about front-end development.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular is a front-end framework for building single-page applications.",
+    "id": 52
+  },
+  {
+    "question": "Which company maintains Angular in Angular basics?",
+    "options": [
+      "Meta",
+      "Google",
+      "Microsoft",
+      "Amazon"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It is one of the major tech companies.",
+    "question_type": "mcq",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Angular is developed and maintained by Google.",
+    "id": 53
+  },
+  {
+    "question": "What is the purpose of a component in Angular in Angular basics?",
+    "options": [
+      "To define UI and logic for a view",
+      "To store database records",
+      "To compile TypeScript to JavaScript",
+      "To send HTTP packets directly"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think about the basic building block of Angular UI.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "A component controls a view and its behavior.",
+    "id": 54
+  },
+  {
+    "question": "Which file usually contains a component template in Angular basics?",
+    "options": [
+      "HTML file",
+      "SQL file",
+      "YAML file",
+      "Dockerfile"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It describes the UI markup.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular templates are usually written in HTML files.",
+    "id": 55
+  },
+  {
+    "question": "What does interpolation use in Angular templates in Angular basics?",
+    "options": [
+      "{{ value }}",
+      "[[ value ]]",
+      "(( value ))",
+      "<< value >>"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It renders values in templates.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Interpolation uses double curly braces.",
+    "id": 56
+  },
+  {
+    "question": "What is property binding syntax in Angular in Angular basics?",
+    "options": [
+      "[property]=\"value\"",
+      "(property)=\"value\"",
+      "{{property}}",
+      "*property=\"value\""
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It binds component data to DOM properties.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Property binding uses square brackets.",
+    "id": 57
+  },
+  {
+    "question": "What is event binding syntax in Angular in Angular basics?",
+    "options": [
+      "(event)=\"handler()\"",
+      "[event]=\"handler()\"",
+      "{{event}}",
+      "*event=\"handler()\""
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It listens to user actions.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Event binding uses parentheses.",
+    "id": 58
+  },
+  {
+    "question": "What does *ngIf do in Angular basics?",
+    "options": [
+      "Conditionally adds/removes elements",
+      "Repeats elements in a loop",
+      "Applies dynamic styles",
+      "Creates services"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It works with true/false conditions.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "*ngIf conditionally renders elements.",
+    "id": 59
+  },
+  {
+    "question": "What does *ngFor do in Angular basics?",
+    "options": [
+      "Loops over a collection",
+      "Hides elements",
+      "Creates modules",
+      "Sends HTTP requests"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It is used with arrays.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "*ngFor repeats a template for each item in a collection.",
+    "id": 60
+  },
+  {
+    "question": "What is the purpose of @Input() in Angular basics?",
+    "options": [
+      "Receive data from a parent component",
+      "Send data to a parent component",
+      "Create routes",
+      "Inject a service"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think parent to child.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@Input() allows parent-to-child data flow.",
+    "id": 61
+  },
+  {
+    "question": "What is the purpose of @Output() in Angular basics?",
+    "options": [
+      "Emit events to a parent component",
+      "Read route parameters",
+      "Create a directive",
+      "Register providers"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It usually works with EventEmitter.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@Output() is used for child-to-parent communication.",
+    "id": 62
+  },
+  {
+    "question": "Which class is commonly used with @Output() in Angular basics?",
+    "options": [
+      "EventEmitter",
+      "HttpClient",
+      "FormGroup",
+      "ActivatedRoute"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It emits values upward.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "EventEmitter emits custom events from child components.",
+    "code": "import { EventEmitter, Output } from '@angular/core';",
+    "id": 63
+  },
+  {
+    "question": "What is a directive in Angular in Angular basics?",
+    "options": [
+      "A class that adds behavior to elements",
+      "A built-in database connector",
+      "A CSS preprocessor",
+      "A backend controller"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Components are a special kind of it.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Directives add behavior to DOM elements.",
+    "id": 64
+  },
+  {
+    "question": "Which Angular decorator defines a component in Angular basics?",
+    "options": [
+      "@Component",
+      "@Injectable",
+      "@NgModule",
+      "@Pipe"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It describes selector, template, and styles.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@Component marks a class as an Angular component.",
+    "code": "import { Component } from '@angular/core';",
+    "id": 65
+  },
+  {
+    "question": "Which decorator marks a class as injectable in Angular basics?",
+    "options": [
+      "@Injectable",
+      "@Directive",
+      "@Pipe",
+      "@HostListener"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used for services.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "@Injectable marks a class for dependency injection.",
+    "id": 66
+  },
+  {
+    "question": "What is Angular Router used for in Angular basics?",
+    "options": [
+      "Navigation between views",
+      "Creating CSS animations",
+      "Compiling templates",
+      "Writing unit tests"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It handles routes and URLs.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular Router manages navigation in an SPA.",
+    "id": 67
+  },
+  {
+    "question": "What is a service in Angular mainly used for in Angular basics?",
+    "options": [
+      "Sharing logic and data",
+      "Rendering templates",
+      "Styling components",
+      "Defining HTML structure"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think reuse across components.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Services hold reusable business logic and shared state.",
+    "id": 68
+  },
+  {
+    "question": "What does dependency injection help with in Angular basics?",
+    "options": [
+      "Providing class dependencies automatically",
+      "Styling components",
+      "Generating random IDs",
+      "Optimizing images"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It reduces manual object creation.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Dependency injection supplies dependencies to classes.",
+    "id": 69
+  },
+  {
+    "question": "Which lifecycle hook runs after Angular initializes component inputs in Angular basics?",
+    "options": [
+      "ngOnInit",
+      "ngOnDestroy",
+      "ngAfterViewChecked",
+      "constructor"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It is very commonly used for setup.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngOnInit runs after inputs are initialized.",
+    "id": 70
+  },
+  {
+    "question": "Which lifecycle hook is used for cleanup before a component is destroyed in Angular basics?",
+    "options": [
+      "ngOnDestroy",
+      "ngOnChanges",
+      "ngAfterContentInit",
+      "ngDoCheck"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Unsubscribe here.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngOnDestroy is the cleanup hook.",
+    "id": 71
+  },
+  {
+    "question": "What is the purpose of a pipe in Angular in Angular basics?",
+    "options": [
+      "Transform display values in templates",
+      "Create routes",
+      "Inject services",
+      "Define modules"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Examples: date, currency.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Pipes format displayed values.",
+    "id": 72
+  },
+  {
+    "question": "Which symbol is used to apply a pipe in a template in Angular basics?",
+    "options": [
+      "|",
+      "&",
+      "%",
+      "#"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Same symbol often used in shell pipelines.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Pipes are used with the | symbol.",
+    "code": "{{ price | currency }}",
+    "id": 73
+  },
+  {
+    "question": "What does the async pipe do in Angular basics?",
+    "options": [
+      "Subscribes to async values and unsubscribes automatically",
+      "Formats dates",
+      "Creates Observables",
+      "Caches HTTP responses"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Useful with Observables.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The async pipe handles Observables/Promises in templates.",
+    "id": 74
+  },
+  {
+    "question": "Which Angular feature is used for forms with explicit model classes in Angular basics?",
+    "options": [
+      "Reactive forms",
+      "Attribute directives",
+      "Resolvers",
+      "Guards"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "They use FormControl and FormGroup.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Reactive forms are model-driven.",
+    "id": 75
+  },
+  {
+    "question": "Which module is needed for two-way binding with ngModel in Angular basics?",
+    "options": [
+      "FormsModule",
+      "HttpClientModule",
+      "RouterModule",
+      "CommonModule"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Template-driven forms need it.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngModel is provided by FormsModule.",
+    "id": 76
+  },
+  {
+    "question": "Which module provides HttpClient in Angular basics?",
+    "options": [
+      "HttpClientModule",
+      "FormsModule",
+      "BrowserAnimationsModule",
+      "RouterTestingModule"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Needed for API calls.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "HttpClient comes from HttpClientModule.",
+    "id": 77
+  },
+  {
+    "question": "What does routerLink do in Angular basics?",
+    "options": [
+      "Creates declarative navigation links",
+      "Registers HTTP interceptors",
+      "Bootstraps the app",
+      "Declares inputs"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used in templates.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "routerLink binds navigation to an element.",
+    "id": 78
+  },
+  {
+    "question": "Where are route parameters commonly read from in Angular basics?",
+    "options": [
+      "ActivatedRoute",
+      "HttpClient",
+      "EventEmitter",
+      "Renderer2"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It exposes paramMap and queryParamMap.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ActivatedRoute gives access to route info.",
+    "id": 79
+  },
+  {
+    "question": "What is the purpose of a standalone component in Angular basics?",
+    "options": [
+      "It can be used without declaring it in an NgModule",
+      "It cannot use directives",
+      "It replaces TypeScript",
+      "It is only for testing"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Modern Angular feature.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Standalone components reduce reliance on NgModules.",
+    "id": 80
+  },
+  {
+    "question": "What is the default change detection strategy called in Angular basics?",
+    "options": [
+      "Default",
+      "OnPush",
+      "Manual",
+      "Strict"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "There is another strategy for performance.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular uses the Default strategy unless changed.",
+    "id": 81
+  },
+  {
+    "question": "Which template syntax adds a CSS class conditionally in Angular basics?",
+    "options": [
+      "[class.active]=\"isActive\"",
+      "(class.active)=\"isActive\"",
+      "*class.active=\"isActive\"",
+      "{{class.active}}"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It starts with [class.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Class binding can add/remove classes conditionally.",
+    "id": 82
+  },
+  {
+    "question": "Which template syntax binds multiple styles using an object in Angular basics?",
+    "options": [
+      "[ngStyle]",
+      "[ngClass]",
+      "*ngStyle",
+      "(style)"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used for dynamic styling.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngStyle binds style values from an object.",
+    "code": "<div [ngStyle]=\"{ color: textColor, fontSize: size + 'px' }\"></div>",
+    "id": 83
+  },
+  {
+    "question": "What does ngClass do in Angular basics?",
+    "options": [
+      "Adds/removes CSS classes dynamically",
+      "Loops through arrays",
+      "Navigates to a route",
+      "Creates a service"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used for conditional classes.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngClass dynamically manages CSS classes.",
+    "id": 84
+  },
+  {
+    "question": "What is template reference variable syntax in Angular basics?",
+    "options": [
+      "#name",
+      "$name",
+      "@name",
+      "%name"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used inside templates.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Template reference variables begin with #.",
+    "code": "<input #emailInput>",
+    "id": 85
+  },
+  {
+    "question": "What is the purpose of ViewChild in Angular basics?",
+    "options": [
+      "Access a child component or DOM element from the class",
+      "Create a service",
+      "Register routes",
+      "Format data"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Used in the component class.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ViewChild gets a reference to a child or template element.",
+    "id": 86
+  },
+  {
+    "question": "What does the disabled attribute binding look like in Angular basics?",
+    "options": [
+      "[disabled]=\"isDisabled\"",
+      "(disabled)=\"isDisabled\"",
+      "*disabled=\"isDisabled\"",
+      "{{disabled}}"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Square brackets.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Property binding can control disabled state.",
+    "code": "<button [disabled]=\"isDisabled\">Submit</button>",
+    "id": 87
+  },
+  {
+    "question": "What does boolean attribute binding affect in Angular basics?",
+    "options": [
+      "DOM property state",
+      "Route guard result",
+      "HTTP response body",
+      "Module imports"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Example: disabled, checked.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Binding a boolean property updates the element state.",
+    "id": 88
+  },
+  {
+    "question": "What is the role of main.ts in a typical Angular app in Angular basics?",
+    "options": [
+      "Bootstraps the root application",
+      "Defines global CSS",
+      "Stores environment variables",
+      "Contains route guards"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It usually bootstraps AppComponent.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "main.ts starts the Angular application.",
+    "id": 89
+  },
+  {
+    "question": "Which Angular package provides basic structural directives like ngIf and ngFor in Angular basics?",
+    "options": [
+      "CommonModule",
+      "FormsModule",
+      "HttpClientModule",
+      "ServiceWorkerModule"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Needed often in standalone components.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "CommonModule provides common directives and pipes.",
+    "id": 90
+  },
+  {
+    "question": "What is a template in Angular in Angular basics?",
+    "options": [
+      "HTML with Angular syntax",
+      "A REST endpoint",
+      "A build script",
+      "A dependency provider"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It controls what users see.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Templates define the view using HTML plus Angular template syntax.",
+    "id": 91
+  },
+  {
+    "question": "Can an Angular component have inline template and styles in Angular basics?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Look at @Component metadata.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Components can use inline template and styles via template and styles properties.",
+    "id": 92
+  },
+  {
+    "question": "Does Angular support one-way data binding in Angular basics?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think about template to class or class to template.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Interpolation, property binding, and event binding are one-way patterns.",
+    "id": 93
+  },
+  {
+    "question": "Is EventEmitter typically used with @Output() in Angular basics?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Child to parent.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "EventEmitter is the common way to emit custom output events.",
+    "id": 94
+  },
+  {
+    "question": "Does *ngIf repeat elements over an array in Angular basics?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Another directive handles loops.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "*ngIf is for conditional rendering, not loops.",
+    "id": 95
+  },
+  {
+    "question": "Does Angular use TypeScript by default in Angular basics?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Think of .ts files.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular projects are primarily written in TypeScript.",
+    "id": 96
+  },
+  {
+    "question": "Is FormsModule required for ngModel in Angular basics?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Template-driven forms.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ngModel comes from FormsModule.",
+    "id": 97
+  },
+  {
+    "question": "Can a pipe be chained with another pipe in Angular basics?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Multiple transformations are possible.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Pipes can be chained in templates.",
+    "id": 98
+  },
+  {
+    "question": "Does routerLink perform navigation in Angular basics?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "It works in templates.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "routerLink is used for declarative navigation.",
+    "id": 99
+  },
+  {
+    "question": "Should reusable business logic usually go into services in Angular basics?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "easy",
+    "description": "Easy level Angular concept question.",
+    "hint": "Keeps components lean.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Services are the standard place for shared logic.",
+    "id": 100
+  },
+  {
+    "question": "What is the main difference between constructor and ngOnInit in Angular?",
+    "options": [
+      "constructor is for class instantiation; ngOnInit is for Angular initialization logic",
+      "They always run at the same time for the same purpose",
+      "ngOnInit creates dependencies; constructor handles DOM events",
+      "constructor is only for services"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "One belongs to TypeScript, one to Angular.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The constructor is a TypeScript feature; ngOnInit is an Angular lifecycle hook.",
+    "id": 101
+  },
+  {
+    "question": "When would you prefer ChangeDetectionStrategy.OnPush?",
+    "options": [
+      "When you want more predictable and efficient change detection",
+      "When you need to disable templates",
+      "When you want automatic two-way binding everywhere",
+      "When you want to avoid using inputs"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think performance optimization.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "OnPush can improve performance by reducing change detection checks.",
+    "id": 102
+  },
+  {
+    "question": "What does a route guard do?",
+    "options": [
+      "Controls access to a route",
+      "Formats route parameters",
+      "Caches templates",
+      "Compiles lazy modules"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "It is about navigation control.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Route guards decide whether navigation can proceed.",
+    "id": 103
+  },
+  {
+    "question": "Which guard type is used to prevent leaving a page with unsaved changes?",
+    "options": [
+      "CanDeactivate",
+      "CanActivate",
+      "Resolve",
+      "CanMatch"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful for unsaved forms.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "CanDeactivate checks before leaving a route.",
+    "id": 104
+  },
+  {
+    "question": "What is a resolver used for in Angular routing?",
+    "options": [
+      "Fetch data before activating a route",
+      "Block component destruction",
+      "Register HTTP interceptors",
+      "Apply CSS before navigation"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Pre-fetching route data.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers load data before the route becomes active.",
+    "id": 105
+  },
+  {
+    "question": "What does lazy loading help improve?",
+    "options": [
+      "Initial bundle size and startup time",
+      "CSS specificity",
+      "Template interpolation speed only",
+      "Event bubbling"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think code splitting.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Lazy loading defers loading feature code until needed.",
+    "id": 106
+  },
+  {
+    "question": "Which RxJS type emits multiple values over time?",
+    "options": [
+      "Observable",
+      "Promise",
+      "Signal only",
+      "EventLoop"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Common in Angular.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Observables can emit many values over time.",
+    "id": 107
+  },
+  {
+    "question": "Why is the async pipe often preferred over manual subscribe in templates?",
+    "options": [
+      "It manages subscription lifecycle automatically",
+      "It converts Observables to arrays",
+      "It disables change detection",
+      "It creates services"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Less boilerplate.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The async pipe subscribes and unsubscribes automatically.",
+    "id": 108
+  },
+  {
+    "question": "What is the purpose of an HTTP interceptor?",
+    "options": [
+      "Inspect or modify HTTP requests and responses",
+      "Create routes dynamically",
+      "Transform pipes globally",
+      "Generate standalone components"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think cross-cutting concerns like auth.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Interceptors sit in the HTTP pipeline.",
+    "id": 109
+  },
+  {
+    "question": "What does FormGroup represent in reactive forms?",
+    "options": [
+      "A group of form controls",
+      "A route configuration",
+      "A dependency graph",
+      "A service registry"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Used in reactive forms.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "FormGroup groups related form controls.",
+    "id": 110
+  },
+  {
+    "question": "What does FormControl represent?",
+    "options": [
+      "A single form input model",
+      "A router outlet",
+      "A DOM renderer",
+      "A build optimizer"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Single field.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "FormControl tracks value and validation state of one control.",
+    "id": 111
+  },
+  {
+    "question": "Which validator checks that a field has a value?",
+    "options": [
+      "Validators.required",
+      "Validators.min",
+      "Validators.pattern",
+      "Validators.emailList"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Most basic validator.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Validators.required ensures a value is present.",
+    "code": "name: new FormControl('', Validators.required)",
+    "id": 112
+  },
+  {
+    "question": "What is the purpose of trackBy with *ngFor?",
+    "options": [
+      "Improve rendering performance by identifying items",
+      "Sort an array automatically",
+      "Prevent all re-renders permanently",
+      "Convert arrays to Observables"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful with large lists.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "trackBy helps Angular track items more efficiently.",
+    "id": 113
+  },
+  {
+    "question": "What problem can happen if you subscribe in a component and never unsubscribe from long-lived streams?",
+    "options": [
+      "Memory leaks",
+      "Template compilation errors",
+      "CSS conflicts",
+      "Route duplication"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Cleanup matters.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Unreleased subscriptions can cause leaks and unexpected behavior.",
+    "id": 114
+  },
+  {
+    "question": "What is the role of ActivatedRouteSnapshot?",
+    "options": [
+      "Provides static snapshot route data at a specific time",
+      "Performs navigation",
+      "Intercepts HTTP requests",
+      "Creates query params"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Snapshot vs observable streams.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ActivatedRouteSnapshot is a static view of current route data.",
+    "id": 115
+  },
+  {
+    "question": "What is the purpose of query parameters?",
+    "options": [
+      "Pass optional URL state like filters and paging",
+      "Define component metadata",
+      "Replace route guards",
+      "Compile templates"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think ?page=2.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Query params often store filter or search state.",
+    "id": 116
+  },
+  {
+    "question": "What is the difference between route params and query params?",
+    "options": [
+      "Route params identify path segments; query params carry optional URL state",
+      "They are always identical",
+      "Query params are only for POST requests",
+      "Route params are only for booleans"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Path vs optional URL data.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Route params are part of the path, query params are key-value pairs after ?.",
+    "id": 117
+  },
+  {
+    "question": "What does providedIn: 'root' do in a service?",
+    "options": [
+      "Registers the service in the root injector",
+      "Restricts service to one component",
+      "Turns the service into a directive",
+      "Delays service creation until ngOnDestroy"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "A common service registration pattern.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "It makes the service available app-wide via the root injector.",
+    "code": "@Injectable({ providedIn: 'root' })",
+    "id": 118
+  },
+  {
+    "question": "What is content projection in Angular?",
+    "options": [
+      "Projecting external markup into a component using ng-content",
+      "Creating routes inside content tags",
+      "Injecting services into templates",
+      "Running pipes in child components"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think slot-like behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Content projection allows parent content to appear inside a child component.",
+    "code": "<ng-content></ng-content>",
+    "id": 119
+  },
+  {
+    "question": "What is the purpose of ng-content?",
+    "options": [
+      "Render projected content",
+      "Create dynamic routes",
+      "Subscribe to Observables",
+      "Apply form validation"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Used in reusable layout components.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ng-content marks where projected content is rendered.",
+    "code": "<ng-content></ng-content>",
+    "id": 120
+  },
+  {
+    "question": "What does ViewEncapsulation affect?",
+    "options": [
+      "How component styles are scoped",
+      "How routes are matched",
+      "How services are injected",
+      "How Observables emit"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "It is about styles.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ViewEncapsulation controls CSS scoping behavior.",
+    "id": 121
+  },
+  {
+    "question": "Why might a pure pipe be beneficial?",
+    "options": [
+      "It avoids unnecessary recalculation when inputs have not changed",
+      "It can access private component state",
+      "It bypasses change detection",
+      "It always mutates inputs"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Performance-related.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Pure pipes run only when Angular detects a pure change to the input.",
+    "id": 122
+  },
+  {
+    "question": "What is the purpose of a custom validator in reactive forms?",
+    "options": [
+      "Add business-specific validation logic",
+      "Create route guards",
+      "Replace FormGroup",
+      "Compile templates"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful for domain rules.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Custom validators handle validation rules beyond built-ins.",
+    "id": 123
+  },
+  {
+    "question": "What does patchValue do in reactive forms?",
+    "options": [
+      "Updates some controls without requiring all values",
+      "Resets the form permanently",
+      "Adds validators automatically",
+      "Marks every control as touched"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Less strict than setValue.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "patchValue updates a subset of form values.",
+    "id": 124
+  },
+  {
+    "question": "What does setValue do in reactive forms?",
+    "options": [
+      "Updates all controls and requires a complete object",
+      "Only updates one control",
+      "Submits the form",
+      "Creates the form structure"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Stricter than patchValue.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "setValue requires values for all controls in the group.",
+    "id": 125
+  },
+  {
+    "question": "Why use debounceTime with form valueChanges?",
+    "options": [
+      "Reduce rapid emissions during typing",
+      "Make validation synchronous",
+      "Skip all duplicate values forever",
+      "Convert values to Promises"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful for search.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "debounceTime helps avoid reacting to every keystroke immediately.",
+    "id": 126
+  },
+  {
+    "question": "What is the benefit of shareReplay in a data service?",
+    "options": [
+      "Reuse the latest emitted value among multiple subscribers",
+      "Force refetch on every subscription",
+      "Disable caching",
+      "Convert an Observable to a signal automatically"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful for API responses.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "shareReplay can share and cache a stream result.",
+    "id": 127
+  },
+  {
+    "question": "What is a common reason to use a facade service with components?",
+    "options": [
+      "To keep components simpler and centralize state/business logic",
+      "To avoid using templates",
+      "To replace all pipes",
+      "To disable routing"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think separation of concerns.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Facade services can reduce component complexity.",
+    "id": 128
+  },
+  {
+    "question": "What does distinctUntilChanged help prevent?",
+    "options": [
+      "Repeated emissions of the same value",
+      "Route activation",
+      "Template rendering",
+      "Dependency injection"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful with form streams.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "distinctUntilChanged filters consecutive duplicate values.",
+    "id": 129
+  },
+  {
+    "question": "What is the purpose of a CanMatch guard?",
+    "options": [
+      "Control whether a route definition should match",
+      "Destroy a component before routing",
+      "Create dynamic HTTP headers",
+      "Validate a form group"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Modern routing concept.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "CanMatch can stop a route from matching in the first place.",
+    "id": 130
+  },
+  {
+    "question": "What is the main advantage of standalone APIs in Angular?",
+    "options": [
+      "Less NgModule boilerplate and more direct imports",
+      "No need for templates",
+      "No more dependency injection",
+      "No support for routing"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Modern Angular ergonomics.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Standalone APIs simplify project structure.",
+    "id": 131
+  },
+  {
+    "question": "What is a signal in Angular primarily for?",
+    "options": [
+      "Reactive state tracking",
+      "HTTP request caching",
+      "CSS encapsulation",
+      "SSR deployment"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Modern reactivity feature.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Signals are Angular's reactive primitive for state.",
+    "id": 132
+  },
+  {
+    "question": "What does computed() create with signals?",
+    "options": [
+      "A derived reactive value",
+      "A manual subscription",
+      "A route resolver",
+      "A lazy module"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think derived state.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "computed derives values from other signals.",
+    "id": 133
+  },
+  {
+    "question": "What is effect() used for with signals?",
+    "options": [
+      "Run side effects when signal dependencies change",
+      "Generate CSS effects",
+      "Create DOM elements directly",
+      "Register lazy routes"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Logging or syncing external state.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "effect reacts to signal changes with side effects.",
+    "id": 134
+  },
+  {
+    "question": "Why would you use inject() instead of constructor injection in some Angular code?",
+    "options": [
+      "To access dependencies in functions or class fields",
+      "To disable DI",
+      "To create route params",
+      "To replace providers"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Common in standalone/functional patterns.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "inject() is helpful in functional APIs and some class field setups.",
+    "code": "const router = inject(Router);",
+    "id": 135
+  },
+  {
+    "question": "What does takeUntilDestroyed help with?",
+    "options": [
+      "Automatic subscription cleanup tied to component lifecycle",
+      "Skipping route guards",
+      "Caching forms",
+      "Reducing CSS size"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Modern Angular/RxJS interop.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "takeUntilDestroyed simplifies cleanup for subscriptions.",
+    "id": 136
+  },
+  {
+    "question": "What is server-side rendering mainly used for?",
+    "options": [
+      "Faster first content and better SEO",
+      "Replacing TypeScript",
+      "Eliminating routers",
+      "Creating pipes"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think first page render.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "SSR can improve initial load and search engine visibility.",
+    "id": 137
+  },
+  {
+    "question": "What is hydration in Angular SSR context?",
+    "options": [
+      "Reusing server-rendered HTML on the client",
+      "Encrypting HTTP responses",
+      "Resetting a form after submit",
+      "Compiling directives in AOT"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "SSR follow-up step.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Hydration attaches client behavior to server-rendered markup.",
+    "id": 138
+  },
+  {
+    "question": "What is a common use of a route data property?",
+    "options": [
+      "Attach static metadata like titles or required roles",
+      "Store local CSS rules",
+      "Replace services",
+      "Send POST bodies"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Extra route metadata.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Route data can carry static configuration metadata.",
+    "id": 139
+  },
+  {
+    "question": "What is the benefit of OnPush with immutable input updates?",
+    "options": [
+      "Angular can detect input reference changes efficiently",
+      "It disables all rerenders",
+      "It only works with forms",
+      "It removes the need for services"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Reference changes matter.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "OnPush works well with immutable data patterns.",
+    "id": 140
+  },
+  {
+    "question": "Does a resolver run before route activation?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Preload route data.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers fetch data before the route becomes active.",
+    "id": 141
+  },
+  {
+    "question": "Can trackBy help reduce DOM recreation in ngFor?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "List rendering optimization.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "trackBy helps Angular preserve DOM nodes when items are unchanged.",
+    "id": 142
+  },
+  {
+    "question": "Is providedIn: 'root' a way to register a singleton-like app-wide service?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think app-wide availability.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "A root-provided service is shared through the root injector.",
+    "id": 143
+  },
+  {
+    "question": "Does patchValue require values for every control in a FormGroup?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Compare with setValue.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "patchValue can update only part of the form model.",
+    "id": 144
+  },
+  {
+    "question": "Can a CanDeactivate guard be used for unsaved form confirmation?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Navigation away.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "It is commonly used to warn users before leaving a page.",
+    "id": 145
+  },
+  {
+    "question": "Is an Observable limited to a single emitted value like a Promise?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Not just one.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Observables can emit multiple values over time.",
+    "id": 146
+  },
+  {
+    "question": "Can OnPush still update the view when an input reference changes?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Reference checks matter.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Input reference changes can trigger view updates with OnPush.",
+    "id": 147
+  },
+  {
+    "question": "Is queryParamMap used to read query string values?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Look after the question mark in URL.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "queryParamMap reads URL query parameters.",
+    "id": 148
+  },
+  {
+    "question": "Can content projection be achieved with ng-content?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Slot-like behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ng-content is Angular's built-in content projection feature.",
+    "id": 149
+  },
+  {
+    "question": "Is shareReplay useful for sharing a fetched stream result across subscribers?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful in data services.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "shareReplay can cache and share stream emissions.",
+    "id": 150
+  },
+  {
+    "question": "What is the main difference between constructor and ngOnInit in Angular in a practical Angular scenario?",
+    "options": [
+      "constructor is for class instantiation; ngOnInit is for Angular initialization logic",
+      "They always run at the same time for the same purpose",
+      "ngOnInit creates dependencies; constructor handles DOM events",
+      "constructor is only for services"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "One belongs to TypeScript, one to Angular.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The constructor is a TypeScript feature; ngOnInit is an Angular lifecycle hook.",
+    "id": 151
+  },
+  {
+    "question": "When would you prefer ChangeDetectionStrategy.OnPush in a practical Angular scenario?",
+    "options": [
+      "When you want more predictable and efficient change detection",
+      "When you need to disable templates",
+      "When you want automatic two-way binding everywhere",
+      "When you want to avoid using inputs"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think performance optimization.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "OnPush can improve performance by reducing change detection checks.",
+    "id": 152
+  },
+  {
+    "question": "What does a route guard do in a practical Angular scenario?",
+    "options": [
+      "Controls access to a route",
+      "Formats route parameters",
+      "Caches templates",
+      "Compiles lazy modules"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "It is about navigation control.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Route guards decide whether navigation can proceed.",
+    "id": 153
+  },
+  {
+    "question": "Which guard type is used to prevent leaving a page with unsaved changes in a practical Angular scenario?",
+    "options": [
+      "CanDeactivate",
+      "CanActivate",
+      "Resolve",
+      "CanMatch"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful for unsaved forms.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "CanDeactivate checks before leaving a route.",
+    "id": 154
+  },
+  {
+    "question": "What is a resolver used for in Angular routing in a practical Angular scenario?",
+    "options": [
+      "Fetch data before activating a route",
+      "Block component destruction",
+      "Register HTTP interceptors",
+      "Apply CSS before navigation"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Pre-fetching route data.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers load data before the route becomes active.",
+    "id": 155
+  },
+  {
+    "question": "What does lazy loading help improve in a practical Angular scenario?",
+    "options": [
+      "Initial bundle size and startup time",
+      "CSS specificity",
+      "Template interpolation speed only",
+      "Event bubbling"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think code splitting.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Lazy loading defers loading feature code until needed.",
+    "id": 156
+  },
+  {
+    "question": "Which RxJS type emits multiple values over time in a practical Angular scenario?",
+    "options": [
+      "Observable",
+      "Promise",
+      "Signal only",
+      "EventLoop"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Common in Angular.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Observables can emit many values over time.",
+    "id": 157
+  },
+  {
+    "question": "Why is the async pipe often preferred over manual subscribe in templates in a practical Angular scenario?",
+    "options": [
+      "It manages subscription lifecycle automatically",
+      "It converts Observables to arrays",
+      "It disables change detection",
+      "It creates services"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Less boilerplate.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The async pipe subscribes and unsubscribes automatically.",
+    "id": 158
+  },
+  {
+    "question": "What is the purpose of an HTTP interceptor in a practical Angular scenario?",
+    "options": [
+      "Inspect or modify HTTP requests and responses",
+      "Create routes dynamically",
+      "Transform pipes globally",
+      "Generate standalone components"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think cross-cutting concerns like auth.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Interceptors sit in the HTTP pipeline.",
+    "id": 159
+  },
+  {
+    "question": "What does FormGroup represent in reactive forms in a practical Angular scenario ?",
+    "options": [
+      "A group of form controls",
+      "A route configuration",
+      "A dependency graph",
+      "A service registry"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Used in reactive forms.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "FormGroup groups related form controls.",
+    "id": 160
+  },
+  {
+    "question": "What does FormControl represent in a practical Angular scenario ?",
+    "options": [
+      "A single form input model",
+      "A router outlet",
+      "A DOM renderer",
+      "A build optimizer"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Single field.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "FormControl tracks value and validation state of one control.",
+    "id": 161
+  },
+  {
+    "question": "Which validator checks that a field has a value in a practical Angular scenario ?",
+    "options": [
+      "Validators.required",
+      "Validators.min",
+      "Validators.pattern",
+      "Validators.emailList"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Most basic validator.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Validators.required ensures a value is present.",
+    "code": "name: new FormControl('', Validators.required)",
+    "id": 162
+  },
+  {
+    "question": "What is the purpose of trackBy with *ngFor in a practical Angular scenario ?",
+    "options": [
+      "Improve rendering performance by identifying items",
+      "Sort an array automatically",
+      "Prevent all re-renders permanently",
+      "Convert arrays to Observables"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful with large lists.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "trackBy helps Angular track items more efficiently.",
+    "id": 163
+  },
+  {
+    "question": "What problem can happen if you subscribe in a component and never unsubscribe from long-lived streams in a practical Angular scenario ?",
+    "options": [
+      "Memory leaks",
+      "Template compilation errors",
+      "CSS conflicts",
+      "Route duplication"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Cleanup matters.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Unreleased subscriptions can cause leaks and unexpected behavior.",
+    "id": 164
+  },
+  {
+    "question": "What is the role of ActivatedRouteSnapshot in a practical Angular scenario ?",
+    "options": [
+      "Provides static snapshot route data at a specific time",
+      "Performs navigation",
+      "Intercepts HTTP requests",
+      "Creates query params"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Snapshot vs observable streams.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ActivatedRouteSnapshot is a static view of current route data.",
+    "id": 165
+  },
+  {
+    "question": "What is the purpose of query parameters in a practical Angular scenario ?",
+    "options": [
+      "Pass optional URL state like filters and paging",
+      "Define component metadata",
+      "Replace route guards",
+      "Compile templates"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think ?page=2.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Query params often store filter or search state.",
+    "id": 166
+  },
+  {
+    "question": "What is the difference between route params and query params in a practical Angular scenario ?",
+    "options": [
+      "Route params identify path segments; query params carry optional URL state",
+      "They are always identical",
+      "Query params are only for POST requests",
+      "Route params are only for booleans"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Path vs optional URL data.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Route params are part of the path, query params are key-value pairs after ?.",
+    "id": 167
+  },
+  {
+    "question": "What does providedIn: 'root' do in a service in a practical Angular scenario ?",
+    "options": [
+      "Registers the service in the root injector",
+      "Restricts service to one component",
+      "Turns the service into a directive",
+      "Delays service creation until ngOnDestroy"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "A common service registration pattern.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "It makes the service available app-wide via the root injector.",
+    "code": "@Injectable({ providedIn: 'root' })",
+    "id": 168
+  },
+  {
+    "question": "What is content projection in Angular in a practical Angular scenario ?",
+    "options": [
+      "Projecting external markup into a component using ng-content",
+      "Creating routes inside content tags",
+      "Injecting services into templates",
+      "Running pipes in child components"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think slot-like behavior.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Content projection allows parent content to appear inside a child component.",
+    "id": 169
+  },
+  {
+    "question": "What is the purpose of ng-content in a practical Angular scenario?",
+    "options": [
+      "Render projected content",
+      "Create dynamic routes",
+      "Subscribe to Observables",
+      "Apply form validation"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Used in reusable layout components.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ng-content marks where projected content is rendered.",
+    "code": "<ng-content></ng-content>",
+    "id": 170
+  },
+  {
+    "question": "What does ViewEncapsulation affect in a practical Angular scenario?",
+    "options": [
+      "How component styles are scoped",
+      "How routes are matched",
+      "How services are injected",
+      "How Observables emit"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "It is about styles.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ViewEncapsulation controls CSS scoping behavior.",
+    "id": 171
+  },
+  {
+    "question": "Why might a pure pipe be beneficial in a practical Angular scenario?",
+    "options": [
+      "It avoids unnecessary recalculation when inputs have not changed",
+      "It can access private component state",
+      "It bypasses change detection",
+      "It always mutates inputs"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Performance-related.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Pure pipes run only when Angular detects a pure change to the input.",
+    "id": 172
+  },
+  {
+    "question": "What is the purpose of a custom validator in reactive forms in a practical Angular scenario?",
+    "options": [
+      "Add business-specific validation logic",
+      "Create route guards",
+      "Replace FormGroup",
+      "Compile templates"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful for domain rules.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Custom validators handle validation rules beyond built-ins.",
+    "id": 173
+  },
+  {
+    "question": "What does patchValue do in reactive forms in a practical Angular scenario?",
+    "options": [
+      "Updates some controls without requiring all values",
+      "Resets the form permanently",
+      "Adds validators automatically",
+      "Marks every control as touched"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Less strict than setValue.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "patchValue updates a subset of form values.",
+    "id": 174
+  },
+  {
+    "question": "What does setValue do in reactive forms in a practical Angular scenario?",
+    "options": [
+      "Updates all controls and requires a complete object",
+      "Only updates one control",
+      "Submits the form",
+      "Creates the form structure"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Stricter than patchValue.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "setValue requires values for all controls in the group.",
+    "id": 175
+  },
+  {
+    "question": "Why use debounceTime with form valueChanges in a practical Angular scenario?",
+    "options": [
+      "Reduce rapid emissions during typing",
+      "Make validation synchronous",
+      "Skip all duplicate values forever",
+      "Convert values to Promises"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful for search.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "debounceTime helps avoid reacting to every keystroke immediately.",
+    "id": 176
+  },
+  {
+    "question": "What is the benefit of shareReplay in a data service in a practical Angular scenario?",
+    "options": [
+      "Reuse the latest emitted value among multiple subscribers",
+      "Force refetch on every subscription",
+      "Disable caching",
+      "Convert an Observable to a signal automatically"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful for API responses.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "shareReplay can share and cache a stream result.",
+    "id": 177
+  },
+  {
+    "question": "What is a common reason to use a facade service with components in a practical Angular scenario?",
+    "options": [
+      "To keep components simpler and centralize state/business logic",
+      "To avoid using templates",
+      "To replace all pipes",
+      "To disable routing"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think separation of concerns.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Facade services can reduce component complexity.",
+    "id": 178
+  },
+  {
+    "question": "What does distinctUntilChanged help prevent in a practical Angular scenario?",
+    "options": [
+      "Repeated emissions of the same value",
+      "Route activation",
+      "Template rendering",
+      "Dependency injection"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful with form streams.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "distinctUntilChanged filters consecutive duplicate values.",
+    "id": 179
+  },
+  {
+    "question": "What is the purpose of a CanMatch guard in a practical Angular scenario ?",
+    "options": [
+      "Control whether a route definition should match",
+      "Destroy a component before routing",
+      "Create dynamic HTTP headers",
+      "Validate a form group"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Modern routing concept.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "CanMatch can stop a route from matching in the first place.",
+    "id": 180
+  },
+  {
+    "question": "What is the main advantage of standalone APIs in Angular in a practical Angular scenario ?",
+    "options": [
+      "Less NgModule boilerplate and more direct imports",
+      "No need for templates",
+      "No more dependency injection",
+      "No support for routing"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Modern Angular ergonomics.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Standalone APIs simplify project structure.",
+    "id": 181
+  },
+  {
+    "question": "What is a signal in Angular primarily for in a practical Angular scenario ?",
+    "options": [
+      "Reactive state tracking",
+      "HTTP request caching",
+      "CSS encapsulation",
+      "SSR deployment"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Modern reactivity feature.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Signals are Angular's reactive primitive for state.",
+    "id": 182
+  },
+  {
+    "question": "What does computed() create with signals in a practical Angular scenario ?",
+    "options": [
+      "A derived reactive value",
+      "A manual subscription",
+      "A route resolver",
+      "A lazy module"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think derived state.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "computed derives values from other signals.",
+    "id": 183
+  },
+  {
+    "question": "What is effect() used for with signals in a practical Angular scenario ?",
+    "options": [
+      "Run side effects when signal dependencies change",
+      "Generate CSS effects",
+      "Create DOM elements directly",
+      "Register lazy routes"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Logging or syncing external state.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "effect reacts to signal changes with side effects.",
+    "id": 184
+  },
+  {
+    "question": "Why would you use inject() instead of constructor injection in some Angular code in a practical Angular scenario ?",
+    "options": [
+      "To access dependencies in functions or class fields",
+      "To disable DI",
+      "To create route params",
+      "To replace providers"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Common in standalone/functional patterns.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "inject() is helpful in functional APIs and some class field setups.",
+    "id": 185
+  },
+  {
+    "question": "What does takeUntilDestroyed help with in a practical Angular scenario ?",
+    "options": [
+      "Automatic subscription cleanup tied to component lifecycle",
+      "Skipping route guards",
+      "Caching forms",
+      "Reducing CSS size"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Modern Angular/RxJS interop.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "takeUntilDestroyed simplifies cleanup for subscriptions.",
+    "id": 186
+  },
+  {
+    "question": "What is server-side rendering mainly used for in a practical Angular scenario ?",
+    "options": [
+      "Faster first content and better SEO",
+      "Replacing TypeScript",
+      "Eliminating routers",
+      "Creating pipes"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think first page render.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "SSR can improve initial load and search engine visibility.",
+    "id": 187
+  },
+  {
+    "question": "What is hydration in Angular SSR context in a practical Angular scenario ?",
+    "options": [
+      "Reusing server-rendered HTML on the client",
+      "Encrypting HTTP responses",
+      "Resetting a form after submit",
+      "Compiling directives in AOT"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "SSR follow-up step.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Hydration attaches client behavior to server-rendered markup.",
+    "id": 188
+  },
+  {
+    "question": "What is a common use of a route data property in a practical Angular scenario ?",
+    "options": [
+      "Attach static metadata like titles or required roles",
+      "Store local CSS rules",
+      "Replace services",
+      "Send POST bodies"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Extra route metadata.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Route data can carry static configuration metadata.",
+    "id": 189
+  },
+  {
+    "question": "What is the benefit of OnPush with immutable input updates in a practical Angular scenario ?",
+    "options": [
+      "Angular can detect input reference changes efficiently",
+      "It disables all rerenders",
+      "It only works with forms",
+      "It removes the need for services"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Reference changes matter.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "OnPush works well with immutable data patterns.",
+    "id": 190
+  },
+  {
+    "question": "Does a resolver run before route activation in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Preload route data.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers fetch data before the route becomes active.",
+    "id": 191
+  },
+  {
+    "question": "Can trackBy help reduce DOM recreation in ngFor in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "List rendering optimization.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "trackBy helps Angular preserve DOM nodes when items are unchanged.",
+    "id": 192
+  },
+  {
+    "question": "Is providedIn: 'root' a way to register a singleton-like app-wide service in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Think app-wide availability.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "A root-provided service is shared through the root injector.",
+    "id": 193
+  },
+  {
+    "question": "Does patchValue require values for every control in a FormGroup in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Compare with setValue.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "patchValue can update only part of the form model.",
+    "id": 194
+  },
+  {
+    "question": "Can a CanDeactivate guard be used for unsaved form confirmation in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Navigation away.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "It is commonly used to warn users before leaving a page.",
+    "id": 195
+  },
+  {
+    "question": "Is an Observable limited to a single emitted value like a Promise in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Not just one.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "Observables can emit multiple values over time.",
+    "id": 196
+  },
+  {
+    "question": "Can OnPush still update the view when an input reference changes in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Reference checks matter.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Input reference changes can trigger view updates with OnPush.",
+    "id": 197
+  },
+  {
+    "question": "Is queryParamMap used to read query string values in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Look after the question mark in URL.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "queryParamMap reads URL query parameters.",
+    "id": 198
+  },
+  {
+    "question": "Can content projection be achieved with ng-content in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Slot-like behavior.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ng-content is Angular's built-in content projection feature.",
+    "id": 199
+  },
+  {
+    "question": "Is shareReplay useful for sharing a fetched stream result across subscribers in a practical Angular scenario ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "medium",
+    "description": "Medium level Angular concept question.",
+    "hint": "Useful in data services.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "shareReplay can cache and share stream emissions.",
+    "id": 200
+  },
+  {
+    "question": "Why can mutating an object input sometimes fail to update an OnPush child component?",
+    "options": [
+      "Because the reference may not change, so Angular may not detect it as a new input",
+      "Because OnPush disables all child rendering permanently",
+      "Because objects cannot be used with inputs",
+      "Because OnPush only works with strings"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think reference equality.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "OnPush checks input references, so direct mutation may not trigger updates.",
+    "id": 201
+  },
+  {
+    "question": "What is the main risk of nesting subscriptions instead of composing streams with RxJS operators?",
+    "options": [
+      "Harder cleanup and more complex async flow",
+      "Faster rendering in all cases",
+      "Guaranteed memory safety",
+      "Automatic error retries"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think readability and leaks.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Nested subscriptions often lead to callback-like complexity and cleanup issues.",
+    "id": 202
+  },
+  {
+    "question": "When should switchMap be preferred over mergeMap for HTTP search requests?",
+    "options": [
+      "When only the latest request result should matter",
+      "When every request must complete regardless of newer ones",
+      "When order must always be preserved",
+      "When you want parallel aggregation only"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Ideal for type-ahead search.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "switchMap cancels previous inner streams when a new value arrives.",
+    "id": 203
+  },
+  {
+    "question": "Why is direct DOM manipulation generally discouraged in Angular components?",
+    "options": [
+      "It can bypass Angular rendering patterns and hurt platform compatibility",
+      "It is impossible in browsers",
+      "It always improves performance too much",
+      "It disables routing"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think framework consistency.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular prefers template bindings and abstractions like Renderer2 when needed.",
+    "id": 204
+  },
+  {
+    "question": "What problem can arise from using functions directly in templates for expensive computations?",
+    "options": [
+      "They may run frequently during change detection",
+      "They are compiled away after build",
+      "They only run once",
+      "They cannot access component state"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Change detection cycles.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Template expressions may be evaluated often, so expensive work there can hurt performance.",
+    "id": 205
+  },
+  {
+    "question": "Why might you choose combineLatest over forkJoin?",
+    "options": [
+      "When you need ongoing latest values from multiple streams",
+      "When you only want final completion values once",
+      "When none of the streams should emit",
+      "When working only with Promises"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Continuous combination vs final combination.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "combineLatest emits whenever any source emits after all have emitted once.",
+    "id": 206
+  },
+  {
+    "question": "What is the benefit of using takeUntil or takeUntilDestroyed in components?",
+    "options": [
+      "Prevent subscriptions from living longer than the component",
+      "Force Observables to emit instantly",
+      "Convert cold streams to hot streams",
+      "Replace HTTP interceptors"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Avoid leaks.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "These operators help tie stream lifetime to component lifetime.",
+    "id": 207
+  },
+  {
+    "question": "What is a potential issue with using index as trackBy in a reordered list?",
+    "options": [
+      "Angular may associate DOM elements with the wrong items",
+      "It always improves identity tracking",
+      "It prevents ngFor from rendering",
+      "It sorts the list automatically"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think stable IDs.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Using the index can break identity when list order changes.",
+    "id": 208
+  },
+  {
+    "question": "Why can circular dependencies between services be problematic?",
+    "options": [
+      "They can break DI resolution or indicate poor architecture",
+      "They always improve reuse",
+      "They are required for feature modules",
+      "They only affect CSS"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Architecture smell.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Circular dependencies complicate object creation and coupling.",
+    "id": 209
+  },
+  {
+    "question": "What is the advantage of route-level lazy loading with standalone components?",
+    "options": [
+      "Feature code loads only when the route is visited",
+      "All components load twice",
+      "It disables preloading strategies",
+      "It removes the need for routers"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Load on demand.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Lazy loading reduces initial bundle size by deferring code.",
+    "id": 210
+  },
+  {
+    "question": "Why is immutable state often paired with OnPush?",
+    "options": [
+      "Reference changes make updates easier to detect",
+      "Immutable state disables inputs",
+      "OnPush requires arrays only",
+      "It prevents all rerenders"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Reference-based detection.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Immutable updates create new references that OnPush can detect.",
+    "id": 211
+  },
+  {
+    "question": "What is the difference between setValue and patchValue that matters in strict form models?",
+    "options": [
+      "setValue requires the full structure; patchValue allows partial updates",
+      "patchValue requires the full structure; setValue is partial",
+      "They are identical",
+      "Only patchValue supports nested groups"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Strict vs flexible.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "setValue is strict and patchValue is partial.",
+    "id": 212
+  },
+  {
+    "question": "Why might you use an injection token instead of a class type provider?",
+    "options": [
+      "To inject interfaces/config values or non-class dependencies",
+      "To avoid DI entirely",
+      "To replace routing",
+      "To declare standalone imports"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Config objects are a common case.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Injection tokens are useful for abstract or non-class providers.",
+    "id": 213
+  },
+  {
+    "question": "What is the main role of APP_INITIALIZER?",
+    "options": [
+      "Run initialization logic before the app finishes bootstrapping",
+      "Create routes after every navigation",
+      "Replace environment files",
+      "Compile pipes lazily"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Startup hook.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "APP_INITIALIZER runs setup tasks before app startup completes.",
+    "id": 214
+  },
+  {
+    "question": "Why can using shareReplay without care sometimes be risky?",
+    "options": [
+      "It may retain cached values/subscriptions longer than intended",
+      "It always cancels HTTP calls too early",
+      "It removes errors from streams automatically",
+      "It forces synchronous execution"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Caching has tradeoffs.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Incorrect use can keep resources alive and cache stale data.",
+    "id": 215
+  },
+  {
+    "question": "What does exhaustMap do in a stream of button clicks for submit actions?",
+    "options": [
+      "Ignores new clicks while the current inner Observable is active",
+      "Cancels the current request for the latest click",
+      "Queues every request in order",
+      "Merges all requests in parallel"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Prevent double submit.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "exhaustMap is useful when you want to ignore repeated triggers during an active task.",
+    "id": 216
+  },
+  {
+    "question": "Why can ExpressionChangedAfterItHasBeenCheckedError occur?",
+    "options": [
+      "A bound value changed after Angular checked it in the same detection cycle",
+      "A route guard returned false",
+      "A provider was missing",
+      "A template had too many pipes"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Timing issue during detection.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "This error points to a value changing during the wrong point in change detection.",
+    "id": 217
+  },
+  {
+    "question": "What is the purpose of ControlValueAccessor?",
+    "options": [
+      "Integrate custom form components with Angular forms API",
+      "Create route resolvers",
+      "Inject validators globally",
+      "Hydrate SSR markup"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Custom form input integration.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ControlValueAccessor bridges custom controls and Angular forms.",
+    "id": 218
+  },
+  {
+    "question": "Why is a facade pattern helpful in larger Angular apps?",
+    "options": [
+      "It hides store/service complexity behind a simpler API for components",
+      "It removes the need for components",
+      "It replaces the router",
+      "It disables RxJS"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Architectural abstraction.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Facades can simplify component interactions with state and services.",
+    "id": 219
+  },
+  {
+    "question": "What is one advantage of using route resolvers over loading everything inside ngOnInit?",
+    "options": [
+      "The route can activate with data ready and avoid intermediate empty states",
+      "Resolvers run after the component is destroyed",
+      "Resolvers are only for forms",
+      "They eliminate HTTP altogether"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Data before view activation.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers can improve route initialization flow by preloading data.",
+    "id": 220
+  },
+  {
+    "question": "Why should you avoid putting impure heavy logic inside a custom pipe used broadly?",
+    "options": [
+      "It may run often and degrade performance",
+      "Pipes are never called in templates",
+      "Impure pipes only work on the server",
+      "It will disable dependency injection"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Performance concern.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Impure pipes can execute frequently during change detection.",
+    "id": 221
+  },
+  {
+    "question": "What is a smart way to preserve filter state across page refresh in Angular routing?",
+    "options": [
+      "Store it in query params or persistent storage",
+      "Keep it only in an in-memory service",
+      "Rely on constructor order",
+      "Use ng-content"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Refresh-safe state.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Query params and storage survive refresh better than in-memory state.",
+    "id": 222
+  },
+  {
+    "question": "Why is CanMatch sometimes preferred over CanActivate for feature-flagged routes?",
+    "options": [
+      "It can stop a route from matching at all before activation",
+      "It runs after component creation",
+      "It only works for forms",
+      "It bypasses lazy loading"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Earlier route decision.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "CanMatch can prevent route selection earlier in the routing process.",
+    "id": 223
+  },
+  {
+    "question": "What issue can happen if a resolver depends only on transient in-memory service state?",
+    "options": [
+      "A browser refresh can lose the state and return empty data",
+      "The resolver becomes synchronous only",
+      "Routing stops working forever",
+      "The template cannot compile"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think page reload.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Refresh recreates the app, so transient state may disappear.",
+    "id": 224
+  },
+  {
+    "question": "Why might you use TransferState with SSR?",
+    "options": [
+      "To avoid refetching the same data on the client after server render",
+      "To replace HttpClientModule",
+      "To disable hydration",
+      "To make components standalone"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "SSR optimization.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "TransferState can pass pre-fetched server data to the browser.",
+    "id": 225
+  },
+  {
+    "question": "What is a key difference between Subject and BehaviorSubject?",
+    "options": [
+      "BehaviorSubject stores the latest value and emits it to new subscribers",
+      "Subject stores the latest value automatically too",
+      "BehaviorSubject cannot emit multiple values",
+      "Subject is only for forms"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think initial/latest value.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "BehaviorSubject has a current value concept.",
+    "id": 226
+  },
+  {
+    "question": "Why can using BehaviorSubject for writable local state be convenient?",
+    "options": [
+      "Subscribers immediately receive the latest state value",
+      "It automatically persists across refresh",
+      "It removes the need for templates",
+      "It prevents all errors"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Latest value on subscribe.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "BehaviorSubject is useful for shared current state in services.",
+    "id": 227
+  },
+  {
+    "question": "When is forkJoin a better choice than combineLatest?",
+    "options": [
+      "When you want the final values after all streams complete once",
+      "When you need continuous updates from form controls",
+      "When sources never complete",
+      "When you want to cancel previous HTTP calls"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Final combined result.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "forkJoin waits for completion and then emits combined final values.",
+    "id": 228
+  },
+  {
+    "question": "Why is Renderer2 preferable to direct nativeElement manipulation in some cases?",
+    "options": [
+      "It provides a safer abstraction across rendering environments",
+      "It makes DOM access synchronous",
+      "It eliminates the need for templates",
+      "It is only for SSR"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Cross-platform abstraction.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Renderer2 is an Angular abstraction over DOM operations.",
+    "id": 229
+  },
+  {
+    "question": "What architectural problem is often indicated by a component that directly performs extensive HTTP, transformation, state management, and routing logic?",
+    "options": [
+      "It likely has too many responsibilities",
+      "It is optimized for reuse",
+      "It is required for OnPush",
+      "It guarantees better testability"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think single responsibility.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Such a component may violate separation of concerns.",
+    "id": 230
+  },
+  {
+    "question": "What is a practical benefit of standalone route configuration with loadComponent?",
+    "options": [
+      "Direct lazy loading of individual components",
+      "Automatic form generation",
+      "Permanent caching of route data",
+      "Removal of change detection"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Modern route API.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "loadComponent enables lazy loading at component granularity.",
+    "id": 231
+  },
+  {
+    "question": "What is a subtle risk of subscribing inside a resolver to set local variables and then returning synchronously?",
+    "options": [
+      "The resolver may return before async data arrives",
+      "It guarantees faster activation",
+      "It caches data automatically",
+      "It prevents route refresh issues"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Async timing bug.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers should return the async source itself, not subscribe and return too early.",
+    "id": 232
+  },
+  {
+    "question": "Why is markForCheck sometimes needed with OnPush components?",
+    "options": [
+      "To manually signal Angular to check the component in some async scenarios",
+      "To disable outputs",
+      "To create forms",
+      "To resolve route params"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Manual trigger.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "markForCheck asks Angular to recheck an OnPush component.",
+    "id": 233
+  },
+  {
+    "question": "What is the benefit of splitting presentational and container components?",
+    "options": [
+      "Cleaner separation between UI and data/state logic",
+      "No need for services",
+      "Eliminates inputs/outputs",
+      "Prevents routing"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "UI vs orchestration.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "This pattern improves reuse, testing, and maintainability.",
+    "id": 234
+  },
+  {
+    "question": "What is a common reason to use distinctUntilChanged with route param or form streams?",
+    "options": [
+      "Avoid reacting to unchanged consecutive values",
+      "Force duplicate emissions",
+      "Reset query params automatically",
+      "Convert streams into signals"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Duplicate filtering.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "It prevents repeated work for identical consecutive values.",
+    "id": 235
+  },
+  {
+    "question": "Does OnPush guarantee that a component never rerenders?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "It is not 'never update'.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "OnPush reduces checks but components can still rerender on input changes, events, or manual triggers.",
+    "id": 236
+  },
+  {
+    "question": "Can a resolver return an Observable directly?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "No need to subscribe manually inside.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers commonly return Observable or Promise results.",
+    "id": 237
+  },
+  {
+    "question": "Is using query params generally safer than in-memory-only services for refresh-persistent filter state?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Refresh-safe state.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Query params survive refresh because they are in the URL.",
+    "id": 238
+  },
+  {
+    "question": "Can nested subscriptions make async code harder to reason about?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "RxJS best practice.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Composing operators is often cleaner than nesting subscriptions.",
+    "id": 239
+  },
+  {
+    "question": "Does switchMap cancel previous inner Observables when a new source value arrives?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Latest wins.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "switchMap switches to the latest inner stream.",
+    "id": 240
+  },
+  {
+    "question": "Can ExpressionChangedAfterItHasBeenCheckedError be related to changing bound data at the wrong time in a detection cycle?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Timing-related.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The error is about state changes after Angular has already checked a binding.",
+    "id": 241
+  },
+  {
+    "question": "Is BehaviorSubject useful when new subscribers need the latest current value immediately?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Current state on subscribe.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "BehaviorSubject emits its current value to new subscribers.",
+    "id": 242
+  },
+  {
+    "question": "Can mutating an input object in place be problematic for OnPush detection?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Reference-based detection.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Without a new reference, OnPush may not see the change.",
+    "id": 243
+  },
+  {
+    "question": "Should expensive computations generally be avoided directly in Angular templates?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Move heavy logic elsewhere.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "They may run often during change detection and hurt performance.",
+    "id": 244
+  },
+  {
+    "question": "Can a ControlValueAccessor connect a custom component to Angular forms?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Custom form control bridge.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ControlValueAccessor lets custom UI controls work with Angular forms APIs.",
+    "id": 245
+  },
+  {
+    "question": "Why can mutating an object input sometimes fail to update an OnPush child component in an advanced Angular application?",
+    "options": [
+      "Because the reference may not change, so Angular may not detect it as a new input",
+      "Because OnPush disables all child rendering permanently",
+      "Because objects cannot be used with inputs",
+      "Because OnPush only works with strings"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think reference equality.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "OnPush checks input references, so direct mutation may not trigger updates.",
+    "id": 246
+  },
+  {
+    "question": "What is the main risk of nesting subscriptions instead of composing streams with RxJS operators in an advanced Angular application?",
+    "options": [
+      "Harder cleanup and more complex async flow",
+      "Faster rendering in all cases",
+      "Guaranteed memory safety",
+      "Automatic error retries"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think readability and leaks.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Nested subscriptions often lead to callback-like complexity and cleanup issues.",
+    "id": 247
+  },
+  {
+    "question": "When should switchMap be preferred over mergeMap for HTTP search requests in an advanced Angular application?",
+    "options": [
+      "When only the latest request result should matter",
+      "When every request must complete regardless of newer ones",
+      "When order must always be preserved",
+      "When you want parallel aggregation only"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Ideal for type-ahead search.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "switchMap cancels previous inner streams when a new value arrives.",
+    "id": 248
+  },
+  {
+    "question": "Why is direct DOM manipulation generally discouraged in Angular components in an advanced Angular application?",
+    "options": [
+      "It can bypass Angular rendering patterns and hurt platform compatibility",
+      "It is impossible in browsers",
+      "It always improves performance too much",
+      "It disables routing"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think framework consistency.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular prefers template bindings and abstractions like Renderer2 when needed.",
+    "id": 249
+  },
+  {
+    "question": "What problem can arise from using functions directly in templates for expensive computations in an advanced Angular application?",
+    "options": [
+      "They may run frequently during change detection",
+      "They are compiled away after build",
+      "They only run once",
+      "They cannot access component state"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Change detection cycles.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Template expressions may be evaluated often, so expensive work there can hurt performance.",
+    "id": 250
+  },
+  {
+    "question": "Why might you choose combineLatest over forkJoin in an advanced Angular application #6?",
+    "options": [
+      "When you need ongoing latest values from multiple streams",
+      "When you only want final completion values once",
+      "When none of the streams should emit",
+      "When working only with Promises"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Continuous combination vs final combination.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "combineLatest emits whenever any source emits after all have emitted once.",
+    "id": 251
+  },
+  {
+    "question": "What is the benefit of using takeUntil or takeUntilDestroyed in components in an advanced Angular application?",
+    "options": [
+      "Prevent subscriptions from living longer than the component",
+      "Force Observables to emit instantly",
+      "Convert cold streams to hot streams",
+      "Replace HTTP interceptors"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Avoid leaks.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "These operators help tie stream lifetime to component lifetime.",
+    "id": 252
+  },
+  {
+    "question": "What is a potential issue with using index as trackBy in a reordered list in an advanced Angular application?",
+    "options": [
+      "Angular may associate DOM elements with the wrong items",
+      "It always improves identity tracking",
+      "It prevents ngFor from rendering",
+      "It sorts the list automatically"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think stable IDs.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Using the index can break identity when list order changes.",
+    "id": 253
+  },
+  {
+    "question": "Why can circular dependencies between services be problematic in an advanced Angular application?",
+    "options": [
+      "They can break DI resolution or indicate poor architecture",
+      "They always improve reuse",
+      "They are required for feature modules",
+      "They only affect CSS"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Architecture smell.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Circular dependencies complicate object creation and coupling.",
+    "id": 254
+  },
+  {
+    "question": "What is the advantage of route-level lazy loading with standalone components in an advanced Angular application ?",
+    "options": [
+      "Feature code loads only when the route is visited",
+      "All components load twice",
+      "It disables preloading strategies",
+      "It removes the need for routers"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Load on demand.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Lazy loading reduces initial bundle size by deferring code.",
+    "id": 255
+  },
+  {
+    "question": "Why is immutable state often paired with OnPush in an advanced Angular application ?",
+    "options": [
+      "Reference changes make updates easier to detect",
+      "Immutable state disables inputs",
+      "OnPush requires arrays only",
+      "It prevents all rerenders"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Reference-based detection.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Immutable updates create new references that OnPush can detect.",
+    "id": 256
+  },
+  {
+    "question": "What is the difference between setValue and patchValue that matters in strict form models in an advanced Angular application ?",
+    "options": [
+      "setValue requires the full structure; patchValue allows partial updates",
+      "patchValue requires the full structure; setValue is partial",
+      "They are identical",
+      "Only patchValue supports nested groups"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Strict vs flexible.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "setValue is strict and patchValue is partial.",
+    "id": 257
+  },
+  {
+    "question": "Why might you use an injection token instead of a class type provider in an advanced Angular application ?",
+    "options": [
+      "To inject interfaces/config values or non-class dependencies",
+      "To avoid DI entirely",
+      "To replace routing",
+      "To declare standalone imports"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Config objects are a common case.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Injection tokens are useful for abstract or non-class providers.",
+    "id": 258
+  },
+  {
+    "question": "What is the main role of APP_INITIALIZER in an advanced Angular application ?",
+    "options": [
+      "Run initialization logic before the app finishes bootstrapping",
+      "Create routes after every navigation",
+      "Replace environment files",
+      "Compile pipes lazily"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Startup hook.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "APP_INITIALIZER runs setup tasks before app startup completes.",
+    "id": 259
+  },
+  {
+    "question": "Why can using shareReplay without care sometimes be risky in an advanced Angular application ?",
+    "options": [
+      "It may retain cached values/subscriptions longer than intended",
+      "It always cancels HTTP calls too early",
+      "It removes errors from streams automatically",
+      "It forces synchronous execution"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Caching has tradeoffs.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Incorrect use can keep resources alive and cache stale data.",
+    "id": 260
+  },
+  {
+    "question": "What does exhaustMap do in a stream of button clicks for submit actions in an advanced Angular application ?",
+    "options": [
+      "Ignores new clicks while the current inner Observable is active",
+      "Cancels the current request for the latest click",
+      "Queues every request in order",
+      "Merges all requests in parallel"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Prevent double submit.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "exhaustMap is useful when you want to ignore repeated triggers during an active task.",
+    "id": 261
+  },
+  {
+    "question": "Why can ExpressionChangedAfterItHasBeenCheckedError occur in an advanced Angular application ?",
+    "options": [
+      "A bound value changed after Angular checked it in the same detection cycle",
+      "A route guard returned false",
+      "A provider was missing",
+      "A template had too many pipes"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Timing issue during detection.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "This error points to a value changing during the wrong point in change detection.",
+    "id": 262
+  },
+  {
+    "question": "What is the purpose of ControlValueAccessor in an advanced Angular application ?",
+    "options": [
+      "Integrate custom form components with Angular forms API",
+      "Create route resolvers",
+      "Inject validators globally",
+      "Hydrate SSR markup"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Custom form input integration.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ControlValueAccessor bridges custom controls and Angular forms.",
+    "id": 263
+  },
+  {
+    "question": "Why is a facade pattern helpful in larger Angular apps in an advanced Angular application ?",
+    "options": [
+      "It hides store/service complexity behind a simpler API for components",
+      "It removes the need for components",
+      "It replaces the router",
+      "It disables RxJS"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Architectural abstraction.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Facades can simplify component interactions with state and services.",
+    "id": 264
+  },
+  {
+    "question": "What is one advantage of using route resolvers over loading everything inside ngOnInit in an advanced Angular application ?",
+    "options": [
+      "The route can activate with data ready and avoid intermediate empty states",
+      "Resolvers run after the component is destroyed",
+      "Resolvers are only for forms",
+      "They eliminate HTTP altogether"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Data before view activation.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers can improve route initialization flow by preloading data.",
+    "id": 265
+  },
+  {
+    "question": "Why should you avoid putting impure heavy logic inside a custom pipe used broadly in an advanced Angular application ?",
+    "options": [
+      "It may run often and degrade performance",
+      "Pipes are never called in templates",
+      "Impure pipes only work on the server",
+      "It will disable dependency injection"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Performance concern.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Impure pipes can execute frequently during change detection.",
+    "id": 266
+  },
+  {
+    "question": "What is a smart way to preserve filter state across page refresh in Angular routing in an advanced Angular application ?",
+    "options": [
+      "Store it in query params or persistent storage",
+      "Keep it only in an in-memory service",
+      "Rely on constructor order",
+      "Use ng-content"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Refresh-safe state.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Query params and storage survive refresh better than in-memory state.",
+    "id": 267
+  },
+  {
+    "question": "Why is CanMatch sometimes preferred over CanActivate for feature-flagged routes in an advanced Angular application ?",
+    "options": [
+      "It can stop a route from matching at all before activation",
+      "It runs after component creation",
+      "It only works for forms",
+      "It bypasses lazy loading"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Earlier route decision.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "CanMatch can prevent route selection earlier in the routing process.",
+    "id": 268
+  },
+  {
+    "question": "What issue can happen if a resolver depends only on transient in-memory service state in an advanced Angular application ?",
+    "options": [
+      "A browser refresh can lose the state and return empty data",
+      "The resolver becomes synchronous only",
+      "Routing stops working forever",
+      "The template cannot compile"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think page reload.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Refresh recreates the app, so transient state may disappear.",
+    "id": 269
+  },
+  {
+    "question": "Why might you use TransferState with SSR in an advanced Angular application ?",
+    "options": [
+      "To avoid refetching the same data on the client after server render",
+      "To replace HttpClientModule",
+      "To disable hydration",
+      "To make components standalone"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "SSR optimization.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "TransferState can pass pre-fetched server data to the browser.",
+    "id": 270
+  },
+  {
+    "question": "What is a key difference between Subject and BehaviorSubject in an advanced Angular application ?",
+    "options": [
+      "BehaviorSubject stores the latest value and emits it to new subscribers",
+      "Subject stores the latest value automatically too",
+      "BehaviorSubject cannot emit multiple values",
+      "Subject is only for forms"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think initial/latest value.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "BehaviorSubject has a current value concept.",
+    "id": 271
+  },
+  {
+    "question": "Why can using BehaviorSubject for writable local state be convenient in an advanced Angular application ?",
+    "options": [
+      "Subscribers immediately receive the latest state value",
+      "It automatically persists across refresh",
+      "It removes the need for templates",
+      "It prevents all errors"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Latest value on subscribe.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "BehaviorSubject is useful for shared current state in services.",
+    "id": 272
+  },
+  {
+    "question": "When is forkJoin a better choice than combineLatest in an advanced Angular application ?",
+    "options": [
+      "When you want the final values after all streams complete once",
+      "When you need continuous updates from form controls",
+      "When sources never complete",
+      "When you want to cancel previous HTTP calls"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Final combined result.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "forkJoin waits for completion and then emits combined final values.",
+    "id": 273
+  },
+  {
+    "question": "Why is Renderer2 preferable to direct nativeElement manipulation in some cases in an advanced Angular application ?",
+    "options": [
+      "It provides a safer abstraction across rendering environments",
+      "It makes DOM access synchronous",
+      "It eliminates the need for templates",
+      "It is only for SSR"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Cross-platform abstraction.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Renderer2 is an Angular abstraction over DOM operations.",
+    "id": 274
+  },
+  {
+    "question": "What architectural problem is often indicated by a component that directly performs extensive HTTP, transformation, state management, and routing logic in an advanced Angular application ?",
+    "options": [
+      "It likely has too many responsibilities",
+      "It is optimized for reuse",
+      "It is required for OnPush",
+      "It guarantees better testability"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think single responsibility.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Such a component may violate separation of concerns.",
+    "id": 275
+  },
+  {
+    "question": "What is a practical benefit of standalone route configuration with loadComponent in an advanced Angular application ?",
+    "options": [
+      "Direct lazy loading of individual components",
+      "Automatic form generation",
+      "Permanent caching of route data",
+      "Removal of change detection"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Modern route API.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "loadComponent enables lazy loading at component granularity.",
+    "id": 276
+  },
+  {
+    "question": "What is a subtle risk of subscribing inside a resolver to set local variables and then returning synchronously in an advanced Angular application ?",
+    "options": [
+      "The resolver may return before async data arrives",
+      "It guarantees faster activation",
+      "It caches data automatically",
+      "It prevents route refresh issues"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Async timing bug.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers should return the async source itself, not subscribe and return too early.",
+    "id": 277
+  },
+  {
+    "question": "Why is markForCheck sometimes needed with OnPush components in an advanced Angular application ?",
+    "options": [
+      "To manually signal Angular to check the component in some async scenarios",
+      "To disable outputs",
+      "To create forms",
+      "To resolve route params"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Manual trigger.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "markForCheck asks Angular to recheck an OnPush component.",
+    "id": 278
+  },
+  {
+    "question": "What is the benefit of splitting presentational and container components in an advanced Angular application ?",
+    "options": [
+      "Cleaner separation between UI and data/state logic",
+      "No need for services",
+      "Eliminates inputs/outputs",
+      "Prevents routing"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "UI vs orchestration.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "This pattern improves reuse, testing, and maintainability.",
+    "id": 279
+  },
+  {
+    "question": "What is a common reason to use distinctUntilChanged with route param or form streams in an advanced Angular application ?",
+    "options": [
+      "Avoid reacting to unchanged consecutive values",
+      "Force duplicate emissions",
+      "Reset query params automatically",
+      "Convert streams into signals"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Duplicate filtering.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "It prevents repeated work for identical consecutive values.",
+    "id": 280
+  },
+  {
+    "question": "Does OnPush guarantee that a component never rerenders in an advanced Angular application ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "It is not 'never update'.",
+    "question_type": "boolean",
+    "correctIndex": [
+      1
+    ],
+    "explanation": "OnPush reduces checks but components can still rerender on input changes, events, or manual triggers.",
+    "id": 281
+  },
+  {
+    "question": "Can a resolver return an Observable directly in an advanced Angular application ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "No need to subscribe manually inside.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Resolvers commonly return Observable or Promise results.",
+    "id": 282
+  },
+  {
+    "question": "Is using query params generally safer than in-memory-only services for refresh-persistent filter state in an advanced Angular application ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Refresh-safe state.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Query params survive refresh because they are in the URL.",
+    "id": 283
+  },
+  {
+    "question": "Can nested subscriptions make async code harder to reason about in an advanced Angular application ?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "RxJS best practice.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Composing operators is often cleaner than nesting subscriptions.",
+    "id": 284
+  },
+  {
+    "question": "Does switchMap cancel previous inner Observables when a new source value arrives in an advanced Angular application?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Latest wins.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "switchMap switches to the latest inner stream.",
+    "id": 285
+  },
+  {
+    "question": "Can ExpressionChangedAfterItHasBeenCheckedError be related to changing bound data at the wrong time in a detection cycle in an advanced Angular application?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Timing-related.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "The error is about state changes after Angular has already checked a binding.",
+    "id": 286
+  },
+  {
+    "question": "Is BehaviorSubject useful when new subscribers need the latest current value immediately in an advanced Angular application?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Current state on subscribe.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "BehaviorSubject emits its current value to new subscribers.",
+    "id": 287
+  },
+  {
+    "question": "Can mutating an input object in place be problematic for OnPush detection in an advanced Angular application?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Reference-based detection.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Without a new reference, OnPush may not see the change.",
+    "id": 288
+  },
+  {
+    "question": "Should expensive computations generally be avoided directly in Angular templates in an advanced Angular application?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Move heavy logic elsewhere.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "They may run often during change detection and hurt performance.",
+    "id": 289
+  },
+  {
+    "question": "Can a ControlValueAccessor connect a custom component to Angular forms in an advanced Angular application?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Custom form control bridge.",
+    "question_type": "boolean",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "ControlValueAccessor lets custom UI controls work with Angular forms APIs.",
+    "id": 290
+  },
+  {
+    "question": "Why can mutating an object input sometimes fail to update an OnPush child component in an advanced Angular application?",
+    "options": [
+      "Because the reference may not change, so Angular may not detect it as a new input",
+      "Because OnPush disables all child rendering permanently",
+      "Because objects cannot be used with inputs",
+      "Because OnPush only works with strings"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think reference equality.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "OnPush checks input references, so direct mutation may not trigger updates.",
+    "id": 291
+  },
+  {
+    "question": "What is the main risk of nesting subscriptions instead of composing streams with RxJS operators in an advanced Angular application?",
+    "options": [
+      "Harder cleanup and more complex async flow",
+      "Faster rendering in all cases",
+      "Guaranteed memory safety",
+      "Automatic error retries"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think readability and leaks.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Nested subscriptions often lead to callback-like complexity and cleanup issues.",
+    "id": 292
+  },
+  {
+    "question": "When should switchMap be preferred over mergeMap for HTTP search requests in an advanced Angular application?",
+    "options": [
+      "When only the latest request result should matter",
+      "When every request must complete regardless of newer ones",
+      "When order must always be preserved",
+      "When you want parallel aggregation only"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Ideal for type-ahead search.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "switchMap cancels previous inner streams when a new value arrives.",
+    "id": 293
+  },
+  {
+    "question": "Why is direct DOM manipulation generally discouraged in Angular components in an advanced Angular application?",
+    "options": [
+      "It can bypass Angular rendering patterns and hurt platform compatibility",
+      "It is impossible in browsers",
+      "It always improves performance too much",
+      "It disables routing"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think framework consistency.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Angular prefers template bindings and abstractions like Renderer2 when needed.",
+    "id": 294
+  },
+  {
+    "question": "What problem can arise from using functions directly in templates for expensive computations in an advanced Angular application ?",
+    "options": [
+      "They may run frequently during change detection",
+      "They are compiled away after build",
+      "They only run once",
+      "They cannot access component state"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Change detection cycles.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Template expressions may be evaluated often, so expensive work there can hurt performance.",
+    "id": 295
+  },
+  {
+    "question": "Why might you choose combineLatest over forkJoin in an advanced Angular application ?",
+    "options": [
+      "When you need ongoing latest values from multiple streams",
+      "When you only want final completion values once",
+      "When none of the streams should emit",
+      "When working only with Promises"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Continuous combination vs final combination.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "combineLatest emits whenever any source emits after all have emitted once.",
+    "id": 296
+  },
+  {
+    "question": "What is the benefit of using takeUntil or takeUntilDestroyed in components in an advanced Angular application ?",
+    "options": [
+      "Prevent subscriptions from living longer than the component",
+      "Force Observables to emit instantly",
+      "Convert cold streams to hot streams",
+      "Replace HTTP interceptors"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Avoid leaks.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "These operators help tie stream lifetime to component lifetime.",
+    "id": 297
+  },
+  {
+    "question": "What is a potential issue with using index as trackBy in a reordered list in an advanced Angular application ?",
+    "options": [
+      "Angular may associate DOM elements with the wrong items",
+      "It always improves identity tracking",
+      "It prevents ngFor from rendering",
+      "It sorts the list automatically"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Think stable IDs.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Using the index can break identity when list order changes.",
+    "id": 298
+  },
+  {
+    "question": "Why can circular dependencies between services be problematic in an advanced Angular application ?",
+    "options": [
+      "They can break DI resolution or indicate poor architecture",
+      "They always improve reuse",
+      "They are required for feature modules",
+      "They only affect CSS"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Architecture smell.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Circular dependencies complicate object creation and coupling.",
+    "id": 299
+  },
+  {
+    "question": "What is the advantage of route-level lazy loading with standalone components in an advanced Angular application ?",
+    "options": [
+      "Feature code loads only when the route is visited",
+      "All components load twice",
+      "It disables preloading strategies",
+      "It removes the need for routers"
+    ],
+    "category": "Angular",
+    "difficulty": "hard",
+    "description": "Hard level Angular concept question.",
+    "hint": "Load on demand.",
+    "question_type": "mcq",
+    "correctIndex": [
+      0
+    ],
+    "explanation": "Lazy loading reduces initial bundle size by deferring code.",
+    "id": 300
   }
 ]

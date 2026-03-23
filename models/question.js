@@ -44,7 +44,7 @@ const questionSchema = new mongoose.Schema(
           if (this.question_type === 'boolean') {
             return value.length === 2;
           }
-          return value.length >= 2 && value.length <= 6;
+          return value.length >= 2 && value.length <= 4;
         },
         message: 'Invalid number of options'
       }
