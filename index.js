@@ -10,7 +10,7 @@ const authRoutes = require('./routes/authRoutes');
 const questionRoutes = require('./routes/questionRoutes');
 const apiQuestionRoutes = require('./routes/api/apiQuestionRoutes');
 const methodOverride = require('method-override');
-
+const cors = require('cors');
 const app = express();
 
 connectDB();
@@ -21,6 +21,22 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
+
+const allowedOrigins = [
+  'http://localhost:4200',
+  'https://interview-prep-one-psi.vercel.app'
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
 
 app.use(
   session({
