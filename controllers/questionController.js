@@ -40,7 +40,8 @@ exports.getApiQuestion = async (req, res) => {
             difficulty: 1,
             question_type: 1,
             hint: 1,
-            explanation: 1
+            explanation: 1,
+            correctIndex: 1
           }
         }
       ])
